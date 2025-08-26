@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* ------------------------------------------------------------ */
+ 
+/* Ocultar botón hamburguesa en desktop */
+.MenuHamburguesa {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+ /* Menú de navegación */
+.Menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: linear-gradient(to top, #1caf21, #c8e6c9); /* verde claro degradado hacia arriba */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+  
+.LogoMenu {
+    display: flex;             /* flex en fila */
+    align-items: center;       /* alinear verticalmente */
+    flex-direction: row;       /* explícito, fila */
+}
+  
+.LogoMenu img {
+    height: 50px;
+    width: auto;
+    margin-right: 12px;        /* espacio entre logo y texto */
+}
+  
+.TextoLogo {
+    display: flex;
+    flex-direction: column;    /* dos líneas de texto, pero el bloque entero está a la derecha */
+    font-size: 17px;
+    line-height: 1.2;
+    color: black;
+    white-space: nowrap;
+   font-weight: bold;
+}
+
+.LinksMenu {
+  display: flex;
+  gap: 20px;
+}
+
+.LinksMenu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600; 
+    transition: color 0.3s;
+  }
+  
+.LinksMenu a:hover {
+    color: #2e7d32; /* verde oscuro al pasar el mouse */
+  }
+
+/* -------------------------------------------------*/
+
+.Torneos {
+    background-image: url("hero2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;   
+    align-items: center;
+    display: flex;
+    
+}
+
+.TituloPrincipal h1{
+    color: rgb(49, 49, 49);
+    margin-left: 30px;
+    margin-top: -20px;
+    padding-right: 50px ;
+    font-size: 80px; 
+    background-color: rgba(139, 137, 137, 0.5);
+    line-height: 96px;
+
+}
+
+.LogoPrincipal{
+    height: 240px;    /* Ajustá este valor al tamaño que quieras */
+    width: auto;
+    border-radius: 8px;
+    margin-left: 150px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+/* ----------------------------------------------------------------*/
+
+.Nuestros-Torneos {
+    background-color: #e6dece;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.Nuestros-Torneos .titulo {
+    font-size: 50px;
+    font-weight: bold;
+    color: #4b3b2c;
+    margin-bottom: 8px;
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 4px;
+}
+
+.Nuestros-Torneos .texto {
+    font-size: 17px;
+    color: #444;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+.torneo-dibujo {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+}
+
+.torneo-contenedor {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.torneo-imagen img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.torneo-info {
+  flex: 1;
+}
+
+.torneo-info h2 {
+  font-size: 28px;
+  color: #333;
+  border-bottom: 2px solid #2e7d32;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.torneo-cuerpo {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start; /* Por defecto, todo arriba */
+}
+
+.torneo-premios {
+  width: 150px;
+  margin-top: 50px; /* 🔹 Baja la lista para que coincida con el hr */
+}
+
+
+.torneo-premios h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.torneo-premios ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.torneo-premios li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.torneo-detalles {
+  flex: 1;
+}
+
+.torneo-bloque {
+  text-align: right;       /* Sigue pegado a la derecha */
+  padding-right: 20px;     /* Margen desde el borde */
+  max-width: 400px;        /* 🔹 Máximo ancho */
+  margin-left: auto;       /* 🔹 Mantenerlo alineado a la derecha */
+
+}
+
+.torneo-bloque h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.torneo-bloque p {
+  font-size: 15px;
+  max-width: 400px;
+  margin-left: auto;
+  color: #555;
+}
+
+.torneo-detalles hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  max-width: 400px;   /* 🔹 Máximo ancho */
+  margin-left: auto;  /* 🔹 Empuja hacia la derecha */
+  margin-right: 20px; /* 🔹 Mantiene la separación del borde */
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+.linea-inscripcion {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.torneo-inscripcion h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.torneo-inscripcion p {
+  font-size: 15px;
+  color: #555;
+}
+
+
+/*---------------------------------------------------------------*/
+.PaginaPie {
+  background: linear-gradient(to top, #1caf21, #c8e6c9);
+  color: rgb(0, 0, 0);
+  padding: 40px 20px;
+  position: relative;
+  font-weight: bold;
+}
+
+.Pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.LogoNombre {
+  display: flex;
+  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
+  align-items: flex-start;
+  margin-bottom: 20px; /* Un pequeño margen abajo */
+}
+
+
+.PieLogo {
+  width: 100px;
+  height: auto;
+  margin-right: 15px; 
+  margin-left: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.NombreEscuela {
+  font-size: 16px;  /* Reducimos el tamaño del texto */
+  font-weight: bold;
+  line-height: 1.2;  /* Alinea las líneas de texto */
+}
+
+.NombreEscuela p {
+  display: block;  /* Hace que cada parte del nombre esté en una línea */
+}
+
+.NavegacionRedes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.LogosRedes {
+  display: flex;
+  flex-direction: column;  /* Cambiar de fila a columna */
+  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
+  align-items: center;  /* Centra las imágenes */
+}
+
+.RedesIconos img {
+  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  height: auto;
+}
+
+
+.NavegacionRapida {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.NavegacionSecciones {
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.NavegacionSecciones h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones h3 a{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.NavegacionSecciones li {
+  margin: 5px 0;
+}
+
+.NavegacionSecciones a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+.NavegacionSecciones a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 1024px) {
+
+  .MenuHamburguesa {
+    display: block;
+  }
+
+  .LinksMenu {
+    display: none;  /* oculto por defecto */
+    flex-direction: column;
+    width: 100%;
+    background-color: #c8e6c9;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .LinksMenu a {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+
+  .LinksMenu.activo {
+    display: flex;
+  }
+
+  .Bienvenida {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    height: auto;
+    align-items: center; /* centra todo horizontalmente */
+    padding: 60px 30px;
+  }
+
+  .TextoBienvenida {
+    margin-left: 0;
+    max-width: 90%;
+    padding: 40px;
+    text-align: center; /* centra el texto y el botón */
+  }
+
+  .TextoBienvenida h1 {
+    font-size: 30px;
+  }
+
+  .TextoBienvenida p {
+    font-size: 24px;
+  }
+
+  .BotonBienvenida {
+    display: inline-block; /* se asegura que se pueda centrar */
+    margin: 20px auto 0; /* margen superior y centrado horizontal */
+  }
+
+  .LogoPrincipal {
+    margin-left: 0;
+    margin-top: 20px;
+    height: 250px;
+  }
+
+
+  /* --- Sección Torneos --- */
+  .Torneos {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding: 60px 30px;
+  }
+
+  .TituloPrincipal h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  .LogoPrincipal {
+    height: 180px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* --- Nuestros Torneos --- */
+  .Nuestros-Torneos .titulo {
+    font-size: 40px;
+  }
+
+  .Nuestros-Torneos .texto {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  /* --- Torneo dibujo --- */
+  .torneo-contenedor {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .torneo-imagen img {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .torneo-cuerpo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    text-align: left;
+  }
+
+  .torneo-premios {
+    width: 40%;
+    text-align: left;
+  }
+
+  .torneo-detalles {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  .torneo-bloque {
+    text-align: left;
+    margin: 0;
+    padding-right: 0;
+  }
+
+  .torneo-detalles hr {
+    margin: 20px 0;
+  }
+
+  /*----------------------------------*/
+  
+  .Pie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LogoNombre {
+    align-items: center;
+  }
+
+  .PieLogo{
+  margin-bottom: 20px;
+  }
+
+  .NavegacionRapida {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .LogosRedes {
+    flex-direction: row; /* mantener fila */
+    gap: 30px;
+    justify-content: center; /* centrado horizontal */
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* --- Sección Torneos --- */
+  .Torneos {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .TituloPrincipal h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 0 auto 20px;
+    padding: 0 10px;
+  }
+
+  .LogoPrincipal {
+    height: 120px;
+    margin: 20px auto 0;
+    display: block;
+  }
+
+  /* --- Nuestros Torneos --- */
+  .Nuestros-Torneos .titulo {
+    font-size: 32px;
+  }
+
+  .Nuestros-Torneos .texto {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  /* --- Torneo dibujo --- */
+  .torneo-contenedor {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .torneo-imagen img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .torneo-cuerpo {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .torneo-premios {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .torneo-premios ul {
+    list-style: none;   /* quita los puntitos */
+    padding: 0;         /* elimina sangría izquierda */
+    margin: 0;
+  }
+  
+
+  .torneo-bloque {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .torneo-detalles hr {
+    margin: 20px auto;
+  }
+}

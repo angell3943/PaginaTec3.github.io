@@ -1,0 +1,650 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* ------------------------------------------------------------ */
+ 
+/* Ocultar botón hamburguesa en desktop */
+.MenuHamburguesa {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+ /* Menú de navegación */
+.Menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: linear-gradient(to top, #1caf21, #c8e6c9); /* verde claro degradado hacia arriba */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+  
+.LogoMenu {
+    display: flex;             /* flex en fila */
+    align-items: center;       /* alinear verticalmente */
+    flex-direction: row;       /* explícito, fila */
+}
+  
+.LogoMenu img {
+    height: 50px;
+    width: auto;
+    margin-right: 12px;        /* espacio entre logo y texto */
+}
+  
+.TextoLogo {
+    display: flex;
+    flex-direction: column;    /* dos líneas de texto, pero el bloque entero está a la derecha */
+    font-size: 17px;
+    line-height: 1.2;
+    color: black;
+    white-space: nowrap;
+   font-weight: bold;
+}
+
+/* LinksMenu desktop */
+.LinksMenu {
+  display: flex;
+  gap: 20px;
+}
+
+.LinksMenu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+.LinksMenu a:hover {
+    color: #2e7d32; /* verde oscuro al pasar el mouse */
+  }
+
+/* -------------------------------------------------*/
+
+.Historia {
+    background-image: url("hero2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;   
+    align-items: center;
+    display: flex;
+    
+}
+
+.TituloPrincipal h1{
+    color: rgb(255, 255, 255);
+    margin-left: 30px;
+    margin-top: -70px;
+    font-size: 60px; 
+    line-height: 96px;
+  
+}
+
+.LogoPrincipal{
+    height: 240px;    /* Ajustá este valor al tamaño que quieras */
+    width: auto;
+    border-radius: 8px;
+    margin-left: 230px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+   
+
+  }
+
+/* ----------------------------------------------------------------*/
+
+section { 
+  width: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.Bloque1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #e6ded2;
+  padding: 40px 60px;
+}
+
+.Texto1 {
+  width: 60%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+
+.ImagenLateral {
+  display: flex;
+  gap: 10px;
+}
+
+.ImagenPrincipal {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;  /* centra horizontalmente */
+  align-items: center;      /* centra verticalmente */
+}
+
+.ImagenPrincipal img {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  max-width: 300px;
+  object-fit: cover;
+  border: 10px solid white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.ImagenArribayAbajo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.ImagenArribayAbajo img {
+  width: 100%;
+  height: 50%; /* La mitad cada una */
+  object-fit: cover;
+  border: 10px solid white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  flex: 1;
+}
+
+.Bloque2 {
+  display: flex;
+  align-items: stretch;
+  gap: 30px; 
+  background-color: #f7f7f7;
+  padding: 40px 60px;
+}
+
+.ImagenGrande {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+}
+
+.ImagenGrande img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Texto2 {
+  width: 50%;
+  padding: 20px;
+  margin: 0;
+  background-color: #e6ded2;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+
+.Bloque3 {
+  background-color: #f0e9da;
+  padding: 40px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Contenedor1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+}
+
+.Texto3 {
+  background-color: white;
+  padding: 25px;
+  flex: 1;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  line-height: 1.6;
+}
+
+.ImagenSuperior {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ImagenSuperior img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.Texto4 {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ----------- Bloque Actualmente ----------- */
+.Bloque4 {
+  background-color: #fdfdfd;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.Titulo1 {
+  color: black;
+  font-size: 22px;
+  text-align: left;
+  margin-left: 20px;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+}
+
+
+
+
+.Texto5 {
+  background-color: #f9f0e1;
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.ImagenDoble {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.ImagenDoble img {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.Texto6 {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff3e0;
+  padding: 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+
+/*---------------------------------------------------------------*/
+.PaginaPie {
+  background: linear-gradient(to top, #1caf21, #c8e6c9);
+  color: rgb(0, 0, 0);
+  padding: 40px 20px;
+  position: relative;
+  font-weight: bold;
+}
+
+.Pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.LogoNombre {
+  display: flex;
+  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
+  align-items: flex-start;
+  margin-bottom: 20px; /* Un pequeño margen abajo */
+}
+
+
+.PieLogo {
+  width: 100px;
+  height: auto;
+  margin-right: 15px; 
+  margin-left: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.NombreEscuela {
+  font-size: 16px;  /* Reducimos el tamaño del texto */
+  font-weight: bold;
+  line-height: 1.2;  /* Alinea las líneas de texto */
+}
+
+.NombreEscuela p {
+  display: block;  /* Hace que cada parte del nombre esté en una línea */
+}
+
+.NavegacionRedes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.LogosRedes {
+  display: flex;
+  flex-direction: column;  /* Cambiar de fila a columna */
+  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
+  align-items: center;  /* Centra las imágenes */
+}
+
+.RedesIconos img {
+  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  height: auto;
+}
+
+
+.NavegacionRapida {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.NavegacionSecciones {
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.NavegacionSecciones h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones h3 a{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.NavegacionSecciones li {
+  margin: 5px 0;
+}
+
+.NavegacionSecciones a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+.NavegacionSecciones a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 1024px){ 
+
+ .MenuHamburguesa {
+    display: block;
+  }
+
+  .LinksMenu {
+    display: none;  /* oculto por defecto */
+    flex-direction: column;
+    width: 100%;
+    background-color: #c8e6c9;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .LinksMenu a {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+
+  .LinksMenu.activo {
+    display: flex;
+  }
+
+  /* --- Sección Historia --- */
+  .Historia {
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .TituloPrincipal h1 {
+    font-size: 50px;
+    margin: 0 15px 20px 15px;
+    line-height: 1.2;
+  }
+
+  .LogoPrincipal {
+    height: 160px;
+    margin: 0;
+  }
+
+  /* --- Bloque 1 y Bloque 2 en columnas --- */
+  .Bloque1, .Bloque2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .Texto1, .Texto2 {
+    flex: 1 1 45%;
+    max-width: 500px;
+  }
+
+  .ImagenLateral, .ImagenGrande {
+    flex: 1 1 45%;
+    max-width: 500px;
+  }
+
+  /* --- Bloque 3 --- */
+  .Contenedor1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .Texto3, .ImagenSuperior {
+    flex: 1 1 45%;
+    max-width: 500px;
+  }
+
+  /* --- Bloque 4 (Actualmente) --- */
+  .Bloque4 {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .Titulo1 {
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+
+  .Texto5, .Texto6 {
+    margin: 20px auto;
+    max-width: 700px;
+  }
+
+  .ImagenDoble {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .ImagenDoble img {
+    width: 45%;
+    max-width: 300px;
+  }
+
+  /*-----------------------------------------------*/
+  
+  .Pie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LogoNombre {
+    align-items: center;
+  }
+
+  .PieLogo{
+  margin-bottom: 20px;
+  }
+
+  .NavegacionRapida {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .LogosRedes {
+    flex-direction: row; /* mantener fila */
+    gap: 30px;
+    justify-content: center; /* centrado horizontal */
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+    .TituloPrincipal {
+        z-index: 2;
+        margin-bottom: 15px;
+    }
+
+    .TituloPrincipal h1 {
+        font-size: 50px;             
+        margin: 0 10px;              
+        line-height: 1.2;
+    }
+
+    .LogoPrincipal {
+        height: 170px;               
+        width: auto;
+        margin: 0;                   
+        margin-top: 10px;            
+        z-index: 2;
+    }
+
+  /* Bloques en columna */
+  .Bloque1, .Bloque2, .Contenedor1, .Bloque4 {
+    flex-direction: column;
+    align-items: center;
+  } 
+  
+  .Bloque1, .Bloque2, .Bloque3, .Bloque4 {
+    padding: 20px;
+  }
+
+  /* Textos centrados y ajustados */
+  .Texto1, .Texto2, .Texto3, .Texto4, .Texto5, .Texto6 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+  }
+
+  /* Imágenes en columna y escaladas */
+  .ImagenLateral, .ImagenDoble, .ImagenArribayAbajo {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ImagenPrincipal img, .ImagenArribayAbajo img,
+  .ImagenGrande img, .ImagenSuperior img, .ImagenDoble img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+ 
+    /*-----------------------------------------*/
+
+  .Pie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LogoNombre {
+    align-items: center;
+    text-align: center;
+  }
+
+  .NavegacionRedes {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .NavegacionRapida {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .NavegacionSecciones h3 {
+    font-size: 18px;
+  }
+
+  .NavegacionSecciones a {
+    font-size: 0.9rem;
+  }
+
+  .LogosRedes {
+    flex-direction: row; /* mantener fila */
+    gap: 30px;
+    justify-content: center; /* centrado horizontal */
+    margin-bottom: 20px;
+  }
+
+  .RedesIconos img {
+    width: 35px;
+  }
+
+}

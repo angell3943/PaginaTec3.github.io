@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Institución Educativa</title>
+  <link rel="stylesheet" href="PaginaPrincipal.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const boton = document.getElementById('MenuHamburguesa');
+    const links = document.getElementById('LinksMenu');
+
+    boton.addEventListener('click', () => {
+      links.classList.toggle('activo');
+    });
+  });
+</script>
+
+  <!-- 1ra seccion Menu de arriba -->
+  <header class="Menu">
+  <div class="LogoMenu">
+    <img src="logo.png" alt="Logo de la Escuela">
+    <div class="TextoLogo">
+      <p>Escuela de Educación</p>
+      <p>Secundaria Técnica N°3</p>
+    </div>
+  </div>
+
+  <!-- Botón hamburguesa -->
+  <div class="MenuHamburguesa" id="MenuHamburguesa">&#9776;</div>
+
+  <nav class="LinksMenu" id="LinksMenu">
+    <a href="index.html">Inicio</a>
+    <a href="https://eest3.temploserver.com/?redirect=0">Campus</a>
+    <a href="PaginaHistoria.html">Institucion</a>
+    <a href="PaginaCambios.html">Novedades</a>
+    <a href="PaginaEventos.html">Eventos</a>
+    <a href="PaginaContactos.html">Contacto</a>
+  </nav>
+</header>
+
+<!-- ----------------------------------------------------------------- -->
+
+
+  <!-- 2da seccion de Bienvenida -->
+  <section class="Bienvenida">
+
+    <!-- Texto y boton los cuales iran al lado del logo para dar la bienvenida-->
+    <div class="TextoBienvenida">
+      <h1>Bienvenidos a nuestro sitio web</h1>
+      <p>Conocé más sobre nosotros</p>
+      <a href="PaginaInstuticion.html" class="BotonBienvenida">Acerca de la escuela</a>
+    </div>
+
+    <!-- Logo de la escuela en grande a la izquierda -->
+      <img src="logo.png" class="LogoPrincipal" alt="Logo Grande de la Escuela">   
+  </section>
+
+<!-- ----------------------------------------------------------------- -->
+
+    <!-- 3ra seccion sobre nuesta escuela -->
+  <section class="Nosotros">
+      <div class="contenedor">
+
+        <!-- Titulo, resumen sobre nuestra escuela y boton para conocer mas sobre la escuela -->
+        <h2>Sobre nuestra institución</h2>
+        <p>
+          Somos una institución comprometida con la formación integral de nuestros
+          estudiantes, brindando herramientas académicas y prácticas para su éxito
+          personal y profesional.
+        </p>
+        <a href="PaginaInstitucion.html" class="BotonNosotros">Ver más</a>
+      </div>
+  </section>
+  
+<!-- ----------------------------------------------------------------- -->
+
+  <!-- 4ta seccion sobre las orientaciones de la escuela -->
+  <section class="Orientaciones">
+    <h2>Modalidades</h2>
+
+      <!-- Cosas que aprenderan los chicos de ciclo basico -->
+    <div class="CicloBasico" >
+       <p>Ciclo Basico</p>
+    </div>
+
+     <!-- Cosas que aprenderan los chicos de informatica y electromecanica -->
+    <div class="Modalidades">
+
+      <div class ="ModalidadChica" style= "background-image: url('Informatica.jpg');">
+          <p>Informatica</p>
+      </div>
+
+      <div class="ModalidadChica" style= "background-image: url('Electromecanica.jpg');">
+         <p>Electromecanica</p>
+      </div>
+
+    </div>
+  </section>
+
+
+<!-- ----------------------------------------------------------------- -->
+
+ <!-- 5ta seccion sobre los eventos que se hicieron en la escuela -->
+  <section class="Eventos">
+    <h2>Eventos escolares</h2>
+
+    <!-- Evento mas importante que tuvo la escuela en las ultimas fechas -->
+    <div class="Evento1" style="background-image: url('Electromecanica.jpg');">
+      <div class="CapaVerde">
+        <h3>Feria de Ciencias</h3>
+        <p>Los estudiantes presentaron proyectos innovadores de tecnología, medioambiente y robótica.</p>
+      </div>
+    </div>
+
+    <!-- Para poner eventos un poco mas pequeños pero no menos importantes-->
+    <div class="EventoChico">
+
+      <div class="Evento2" style="background-image: url('Electromecanica.jpg');">
+        <div class="CapaVerde">
+          <h3>Acto del 25 de Mayo</h3>
+          <p>Conmemoración histórica con participación de todos los cursos.</p>
+        </div>
+      </div>
+
+      <div class="Evento2" style="background-image: url('ciclo-basico.jpg');">
+        <div class="CapaVerde">
+          <h3>Viaje a Tecnópolis</h3>
+          <p>Visita educativa para conocer avances en ciencia y tecnología.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Evento mas viejo de los 4 que van a haber en total  -->
+    <div class="Evento3" style="background-image: url('Electromecanica.jpg');">
+      <div class="CapaVerde">
+        <h3>Expo Educativa</h3>
+        <p>La escuela presentó sus modalidades a futuros ingresantes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ----------------------------------------------------------------- -->
+
+  <!-- 6ta seccion sobre las inscripciones a la escuela -->
+
+  <section class="inscripciones">
+
+    <!-- Parte de inscripciones normales -->
+    <div class="Izquierda">
+      <div>
+
+        <!-- Fechas y requisitos -->
+        <h2>Inscripción</h2>
+
+        <h3>Requisitos generales</h3>
+        <p>Los estudiantes deben presentar la documentación obligatoria y completar el formulario oficial.</p>
+
+        <h3>Fechas importantes</h3>
+        <p> La inscripción estará habilitada desde el 1 al 20 de marzo. Los turnos se otorgan por orden de llegada.</p>
+
+        <!-- Cosas que deben llevar para inscribirse -->
+        <h3>Documentación</h3>
+        <div class="DobleLista">
+          <ul>
+            <li>DNI del alumno</li>
+            <li>Partida de nacimiento</li>
+            <li>Certificado de vacunación</li>
+          </ul>
+          <ul>
+            <li>Boletín anterior</li>
+            <li>Foto 4x4</li>
+            <li>Formulario completo</li>
+          </ul>
+        </div>
+      </div>
+      <button class="BotonInscripciones">Solicitar inscripción</button>
+    </div>
+ 
+    <!-- Columna derecha -->
+    <div class="Derecha">
+
+      <!-- Pases de una escuela a la nuestra -->
+      <div class="Pase">
+        <div>
+          
+          <h2>Desde otra escuela</h2>
+
+          <!-- Cosas para llevar -->
+          <h3>Documentación necesaria</h3>
+
+         
+          <div class="DobleLista">
+            <ul>
+              <li>Certificado de pase</li>
+              <li>Informe de calificaciones</li>
+              <li>DNI del alumno</li>
+            </ul>
+            <ul>
+              <li>Entrevista con directivo</li>
+              <li>Constancia de materias</li>
+              <li>Boletín firmado</li>
+            </ul>
+          </div>
+
+        </div>
+        <button class="BotonInscripciones">Ver requisitos</button>
+      </div>
+
+      <!-- A mitad de año -->
+      <div class="Pase">
+        <div>
+          <h2>A mitad de año</h2>
+
+          <h3>Requisitos</h3>
+          <div class="DobleLista">
+            <ul>
+              <li>Informe de situación escolar</li>
+              <li>Motivo del cambio</li>
+              <li>Certificado médico</li>
+            </ul>
+            <ul>
+              <li>Entrevista previa</li>
+              <li>Documentación completa</li>
+              <li>Aprobación institucional</li>
+            </ul>
+          </div>
+        </div>
+        <button class="BotonInscripciones">Consultar ingreso</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ----------------------------------------------------------------- -->
+
+  <section class="Novedades">
+    <h2>Novedades</h2>
+  
+    <div class="NovedadesRecuadro">   
+
+        <img src="Informatica.jpg" class="NovedadesImagenes" alt="Imagen de novedad">
+
+       <div class="ContenidoNovedades">
+        <h3>Título de la novedad</h3>
+        <p>Aquí va un texto donde se puede contar alguna novedad reciente o importante que haya ocurrido en la escuela.</p>
+        <div class="PosicionBoton">
+          <button class="BotonNovedades">Ver más</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ----------------------------------------------------------------- -->
+
+  <!-- 7ma seccion sobre los testimonios de los egresados y padres  -->
+
+  <section class="Egresados">
+   
+    <div class="Testimonios">
+      <div class="flecha izquierda">❮</div>
+  
+      <!-- Muestra la foto, y el testimonio de la persona -->
+      <div class="Testimonio">
+        <img src="Informatica.jpg" alt="Persona" class="TestimonioFoto">
+        <h3 class="TestimonioNombre">Juan Pérez</h3>
+        <p class="TestimonioTexto">
+          “La escuela me brindó herramientas y experiencias únicas. Recomiendo totalmente esta institución.”
+        </p>
+      </div>
+  
+      
+      <div class="flecha derecha">❯</div>
+
+      <div class="linea"></div> 
+
+    </div>
+  </section>
+
+ 
+   <!-- ----------------------------------------------------------------- -->
+
+
+    <!-- 8va seccion sobre el centro estudiantil de la escuela -->
+  <h2 class="CentroTitulo">Centro de Estudiantes</h2>
+  <section class="CentroEstudiantil">
+  
+    <div class="CentroContenido">
+
+       <!-- Que es, quienes son, que hacen los del centro estudiantil -->
+      <div class="CentroTexto">
+        <h3>¿Qué es el centro de estudiantes?</h3>
+        <p>
+          Es una organización formada por estudiantes que representa sus intereses, organiza actividades y 
+          fomenta la participación dentro de la escuela. Su rol es fundamental para fortalecer la vida democrática institucional.
+        </p>
+      </div>
+
+        <img src="Informatica.jpg" class="CentroFoto" alt="Centro de los del Estudiantes">
+      
+    </div>
+  </section>
+  
+  
+
+  <!-- ----------------------------------------------------------------- -->
+
+   <!-- 9na seccion la navegacion rapida entre paginass -->
+
+  <footer class="PaginaPie">
+    <div class="Pie">
+      <!-- Logo y nombre de la escuela -->
+      <div class="LogoNombre">       
+          <img src="logo.png" alt="Logo de la escuela" class="PieLogo">
+        <div class="NombreEscuela">
+          <p>Escuela Educación</p><br>
+          <p>Secundaria Técnica N°3</p>
+        </div>
+      </div>
+  
+      <!-- Redes sociales -->
+      <div class="NavegacionRedes">
+
+        <div class="LogosRedes">
+          <a href="#" class="RedesIconos"><img src="face .jpg" alt="Facebook"></a>
+          <a href="#" class="RedesIconos"><img src="insta.jpg" alt="Instagram"></a>
+        </div>
+      </div>
+  
+      <!-- Navegación rápida -->
+      <div class="NavegacionRapida">
+        <div class="NavegacionSecciones">
+          <h3>Institución</h3>
+          <ul>
+            <li><a href="#">Programas de estudios</a></li>
+            <li><a href="#">Autoridades</a></li>
+            <li><a href="#">Historia de la escula</a></li>
+            <li><a href="#">Nuestras aulas y talleres</a></li>
+
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3>Eventos</h3>
+          <ul>
+            <li><a href="#">Exposion Tecnica 2025</a></li>
+            <li><a href="#">Otras Exposiones</a></li>
+            <li><a href="#">Deportivos</a></li>
+            <li><a href="#">Tecnicos</a></li>
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3>Novedades</h3>
+          <ul>
+            <li><a href="PaginaInscripciones.html">Inscripciones</a></li>
+            <li><a href="#">Avisos</a></li>
+            <li><a href="#">Cambios</a></li>
+            <li><a href="PaginaEgresados.html">Egresados</a></li>
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3><a href="PaginaContactos.html">Contactos</a></h3> 
+        </div>
+        <div class="NavegacionSecciones">
+          <h3><a href="#">Campus Virtual</a></h3>
+        </div>
+      </div>
+    </div>
+  </footer>

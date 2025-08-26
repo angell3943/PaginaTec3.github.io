@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* ------------------------------------------------------------ */
+ 
+/* Ocultar botón hamburguesa en desktop */
+.MenuHamburguesa {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+ /* Menú de navegación */
+.Menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: linear-gradient(to top, #1caf21, #c8e6c9); 
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+  
+.LogoMenu {
+    display: flex;             
+    align-items: center;       
+    flex-direction: row;      
+}
+  
+.LogoMenu img {
+    height: 50px;
+    width: auto;
+    margin-right: 12px;       
+}
+  
+.TextoLogo {
+    display: flex;
+    flex-direction: column;    
+    font-size: 17px;
+    line-height: 1.2;
+    color: black;
+    white-space: nowrap;
+   font-weight: bold;
+}
+
+/* LinksMenu desktop */
+.LinksMenu {
+  display: flex;
+  gap: 20px;
+}
+
+.LinksMenu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+.LinksMenu a:hover {
+    color: #2e7d32; 
+  }
+
+
+/* ------------------------------------------------------------ */
+
+.Egresados {
+    background-image: url("hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;   
+    align-items: center;
+    display: flex;
+    
+}
+
+.TituloPrincipal h1{
+    color: rgb(49, 49, 49);
+    margin-left: 100px;
+    margin-top: -240px;
+    font-size: 80px; 
+}
+
+.TituloPrincipal h1::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 4px;
+    background-color: orange; 
+    margin: -9px auto 0;
+    border-radius: 2px;
+}
+
+
+.TituloPrincipal p{
+    color: rgb(49, 49, 49);
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+/* ------------------------------------------------------------ */
+
+.Testimonios{
+    
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 100px;
+    width: 100%; 
+    display: flex;
+}
+
+
+.Cuadros{
+    background-color: rgb(235, 235, 183);
+    padding: 40px;
+    border-radius: 40px;
+    width: 500px;
+    justify-content: center;   
+    align-items: center;        
+    text-align: center;   
+}
+
+.ImagenTestimonio{
+    width: 70px;
+    border-radius: 50%
+}
+
+.Cuadros h4 {
+  margin-bottom: 20px;
+}
+
+.Cuadros p{
+    font-size: 15px;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.formulario-egresado {
+  background-color: #eae4db;
+  padding: 40px 20px;
+  text-align: flex;
+
+}
+
+.Formulariotitulo {
+display: flex;
+
+}
+ 
+.Formulariotitulo h2 {
+  font-size: 60px;
+}
+
+.Formulariotitulo h2::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  background-color: orange; 
+  margin: -9px auto 0;
+  border-radius: 2px;
+}
+
+.formulario-egresado p{
+    padding-bottom: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+.formulario-egresado .Subtitulo{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 300;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.form-grupo input {
+  padding: 5px;
+}
+
+.form-experiencia textarea {
+  width: 300px;
+  height: 370px;
+  padding: 10px;
+}
+
+.form-boton {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-boton button {
+  background-color: #3ebc5c;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+ /*---------------------------------------------------------------*/
+ 
+.PaginaPie {
+  background: linear-gradient(to top, #1caf21, #c8e6c9);
+  color: rgb(0, 0, 0);
+  padding: 40px 20px;
+  position: relative;
+  font-weight: bold;
+}
+
+.Pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.LogoNombre {
+  display: flex;
+  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
+  align-items: flex-start;
+  margin-bottom: 20px; /* Un pequeño margen abajo */
+}
+
+
+.PieLogo {
+  width: 100px;
+  height: auto;
+  margin-right: 15px; 
+  margin-left: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.NombreEscuela {
+  font-size: 16px;  /* Reducimos el tamaño del texto */
+  font-weight: bold;
+  line-height: 1.2;  /* Alinea las líneas de texto */
+}
+
+.NombreEscuela p {
+  display: block;  /* Hace que cada parte del nombre esté en una línea */
+}
+
+.NavegacionRedes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.LogosRedes {
+  display: flex;
+  flex-direction: column;  /* Cambiar de fila a columna */
+  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
+  align-items: center;  /* Centra las imágenes */
+}
+
+.RedesIconos img {
+  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  height: auto;
+}
+
+
+.NavegacionRapida {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.NavegacionSecciones {
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.NavegacionSecciones h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones h3 a{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.NavegacionSecciones li {
+  margin: 5px 0;
+}
+
+.NavegacionSecciones a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+.NavegacionSecciones a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------- TABLET ------------------- */
+@media (max-width: 1024px) {
+    .MenuHamburguesa {
+    display: block;
+  }
+
+  .LinksMenu {
+    display: none;  /* oculto por defecto */
+    flex-direction: column;
+    width: 100%;
+    background-color: #c8e6c9;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .LinksMenu a {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+
+  .LinksMenu.activo {
+    display: flex;
+  }
+
+  /* Hero - Egresados */
+   .TituloPrincipal {
+    text-align: center;
+    margin: 0 auto;    /* centra con márgenes automáticos */
+    display: block;
+  }
+
+  .TituloPrincipal h1 {
+    font-size: 65px;
+    margin-left: 30px;
+    margin-top: 0;
+  }
+
+  .TituloPrincipal p {
+    font-size: 25px;
+    margin-left: 35px;
+  }
+
+  /* Testimonios */
+  .Testimonios {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .Cuadros {
+    width: 80%;
+  }
+
+  /* Formulario */
+  .form-experiencia textarea {
+    width: 90%;
+    height: 250px;
+  }
+
+  /* Footer */
+  .Pie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LogoNombre {
+    align-items: center;
+  }
+
+  .PieLogo{
+    margin-bottom: 20px;
+  }
+
+  .NavegacionRapida {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .LogosRedes {
+    flex-direction: row; /* mantener fila */
+    gap: 30px;
+    justify-content: center; /* centrado horizontal */
+    margin-bottom: 20px;
+  }
+}
+
+/* ------------------- MÓVIL ------------------- */
+@media (max-width: 768px) {
+
+  /* Hero - Egresados */
+
+    .TituloPrincipal {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+
+
+  .TituloPrincipal h1 {
+    font-size: 45px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .TituloPrincipal p {
+    font-size: 20px;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+
+  /* Testimonios */
+  .Cuadros {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .ImagenTestimonio {
+    width: 60px;
+  }
+
+  /* Formulario */
+  .Formulariotitulo h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-grupo,
+  .form-experiencia {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .form-experiencia textarea {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* Footer */
+  .LogoNombre {
+    align-items: center;
+  }
+
+  .NombreEscuela {
+    text-align: center;
+  }
+
+  .LogosRedes {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .NavegacionRapida {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}

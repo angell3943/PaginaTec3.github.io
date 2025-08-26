@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* ------------------------------------------------------------ */
+  
+ /* Menú de navegación */
+.Menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: linear-gradient(to top, #1caf21, #c8e6c9); /* verde claro degradado hacia arriba */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+  
+.LogoMenu {
+    display: flex;             /* flex en fila */
+    align-items: center;       /* alinear verticalmente */
+    flex-direction: row;       /* explícito, fila */
+}
+  
+.LogoMenu img {
+    height: 50px;
+    width: auto;
+    margin-right: 12px;        /* espacio entre logo y texto */
+}
+  
+.TextoLogo {
+    display: flex;
+    flex-direction: column;    /* dos líneas de texto, pero el bloque entero está a la derecha */
+    font-size: 17px;
+    line-height: 1.2;
+    color: black;
+    white-space: nowrap;
+   font-weight: bold;
+}
+
+.LinksMenu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+.LinksMenu a:hover {
+    color: #2e7d32; /* verde oscuro al pasar el mouse */
+  }
+
+/* -------------------------------------------------*/
+
+.AulasyTalleres {
+    background-image: url("hero2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;   
+    align-items: center;
+    display: flex;
+    
+}
+
+.TituloPrincipal h1{
+    color: rgb(255, 255, 255);
+    margin-left: 30px;
+    margin-top: -70px;
+    font-size: 60px; 
+    line-height: 96px;
+  
+}
+
+/* ----------------------------------------------------------------*/
+
+.DescubreAula{
+  padding: 32px;
+  background: #f6f0e7;
+}
+
+.DescubreAula hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Titulo {
+  font-size: 40px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.Aulas {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.ColumnaTexto {
+  flex: 1;
+  text-align: left;
+  min-width: 400px;
+}
+
+.Columna1{
+  display: flex;
+  gap: 1rem;
+}
+
+.Foto1 img {
+  height: 100%;
+  max-height: 500px;
+  width: 500px;
+  object-fit: cover;
+}
+
+
+.Mejoras h2{
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 3px;
+}
+
+
+
+
+.NuevoMaterial {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto; /* Centrado horizontal */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.NuevoMaterial img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(40%); /* Efecto negro translúcido */
+}
+
+.InformacionImagen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  padding: 10px 20px;
+}
+
+.Titulo2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.TextoMaterial {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.TextoPequeño{
+    margin-top: 22px;
+    margin-bottom: -10px;
+    font-size: 10px;
+}
+
+
+.Zoom {
+  font-family: sans-serif;
+  color: #333;
+  background-color: #f6f0e7;
+  padding: 20px 2px;
+}
+
+.Titulo3 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+.InformacionZoom {
+  margin-left: 40px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.Columna2,
+.Columna3 {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  max-height: 400px;
+  gap: 10px;
+}
+
+.Columna2 .Pequeña{
+  width: 100%;
+  max-height: 300px;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.Columna3 .Arriba{
+  width: 100%;
+  max-height: 200px;
+  max-width: 400px;
+  object-fit: cover;
+  
+}
+
+.TextoZoom {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.Central img {
+  width: 500px;
+  height: 100%;
+  max-height: 390px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+
+.Talleres {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 80px;
+  font-family: Arial, sans-serif;
+  color: #333;
+
+}
+
+.Titulo4 {
+  text-align: right;
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+}
+
+.SubtituloTalleres {
+  font-size: 30px;
+  color: #222;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 3px;
+}
+
+
+
+.Descripcion {
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #666;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.Sala {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.SalaImagen {
+  position: relative;
+  background-image: url("hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.Overlay {
+  background-color: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.Titulo5 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.Descripcion2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.TextoTalleres {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+.Aulas2 {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.BloqueAulas {
+  padding: 10px;
+  margin-bottom: 60px;
+
+}
+
+.Titulo6 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: -40px;
+  color: #333;
+  display: inline-block;
+  padding-bottom: 2px;
+  text-decoration: underline;
+  text-decoration-color: green;
+  text-decoration-thickness: 3px;
+}
+
+
+.Titulo6.C {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* o lo que necesites */
+}
+
+
+
+.GrupoImagenes{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ImagenAula.A {
+  max-height: 500px;  
+  max-width: 95%;    
+}
+
+.ImagenAula.B {
+  max-height: 250px;  
+  max-width: 90%;   
+}
+
+.ImagenAula.C {
+  max-height: 350px;  
+  max-width: 90%;   
+}
+
+
+.Columna4,
+.Columna5 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Columna4 {
+  flex: 1;
+  min-width: 200px;
+}
+
+.Columna5 {
+  flex: 1;
+  min-width: 200px;
+}
+
+.ImagenAula {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.ImagenAula.grande {
+  max-height: 500px;
+  max-width: 100%;
+}
+
+.TextoImagen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+
+.Titulo6.D{
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 3px;
+  margin-bottom: 15px;
+}
+
+.SalaImagen.a {
+  background-image: url("hero2.jpg");
+}
+/*---------------------------------------------------------------*/
+.PaginaPie {
+  background: linear-gradient(to top, #1caf21, #c8e6c9);
+  color: rgb(0, 0, 0);
+  padding: 40px 20px;
+  position: relative;
+  font-weight: bold;
+}
+
+.Pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.LogoNombre {
+  display: flex;
+  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
+  align-items: flex-start;
+  margin-bottom: 20px; /* Un pequeño margen abajo */
+}
+
+
+.PieLogo {
+  width: 100px;
+  height: auto;
+  margin-right: 15px; 
+  margin-left: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.NombreEscuela {
+  font-size: 16px;  /* Reducimos el tamaño del texto */
+  font-weight: bold;
+  line-height: 1.2;  /* Alinea las líneas de texto */
+}
+
+.NombreEscuela p {
+  display: block;  /* Hace que cada parte del nombre esté en una línea */
+}
+
+.NavegacionRedes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.LogosRedes {
+  display: flex;
+  flex-direction: column;  /* Cambiar de fila a columna */
+  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
+  align-items: center;  /* Centra las imágenes */
+}
+
+.RedesIconos img {
+  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  height: auto;
+}
+
+
+.NavegacionRapida {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.NavegacionSecciones {
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.NavegacionSecciones h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones h3 a{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.NavegacionSecciones li {
+  margin: 5px 0;
+}
+
+.NavegacionSecciones a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+.NavegacionSecciones a:hover {
+  text-decoration: underline;
+}
+

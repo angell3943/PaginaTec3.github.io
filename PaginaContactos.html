@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Institución Educativa</title>
+  <link rel="stylesheet" href="PaginaContactos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const boton = document.getElementById('MenuHamburguesa');
+    const links = document.getElementById('LinksMenu');
+
+    boton.addEventListener('click', () => {
+      links.classList.toggle('activo');
+    });
+  });
+</script>
+
+  <!-- 1ra seccion Menu de arriba -->
+  <header class="Menu">
+  <div class="LogoMenu">
+    <img src="logo.png" alt="Logo de la Escuela">
+    <div class="TextoLogo">
+      <p>Escuela de Educación</p>
+      <p>Secundaria Técnica N°3</p>
+    </div>
+  </div>
+
+  <!-- Botón hamburguesa -->
+  <div class="MenuHamburguesa" id="MenuHamburguesa">&#9776;</div>
+
+   <nav class="LinksMenu" id="LinksMenu">
+      <a href="index.html">Inicio</a>
+      <a href="https://eest3.temploserver.com/?redirect=0">Campus</a>
+      <a href="PaginaHistoria.html">Institucion</a>
+      <a href="PaginaCambios.html">Novedades</a>
+      <a href="PaginaEventos.html">Eventos</a>
+      <a href="PaginaContactos.html">Contacto</a>
+    </nav>
+</header>
+ 
+  
+<!-- ----------------------------------------------------------------- -->
+
+
+  <!-- seccion de Contacto -->
+  
+    <section class="contacto">
+        <h2>Contáctanos</h2>
+    <div class="contenedor-contacto">
+        <div class="columna izquierda">
+            
+            <h3>Teléfono </h3>
+            <p>0000 - 12345678</p>
+            <h3>Nuestras redes</h3>
+            <p>Instagram: <a href="#">eest3padua</a></p>
+            <p>Facebook: <a href="#">Escuela de Educación Secundaria Técnica 3</a></p>
+            <h3>Biblioteca</h3>
+            <p>Instagram: <a href="#">Instagram de la biblioteca</a></p>
+        </div>
+
+        <div class="columna centro">
+          <h3>Horarios de atención</h3>
+            <p>Turno mañana de 8 a 11:00 hrs</p>
+            <p>Turno tarde de 13:30 a 16:00 hrs</p>
+            <h3>Dirección</h3>
+           <p>El Algarrobo 223, San Antonio de Padua, Provincia de Buenos Aires</p>
+        </div>
+
+        <div class="columna derecha">
+            <h3>Mapa interactivo</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.2687596395945!2d-58.685788099999996!3d-34.6731658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc0867422f20b%3A0x486a3acb13f50d77!2sEscuela%20T%C3%A9cnica%20N%C2%BA%203!5e0!3m2!1ses-419!2sar!4v1753142254809!5m2!1ses-419!2sar" 
+                width="100%" 
+                height="300" 
+                style="border: 4px solid #1caf21;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+    </section>
+
+  
+
+  <!-- ----------------------------------------------------------------- -->
+
+   <!-- 9na seccion la navegacion rapida entre paginass -->
+
+  <footer class="PaginaPie">
+    <div class="Pie">
+      <!-- Logo y nombre de la escuela -->
+      <div class="LogoNombre">       
+          <img src="logo.png" alt="Logo de la escuela" class="PieLogo">
+        <div class="NombreEscuela">
+          <p>Escuela Educación</p><br>
+          <p>Secundaria Técnica N°3</p>
+        </div>
+      </div>
+  
+      <!-- Redes sociales -->
+      <div class="NavegacionRedes">
+
+        <div class="LogosRedes">
+          <a href="#" class="RedesIconos"><img src="face .jpg" alt="Facebook"></a>
+          <a href="#" class="RedesIconos"><img src="insta.jpg" alt="Instagram"></a>
+        </div>
+      </div>
+  
+      <!-- Navegación rápida -->
+      <div class="NavegacionRapida">
+        <div class="NavegacionSecciones">
+          <h3>Institución</h3>
+          <ul>
+            <li><a href="#">Programas de estudios</a></li>
+            <li><a href="#">Autoridades</a></li>
+            <li><a href="#">Historia de la escula</a></li>
+            <li><a href="#">Nuestras aulas y talleres</a></li>
+
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3>Eventos</h3>
+          <ul>
+            <li><a href="#">Exposion Tecnica 2025</a></li>
+            <li><a href="#">Otras Exposiones</a></li>
+            <li><a href="#">Deportivos</a></li>
+            <li><a href="#">Tecnicos</a></li>
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3>Novedades</h3>
+          <ul>
+            <li><a href="PaginaInscripciones.html">Inscripciones</a></li>
+            <li><a href="#">Avisos</a></li>
+            <li><a href="#">Cambios</a></li>
+            <li><a href="PaginaEgresados.html">Egresados</a></li>
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3><a href="PaginaContactos.html">Contactos</a></h3> 
+        </div>
+        <div class="NavegacionSecciones">
+          <h3><a href="#">Campus Virtual</a></h3>
+        </div>
+      </div>
+    </div>
+  </footer> 
