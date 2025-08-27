@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Institución Educativa</title>
-  <link rel="stylesheet" href="PaginaPrincipal.css" />
+  <link rel="stylesheet" href="PaginaPrincipal.css">
+  <script src="PaginaPrincipal.js"></script>
   
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 <body>
-  
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const boton = document.getElementById('MenuHamburguesa');
-    const links = document.getElementById('LinksMenu');
 
-    boton.addEventListener('click', () => {
-      links.classList.toggle('activo');
-    });
-  });
-</script>
 
   <!-- 1ra seccion Menu de arriba -->
   <header class="Menu">
@@ -48,18 +39,18 @@
 <!-- ----------------------------------------------------------------- -->
 
 
-  <!-- 2da seccion de Bienvenida -->
-  <section class="Bienvenida">
+  <!-- 2da seccion de Presentacion de la pagina -->
+  <section class="Presentacion" id="Presentacion">
 
     <!-- Texto y boton los cuales iran al lado del logo para dar la bienvenida-->
     <div class="TextoBienvenida">
       <h1>Bienvenidos a nuestro sitio web</h1>
       <p>Conocé más sobre nosotros</p>
-      <a href="PaginaInstuticion.html" class="BotonBienvenida">Acerca de la escuela</a>
+      <a href="PaginaHistoria.html" class="BotonBienvenida">Acerca de la escuela</a>
     </div>
 
     <!-- Logo de la escuela en grande a la izquierda -->
-      <img src="logo.png" class="LogoPrincipal" alt="Logo Grande de la Escuela">   
+    <img src="logo.png" class="LogoPrincipal" alt="Logo Grande de la Escuela">   
   </section>
 
 <!-- ----------------------------------------------------------------- -->
@@ -374,3 +365,4 @@
       </div>
     </div>
   </footer>
+</html>
