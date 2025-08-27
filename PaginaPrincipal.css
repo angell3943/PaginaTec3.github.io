@@ -78,12 +78,11 @@ body {
 /* Sección de bienvenida */
 .Presentacion {
     height: 100vh;
-    background-image: url('hero2.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
-
+    transition: background-image 1s ease-in-out;
     justify-content: space-between; /* Para separar texto y logo */
     padding: 0 60px;               /* Espacio a ambos lados */
   }
