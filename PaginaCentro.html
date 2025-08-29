@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Institución Educativa</title>
+  <link rel="stylesheet" href="PaginaCentro.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" type="img/png"
+href="favicon.png">
+</head>
+<body>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const boton = document.getElementById('MenuHamburguesa');
+    const links = document.getElementById('LinksMenu');
+
+    boton.addEventListener('click', () => {
+      links.classList.toggle('activo');
+    });
+  });
+</script>
+
+  <!-- 1ra seccion Menu de arriba -->
+  <header class="Menu">
+
+    <div class="LogoMenu">
+      <img src="logo.png" alt="Logo de la Escuela"> <!-- Logo escolar-->
+   
+   
+      <!-- Texto que ira junto al logo de la escuela -->
+        <div class="TextoLogo"> 
+           <p>Escuela de Educación</p>
+            <p>Secundaria Técnica N°3</p>
+        </div>
+    </div>
+
+   <div class="MenuHamburguesa" id="MenuHamburguesa">&#9776;</div>
+
+     <nav id="LinksMenu">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li>
+      <a href="#">Institucion</a>
+      <ul>
+        <li><a href="PaginaPlanes.html">Programas de estudio</a></li>
+        <li><a href="PaginaAutoridades.html">Autoridades</a></li>
+        <li><a href="PaginaHistoria.html">Historia de la escuela</a></li>
+        <li><a href="PaginaAulas.html">Aulas y talleres</a></li>
+        <li><a href="PaginaCentro.html">Centro de estudiantes</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Eventos</a>
+        <ul>
+        <li><a href="PaginaExposiciones.html">Exposición técnica</a></li>
+        <li><a href="PaginaEventos.html">Eventos escolares</a></li>
+        <li><a href="PaginaTorneos.html">Torneos</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Novedades</a>
+        <ul>
+        <li><a href="PaginaInscripciones.html">Inscripciones</a></li>
+        <li><a href="PaginaCambios.html">Cambios</a></li>
+        <li><a href="PaginaEgresados.html">Egresados</a></li>
+      </ul>
+    </li>
+    <li><a href="PaginaContactos.html">Contacto</a></li>
+    <li><a href="#">Campus</a></li>
+  </ul>
+</nav>
+  </header>
+  
+<!-- ----------------------------------------------------------------- -->
+
+ <!-- 2da seccion de Aitoridades -->
+     <section class="Centro">
+
+    <!-- Texto De presentacion de la pagina-->
+    <div class="TituloPrincipal">
+      <h1>Nuestro centro<br>de estudiantes</h1>
+    </div> 
+  </section>
+  
+
+<!-- ----------------------------------------------------------------- -->
+
+<section class="CentroEstudiantil">
+  <div class="Beige">
+    <!-- Primer bloque blanco -->
+    <div class="Tarjeta Blanco1">
+      <h3>¿Qué es un centro de estudiantes?</h3>
+      <p>Un centro de estudiantes es un grupo de alumnos organizados democráticamente que representa al estudiantado...</p>
+    </div>
+    <!-- Segundo bloque blanco -->
+    <div class="Tarjeta Blanco2">
+      <h3>¿Cómo se conforma?</h3>
+      <p>Un centro de estudiantes es un grupo de alumnos organizados democráticamente que representa al estudiantado...</p>
+    </div>
+  </div>
+
+  <div class="Blanco">
+    <!-- Tercer bloque beige -->
+    <div class="Tarjeta Beige1">
+      <h3>¿Qué autoridad tienen?</h3>
+      <p>Un centro de estudiantes es un grupo de alumnos organizados democráticamente que representa al estudiantado...</p>
+    </div>
+    <!-- Cuarto bloque beige -->
+    <div class="Tarjeta Beige2">
+      <h3>¿Cómo se lo elije?</h3>
+      <p>Un centro de estudiantes es un grupo de alumnos organizados democráticamente que representa al estudiantado...</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="Bloque IntegrantesBeige">
+  <h2 class="Titulo">¿Quiénes lo integran?</h2>
+  <div class="Integrantes">
+    <div class="Tarjeta1 a">
+      <p class="Puesto">Presidente</p>
+      <img src="hero.jpg" alt="Presidente">
+    </div>
+    
+    <div class="Tarjeta1 b">
+      <p class="Puesto">Vicepresidente</p>
+      <img src="hero.jpg" alt="Vicepresidente">
+    </div>
+
+    <div class="Tarjeta1 c">
+      <p class="Puesto">Tesorero</p>
+      <img src="hero.jpg" alt="Tesorero">
+    </div>
+    
+    
+  </div>
+</section>
+
+<section class="Bloque IntegrantesBlanco">
+  <div class="Integrantes">
+    <div class="Tarjeta2 a">
+      <p class="Puesto">Vocal</p>
+      <img src="hero.jpg" alt="Vocal 1">
+    </div>
+    <div class="Tarjeta2 b">
+      <p class="Puesto">Vocal</p>
+      <img src="hero.jpg" alt="Vocal 2">
+    </div>
+    <div class="Tarjeta2 c">
+      <p class="Puesto">Vocal</p>
+      <img src="hero.jpg" alt="Vocal 3">
+    </div>
+    <div class="Tarjeta2 d">
+      <p class="Puesto">Vocal</p>
+      <img src="hero.jpg" alt="Vocal 4">
+    </div>
+    <div class="Tarjeta2 e">
+      <p class="Puesto">Vocal</p>
+      <img src="hero.jpg" alt="Vocal 5">
+    </div>
+  </div>
+
+</section>
+ 
+
+<section class="FotoGrupal">
+    <img src="hero.jpg" alt="Foto grupal del equipo" class="FotoGrande">
+</section>
+
+
+<!-- ----------------------------------------------------------------- -->
+
+   <!-- 9na seccion la navegacion rapida entre paginass -->
+
+  <footer class="PaginaPie">
+    <div class="Pie">
+      <!-- Logo y nombre de la escuela -->
+      <div class="LogoNombre">       
+          <img src="logo.png" alt="Logo de la escuela" class="PieLogo">
+        <div class="NombreEscuela">
+          <p>Escuela Educación</p><br>
+          <p>Secundaria Técnica N°3</p>
+        </div>
+      </div>
+  
+      <!-- Redes sociales -->
+      <div class="NavegacionRedes">
+
+        <div class="LogosRedes">
+          <a href="#" class="RedesIconos"><img src="face .jpg" alt="Facebook"></a>
+          <a href="#" class="RedesIconos"><img src="insta.jpg" alt="Instagram"></a>
+        </div>
+      </div>
+  
+      <!-- Navegación rápida -->
+      <div class="NavegacionRapida">
+        <div class="NavegacionSecciones">
+          <h3>Institución</h3>
+          <ul>
+            <li><a href="#">Programas de estudios</a></li>
+            <li><a href="#">Autoridades</a></li>
+            <li><a href="#">Historia de la escula</a></li>
+            <li><a href="#">Nuestras aulas y talleres</a></li>
+
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3>Eventos</h3>
+          <ul>
+            <li><a href="#">Exposion Tecnica 2025</a></li>
+            <li><a href="#">Otras Exposiones</a></li>
+            <li><a href="#">Deportivos</a></li>
+            <li><a href="#">Tecnicos</a></li>
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3>Novedades</h3>
+          <ul>
+            <li><a href="PaginaInscripciones.html">Inscripciones</a></li>
+            <li><a href="#">Avisos</a></li>
+            <li><a href="#">Cambios</a></li>
+            <li><a href="PaginaEgresados.html">Egresados</a></li>
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3><a href="PaginaContactos.html">Contactos</a></h3> 
+        </div>
+        <div class="NavegacionSecciones">
+          <h3><a href="#">Campus Virtual</a></h3>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

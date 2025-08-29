@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Institución Educativa</title>
+  <link rel="stylesheet" href="PaginaEgresados.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" type="img/png"
+href="favicon.png">
+</head>
+<body>
+
+   <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const boton = document.getElementById('MenuHamburguesa');
+    const links = document.getElementById('LinksMenu');
+
+    boton.addEventListener('click', () => {
+      links.classList.toggle('activo');
+    });
+  });
+</script>
+
+  <!-- 1ra seccion Menu de arriba -->
+  <header class="Menu">
+
+    <div class="LogoMenu">
+      <img src="logo.png" alt="Logo de la Escuela"> <!-- Logo escolar-->
+   
+   
+      <!-- Texto que ira junto al logo de la escuela -->
+        <div class="TextoLogo"> 
+           <p>Escuela de Educación <br> Secundaria Técnica N°3</p>
+        </div>
+    </div>
+
+    <div class="MenuHamburguesa" id="MenuHamburguesa">&#9776;</div>
+
+    <nav id="LinksMenu">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li>
+      <a href="#">Institucion</a>
+      <ul>
+        <li><a href="PaginaPlanes.html">Programas de estudio</a></li>
+        <li><a href="PaginaAutoridades.html">Autoridades</a></li>
+        <li><a href="PaginaHistoria.html">Historia de la escuela</a></li>
+        <li><a href="PaginaAulas.html">Aulas y talleres</a></li>
+        <li><a href="PaginaCentro.html">Centro de estudiantes</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Eventos</a>
+        <ul>
+        <li><a href="PaginaExposiciones.html">Exposición técnica</a></li>
+        <li><a href="PaginaEventos.html">Eventos escolares</a></li>
+        <li><a href="PaginaTorneos.html">Torneos</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Novedades</a>
+        <ul>
+        <li><a href="PaginaInscripciones.html">Inscripciones</a></li>
+        <li><a href="PaginaCambios.html">Cambios</a></li>
+        <li><a href="PaginaEgresados.html">Egresados</a></li>
+      </ul>
+    </li>
+    <li><a href="PaginaContactos.html">Contacto</a></li>
+    <li><a href="#">Campus</a></li>
+  </ul>
+</nav>
+  </header>
+<!-- ----------------------------------------------------------------- -->
+
+  <!-- 2da seccion de Egresados -->
+     <section class="Egresados">
+
+    <!-- Texto De presentacion de la pagina-->
+    <div class="TituloPrincipal">
+      <h1>Nuestros Egresados</h1>
+      <p>Descubre porque nos eligieron</p>
+    </div> 
+  </section>
+
+<!-- ----------------------------------------------------------------- -->
+
+  <!-- 3ra seccion de testumonios -->
+
+      <section class="Testimonios">
+        <div class="Cuadros"> 
+          <img class="ImagenTestimonio" src="ciclo-basico.jpg" alt="Foto del Egresado">
+          <h5>Informatica</h5> 
+          <h4>Tomas Bertuzzo</h4>  
+          <p>jaksajlasjdalklklhsduisquam, vitae necessitatibus aut provident, animi voluptatum corrupti repellat at voluptatibus numquam? Nostrum itaque accusamus repudiandae officiis!
+          </p>
+        </div>
+        <div class="Cuadros">
+          <img class="ImagenTestimonio" src="ciclo-basico.jpg" alt="">
+          <h5>Informatica</h5> 
+          <h4>Tomas Bertuzzo</h4>
+          <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Incidunt nam architecto atque sit, nulla vero et expedita illo voluptate! Similique, odit. Cumque vero beatae sed accusamus, neque in odio atque.
+          </p>
+        </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------- -->
+
+    <section class="formulario-egresado">
+      <div class="Formulariotitulo">
+        <h2>Si sos egresado...</h2>
+      </div>
+      <p>Dejanos tu opinión sobre nosotros,<br>compartí tu experiencia a futuros estudiantes!!</p>
+      <p class="Subtitulo">Completá el formulario y envianos tu experiencia</p>
+    <form>
+      <div class="form-grupo">
+        <label>Nombres:</label>
+        <input type="text">
+        <label>Apellidos:</label>
+        <input type="text">
+        <label>DNI:</label>
+        <input type="text">
+        <label>Año de egreso:</label>
+        <input type="text">
+        <label>Especialización:</label>
+        <input type="text">
+      </div>
+      <div class="form-experiencia">
+
+        <textarea></textarea>
+      </div>
+      <div class="form-boton">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </section>
+
+     <!-- 9na seccion la navegacion rapida entre paginass -->
+
+  <footer class="PaginaPie">
+    <div class="Pie">
+      <!-- Logo y nombre de la escuela -->
+      <div class="LogoNombre">       
+          <img src="logo.png" alt="Logo de la escuela" class="PieLogo">
+        <div class="NombreEscuela">
+          <p>Escuela Educación</p><br>
+          <p>Secundaria Técnica N°3</p>
+        </div>
+      </div>
+  
+      <!-- Redes sociales -->
+      <div class="NavegacionRedes">
+
+        <div class="LogosRedes">
+          <a href="#" class="RedesIconos"><img src="face .jpg" alt="Facebook"></a>
+          <a href="#" class="RedesIconos"><img src="insta.jpg" alt="Instagram"></a>
+        </div>
+      </div>
+  
+      <!-- Navegación rápida -->
+      <div class="NavegacionRapida">
+        <div class="NavegacionSecciones">
+          <h3>Institución</h3>
+          <ul>
+            <li><a href="#">Programas de estudios</a></li>
+            <li><a href="#">Autoridades</a></li>
+            <li><a href="#">Historia de la escula</a></li>
+            <li><a href="#">Nuestras aulas y talleres</a></li>
+
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3>Eventos</h3>
+          <ul>
+            <li><a href="#">Exposion Tecnica 2025</a></li>
+            <li><a href="#">Otras Exposiones</a></li>
+            <li><a href="#">Deportivos</a></li>
+            <li><a href="#">Tecnicos</a></li>
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3>Novedades</h3>
+          <ul>
+            <li><a href="PaginaInscripciones.html">Inscripciones</a></li>
+            <li><a href="#">Avisos</a></li>
+            <li><a href="#">Cambios</a></li>
+            <li><a href="PaginaEgresados.html">Egresados</a></li>
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3><a href="PaginaContactos.html">Contactos</a></h3> 
+        </div>
+        <div class="NavegacionSecciones">
+          <h3><a href="#">Campus Virtual</a></h3>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</html>

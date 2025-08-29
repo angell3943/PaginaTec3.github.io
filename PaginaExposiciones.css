@@ -1,0 +1,872 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* ------------------------------------------------------------ */
+ 
+/* Ocultar botón hamburguesa en desktop */
+.MenuHamburguesa {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+ /* Menú de navegación */
+.Menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: linear-gradient(to top, #1caf21, #c8e6c9); /* verde claro degradado hacia arriba */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+  
+.LogoMenu {
+    display: flex;             /* flex en fila */
+    align-items: center;       /* alinear verticalmente */
+    flex-direction: row;       /* explícito, fila */
+}
+  
+.LogoMenu img {
+    height: 50px;
+    width: auto;
+    margin-right: 12px;        /* espacio entre logo y texto */
+}
+  
+.TextoLogo {
+    display: flex;
+    flex-direction: column;    /* dos líneas de texto, pero el bloque entero está a la derecha */
+    font-size: 17px;
+    line-height: 1.2;
+    color: black;
+    white-space: nowrap;
+   font-weight: bold;
+}
+
+/* LinksMenu desktop */
+#LinksMenu {
+  display: flex;
+}
+
+#LinksMenu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+#LinksMenu a:hover {
+    color: #2e7d32; /* verde oscuro al pasar el mouse */
+  }
+
+#LinksMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#LinksMenu > ul {
+  display: flex;       
+}
+
+#LinksMenu > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 10px 15px;
+  display: block;
+  transition: color 0.3s;
+}
+
+#LinksMenu > ul > li > a:hover {
+  color: #2e7d32;
+}
+
+
+#LinksMenu li ul {
+  display: none;         
+  position: absolute;   
+  top: 100%;             
+  left: 10%;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#LinksMenu li:hover > ul {
+  display: block;
+}
+
+
+#LinksMenu li ul li a {
+  display: block;
+  min-width: 140px;      
+  padding: 5px 5px;
+  color: #1caf21;
+  text-decoration: none;
+  margin: 0;
+}
+
+#LinksMenu li ul li a:hover {
+  background: greenyellow;
+}
+
+/* Necesario para que los submenús se posicionen correctamente */
+#LinksMenu > ul > li {
+  position: relative;
+}
+
+
+/* -------------------------------------------------*/
+
+.Exposiciones {
+    background-image: url("hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;   
+    align-items: center;
+    display: flex;
+    
+}
+
+.TituloPrincipal h1{
+    color: rgb(49, 49, 49);
+    margin-left: 30px;
+    margin-top: -200px;
+    padding-right: 200px ;
+    font-size: 80px; 
+    background-color: rgba(139, 137, 137, 0.5);
+    line-height: 96px;
+}
+
+/* ----------------------------------------------------------------*/
+
+.Expo1 {
+  background-color: #f7f7f7;
+  padding: 50px 20px;
+}
+
+.Contenedor1{
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Columna1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Titulo1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: green;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 3px;
+}
+
+.Texto1 {
+  background-color: #ece6e1;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.ImagenExpo {
+  margin-top: 10px;
+
+}
+
+.Imagen1 {
+  width: 500px;
+  height: 405px;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.Columna2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.Imagen2y3 {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 8px;
+  max-width: 450px;
+}
+
+
+
+.Proyectos {
+  padding: 40px 20px;
+  background-color: #f2ede3;
+  font-family: Arial, sans-serif;
+}
+
+.Titulo2 {
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+  margin-bottom: 20px;
+
+}
+
+.Contenedor2 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.Columna3 {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Subtitulo1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+}
+
+.ContenedorTexto{
+  background-color: rgb(255, 255, 255) ;
+  margin-bottom: 10px;
+}
+
+.Texto2 {
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 12px 10px;
+  max-width: 500px;
+}
+
+.ImagenProyecto {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.Proyectos2 {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.Proyec1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+.Fila2 {
+  flex-direction: row;
+}
+
+.Fila1 {
+  flex-direction: row-reverse;
+}
+
+.Texto3 {
+  flex: 1;
+  background-color: #eae2d9;
+  padding: 20px;
+}
+
+.Titulo3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.Descripcion1 {
+  font-size: 16px;
+  color: #555;
+}
+
+.ImagenProyecto2 {
+  flex: 1;
+  max-width: 550px;
+}
+
+.ImagenProyecto2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+.Seccion2 {
+  background-color: #e8dbc8;
+  padding: 40px 20px;
+}
+
+.Titulo4 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #444;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-underline-offset: 4px;
+}
+
+.Contenedor3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  gap: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.ColumnaIzquierda, .ColumnaDerecha {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ColumnaDerecha {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.Subtitulo2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.Texto4 {
+  background-color: #f2f0ec;
+  padding: 20px;;
+  font-size: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.Imagen4 {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  object-fit: cover;
+  align-items: center;
+  flex-direction: column;  
+  display: block;
+  margin: 0 auto;
+}
+
+
+.Seccion3 {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+}
+
+.Titulo5 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+  text-decoration: underline;
+  text-decoration-color: #2e7d32;
+  text-decoration-thickness: 3px;
+}
+
+.Bloque1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.Columna4 {
+  width: 48%;
+  position: relative;
+}
+
+.Subtitulo3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.Subtitulo3.Derecha {
+  text-align: right;
+}
+
+.Texto5 {
+  background-color: #e9e4db;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.ImagenSeccion3 {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.ImagenSeccion3.Arriba {
+  margin-bottom: 15px;
+}
+
+.Imagen5 {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Imagen5.GirarIzquierda.a{
+    position: relative;
+    left: 350px;
+}
+
+.Imagen5.GirarIzquierda.b{
+    position: relative;
+    left: 300px;
+}
+
+
+.Imagen5.GirarDerecha.a{
+    position: relative;
+    left: 100px;
+}
+.Imagen5.GirarDerecha.b{
+    position: relative;
+    left: 50px;
+}
+
+.GirarIzquierda {
+  transform: rotate(-6deg);
+}
+
+.GirarDerecha {
+  transform: rotate(6deg);
+}
+
+
+
+/*---------------------------------------------------------------*/
+.PaginaPie {
+  background: linear-gradient(to top, #1caf21, #c8e6c9);
+  color: rgb(0, 0, 0);
+  padding: 40px 20px;
+  position: relative;
+  font-weight: bold;
+}
+
+.Pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.LogoNombre {
+  display: flex;
+  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
+  align-items: flex-start;
+  margin-bottom: 20px; /* Un pequeño margen abajo */
+}
+
+
+.PieLogo {
+  width: 100px;
+  height: auto;
+  margin-right: 15px; 
+  margin-left: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.NombreEscuela {
+  font-size: 16px;  /* Reducimos el tamaño del texto */
+  font-weight: bold;
+  line-height: 1.2;  /* Alinea las líneas de texto */
+}
+
+.NombreEscuela p {
+  display: block;  /* Hace que cada parte del nombre esté en una línea */
+}
+
+.NavegacionRedes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.LogosRedes {
+  display: flex;
+  flex-direction: column;  /* Cambiar de fila a columna */
+  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
+  align-items: center;  /* Centra las imágenes */
+}
+
+.RedesIconos img {
+  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  height: auto;
+}
+
+
+.NavegacionRapida {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.NavegacionSecciones {
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.NavegacionSecciones h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones h3 a{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.NavegacionSecciones li {
+  margin: 5px 0;
+}
+
+.NavegacionSecciones a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+.NavegacionSecciones a:hover {
+  text-decoration: underline;
+}
+
+@media  (max-width: 1028px) {
+
+      .MenuHamburguesa {
+    display: block;
+  }
+
+  .LinksMenu {
+    display: none;  /* oculto por defecto */
+    flex-direction: column;
+    width: 100%;
+    background-color: #c8e6c9;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .LinksMenu a {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+
+  .LinksMenu.activo {
+    display: flex;
+  }
+
+.Exposiciones {
+      height: 50vh;  /* Reducimos la altura de la sección */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+  .TituloPrincipal h1 {
+      font-size: 70px;   /* Reducimos tamaño de fuente */
+      margin: 0;
+      padding: 10px 20px;
+      line-height: 60px;
+  }
+ 
+
+  /* Expo1: columnas en columna */
+  .Contenedor1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Columna2 {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .Imagen2y3 {
+    max-width: 300px;
+    height: auto;
+  }
+
+  /* Proyectos: columnas centradas */
+  .Contenedor2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Columna3 {
+    width: 90%;
+  }
+
+  .ImagenProyecto {
+    max-width: 100%;
+  }
+
+  /* Proyectos2: columnas en columna */
+  .Proyec1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Texto3 {
+    width: 90%;
+  }
+
+  .ImagenProyecto2 {
+    max-width: 80%;
+  }
+
+  /* Seccion2: columnas en columna */
+  .Contenedor3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ColumnaIzquierda, .ColumnaDerecha {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Imagen4 {
+    max-width: 90%;
+  }
+
+  /* Seccion3: bloques en columna */
+  .Bloque1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Columna4 {
+    width: 90%;
+    text-align: center;
+  }
+
+  .ImagenSeccion3 {
+    gap: 20px;
+  }
+
+  .Imagen5 {
+    width: 200px;
+    height: auto;
+  }
+
+  .Imagen5.GirarIzquierda.a {
+    transform: rotate(-6deg) translateX(100px);
+}
+
+.Imagen5.GirarIzquierda.b {
+    transform: rotate(-6deg) translateX(100px);
+    margin-top: 50px;
+  }
+
+.Imagen5.GirarDerecha.a {
+    transform: rotate(6deg) translateX(-20px);
+}
+
+.Imagen5.GirarDerecha.b {
+    transform: rotate(6deg) translateX(170px);
+    margin-bottom: 50px;
+}
+
+.Pie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LogoNombre {
+    align-items: center;
+    text-align: center;
+  }
+
+  .NavegacionRedes {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .NavegacionRapida {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .NavegacionSecciones h3 {
+    font-size: 18px;
+  }
+
+  .NavegacionSecciones a {
+    font-size: 0.9rem;
+  }
+
+  .LogosRedes {
+    flex-direction: row; /* mantener fila */
+    gap: 30px;
+    justify-content: center; /* centrado horizontal */
+    margin-bottom: 20px;
+  }
+
+  .RedesIconos img {
+    width: 35px;
+  }
+
+}
+
+/* Celular: 768px */
+@media (max-width: 768px) {
+
+  /* Título principal aún más pequeño */
+  .TituloPrincipal h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: -60px;
+  }
+
+  /* Expo1 */
+  .Imagen1 {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .Imagen2y3 {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Proyectos */
+  .Columna3 {
+    width: 95%;
+  }
+
+  .ImagenProyecto {
+    max-width: 100%;
+  }
+
+  /* Proyectos2 */
+  .Texto3 {
+    width: 95%;
+  }
+
+  .ImagenProyecto2 {
+    max-width: 95%;
+  }
+
+  /* Seccion2 */
+  .ColumnaIzquierda, .ColumnaDerecha {
+    width: 100%;
+  }
+
+  .Imagen4 {
+    max-width: 95%;
+  }
+
+  /* Seccion3 */
+  .Columna4 {
+    width: 95%;
+  }
+
+  .Imagen5 {
+    width: 180px;
+    height: auto;
+  }
+
+.Imagen5.GirarIzquierda.a {
+    transform: rotate(-6deg) translateX(-330px);
+}
+
+.Imagen5.GirarIzquierda.b {
+    transform: rotate(-6deg) translateX(-280px);
+}
+
+.Imagen5.GirarDerecha.a {
+    transform: rotate(6deg) translateX(120px);
+}
+
+.Imagen5.GirarDerecha.b {
+    transform: rotate(6deg) translateX(170px);
+    margin-bottom: 50px;
+}
+
+}
+
+

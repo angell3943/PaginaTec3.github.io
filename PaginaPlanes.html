@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia Institucional</title>
+  <link rel="stylesheet" href="PaginaPlanes.css">
+<link rel="icon" type="img/png"
+href="favicon.png">
+</head>
+<body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const boton = document.getElementById('MenuHamburguesa');
+    const links = document.getElementById('LinksMenu');
+
+    boton.addEventListener('click', () => {
+      links.classList.toggle('activo');
+    });
+  });
+</script>
+
+
+      <!-- 1ra seccion Menu de arriba -->
+  <header class="Menu">
+
+    <div class="LogoMenu">
+      <img src="logo.png" alt="Logo de la Escuela"> <!-- Logo escolar-->
+   
+   
+      <!-- Texto que ira junto al logo de la escuela -->
+        <div class="TextoLogo"> 
+           <p>Escuela de Educación</p>
+            <p>Secundaria Técnica N°3</p>
+        </div>
+    </div>
+
+    <!-- Botón hamburguesa -->
+    <div class="MenuHamburguesa" id="MenuHamburguesa">&#9776;</div>
+
+
+    <!-- Links vinculados a las paginas correspondiendotes -->
+    <nav id="LinksMenu">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li>
+      <a href="#">Institucion</a>
+      <ul>
+        <li><a href="PaginaPlanes.html">Programas de estudio</a></li>
+        <li><a href="PaginaAutoridades.html">Autoridades</a></li>
+        <li><a href="PaginaHistoria.html">Historia de la escuela</a></li>
+        <li><a href="PaginaAulas.html">Aulas y talleres</a></li>
+        <li><a href="PaginaCentro.html">Centro de estudiantes</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Eventos</a>
+        <ul>
+        <li><a href="PaginaExposiciones.html">Exposición técnica</a></li>
+        <li><a href="PaginaEventos.html">Eventos escolares</a></li>
+        <li><a href="PaginaTorneos.html">Torneos</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Novedades</a>
+        <ul>
+        <li><a href="PaginaInscripciones.html">Inscripciones</a></li>
+        <li><a href="PaginaCambios.html">Cambios</a></li>
+        <li><a href="PaginaEgresados.html">Egresados</a></li>
+      </ul>
+    </li>
+    <li><a href="PaginaContactos.html">Contacto</a></li>
+    <li><a href="#">Campus</a></li>
+  </ul>
+</nav>
+  </header>
+  
+<!-- ----------------------------------------------------------------- -->
+
+ <!-- 2da seccion de Historia -->
+     <section class="Planes">
+
+    <!-- Texto De presentacion de la pagina-->
+    <div class="TituloPrincipal">
+      <h1>Planes de<br>Estudio</h1>
+      <p>Ciclo basico y superior</p>
+    </div> 
+  </section>
+  
+
+<!-- ----------------------------------------------------------------- -->
+ 
+<section class="CambioRegimen">
+  <p class="Titulo">¡Cambio del régimen académico!</p>
+  <p class="Texto">
+    A partir del ciclo lectivo 2025, en la provincia de Buenos Aires cambia el régimen académico de la secundaria: ya no se repite el año completo, sino solo las materias desaprobadas. Las calificaciones serán cuatrimestrales y se requerirá aprobar cada cuatrimestre con nota mínima. Habrá instancias de apoyo e intensificación durante el año para recuperar materias. El objetivo es acompañar mejor a los estudiantes y reducir el abandono escolar.
+  </p>
+  <a href="#" class="InformacionEnlace">Para más información dirigirse aquí</a>
+</section>
+
+<section class="Escuela">
+
+  <h2 class="TituloEscuela">Nuestra escuela</h2>
+  <p class="Descripcion">
+    A lo largo del tiempo, nuestra escuela se ha modernizado incorporando nuevas tecnologías, metodologías innovadoras y una mirada actual sobre la educación, sin perder la calidez y el compromiso de siempre.
+  </p>
+
+  <h3 class="Subtitulo">El ciclo básico</h3>
+  <p class="Descripcion">
+    El Ciclo Básico se adapta a los desafíos del presente con propuestas renovadas que integran lo pedagógico, lo tecnológico y lo humano.
+  </p>
+
+  <div class="Tiempo">
+  <img src="Electromecanica.jpg" alt="Ícono de duración">
+  <p class="Texto1">3 años</p> 
+  <p class="Texto2">de duración</p>
+  </div>
+
+  <p class="PlanesEstudio">Descarga los planes de estudio</p>
+  <div class="BotonesBasicos">
+    <button>1° año</button>
+    <button>2° año</button>
+    <button>3° año</button>
+  </div>
+
+  </section>
+
+  <section class="InformaticaElectromecanica">
+    <h3 class="Titulo2">Ciclo Superior</h3>
+
+    <p class="Descripcion">
+     El Ciclo Básico se adapta a los desafíos del presente con propuestas renovadas que integran lo pedagógico, lo tecnológico y lo humano.
+    </p>
+
+      <div class="Tiempo">
+    <img src="ciclo-basico.jpg" alt="Ícono de duración">
+    <p class="Texto1">4 años</p>
+    <p class="Texto2">de duración</p>
+      </div>
+
+  <h2 class="Titulo2">Nuestras especializaciones</h2>
+
+  <div class="Modalidades">  
+
+   <div class="Modalidad2">
+      <a href="#"> 
+      <img src="electromecanica.jpg" alt="Electromecánica">
+      <p class="Titulo3">Técnico/a en Electromecánica</p>
+      </a>
+    </div>
+
+    <div class="Modalidad2">
+      <a href="#">
+      <img src="Informatica.jpg" alt="Informatica">
+      <p class="Titulo3">Técnico/a en Informática</p>
+    </a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ----------------------------------------------------------------- -->
+
+   <!-- 9na seccion la navegacion rapida entre paginass -->
+
+  <footer class="PaginaPie">
+    <div class="Pie">
+      <!-- Logo y nombre de la escuela -->
+      <div class="LogoNombre">       
+          <img src="logo.png" alt="Logo de la escuela" class="PieLogo">
+        <div class="NombreEscuela">
+          <p>Escuela Educación</p><br>
+          <p>Secundaria Técnica N°3</p>
+        </div>
+      </div>
+  
+      <!-- Redes sociales -->
+      <div class="NavegacionRedes">
+
+        <div class="LogosRedes">
+          <a href="#" class="RedesIconos"><img src="face .jpg" alt="Facebook"></a>
+          <a href="#" class="RedesIconos"><img src="insta.jpg" alt="Instagram"></a>
+        </div>
+      </div>
+  
+      <!-- Navegación rápida -->
+      <div class="NavegacionRapida">
+        <div class="NavegacionSecciones">
+          <h3>Institución</h3>
+          <ul>
+            <li><a href="#">Programas de estudios</a></li>
+            <li><a href="#">Autoridades</a></li>
+            <li><a href="#">Historia de la escula</a></li>
+            <li><a href="#">Nuestras aulas y talleres</a></li>
+
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3>Eventos</h3>
+          <ul>
+            <li><a href="#">Exposion Tecnica 2025</a></li>
+            <li><a href="#">Otras Exposiones</a></li>
+            <li><a href="#">Deportivos</a></li>
+            <li><a href="#">Tecnicos</a></li>
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3>Novedades</h3>
+          <ul>
+            <li><a href="PaginaInscripciones.html">Inscripciones</a></li>
+            <li><a href="#">Avisos</a></li>
+            <li><a href="#">Cambios</a></li>
+            <li><a href="PaginaEgresados.html">Egresados</a></li>
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3><a href="PaginaContactos.html">Contactos</a></h3> 
+        </div>
+        <div class="NavegacionSecciones">
+          <h3><a href="#">Campus Virtual</a></h3>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

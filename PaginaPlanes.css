@@ -1,0 +1,710 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* ------------------------------------------------------------ */
+
+/* Ocultar botón hamburguesa en desktop */
+.MenuHamburguesa {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+ /* Menú de navegación */
+.Menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: linear-gradient(to top, #1caf21, #c8e6c9); /* verde claro degradado hacia arriba */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+  
+.LogoMenu {
+    display: flex;             /* flex en fila */
+    align-items: center;       /* alinear verticalmente */
+    flex-direction: row;       /* explícito, fila */
+}
+  
+.LogoMenu img {
+    height: 50px;
+    width: auto;
+    margin-right: 12px;        /* espacio entre logo y texto */
+}
+  
+.TextoLogo {
+    display: flex;
+    flex-direction: column;    /* dos líneas de texto, pero el bloque entero está a la derecha */
+    font-size: 17px;
+    line-height: 1.2;
+    color: black;
+    white-space: nowrap;
+   font-weight: bold;
+}
+
+/* LinksMenu desktop */
+#LinksMenu {
+  display: flex;
+}
+
+#LinksMenu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+#LinksMenu a:hover {
+    color: #2e7d32; /* verde oscuro al pasar el mouse */
+  }
+
+#LinksMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#LinksMenu > ul {
+  display: flex;       
+}
+
+#LinksMenu > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 10px 15px;
+  display: block;
+  transition: color 0.3s;
+}
+
+#LinksMenu > ul > li > a:hover {
+  color: #2e7d32;
+}
+
+
+#LinksMenu li ul {
+  display: none;         
+  position: absolute;   
+  top: 100%;             
+  left: 10%;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#LinksMenu li:hover > ul {
+  display: block;
+}
+
+
+#LinksMenu li ul li a {
+  display: block;
+  min-width: 140px;      
+  padding: 5px 5px;
+  color: #1caf21;
+  text-decoration: none;
+  margin: 0;
+}
+
+#LinksMenu li ul li a:hover {
+  background: greenyellow;
+}
+
+/* Necesario para que los submenús se posicionen correctamente */
+#LinksMenu > ul > li {
+  position: relative;
+}
+
+
+/* -------------------------------------------------*/
+
+.Planes {
+    background-image: url("hero2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;   
+    align-items: center;
+    display: flex;
+    
+}
+
+.TituloPrincipal h1{
+    color: rgb(255, 255, 255);
+    margin-left: 30px;
+    margin-top: -70px;
+    font-size: 105px; 
+    line-height: 96px;
+  
+}
+
+.TituloPrincipal p{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 35px;
+    font-size: 18px;
+}
+
+/* ----------------------------------------------------------------*/
+
+
+/* Sección del régimen académico */
+.CambioRegimen {
+    background-color: #e6dece;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.CambioRegimen .Titulo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4b3b2c;
+    margin-bottom: 8px;
+}
+
+.CambioRegimen .Texto {
+    font-size: 17px;
+    color: #444;
+}
+
+.CambioRegimen .InformacionEnlace {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Sección Nuestra Escuela */
+.Escuela {
+  text-align: center;
+  padding: 40px 15px;
+  background-color: #fff;
+  
+}
+
+.TituloEscuela {
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.TituloEscuela::after {
+    content: "";
+    display: block;
+    width: 25%;
+    height: 4px;
+    background-color: #54b159; 
+    margin: 0px auto 0;
+    border-radius: 2px;
+}
+
+.Descripcion {
+  font-size: 17px;
+  color: #555;
+  margin: 0 auto 20px;
+  max-width: 450px;
+}
+
+.Subtitulo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.Tiempo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.Tiempo img {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 5px;
+}
+
+.Texto2 {
+  font-size: 13px;
+  font-weight: normal;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.PlanesEstudio {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.BotonesBasicos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.BotonesBasicos button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Sección Especializaciones y Ciclo superior */
+.InformaticaElectromecanica {
+  background-color: #e6dece;
+  text-align: center;
+  padding: 40px 15px;
+}
+
+.Titulo2 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.Titulo2::after {
+    content: "";
+    display: block;
+    width: 21%;
+    height: 4px;
+    background-color: orange; 
+    margin: 0px auto 0;
+    border-radius: 2px;
+}
+
+.Modalidades {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.Modalidad2 {
+  background-color: #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 250px;
+  text-align: center;
+}
+
+.Modalidad2 a{
+    text-decoration: none;
+}
+
+.Modalidad2 img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.Titulo3 {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/*---------------------------------------------------------------*/
+.PaginaPie {
+  background: linear-gradient(to top, #1caf21, #c8e6c9);
+  color: rgb(0, 0, 0);
+  padding: 40px 20px;
+  position: relative;
+  font-weight: bold;
+}
+
+.Pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.LogoNombre {
+  display: flex;
+  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
+  align-items: flex-start;
+  margin-bottom: 20px; /* Un pequeño margen abajo */
+}
+
+
+.PieLogo {
+  width: 100px;
+  height: auto;
+  margin-right: 15px; 
+  margin-left: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.NombreEscuela {
+  font-size: 16px;  /* Reducimos el tamaño del texto */
+  font-weight: bold;
+  line-height: 1.2;  /* Alinea las líneas de texto */
+}
+
+.NombreEscuela p {
+  display: block;  /* Hace que cada parte del nombre esté en una línea */
+}
+
+.NavegacionRedes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.LogosRedes {
+  display: flex;
+  flex-direction: column;  /* Cambiar de fila a columna */
+  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
+  align-items: center;  /* Centra las imágenes */
+}
+
+.RedesIconos img {
+  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  height: auto;
+}
+
+
+.NavegacionRapida {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.NavegacionSecciones {
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.NavegacionSecciones h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones h3 a{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.NavegacionSecciones li {
+  margin: 5px 0;
+}
+
+.NavegacionSecciones a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+.NavegacionSecciones a:hover {
+  text-decoration: underline;
+}
+
+
+/* Tablet y móvil */
+@media (max-width: 1024px) {
+  
+  .MenuHamburguesa {
+    display: block;
+  }
+
+  .LinksMenu {
+    display: none;  /* oculto por defecto */
+    flex-direction: column;
+    width: 100%;
+    background-color: #c8e6c9;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .LinksMenu a {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+
+  .LinksMenu.activo {
+    display: flex;
+  }
+/*-----------------------------------------------*/
+
+.Planes {
+    justify-content: center;
+  }
+
+  .TituloPrincipal h1 {
+    font-size: 80px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .TituloPrincipal p {
+    font-size: 16px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Cambio de régimen */
+  .CambioRegimen .Titulo {
+    font-size: 20px;
+  }
+  .CambioRegimen .Texto {
+    font-size: 16px;
+  }
+  .CambioRegimen .InformacionEnlace {
+    font-size: 14px;
+  }
+
+  /* Nuestra escuela */
+  .TituloEscuela {
+    font-size: 40px;
+  }
+  .Descripcion {
+    font-size: 15px;
+    max-width: 350px;
+  }
+
+  .Subtitulo {
+    font-size: 30px;
+  }
+
+  .Tiempo img {
+    width: 35px;
+    height: 35px;
+  }
+  .Texto1 {
+    font-size: 20px;
+  }
+  .Texto2 {
+    font-size: 20px;
+  }
+
+  .PlanesEstudio {
+    font-size: 13px;
+  }
+
+  .BotonesBasicos {
+    justify-content: center; /* centrado horizontal */
+    flex-wrap: wrap;         /* permite que los botones bajen de línea si no entran */
+    gap: 10px;
+  }
+
+  .BotonesBasicos button {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+
+  /* Ciclo superior y modalidades */
+  .Titulo2 {
+    font-size: 35px;
+  }
+  .Modalidad2 {
+    max-width: 200px;
+  }
+  .Modalidad2 img {
+    height: 150px;
+  }
+  .Titulo3 {
+    font-size: 20px;
+  }
+
+/*-----------------------------------------------*/
+  
+  .Pie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LogoNombre {
+    align-items: center;
+  }
+
+  .PieLogo{
+  margin-bottom: 20px;
+  }
+
+  .NavegacionRapida {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .LogosRedes {
+    flex-direction: row; /* mantener fila */
+    gap: 30px;
+    justify-content: center; /* centrado horizontal */
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+/* Móvil */
+@media (max-width: 768px) {
+
+  /* Planes */
+  .TituloPrincipal h1 {
+    font-size: 70px;
+    margin-bottom: 15px;
+
+  }
+  .TituloPrincipal p {
+    font-size: 16px;
+  }
+
+  /* Cambio de régimen */
+  .CambioRegimen .Titulo {
+    font-size: 18px;
+  }
+  .CambioRegimen .Texto {
+    font-size: 14px;
+  }
+  .CambioRegimen .InformacionEnlace {
+    font-size: 12px;
+  }
+
+  /* Nuestra escuela */
+  .TituloEscuela {
+    font-size: 30px;
+  }
+  .Descripcion {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .Subtitulo {
+    font-size: 24px;
+  }
+
+  .Tiempo img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .Texto1 {
+    font-size: 20px;
+  }
+  .Texto2 {
+    font-size: 20px;
+  }
+
+  .PlanesEstudio {
+    font-size: 12px;
+  }
+
+  .BotonesBasicos {
+    justify-content: center; /* centrado horizontal */
+    flex-wrap: wrap;         /* permite que los botones bajen de línea si no entran */
+    gap: 10px;
+  }
+
+  .BotonesBasicos button {
+    width: 50%;
+    padding: 6px 0;
+    font-size: 12px;
+  }
+
+
+  /* Ciclo superior y modalidades */
+  .Titulo2 {
+    font-size: 28px;
+  }
+
+  .Modalidades {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .Modalidad2 {
+    max-width: 100%;
+  }
+
+  .Modalidad2 img {
+    height: 130px;
+  }
+
+  .Titulo3 {
+    font-size: 20px;
+  }
+
+/*-----------------------------------------*/
+
+.Pie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LogoNombre {
+    align-items: center;
+    text-align: center;
+  }
+
+  .NavegacionRedes {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .NavegacionRapida {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .NavegacionSecciones h3 {
+    font-size: 18px;
+  }
+
+  .NavegacionSecciones a {
+    font-size: 0.9rem;
+  }
+
+  .LogosRedes {
+    flex-direction: row; /* mantener fila */
+    gap: 30px;
+    justify-content: center; /* centrado horizontal */
+    margin-bottom: 20px;
+  }
+
+  .RedesIconos img {
+    width: 35px;
+  }
+}

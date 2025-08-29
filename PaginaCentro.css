@@ -1,0 +1,709 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* ------------------------------------------------------------ */
+ 
+/* Ocultar botón hamburguesa en desktop */
+.MenuHamburguesa {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+ /* Menú de navegación */
+.Menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: linear-gradient(to top, #1caf21, #c8e6c9); /* verde claro degradado hacia arriba */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+  
+.LogoMenu {
+    display: flex;             /* flex en fila */
+    align-items: center;       /* alinear verticalmente */
+    flex-direction: row;       /* explícito, fila */
+}
+  
+.LogoMenu img {
+    height: 50px;
+    width: auto;
+    margin-right: 12px;        /* espacio entre logo y texto */
+}
+  
+.TextoLogo {
+    display: flex;
+    flex-direction: column;    /* dos líneas de texto, pero el bloque entero está a la derecha */
+    font-size: 17px;
+    line-height: 1.2;
+    color: black;
+    white-space: nowrap;
+   font-weight: bold;
+}
+
+/* LinksMenu desktop */
+#LinksMenu {
+  display: flex;
+}
+
+#LinksMenu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+#LinksMenu a:hover {
+    color: #2e7d32; /* verde oscuro al pasar el mouse */
+  }
+
+#LinksMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#LinksMenu > ul {
+  display: flex;       
+}
+
+#LinksMenu > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 10px 15px;
+  display: block;
+  transition: color 0.3s;
+}
+
+#LinksMenu > ul > li > a:hover {
+  color: #2e7d32;
+}
+
+
+#LinksMenu li ul {
+  display: none;         
+  position: absolute;   
+  top: 100%;             
+  left: 10%;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#LinksMenu li:hover > ul {
+  display: block;
+}
+
+
+#LinksMenu li ul li a {
+  display: block;
+  min-width: 140px;      
+  padding: 5px 5px;
+  color: #1caf21;
+  text-decoration: none;
+  margin: 0;
+}
+
+#LinksMenu li ul li a:hover {
+  background: greenyellow;
+}
+
+/* Necesario para que los submenús se posicionen correctamente */
+#LinksMenu > ul > li {
+  position: relative;
+}
+
+
+/* -------------------------------------------------*/
+
+.Centro {
+    background-image: url("hero2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;   
+    align-items: center;
+    display: flex;
+    
+}
+
+.TituloPrincipal h1{
+    color: rgb(255, 255, 255);
+    margin-left: 30px;
+    margin-top: 100px;
+    padding-right: 120px ;
+    font-size: 80px; 
+    background-color:rgb(25, 179, 25);
+    line-height: 96px;
+}
+
+
+/* ----------------------------------------------------------------*/
+
+.CentroEstudiantil {
+  width: 100%;
+}
+
+.Beige {
+  background-color: #ede5db; /* color beige claro */
+  padding: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  height: 75vh;
+}
+
+.Blanco {
+  background-color: #ffffff;
+  padding: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  height: 65vh;
+}
+
+.Tarjeta {
+  width: 300px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  transform-origin: center;
+  position: relative;
+}
+
+.Tarjeta h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.Tarjeta p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.Blanco1, .Blanco2 {
+  position: relative;
+  background-color: white;
+}
+
+.Blanco1 {
+  right: 100px;
+  bottom: 30px;
+  transform: rotate(-10deg);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  height: 400px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.Blanco2  {
+  left: 30px;
+  top: 100px;
+  transform: rotate(7deg);
+  clip-path: ellipse(70% 50% at 50% 50%);
+  height: 300px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.Beige1, .Beige2 {
+  position: relative;
+  background-color: #ede5db;
+}
+
+.Beige1{
+  bottom: 30px;
+  right: -12px;
+  transform: rotate(14deg);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  height: 250px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.Beige2{
+  left: 234px;
+  top: 100px;
+  transform: rotate(-10deg);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  height: 250px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.Bloque {
+  padding: 40px 0;
+}
+
+.IntegrantesBeige {
+  background-color: #f5f0e6;
+  height: 150vh;
+}
+
+.IntregrantesBlanco {
+  background-color: #ffffff;
+  height: 110vh;
+}
+
+.Titulo {
+  text-align: center;
+  position: relative;
+  top: 18px;
+  left: 50px;
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-color: green;
+}
+
+.Integrantes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.Tarjeta1 {
+  position: relative;
+  background-color: inherit;
+  padding: 10px 20px;
+  text-align: center;
+  width: 300px;
+  height: 250px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+.Tarjeta2 { 
+  position: relative;
+  background-color: inherit;
+  padding: 10px 20px;
+  text-align: center;
+  width: 300px;
+  height: 250px;
+  box-sizing: border-box;
+    background-color: #ede5db;
+}
+
+.Tarjeta1 img, .Tarjeta2 img {
+    width: 230px;
+    height: auto;
+    border: 6px solid white;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.Puesto{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.Tarjeta1.a{
+    right:50px;
+    transform: rotate(13deg);
+}
+
+.Tarjeta1.b{
+    top:100px;
+    left: 300px;
+    transform: rotate(-16deg);
+}
+
+.Tarjeta1.c{
+    top:320px;
+    right:400px;
+    transform: rotate(2deg);
+}
+
+
+.Tarjeta2.a{
+    top:370px;
+    right:-15px;
+    transform: rotate(5deg);
+}
+
+.Tarjeta2.b{
+    right:120px;
+    transform: rotate(-5deg);
+}
+
+.Tarjeta2.c{
+    left:120px;
+    transform: rotate(5deg);
+}
+
+.Tarjeta2.d{
+    top:390px;
+    transform: rotate(-10deg);
+}
+
+.Tarjeta2.e{
+    top:50px;
+    left:30px;
+    transform: rotate(-1deg);
+}
+
+.FotoGrupal {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff; /* o el color que combine con el resto del sitio */
+}
+
+.FotoGrande{
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 300px;
+    border: 18px solid #ede5db;
+
+}
+
+
+
+/*---------------------------------------------------------------*/
+.PaginaPie {
+  background: linear-gradient(to top, #1caf21, #c8e6c9);
+  color: rgb(0, 0, 0);
+  padding: 40px 20px;
+  position: relative;
+  font-weight: bold;
+}
+
+.Pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.LogoNombre {
+  display: flex;
+  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
+  align-items: flex-start;
+  margin-bottom: 20px; /* Un pequeño margen abajo */
+}
+
+
+.PieLogo {
+  width: 100px;
+  height: auto;
+  margin-right: 15px; 
+  margin-left: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.NombreEscuela {
+  font-size: 16px;  /* Reducimos el tamaño del texto */
+  font-weight: bold;
+  line-height: 1.2;  /* Alinea las líneas de texto */
+}
+
+.NombreEscuela p {
+  display: block;  /* Hace que cada parte del nombre esté en una línea */
+}
+
+.NavegacionRedes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.LogosRedes {
+  display: flex;
+  flex-direction: column;  /* Cambiar de fila a columna */
+  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
+  align-items: center;  /* Centra las imágenes */
+}
+
+.RedesIconos img {
+  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  height: auto;
+}
+
+
+.NavegacionRapida {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.NavegacionSecciones {
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.NavegacionSecciones h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones h3 a{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.NavegacionSecciones li {
+  margin: 5px 0;
+}
+
+.NavegacionSecciones a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+.NavegacionSecciones a:hover {
+  text-decoration: underline;
+}
+/* ------------------- MEDIA QUERIES ------------------- */
+@media (max-width: 1024px) {
+    .MenuHamburguesa {
+    display: block;
+  }
+
+  .LinksMenu {
+    display: none;  /* oculto por defecto */
+    flex-direction: column;
+    width: 100%;
+    background-color: #c8e6c9;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .LinksMenu a {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+
+  .LinksMenu.activo {
+    display: flex;
+  }
+   .Centro {
+      height: 50vh;  /* Reducimos la altura de la sección */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+  .TituloPrincipal h1 {
+      font-size: 60px;   /* Reducimos tamaño de fuente */
+      margin: 0;
+      padding: 10px 20px;
+      line-height: 60px;
+  }
+     /* Tarjetas en columna y centradas */
+  .Tarjeta {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      padding: 15px;      /* Reducido del original */
+      width: 90%;          /* Ocupa la mayor parte del contenedor */
+      max-width: 350px;    /* Limita el ancho máximo */
+      height: auto;        /* Se ajusta automáticamente al contenido */
+  }
+
+  .Tarjeta h3 {
+      order: 0;
+      margin-bottom: 10px;
+      width: 100%;
+  }
+
+  .Tarjeta p {
+      order: 1;
+      width: 100%;
+  }
+
+
+  /* Sección CentroEstudiantil: columna */
+  .Beige, .Blanco {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  /* Tarjetas: centradas */
+  .Blanco1, .Blanco2, .Beige1, .Beige2 {
+    transform: rotate(0deg);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    clip-path: none;
+    width: 90%;
+    max-width: 350px;
+    margin: 20px 0;
+  }
+
+  /* Integrantes: columna */
+  .Integrantes {
+    display: flex;
+    flex-direction: column;  /* Una debajo de otra */
+    align-items: center;     /* Centrado horizontal */
+    gap: 30px;               /* Espacio entre tarjetas */
+    padding: 20px;
+}
+
+.Tarjeta1, .Tarjeta2 {
+    position: static;        /* Quita posición relativa */
+    transform: rotate(0deg); /* Sin inclinaciones */
+    width: 300px;            /* Mantener ancho */
+    text-align: center;
+    margin: 0 auto;
+}
+
+.Tarjeta1.a, .Tarjeta1.b, .Tarjeta1.c,
+.Tarjeta2.a, .Tarjeta2.b, .Tarjeta2.c, 
+.Tarjeta2.d, .Tarjeta2.e{
+  transform: rotate(0deg);
+}
+
+  /* Título de integrantes centrado */
+  .Titulo {
+    left: 0;
+    top: 0;
+    text-align: center;
+  }
+
+  /* Foto grupal centrada */
+  .FotoGrande {
+    max-width: 90%;
+    height: auto;
+  }
+
+ .Pie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LogoNombre {
+    align-items: center;
+  }
+
+  .PieLogo{
+  margin-bottom: 20px;
+  }
+
+  .NavegacionRapida {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .LogosRedes {
+    flex-direction: row; /* mantener fila */
+    gap: 30px;
+    justify-content: center; /* centrado horizontal */
+    margin-bottom: 20px;
+  }
+
+  .Pie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LogoNombre {
+    align-items: center;
+    text-align: center;
+  }
+
+  .NavegacionRedes {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .NavegacionRapida {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .NavegacionSecciones h3 {
+    font-size: 18px;
+  }
+
+  .NavegacionSecciones a {
+    font-size: 0.9rem;
+  }
+
+  .LogosRedes {
+    flex-direction: row; /* mantener fila */
+    gap: 30px;
+    justify-content: center; /* centrado horizontal */
+    margin-bottom: 20px;
+  }
+
+  .RedesIconos img {
+    width: 35px;
+  }
+
+}
+
+@media  (max-width: 768px) {
+  .Centro {
+      height: 40vh;  /* Altura menor para móviles */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+  .TituloPrincipal h1 {
+      font-size: 45px;   /* Tamaño más pequeño */
+      margin: 0;
+      padding: 5px 10px;
+      line-height: 45px;
+  }
+}

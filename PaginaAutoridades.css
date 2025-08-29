@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* ------------------------------------------------------------ */
+ 
+/* Ocultar botón hamburguesa en desktop */
+.MenuHamburguesa {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+ /* Menú de navegación */
+.Menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: linear-gradient(to top, #1caf21, #c8e6c9); /* verde claro degradado hacia arriba */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+  
+.LogoMenu {
+    display: flex;             /* flex en fila */
+    align-items: center;       /* alinear verticalmente */
+    flex-direction: row;       /* explícito, fila */
+}
+  
+.LogoMenu img {
+    height: 50px;
+    width: auto;
+    margin-right: 12px;        /* espacio entre logo y texto */
+}
+  
+.TextoLogo {
+    display: flex;
+    flex-direction: column;    /* dos líneas de texto, pero el bloque entero está a la derecha */
+    font-size: 17px;
+    line-height: 1.2;
+    color: black;
+    white-space: nowrap;
+   font-weight: bold;
+}
+
+/* LinksMenu desktop */
+#LinksMenu {
+  display: flex;
+}
+
+#LinksMenu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+#LinksMenu a:hover {
+    color: #2e7d32; /* verde oscuro al pasar el mouse */
+  }
+
+#LinksMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#LinksMenu > ul {
+  display: flex;       
+}
+
+#LinksMenu > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 10px 15px;
+  display: block;
+  transition: color 0.3s;
+}
+
+#LinksMenu > ul > li > a:hover {
+  color: #2e7d32;
+}
+
+
+#LinksMenu li ul {
+  display: none;         
+  position: absolute;   
+  top: 100%;             
+  left: 10%;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#LinksMenu li:hover > ul {
+  display: block;
+}
+
+
+#LinksMenu li ul li a {
+  display: block;
+  min-width: 140px;      
+  padding: 5px 5px;
+  color: #1caf21;
+  text-decoration: none;
+  margin: 0;
+}
+
+#LinksMenu li ul li a:hover {
+  background: greenyellow;
+}
+
+/* Necesario para que los submenús se posicionen correctamente */
+#LinksMenu > ul > li {
+  position: relative;
+}
+
+
+/* -------------------------------------------------*/
+
+.Autoridades {
+    background-image: url("hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;   
+    align-items: center;
+    display: flex;
+    
+}
+
+.TituloPrincipal h1{
+    color: rgb(49, 49, 49);
+    margin-left: 30px;
+    margin-top: -200px;
+    padding-right: 200px ;
+    font-size: 80px; 
+    background-color: rgba(139, 137, 137, 0.5);
+    line-height: 96px;
+}
+
+.LogoPrincipal{
+    height: 280px;    /* Ajustá este valor al tamaño que quieras */
+    width: auto;
+    border-radius: 8px;
+    margin-left: 230px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+}
+
+/* ----------------------------------------------------------------*/
+
+
+.Piramide {
+  padding: 50px;
+  text-align: center;
+  background-color: #ccc;
+}
+
+
+.Nivel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.Tarjetas {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 250px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.Tarjetas img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #ccc;
+}
+
+.Tarjetas h3 {
+  font-size: 18px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.Tarjetas p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Colores personalizados */
+.Verde {
+  background-color: #d7f5d0;
+}
+
+.Naranja {
+  background-color: #ffe1b3;
+}
+
+
+/* Líneas horizontales que conectan múltiples tarjetas en un mismo nivel */
+.Nivel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #999;
+  z-index: 0;
+}
+
+
+
+/*---------------------------------------------------------------*/
+.PaginaPie {
+  background: linear-gradient(to top, #1caf21, #c8e6c9);
+  color: rgb(0, 0, 0);
+  padding: 40px 20px;
+  position: relative;
+  font-weight: bold;
+}
+
+.Pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.LogoNombre {
+  display: flex;
+  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
+  align-items: flex-start;
+  margin-bottom: 20px; /* Un pequeño margen abajo */
+}
+
+
+.PieLogo {
+  width: 100px;
+  height: auto;
+  margin-right: 15px; 
+  margin-left: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.NombreEscuela {
+  font-size: 16px;  /* Reducimos el tamaño del texto */
+  font-weight: bold;
+  line-height: 1.2;  /* Alinea las líneas de texto */
+}
+
+.NombreEscuela p {
+  display: block;  /* Hace que cada parte del nombre esté en una línea */
+}
+
+.NavegacionRedes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.LogosRedes {
+  display: flex;
+  flex-direction: column;  /* Cambiar de fila a columna */
+  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
+  align-items: center;  /* Centra las imágenes */
+}
+
+.RedesIconos img {
+  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  height: auto;
+}
+
+
+.NavegacionRapida {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.NavegacionSecciones {
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.NavegacionSecciones h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones h3 a{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.NavegacionSecciones li {
+  margin: 5px 0;
+}
+
+.NavegacionSecciones a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+.NavegacionSecciones a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 1024px) {
+
+    .MenuHamburguesa {
+    display: block;
+  }
+
+  .LinksMenu {
+    display: none;  /* oculto por defecto */
+    flex-direction: column;
+    width: 100%;
+    background-color: #c8e6c9;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .LinksMenu a {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+
+  .LinksMenu.activo {
+    display: flex;
+  }
+
+  /* Autoridades - Título y logo */
+  .Autoridades {
+    flex-direction: column; /* columna */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto; /* ajustar altura para tablet */
+    padding: 40px 20px;
+  }
+
+  .TituloPrincipal h1 {
+    margin: 0 0 20px 0;
+    font-size: 60px;
+    padding-right: 0;
+    margin-top: 0;
+    background-color: rgba(139, 137, 137, 0.5);
+    line-height: 1.2em;
+  }
+
+  .LogoPrincipal {
+    margin: 20px 0 0 0;
+    height: 220px; 
+  }
+
+  .Piramide {
+    padding: 30px 20px;
+  }
+
+  .Nivel {
+    display: flex;
+    flex-wrap: wrap;       /* permite que se divida en varias filas */
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .Tarjetas {
+    flex: 1 1 calc(50% - 20px); /* cada tarjeta ocupa ~50% del ancho menos el gap */
+    max-width: 250px;           /* no se haga demasiado grande */
+  }
+
+  .Tarjetas img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .Tarjetas h3 {
+    font-size: 16px;
+  }
+
+  .Tarjetas p {
+    font-size: 14px;
+  }
+
+  /*----------------------------------*/
+  
+  .Pie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LogoNombre {
+    align-items: center;
+  }
+
+  .PieLogo{
+  margin-bottom: 20px;
+  }
+
+  .NavegacionRapida {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .LogosRedes {
+    flex-direction: row; /* mantener fila */
+    gap: 30px;
+    justify-content: center; /* centrado horizontal */
+    margin-bottom: 20px;
+  }
+
+  .Pie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LogoNombre {
+    align-items: center;
+    text-align: center;
+  }
+
+  .NavegacionRedes {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .NavegacionRapida {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .NavegacionSecciones h3 {
+    font-size: 18px;
+  }
+
+  .NavegacionSecciones a {
+    font-size: 0.9rem;
+  }
+
+  .LogosRedes {
+    flex-direction: row; /* mantener fila */
+    gap: 30px;
+    justify-content: center; /* centrado horizontal */
+    margin-bottom: 20px;
+  }
+
+  .RedesIconos img {
+    width: 35px;
+  }
+
+
+}
+
+
+/* ----------------- Móvil (≤768px) ----------------- */
+@media (max-width: 768px) {
+
+  /* Autoridades - Título y logo */
+  .Autoridades {
+    padding: 30px 15px;
+  }
+
+  .TituloPrincipal h1 {
+    font-size: 45px;
+    line-height: 1.1em;
+  }
+
+  .LogoPrincipal {
+    height: 180px;
+    margin: 15px 0 0 0;
+  }
+
+  /* Pirámide de autoridades */
+  .Piramide {
+    padding: 20px 10px;
+  }
+
+  .Nivel {
+    flex-direction: column; /* todo en columna para móviles */
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .Tarjetas {
+    width: 90%;  /* ocupar casi todo el ancho */
+    max-width: 250px;
+    padding: 15px;
+  }
+
+  .Tarjetas img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .Tarjetas h3 {
+    font-size: 15px;
+  }
+
+  .Tarjetas p {
+    font-size: 13px;
+  }
+
+}

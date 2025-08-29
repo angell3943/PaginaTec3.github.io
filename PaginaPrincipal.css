@@ -1,0 +1,1461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* ------------------------------------------------------------ */
+
+/* Ocultar botón hamburguesa en desktop */
+.MenuHamburguesa {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+ /* Menú de navegación */
+.Menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: linear-gradient(to top, #1caf21, #c8e6c9); /* verde claro degradado hacia arriba */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+  
+.LogoMenu {
+    display: flex;             /* flex en fila */
+    align-items: center;       /* alinear verticalmente */
+    flex-direction: row;       /* explícito, fila */
+}
+  
+.LogoMenu img {
+    height: 50px;
+    width: auto;
+    margin-right: 12px;        /* espacio entre logo y texto */
+}
+  
+.TextoLogo {
+    display: flex;
+    flex-direction: column;    /* dos líneas de texto, pero el bloque entero está a la derecha */
+    font-size: 17px;
+    line-height: 1.2;
+    color: black;
+    white-space: nowrap;
+   font-weight: bold;
+}
+
+/* LinksMenu desktop */
+#LinksMenu {
+  display: flex;
+}
+
+#LinksMenu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+#LinksMenu a:hover {
+    color: #2e7d32; /* verde oscuro al pasar el mouse */
+  }
+
+#LinksMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#LinksMenu > ul {
+  display: flex;       
+}
+
+#LinksMenu > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 10px 15px;
+  display: block;
+  transition: color 0.3s;
+}
+
+#LinksMenu > ul > li > a:hover {
+  color: #2e7d32;
+}
+
+
+#LinksMenu li ul {
+  display: none;         
+  position: absolute;   
+  top: 100%;             
+  left: 10%;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#LinksMenu li:hover > ul {
+  display: block;
+}
+
+
+#LinksMenu li ul li a {
+  display: block;
+  min-width: 140px;      
+  padding: 5px 5px;
+  color: #1caf21;
+  text-decoration: none;
+  margin: 0;
+}
+
+#LinksMenu li ul li a:hover {
+  background: greenyellow;
+}
+
+/* Necesario para que los submenús se posicionen correctamente */
+#LinksMenu > ul > li {
+  position: relative;
+}
+
+
+
+
+/* ------------------------------------------------------------ */
+
+
+/* ===== SECCIÓN PRESENTACIÓN ===== */
+.Presentacion {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+/* -------- SLIDER -------- */
+.Presentacion .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* al fondo */
+}
+
+.Presentacion .slider ul {
+  display: flex;   
+  animation: slide 20s infinite alternate linear;
+  width: 400%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.Presentacion .slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.Presentacion .slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+
+}
+
+/* -------- CONTENIDO ENCIMA -------- */
+.ContenidoPresentacion {
+  position: relative;
+  z-index: 2; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 250px;
+  padding: 0 60px;
+}
+
+/* Caja del texto */
+.TextoBienvenida {
+  background-color: rgba(252, 158, 16, 0.75);
+  max-width: 475px;
+  min-height: 325px;
+  padding: 60px;
+  border-radius: 15px;
+  color: black;
+}
+
+.TextoBienvenida h1 {
+  font-size: 35px;
+}
+
+.TextoBienvenida p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.BotonBienvenida {
+  background-color: #54b159;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.BotonBienvenida:hover {
+  background-color: #81c784;
+}
+
+  /* Logo grande */
+.LogoPrincipal {
+  height: 340px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+/* ------------------------------------------------------------ */
+
+ /* Sección Sobre Nosotros */
+.Nosotros {
+  background-color: #f2f2f2e1;  /* blanco grisáceo suave */
+  padding: 80px 0;
+}
+
+.Nosotros .contenedor{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.Nosotros h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  color: black;
+}
+
+/* Línea subrayada personalizada */
+.Nosotros h2::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  background-color: #54b159; 
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.Nosotros p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.Nosotros .BotonNosotros{
+  background-color: #54b159;
+  color: black;
+  padding: 6px 60px;
+  font-size: 25px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.Nosotros .BotonNosotros:hover {
+  background-color: #81c784;
+}
+
+/* ------------------------------------------------------------ */
+
+/* Estilo general de la sección */
+.Orientaciones {
+  padding: 40px;
+  background-color: #e6e6e6;
+}
+
+.Orientaciones h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.Orientaciones h2::after {
+  content: "";
+  display: block;
+  width: 15%;
+  height: 4px;
+  background-color: #54b159; 
+  margin: 1px auto 0;
+  border-radius: 2px;
+}
+
+/* Estilo para el rectángulo grande */
+.CicloBasico{
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 30px;
+  background-image: url('ciclo-basico.jpg');
+}
+
+.CicloBasico p{
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  background-color: white;
+  color: black;
+  padding: 5px 50px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/* Contenedor de las dos chicas */
+.Modalidades {
+  display: flex;
+  gap: 20px;
+}
+
+/* Estilo para los rectángulos pequeños */
+.ModalidadChica {
+  flex: 1;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+/* Texto sobre la imagen */
+.ModalidadChica p{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.Eventos {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.Eventos h2 {
+  
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.Eventos h2::after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 4px;
+  background-color: #54b159; 
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.CapaVerde {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background-color: rgba(0, 128, 0, 0.6); 
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.CapaVerde h3 {
+
+  margin: 0 0 10px;
+  font-size: 19px;
+}
+
+.CapaVerde p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.Evento1 {
+  position: relative;
+  width: 1155px; /* Ancho */
+  height: 500px; /* Alto */
+  margin: 0 auto 40px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.EventoChico {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+ 
+}
+
+.Evento2 {
+
+  position: relative;
+  width: 550px;
+  height: 250px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.Evento3 {
+
+  position: relative;
+  width: 1155px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* ------------------------------------------------------------ */
+
+.inscripciones {
+
+  background-color: #f5f0dc;  
+  display: flex;
+  height: 120vh;
+}
+
+.inscripciones h2{
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Izquierda {
+  width: 50%;
+  padding: 30px;
+  box-sizing: border-box;
+  border-right: 2px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Derecha {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Izquierda .Derecha h3{
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+
+}
+
+.Izquierda p{
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.Pase {
+  flex: 1;
+  padding: 30px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Pase:last-child {
+  border-bottom: none;
+}
+
+
+.DobleLista {
+  display: flex;         /* activa flexbox */
+  gap: 40px;             /* espacio entre las listas */
+  justify-content: center; /* centra las listas horizontalmente */
+}
+
+.DobleLista ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.BotonInscripciones {
+  margin-top: 30px;
+  padding: 12px 25px;
+  background-color: orange;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  align-self: center;
+  transition: 0.3s;
+}
+
+.BotonInscripciones:hover {
+  background-color: darkorange;
+}
+
+/* ------------------------------------------------------------ */
+
+.Novedades {
+  background-color: #f9f4ec; 
+  padding: 50px 20px;
+  text-align: center;
+
+}
+
+.Novedades h2{
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 40px;  
+
+}
+
+
+.Novedades h2::after {
+
+   content: "";
+  display: block;
+  width: 13%;
+   height: 4px;
+  background-color: #54b159; 
+  margin: 5px auto 0;
+  border-radius: 2px;
+}
+
+.NovedadesRecuadro {
+ 
+  background-color: orange;
+  border-radius: 40px;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+   overflow: hidden;
+   max-width: 1500px;
+  margin: 0 auto; 
+   height: 200px;
+  display: flex;
+}
+
+.NovedadesImagenes {
+  width: 400px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.ContenidoNovedades {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.ContenidoNovedades h3{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.ContenidoNovedades p{
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.PosicionBoton {
+  text-align: right;
+}
+
+.BotonNovedades{
+  background-color: #54b159;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.BotonNovedades:hover {
+  background-color: #449447;
+}
+
+/* ------------------------------------------------------------ */
+
+.Egresados {
+  background-color: #f5e6ce; /* Beige claro */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.Testimonios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.TestimonioFoto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.TestimonioNombre {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.TestimonioTexto {
+  font-style: italic;
+  font-size: 18px;
+  color: #333;
+}
+
+.flecha {
+  font-size: 35px;
+  color: #999;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s;
+}
+
+.flecha:hover {
+  color: #54b159;
+}
+
+.linea {
+  position: absolute;
+  bottom: -20px; /* Separación desde el testimonio */
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: black;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+/* ------------------------------------------------------------ */
+
+
+.CentroEstudiantil {
+  background-color: #f9f4ec; /* Fondo beige */
+  padding: 0; /* Eliminamos el padding para que la imagen ocupe todo */
+  height: 60vh; /* 100% de la altura de la ventana */
+}
+
+.CentroTitulo {
+  font-size: 43px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+
+.CentroTitulo::after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 4px;
+  background-color: #54b159; 
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.CentroContenido {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  height: 100%; /* Aseguramos que ocupe toda la altura disponible */
+}
+
+.CentroTexto {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.CentroTexto h3{
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.CentroTexto p {
+  font-size: 16px;
+  color: #333;
+}
+
+.CentroFoto {
+  flex: 1;
+  height: 100%; /* Aseguramos que la imagen ocupe todo el alto */
+  overflow: hidden;
+  position: relative; /* Para aplicar correctamente los bordes curvos */
+  width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+  height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
+  object-fit: cover; /* La imagen cubre todo el contenedor */
+  border-top-left-radius: 100px;  /* Bordes curvos más grandes para un efecto más ovalado */
+  border-bottom-left-radius: 100px; /* Bordes curvos más grandes para un efecto más ovalado */
+}
+
+
+/* ------------------------------------------------------------ */
+
+.PaginaPie {
+  background: linear-gradient(to top, #1caf21, #c8e6c9);
+  color: rgb(0, 0, 0);
+  padding: 40px 20px;
+  position: relative;
+  font-weight: bold;
+}
+
+.Pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.LogoNombre {
+  display: flex;
+  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
+  align-items: flex-start;
+  margin-bottom: 20px; /* Un pequeño margen abajo */
+}
+
+
+.PieLogo {
+  width: 100px;
+  height: auto;
+  margin-right: 15px; 
+  margin-left: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.NombreEscuela {
+  font-size: 16px;  /* Reducimos el tamaño del texto */
+  font-weight: bold;
+  line-height: 1.2;  /* Alinea las líneas de texto */
+}
+
+.NombreEscuela p {
+  display: block;  /* Hace que cada parte del nombre esté en una línea */
+}
+
+.NavegacionRedes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.LogosRedes {
+  display: flex;
+  flex-direction: column;  /* Cambiar de fila a columna */
+  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
+  align-items: center;  /* Centra las imágenes */
+}
+
+.RedesIconos img {
+  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  height: auto;
+}
+
+
+.NavegacionRapida {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.NavegacionSecciones {
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.NavegacionSecciones h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones h3 a{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.NavegacionSecciones li {
+  margin: 5px 0;
+}
+
+.NavegacionSecciones a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+.NavegacionSecciones a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Tablet y móvil */
+@media (max-width: 1024px) {
+
+  .MenuHamburguesa {
+    display: block;
+  }
+
+  .LinksMenu {
+    display: none;  /* oculto por defecto */
+    flex-direction: column;
+    width: 100%;
+    background-color: #c8e6c9;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .LinksMenu a {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+
+  .LinksMenu.activo {
+    display: flex;
+  }
+
+  .Presentacion {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    height: auto;
+    align-items: center; /* centra todo horizontalmente */
+    padding: 60px 30px;
+  }
+
+  .TextoBienvenida {
+    margin-left: 0;
+    max-width: 90%;
+    padding: 40px;
+    text-align: center; /* centra el texto y el botón */
+  }
+
+  .TextoBienvenida h1 {
+    font-size: 30px;
+  }
+
+  .TextoBienvenida p {
+    font-size: 24px;
+  }
+
+  .BotonBienvenida {
+    display: inline-block; /* se asegura que se pueda centrar */
+    margin: 20px auto 0; /* margen superior y centrado horizontal */
+  }
+
+  .LogoPrincipal {
+    margin-left: 0;
+    margin-top: 20px;
+    height: 250px;
+  }
+
+/* ---------------------------------------------------------- */
+
+.Nosotros {
+    padding: 60px 20px;
+  }
+
+.Nosotros h2 {
+    font-size:30px;
+  }
+
+.Nosotros p {
+    font-size:20px;
+  }
+
+.Nosotros .BotonNosotros {
+    font-size: 20px;
+    padding: 6px 50px;
+  }
+/* ---------------------------------------------------------- */
+
+ .Orientaciones {
+    padding: 30px 20px;
+  }
+
+  .Orientaciones h2 {
+    font-size: 28px;
+  }
+
+  /* Ciclo Básico más compacto */
+  .CicloBasico {
+    height: 220px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .CicloBasico p {
+    font-size: 35px;
+    padding: 5px 30px;
+    position: static; /* para centrarlo */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+    text-align: center;
+  }
+
+   .Modalidades {
+    flex-direction: column; /* apilar vertical */
+    gap: 25px;
+  }
+
+  .ModalidadChica {
+    height: auto;             /* quitar altura fija */
+    aspect-ratio: 2.5 / 1;    /* mantener proporción ancho/alto */
+    display: flex;             /* contenedor flex */
+    align-items: center;       /* centrar vertical */
+    justify-content: center;   /* centrar horizontal */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .ModalidadChica p {
+    position: static;          
+    font-size: 22px;
+    padding: 10px 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+    text-align: center;
+  }
+/* ---------------------------------------------------------- */
+
+.Evento1 {
+    width: 90%;
+    height: 400px;        /* altura fija para que se vea la imagen */
+    margin: 20px auto;
+  }
+
+  .Evento2 {
+    width: 90%;
+    height: 250px;        /* altura proporcional a PC */
+    margin: 15px auto;
+  }
+
+  .Evento3 {
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+  }
+
+  .EventoChico {
+    flex-direction: column; /* apilar verticalmente */
+    gap: 20px;
+  }
+
+  .CapaVerde {
+    display: none;         /* ocultamos el recuadro verde */
+  }
+/*-----------------------------------------------------------*/
+
+ .inscripciones {
+    flex-direction: column;      /* apilar columnas */
+    align-items: center;          /* centrar horizontalmente todo */
+    height: auto;                 /* altura automática */
+  }
+
+  .inscripciones h2, .Izquierda h2, .Derecha h2{
+    font-size: 45px;
+  }
+
+    .inscripciones h3, .Izquierda h3, .Derecha h3{
+    font-size: 23px;
+    margin-bottom: 5px;
+  }
+  
+
+  .Izquierda, .Derecha {
+    width: 90%;                   /* ancho más adecuado */
+    padding: 20px;
+    border-right: none;           /* quitar borde derecho */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centrar contenido interno */
+    text-align: center;           /* centrar texto */
+  }
+
+  .Pase {
+    flex: unset;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centrar contenido interno */
+    text-align: center;
+  }
+
+   .DobleLista {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;    /* centrado de cada lista */
+  }
+
+  .DobleLista ul li {
+  margin-bottom: 10px; /* Ajusta este valor según necesites */
+}
+
+  .BotonInscripciones {
+    align-self: center;           /* centrar botón */
+  }
+
+
+  /*----------------------------------------*/
+
+ .NovedadesRecuadro {
+    flex-direction: column; /* apila verticalmente */
+    height: auto;           /* deja que la altura se ajuste al contenido */
+  }
+
+  .NovedadesImagenes {
+    width: 100%;            /* imagen ocupa todo el ancho */
+    height: auto;           /* altura proporcional */
+    border-radius: 40px 40px 0 0; /* bordes solo arriba */
+  }
+
+  .ContenidoNovedades {
+    padding: 20px;
+    text-align: center;     /* centra el texto y botón */
+  }
+
+  .ContenidoNovedades h3,
+  .ContenidoNovedades p {
+    text-align: center;
+  }
+
+  .PosicionBoton {
+    text-align: center;     /* botón centrado */
+    margin-bottom: 20px;
+  }
+
+ /*-------------------------- */
+  .Testimonios {
+    flex-direction: column; /* apila verticalmente */
+    gap: 30px; /* espacio entre los testimonios */
+    max-width: 600px;
+  }
+
+  .TestimonioFoto {
+    width: 100px;
+    height: 100px;
+  }
+
+  .TestimonioNombre {
+    font-size: 18px;
+  }
+
+  .TestimonioTexto {
+    font-size: 16px;
+  }
+
+  .flecha {
+    display: none;
+  }
+
+  /*------------------------------------*/
+
+  .CentroEstudiantil{
+    height: 80vh; /* 100% de la altura de la ventana */
+
+  }
+  .CentroContenido {
+    flex-direction: column; /* apila texto arriba y foto abajo */
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .CentroTexto {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .CentroTexto h3 {
+    font-size: 28px; /* más pequeño para tablet */
+  }
+
+  .CentroTexto p {
+    font-size: 15px;
+  }
+
+  .CentroFoto {
+    width: 80%;      /* se reduce un poco */
+    max-width: 500px; /* evita que crezca demasiado */
+    border-radius: 100px;
+    margin-top: 20px;
+  }
+  /*----------------------------------*/
+  
+  .Pie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LogoNombre {
+    align-items: center;
+  }
+
+  .PieLogo{
+  margin-bottom: 20px;
+  }
+
+  .NavegacionRapida {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .LogosRedes {
+    flex-direction: row; /* mantener fila */
+    gap: 30px;
+    justify-content: center; /* centrado horizontal */
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/* Móvil */
+@media (max-width: 768px) {
+  
+  .Presentacion {
+    padding: 50px 20px;
+  }
+
+  .TextoBienvenida {
+    padding: 30px 20px;
+    text-align: center; /* centra todo el contenido */
+  }
+
+  .TextoBienvenida h1 {
+    font-size: 25px;
+  }
+
+  .TextoBienvenida p {
+    font-size: 20px;
+  }
+
+  .BotonBienvenida {
+    display: inline-block; /* asegura que se comporte como bloque centrable */
+    margin: 20px auto 0; /* margen superior y centrado horizontal */
+  }
+
+  .LogoPrincipal {
+    height: 180px;
+  }
+
+/*-------------------------------------------------*/
+
+.Nosotros {
+    padding: 50px 15px;
+  }
+
+  .Nosotros h2 {
+    font-size: 25px;
+  }
+
+  .Nosotros p {
+    font-size: 16px;
+  }
+
+  .Nosotros .BotonNosotros {
+    font-size: 18px;
+    padding: 6px 40px;
+  }
+
+  /* ---------------------------------------------------------- */
+
+   .Orientaciones {
+    padding: 25px 15px;
+  }
+
+  .Orientaciones h2 {
+    font-size: 24px;
+  }
+
+  .CicloBasico {
+    height: 180px;
+  }
+
+  .CicloBasico p {
+    font-size: 28px;
+    padding: 5px 20px;
+  }
+
+  .Modalidades {
+    gap: 20px;
+  }
+
+  .ModalidadChica {
+    aspect-ratio: 2 / 1;       /* un poco más cuadrado para móvil */
+  }
+
+  .ModalidadChica p {
+    font-size: 18px;
+    padding: 8px 20px;
+}
+
+/* --------------------------------------*/
+  .Evento1 {
+    width: 95%;
+    height: 300px;
+    margin: 15px auto;
+  }
+
+  .Evento2 {
+    width: 95%;
+    height: 200px;
+    margin: 10px auto;
+  }
+
+  .Evento3 {
+    width: 95%;
+    height: 250px;
+    margin: 15px auto;
+  }
+
+  .EventoChico {
+    gap: 15px;
+  }
+
+ /*-------------------------------------- */
+
+ .inscripciones {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .Izquierda, .Derecha {
+    width: 95%;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .DobleLista {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;    /* centrado de cada lista */
+  }
+
+  .DobleLista ul li {
+  margin-bottom: 5px; /* Ajusta este valor según necesites */
+}
+
+  .BotonInscripciones {
+    width: 60%;                  /* botón más ancho en móvil */
+    text-align: center;
+  }
+
+/*--------------------------------*/
+ .Novedades h2 {
+    font-size: 35px;        /* título más pequeño */
+  }
+
+  .ContenidoNovedades h3 {
+    font-size: 25px;
+  }
+
+  .ContenidoNovedades p {
+    font-size: 14px;
+  }
+
+  .NovedadesRecuadro {
+    border-radius: 30px;
+  }
+
+  .NovedadesImagenes {
+    border-radius: 30px 30px 0 0;
+  }
+
+ /*------------------------ */
+
+ .Testimonios {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+  }
+
+  .TestimonioFoto {
+    width: 80px;
+    height: 80px;
+  }
+
+  .TestimonioNombre {
+    font-size: 16px;
+  }
+
+  .TestimonioTexto {
+    font-size: 14px;
+  }
+/*---------------------------*/
+
+  .CentroEstudiantil{
+    height: 70vh; 
+  }
+
+  .CentroContenido {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .CentroTexto {
+    padding: 20px 15px;
+  }
+
+  .CentroTexto h3 {
+    font-size: 22px;
+  }
+
+  .CentroTexto p {
+    font-size: 14px;
+  }
+
+  .CentroFoto {
+    width: 90%;
+    height: 350px;
+    border-radius: 80px;
+    margin-top: 15px;
+  }
+
+/*-----------------------------------------*/
+
+  .Pie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LogoNombre {
+    align-items: center;
+    text-align: center;
+  }
+
+  .NavegacionRedes {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .NavegacionRapida {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .NavegacionSecciones h3 {
+    font-size: 18px;
+  }
+
+  .NavegacionSecciones a {
+    font-size: 0.9rem;
+  }
+
+  .LogosRedes {
+    flex-direction: row; /* mantener fila */
+    gap: 30px;
+    justify-content: center; /* centrado horizontal */
+    margin-bottom: 20px;
+  }
+
+
+  .RedesIconos img {
+    width: 35px;
+  }
+}
