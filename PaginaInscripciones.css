@@ -52,12 +52,12 @@ body {
    font-weight: bold;
 }
 
-.LinksMenu {
+/* LinksMenu desktop */
+#LinksMenu {
   display: flex;
-  gap: 20px;
 }
 
-.LinksMenu a {
+#LinksMenu a {
     margin-left: 20px;
     text-decoration: none;
     color: black;
@@ -65,9 +65,68 @@ body {
     transition: color 0.3s;
   }
   
-.LinksMenu a:hover {
+#LinksMenu a:hover {
     color: #2e7d32; /* verde oscuro al pasar el mouse */
   }
+
+#LinksMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#LinksMenu > ul {
+  display: flex;       
+}
+
+#LinksMenu > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 10px 15px;
+  display: block;
+  transition: color 0.3s;
+}
+
+#LinksMenu > ul > li > a:hover {
+  color: #2e7d32;
+}
+
+
+#LinksMenu li ul {
+  display: none;         
+  position: absolute;   
+  top: 100%;             
+  left: 10%;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#LinksMenu li:hover > ul {
+  display: block;
+}
+
+
+#LinksMenu li ul li a {
+  display: block;
+  min-width: 140px;      
+  padding: 5px 5px;
+  color: #1caf21;
+  text-decoration: none;
+  margin: 0;
+}
+
+#LinksMenu li ul li a:hover {
+  background: greenyellow;
+}
+
+/* Necesario para que los submenús se posicionen correctamente */
+#LinksMenu > ul > li {
+  position: relative;
+}
+
 
 
   /* ----------------------------------------------------------------*/
