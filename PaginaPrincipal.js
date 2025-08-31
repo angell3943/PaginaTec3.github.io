@@ -1,35 +1,59 @@
-function setupSlider(sliderId, navId, intervalTime = 5000) {
+function setupSlider(sliderId, dotsId, itemClass) {
   const slider = document.getElementById(sliderId);
-  const slides = slider.querySelectorAll('.slide');
-  const navLinks = document.getElementById(navId).querySelectorAll('a');
-  let currentIndex = 0;
-  let sliderWidth = slider.offsetWidth;
+  const track = slider.querySelector('.slider-track');
+  const items = slider.querySelectorAll(itemClass);
+  const dotsContainer = document.getElementById(dotsId);
+  let current = 0;
+  let interval;
 
-  function goToSlide(index) {
-    slider.scrollTo({ left: sliderWidth * index, behavior: "smooth" });
-    navLinks.forEach(l => l.classList.remove("active"));
-    navLinks[index].classList.add("active");
-    currentIndex = parseInt(index);
+  // Limpiar los dots existentes antes de crearlos
+  dotsContainer.innerHTML = '';
+
+  items.forEach((_, i) => {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if(i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => {
+      current = i;
+      updateSlider();
+      resetInterval();
+    });
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = dotsContainer.querySelectorAll('.dot');
+
+  function updateSlider() {
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
   }
 
-  navLinks.forEach(link => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      goToSlide(link.dataset.index);
-    });
-  });
+  function nextSlide() {
+    current = (current + 1) % items.length;
+    updateSlider();
+  }
 
-  window.addEventListener("resize", () => {
-    sliderWidth = slider.offsetWidth;
-    goToSlide(currentIndex);
-  });
+  function startInterval() {
+    interval = setInterval(nextSlide, 5000);
+  }
 
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    goToSlide(currentIndex);
-  }, intervalTime);
+  function resetInterval() {
+    clearInterval(interval);
+    startInterval();
+  }
+
+  updateSlider();
+  startInterval();
 }
 
+
 // Inicializar sliders
-setupSlider("slider1", "slider1-nav");
-setupSlider("slider2", "slider2-nav");
+setupSlider('slider2', 'dots2', '.Orientacion');
+setupSlider('slider-orientaciones4', 'dots4', '.Orientacion');
+setupSlider('slider-eventos', 'dots-eventos', '.Evento');
+
+
+
+
+
+
