@@ -9,6 +9,18 @@ body {
 }
 /* ------------------------------------------------------------ */
  
+<<<<<<< HEAD
+ /* Menú de navegación */ 
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: linear-gradient(to top, #1caf21, #c8e6c9);
+=======
 /* Ocultar botón hamburguesa en desktop */
 .MenuHamburguesa {
   display: none;
@@ -27,25 +39,40 @@ body {
     justify-content: space-between;
     padding: 10px 30px;
     background: linear-gradient(to top, #1caf21, #c8e6c9); /* verde claro degradado hacia arriba */
+>>>>>>> 85a653852eb8f1a75c243fbe1e70a89906f3bed3
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
   
 .LogoMenu {
+<<<<<<< HEAD
+    display: flex;             
+    align-items: center;       
+    flex-direction: row;       
+=======
     display: flex;             /* flex en fila */
     align-items: center;       /* alinear verticalmente */
     flex-direction: row;       /* explícito, fila */
+>>>>>>> 85a653852eb8f1a75c243fbe1e70a89906f3bed3
 }
   
 .LogoMenu img {
     height: 50px;
     width: auto;
+<<<<<<< HEAD
+    margin-right: 12px;        
+=======
     margin-right: 12px;        /* espacio entre logo y texto */
+>>>>>>> 85a653852eb8f1a75c243fbe1e70a89906f3bed3
 }
   
 .TextoLogo {
     display: flex;
+<<<<<<< HEAD
+    flex-direction: column;    
+=======
     flex-direction: column;    /* dos líneas de texto, pero el bloque entero está a la derecha */
+>>>>>>> 85a653852eb8f1a75c243fbe1e70a89906f3bed3
     font-size: 17px;
     line-height: 1.2;
     color: black;
@@ -53,6 +80,58 @@ body {
    font-weight: bold;
 }
 
+<<<<<<< HEAD
+/* Menu desktop y hamburguesa*/
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.abrir-menu, .cerrar-menu {
+    display: none;
+}
+
+.nav .nav-list li a {
+  text-decoration: none;
+}
+
+.sub-nav-list {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    gap: 5px;
+    padding-top: 5px;
+}
+
+@media screen and (min-width: 826px) {
+
+    .nav-list li {
+        position: relative;
+    }
+
+    .nav-list li .sub-nav-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100px;
+    background-color: #f0f0f0;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+.nav-list li:hover .sub-nav-list {
+    display: flex;
+}
+
+.nav .nav-list li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 5px 15px;
+=======
 /* LinksMenu desktop */
 #LinksMenu {
   display: flex;
@@ -85,10 +164,95 @@ body {
   color: black;
   font-weight: 600;
   padding: 10px 15px;
+>>>>>>> 85a653852eb8f1a75c243fbe1e70a89906f3bed3
   display: block;
   transition: color 0.3s;
 }
 
+<<<<<<< HEAD
+.nav .nav-list li:hover > a{
+  color: #1caf21;
+}
+
+.sub-nav-list li:hover {
+  background-color: greenyellow;
+}
+
+}
+
+@media screen and (max-width: 825px) {
+    
+    .abrir-menu, .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+    }
+
+    .abrir-menu:hover,
+    .cerrar-menu:hover {
+        cursor: pointer;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #4b4b4b;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .nav-list li {
+        padding: 5px;
+    }
+
+    .sub-nav-list li {
+        padding-top: 10px;
+    }
+
+    .nav-list li a {
+    color: #f0f0f0;
+    }
+
+    .sub-nav-list {
+        display: none;
+    }
+
+    .nav-list li:has(.sub-nav-list) > a::after{
+        content: "▼";
+        display: inline-block;
+        margin-left: 5px;
+        transition: transform 0.3s;
+    }
+
+    .sub-nav-list.activo{
+        display: flex;
+    }
+
+=======
 #LinksMenu > ul > li > a:hover {
   color: #2e7d32;
 }
@@ -126,6 +290,7 @@ body {
 /* Necesario para que los submenús se posicionen correctamente */
 #LinksMenu > ul > li {
   position: relative;
+>>>>>>> 85a653852eb8f1a75c243fbe1e70a89906f3bed3
 }
 
 
