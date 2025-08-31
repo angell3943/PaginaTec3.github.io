@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Institución Educativa</title>
   <link rel="stylesheet" href="PaginaPrincipal.css">
-  <script src="PaginaPrincipal.js"></script>
+  
   
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 <body>
+
 
 
   <!-- 1ra seccion Menu de arriba -->
@@ -109,37 +110,109 @@
   
 <!-- ----------------------------------------------------------------- -->
 
-  <section class="Orientaciones">
-    <h2>Modalidades</h2>
 
-  
-    
-    <div class="CicloBasico">
 
-  <div class="Overlay Ciclo-Izq">
-    <h1>Ciclo Basico</h1>
-    <p>En el ciclo básico, los estudiantes adquieren una 
-    formación integral que abarca diversas áreas del conocimiento, desarrollando habilidades 
-    fundamentales para su crecimiento académico y personal.</p>
+<section id="Orientaciones">
+
+   <!-- TITULO PRINCIPAL -->
+  <div class="TituloOrientaciones">
+    <h1>
+      Descubre nuestros<br>
+      programas de<br>
+      estudio
+    </h1>
   </div>
 
-  <!-- Botón centrado sobre la imagen -->
-  <a href="#" class="BotonVerMas">Ver más</a>
-</div>
-
-<div class="CicloBasico">
-  <div class="Overlay Ciclo-Der">
-    <h1>Ciclo Superior</h1>
-    <p>En el ciclo superior, los estudiantes se especializan en áreas técnicas específicas, 
-      preparándose para el mundo laboral con conocimientos avanzados y habilidades prácticas.</p>
+  <!-- SUBTITULO PARA SLIDER 1 -->
+  <div class="SubtituloOrientaciones Izq2">
+    <h2>Ciclo Básico</h2>
   </div>
 
-  <!-- Botón centrado sobre la imagen --> 
-  <a href="#" class="BotonVerMas">Ver más</a>
-</div>
-     
-  </section>
-  
+  <!-- SLIDER 1: 2 imágenes -->
+  <div class="slider-wrapper" id="slider1-wrapper">
+    <div class="slider2" id="slider1">
+      <div class="slide">
+        <img src="hero.jpg" alt="Slide 1">
+        <div class="Overlay Der">
+          <h1>Ciclo Básico</h1>
+          <p>Texto para el ciclo básico.</p>
+        </div>
+        <a href="#" class="BotonVerMas">Ver más</a>
+      </div>
+
+      <div class="slide">
+        <img src="ciclo-basico.jpg" alt="Slide 2">
+        <div class="Overlay Der">
+          <h1>Ciclo Superior</h1>
+          <p>Texto para el ciclo superior.</p>
+        </div>
+        <a href="#" class="BotonVerMas">Ver más</a>
+      </div>
+    </div>
+
+    <div class="slider-nav" id="slider1-nav">
+      <a href="#" data-index="0" class="active"></a>
+      <a href="#" data-index="1"></a>
+    </div>
+  </div>
+
+
+    <!-- SUBTITULO PARA SLIDER 2 -->
+  <div class="SubtituloOrientaciones Der2">
+    <h2>Ciclo Superior</h2>
+  </div>
+
+  <!-- SLIDER 2: 4 imágenes -->
+  <div class="slider-wrapper" id="slider2-wrapper">
+    <div class="slider2" id="slider2">
+      <div class="slide">
+        <img src="hero.jpg" alt="Slide 1">
+        <div class="Overlay Izq">
+          <h1>Slide 1</h1>
+          <p>Texto para la primera imagen.</p>
+        </div>
+        <a href="#" class="BotonVerMas">Ver más</a>
+      </div>
+
+      <div class="slide">
+        <img src="ciclo-basico.jpg" alt="Slide 2">
+        <div class="Overlay Izq">
+          <h1>Slide 2</h1>
+          <p>Texto para la segunda imagen.</p>
+        </div>
+        <a href="#" class="BotonVerMas">Ver más</a>
+      </div>
+
+      <div class="slide">
+        <img src="hero2.jpg" alt="Slide 3">
+        <div class="Overlay Izq">
+          <h1>Slide 3</h1>
+          <p>Texto para la tercera imagen.</p>
+        </div>
+        <a href="#" class="BotonVerMas">Ver más</a>
+      </div>
+
+      <div class="slide">
+        <img src="hero3.jpg" alt="Slide 4">
+        <div class="Overlay Izq">
+          <h1>Slide 4</h1>
+          <p>Texto para la cuarta imagen.</p>
+        </div>
+        <a href="#" class="BotonVerMas">Ver más</a>
+      </div>
+    </div>
+
+    <div class="slider-nav" id="slider2-nav">
+      <a href="#" data-index="0" class="active"></a>
+      <a href="#" data-index="1"></a>
+      <a href="#" data-index="2"></a>
+      <a href="#" data-index="3"></a>
+    </div>
+  </div>
+
+  <script src="PaginaPrincipal.js"></script>
+
+</section>
 
 
 <!-- ----------------------------------------------------------------- -->
