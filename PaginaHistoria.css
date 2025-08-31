@@ -9,7 +9,6 @@ body {
 }
 /* ------------------------------------------------------------ */
  
-<<<<<<< HEAD
  /* Menú de navegación */ 
 header {
     display: flex;
@@ -20,59 +19,25 @@ header {
     justify-content: space-between;
     padding: 1rem;
     background: linear-gradient(to top, #1caf21, #c8e6c9);
-=======
-/* Ocultar botón hamburguesa en desktop */
-.MenuHamburguesa {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-
- /* Menú de navegación */
-.Menu {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 30px;
-    background: linear-gradient(to top, #1caf21, #c8e6c9); /* verde claro degradado hacia arriba */
->>>>>>> 85a653852eb8f1a75c243fbe1e70a89906f3bed3
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
   
 .LogoMenu {
-<<<<<<< HEAD
     display: flex;             
     align-items: center;       
     flex-direction: row;       
-=======
-    display: flex;             /* flex en fila */
-    align-items: center;       /* alinear verticalmente */
-    flex-direction: row;       /* explícito, fila */
->>>>>>> 85a653852eb8f1a75c243fbe1e70a89906f3bed3
 }
   
 .LogoMenu img {
     height: 50px;
     width: auto;
-<<<<<<< HEAD
     margin-right: 12px;        
-=======
-    margin-right: 12px;        /* espacio entre logo y texto */
->>>>>>> 85a653852eb8f1a75c243fbe1e70a89906f3bed3
 }
   
 .TextoLogo {
     display: flex;
-<<<<<<< HEAD
     flex-direction: column;    
-=======
-    flex-direction: column;    /* dos líneas de texto, pero el bloque entero está a la derecha */
->>>>>>> 85a653852eb8f1a75c243fbe1e70a89906f3bed3
     font-size: 17px;
     line-height: 1.2;
     color: black;
@@ -80,7 +45,6 @@ header {
    font-weight: bold;
 }
 
-<<<<<<< HEAD
 /* Menu desktop y hamburguesa*/
 
 .nav-list {
@@ -131,45 +95,10 @@ header {
   color: black;
   font-weight: 600;
   padding: 5px 15px;
-=======
-/* LinksMenu desktop */
-#LinksMenu {
-  display: flex;
-}
-
-#LinksMenu a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    transition: color 0.3s;
-  }
-  
-#LinksMenu a:hover {
-    color: #2e7d32; /* verde oscuro al pasar el mouse */
-  }
-
-#LinksMenu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#LinksMenu > ul {
-  display: flex;       
-}
-
-#LinksMenu > ul > li > a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  padding: 10px 15px;
->>>>>>> 85a653852eb8f1a75c243fbe1e70a89906f3bed3
   display: block;
   transition: color 0.3s;
 }
 
-<<<<<<< HEAD
 .nav .nav-list li:hover > a{
   color: #1caf21;
 }
@@ -252,119 +181,6 @@ header {
         display: flex;
     }
 
-=======
-#LinksMenu > ul > li > a:hover {
-  color: #2e7d32;
-}
-
-
-#LinksMenu li ul {
-  display: none;         
-  position: absolute;   
-  top: 100%;             
-  left: 10%;
-  margin: 0;
-  padding: 0;
-  background: #f0f0f0;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-#LinksMenu li:hover > ul {
-  display: block;
-}
-
-
-#LinksMenu li ul li a {
-  display: block;
-  min-width: 140px;      
-  padding: 5px 5px;
-  color: #1caf21;
-  text-decoration: none;
-  margin: 0;
-}
-
-#LinksMenu li ul li a:hover {
-  background: greenyellow;
-}
-
-/* Necesario para que los submenús se posicionen correctamente */
-#LinksMenu > ul > li {
-  position: relative;
-}
-/* LinksMenu desktop */
-#LinksMenu {
-  display: flex;
-}
-
-#LinksMenu a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    transition: color 0.3s;
-  }
-  
-#LinksMenu a:hover {
-    color: #2e7d32; /* verde oscuro al pasar el mouse */
-  }
-
-#LinksMenu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#LinksMenu > ul {
-  display: flex;       
-}
-
-#LinksMenu > ul > li > a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  padding: 10px 15px;
-  display: block;
-  transition: color 0.3s;
-}
-
-#LinksMenu > ul > li > a:hover {
-  color: #2e7d32;
-}
-
-
-#LinksMenu li ul {
-  display: none;         
-  position: absolute;   
-  top: 100%;             
-  left: 10%;
-  margin: 0;
-  padding: 0;
-  background: #f0f0f0;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-#LinksMenu li:hover > ul {
-  display: block;
-}
-
-
-#LinksMenu li ul li a {
-  display: block;
-  min-width: 140px;      
-  padding: 5px 5px;
-  color: #1caf21;
-  text-decoration: none;
-  margin: 0;
-}
-
-#LinksMenu li ul li a:hover {
-  background: greenyellow;
-}
-
-/* Necesario para que los submenús se posicionen correctamente */
-#LinksMenu > ul > li {
-  position: relative;
->>>>>>> 85a653852eb8f1a75c243fbe1e70a89906f3bed3
 }
 
 
