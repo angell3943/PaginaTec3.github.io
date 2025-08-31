@@ -131,10 +131,10 @@ body {
 /* -------------------------------------------------*/
 
 .Planes {
-    background-image: url("hero2.jpg");
+    background-image: url("planes.jpg");
     background-size: cover;
     background-position: center;
-    height: 70vh;   
+    height: 80vh;   
     align-items: center;
     display: flex;
     
