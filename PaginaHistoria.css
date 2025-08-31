@@ -187,10 +187,10 @@ header {
 /* -------------------------------------------------*/
 
 .Historia {
-    background-image: url("hero2.jpg");
+    background-image: url("historia.jpg");
     background-size: cover;
     background-position: center;
-    height: 50vh;   
+    height: 60vh;   
     align-items: center;
     display: flex;
     
