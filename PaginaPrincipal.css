@@ -882,6 +882,8 @@ header {
 
 /* ------------------------------------------------------------ */
 
+/*  Footer */  
+
 .PaginaPie {
   background: linear-gradient(to top, #1caf21, #c8e6c9);
   color: rgb(0, 0, 0);
@@ -935,13 +937,14 @@ header {
 
 .LogosRedes {
   display: flex;
-  flex-direction: column;  /* Cambiar de fila a columna */
-  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
-  align-items: center;  /* Centra las imágenes */
+  flex-direction: column;  
+  gap: 10px;  
+  align-items: center;  
+  padding: 1rem;
 }
 
 .RedesIconos img {
-  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  width: 40px;  
   height: auto;
 }
 
