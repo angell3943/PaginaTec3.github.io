@@ -528,7 +528,6 @@ header {
 }
 
 
-
 #dots-eventos .dot { 
   background-color: gray; 
 }
@@ -563,9 +562,6 @@ header {
   line-height: 1.2;
   margin: 0;
 }
-
-
-
 
 .TituloEvento {
   margin-bottom: 20px;
@@ -999,32 +995,6 @@ header {
 /* Tablet y móvil */
 @media (max-width: 1024px) {
 
-  .MenuHamburguesa {
-    display: block;
-  }
-
-  .LinksMenu {
-    display: none;  /* oculto por defecto */
-    flex-direction: column;
-    width: 100%;
-    background-color: #c8e6c9;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    padding: 0;
-    margin: 0;
-  }
-
-  .LinksMenu a {
-    padding: 15px 20px;
-    text-align: center;
-    border-bottom: 1px solid #fff;
-  }
-
-  .LinksMenu.activo {
-    display: flex;
-  }
-
   .Presentacion {
     flex-direction: column;
     justify-content: center;
@@ -1084,44 +1054,61 @@ header {
   }
 /* ---------------------------------------------------------- */
 
-#orientaciones {
-    padding: 30px 0;
-  }
+/* Tablets */
 
-  .slider-wrapper {
-    max-width: 90%;
-    width: 100%;
-  }
-
-
-/* ---------------------------------------------------------- */
-
-.Evento1 {
+   .slider-orientaciones, .cuatro-orientaciones,
+  .Evento1, .cuatro-eventos {
     width: 90%;
-    height: 400px;        /* altura fija para que se vea la imagen */
-    margin: 20px auto;
+    height: 250px; /* altura fija visible */
   }
 
-  .Evento2 {
-    width: 90%;
-    height: 250px;        /* altura proporcional a PC */
-    margin: 15px auto;
+  .Overlay {
+    width: 45%;
+    padding: 15px;
   }
 
-  .Evento3 {
-    width: 90%;
-    height: 300px;
-    margin: 20px auto;
+  .Overlay.Izq {
+    left: 0;
+    right: auto;
   }
 
-  .EventoChico {
-    flex-direction: column; /* apilar verticalmente */
-    gap: 20px;
+  .Overlay.Der {
+    right: 0;
+    left: auto;
   }
 
-  .CapaVerde {
-    display: none;         /* ocultamos el recuadro verde */
+  .Overlay h3 {
+    font-size: 18px;
   }
+
+  .Overlay p {
+    font-size: 14px;
+  }
+
+  .BotonVerMas.Naranja {
+    padding: 6px 60px;
+    font-size: 18px;
+  }
+
+  .BotonVerMas.Gris {
+    padding: 4px 40px;
+    font-size: 16px;
+  }
+
+  .SubtituloOrientaciones.Izq2,
+  .SubtituloOrientaciones.Der2 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .TituloOrientaciones h1 {
+    font-size: 28px;
+  }
+
+  .TituloEvento {
+    font-size: 1.8rem;
+  }
+  
 /*-----------------------------------------------------------*/
 
  .inscripciones {
@@ -1341,49 +1328,72 @@ header {
 
   /* ---------------------------------------------------------- */
 
-#orientaciones {
-    padding: 20px 0;
+  .slider-orientaciones, .cuatro-orientaciones,
+  .Evento1, .cuatro-eventos {
+    width: 100%;
+    height: 200px; /* altura visible */
   }
 
-.Overlay {
-    width: 40%;
-    padding: 15px;
-  }  
-.Overlay h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  .Overlay {
+    width: 35%;
+    padding: 10px;
   }
 
-.Overlay p {
+  .Overlay.Izq {
+    left: 0;
+    right: auto;
+  }
+
+  .Overlay.Der {
+    right: 0;
+    left: auto;
+  }
+
+  .Overlay h3 {
+    font-size: 16px;
+  }
+
+  .Overlay p {
+    font-size: 13px;
+  }
+
+  .BotonVerMas.Naranja {
+    padding: 4px 25px;
+    font-size: 16px;
+  }
+
+ 
+  .SubtituloOrientaciones.Izq2,
+  .SubtituloOrientaciones.Der2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+
+  .TituloOrientaciones h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .Evento1{
+  width: 100%; /* Ancho */
+  height: 300px; /* Alto */
+}
+
+.cuatro-eventos{
+  width: 100%; /* Ancho */
+  height: 300px; /* Alto */
+
+}
+
+  .TituloEvento {
+    font-size: 1.5rem;
+    text-align: center;
+  } 
+  
+  .BotonVerMas.Gris {
+    padding: 5px 8px;
     font-size: 14px;
-  }
-
-.BotonVerMas {
-    padding: 8px 40px;
-    font-size: 18px;
-  }
-
-/* --------------------------------------*/
-  .Evento1 {
-    width: 95%;
-    height: 300px;
-    margin: 15px auto;
-  }
-
-  .Evento2 {
-    width: 95%;
-    height: 200px;
-    margin: 10px auto;
-  }
-
-  .Evento3 {
-    width: 95%;
-    height: 250px;
-    margin: 15px auto;
-  }
-
-  .EventoChico {
-    gap: 15px;
   }
 
  /*-------------------------------------- */
