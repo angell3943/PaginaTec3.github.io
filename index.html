@@ -218,7 +218,10 @@ Conocé los planes de estudio de Informática, diseñados para brindarte una for
       <div class="Overlay Gris Der">
         <h3>¿Qué es una expo técnica?</h3>
         <p>La Expo Técnica es un espacio donde los estudiantes muestran los proyectos y trabajos que desarrollaron durante el año en las distintas áreas de estudio. En esta jornada se realizan exposiciones de maquetas, demostraciones en talleres, charlas educativas y presentaciones de las diferentes modalidades, permitiendo que la comunidad conozca de cerca lo que se aprende y se produce dentro de la escuela técnica.</p>
+        <a href="PaginaEventos.html" class="BotonVerMas Gris">Ver más</a>
       </div>
+      
+
     </div>
 
 
@@ -274,22 +277,24 @@ Conocé los planes de estudio de Informática, diseñados para brindarte una for
       <div>
 
         <!-- Apertura y publico -->
-        <h2>Inscripciones</h2>
+        <h2 class="Titulo-Incripciones">Inscripciones</h2>
 
-        <h3>Apertura de Inscripciones</h3>
-        <p>Las inscripciones para el Ciclo Lectivo 2026 se habilitarán a partir del mes de " ". Las fechas exactas se publicarán en nuestras redes oficiales y en Inscripciones</p>
+        <h3 class="Subtitulo-Inscripcion">Apertura de Inscripciones</h3>
+        <p class="Texto-Inscripciones">
+          Las inscripciones para el Ciclo Lectivo 2026 se habilitarán a partir del mes de " ". Las fechas exactas se publicarán en nuestras redes oficiales y en Inscripciones 
+        </p>
 
-        <h3>¿A quién dirigirse?</h3>
-        <p>Las consultas e inscripciones se realizan en Secretaría. También podés comunicarte por teléfono o consultar en Inscripciones</p>
+        <h3 class="Subtitulo-Inscripcion">¿A quién dirigirse?</h3>
+        <p class="Texto-Inscripciones">
+          Las consultas e inscripciones se realizan en Secretaría. También podés comunicarte por teléfono o consultar en Inscripciones
+        </p>
 
         <!-- Horario -->
-        <h3>Horarios de atención</h3>
-        <div class="DobleLista">
-          <ul>
-            <p>De Lunes a Viernes de 8:00hs a </p>
-            <p>11:00hs y de 13:00hs a 16:00hs</p>
-          </ul>
-        </div>
+        <h3 class="Subtitulo-Inscripcion">Horarios de atención</h3> 
+            <p class="Texto-Inscripciones">
+              De <b>Lunes</b> a <b>Viernes</b> de 8:00hs a <br> 
+              11:00hs y de 13:00hs a 16:00hs
+            </p>
       </div>
       <button class="BotonInscripciones">Solicitar inscripción</button>
     </div>
@@ -301,13 +306,10 @@ Conocé los planes de estudio de Informática, diseñados para brindarte una for
       <div class="Pase">
         <div>
           
-          <h2>Desde otra escuela</h2>
+          <h2 class="Titulo-Pase">Desde otra escuela</h2>
 
           <!-- Cosas para llevar -->
-<p>Los alumnos que vienen de otra institución deben presentar su certificado de estudios con las materias cursadas y calificaciones. Se revisará la equivalencia de materias y se indicará el curso correspondiente.</p>
-         
-          <div class="DobleLista">
-          </div>
+          <p class="Texto-Pase">Los alumnos que vienen de otra institución deben presentar su certificado de estudios con las materias cursadas y calificaciones. Se revisará la equivalencia de materias y se indicará el curso correspondiente.</p>
 
         </div>
         <button class="BotonInscripciones">Ver requisitos</button>
@@ -316,10 +318,8 @@ Conocé los planes de estudio de Informática, diseñados para brindarte una for
       <!-- A mitad de año -->
       <div class="Pase">
         <div>
-          <h2>Desde quinto año</h2>
-          <div class="DobleLista">
-            <p>Los alumnos que quieran incorporarse a partir de quinto año deben haber cursado previamente la misma modalidad que ofrece nuestra escuela (Electromecánica o Informática). No se permite el ingreso si vienen de otra orientación.</p>
-          </div>
+          <h2 class="Titulo-Pase">Desde quinto año</h2>
+            <p class="Texto-Pase">Los alumnos que quieran incorporarse a partir de quinto año deben haber cursado previamente la misma modalidad que ofrece nuestra escuela (Electromecánica o Informática). No se permite el ingreso si vienen de otra orientación.</p>
         </div>
         <button class="BotonInscripciones">Consultar ingreso</button>
       </div>
@@ -330,22 +330,55 @@ Conocé los planes de estudio de Informática, diseñados para brindarte una for
   <!-- ----------------------------------------------------------------- -->
 
   <section class="Novedades">
-    <h2>Novedades</h2>
-  
-    <div class="NovedadesRecuadro">   
+  <h2>Novedades</h2>
 
+  <div class="slider-novedades">
+    <div class="slider-track-novedades">
+      
+      <!-- Slide 1 -->
+      <div class="NovedadesRecuadro">
         <img src="Informatica.jpg" class="NovedadesImagenes" alt="Imagen de novedad">
+        <div class="ContenidoNovedades">
+          <h3>Título de la novedad 1</h3>
+          <p>Texto de ejemplo para la primera novedad de la escuela.</p>
+          <div class="PosicionBoton">
+            <button class="BotonNovedades">Ver más</button>
+          </div>
+        </div>
+      </div>
 
-       <div class="ContenidoNovedades">
-        <h3>Título de la novedad</h3>
-        <p>Aquí va un texto donde se puede contar alguna novedad reciente o importante que haya ocurrido en la escuela.</p>
-        <div class="PosicionBoton">
-          <button class="BotonNovedades">Ver más</button>
+      <!-- Slide 2 -->
+      <div class="NovedadesRecuadro">
+        <img src="hero.jpg" class="NovedadesImagenes" alt="Imagen de novedad">
+        <div class="ContenidoNovedades">
+          <h3>Título de la novedad 2</h3>
+          <p>Texto de ejemplo para la segunda novedad importante.</p>
+          <div class="PosicionBoton">
+            <button class="BotonNovedades">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="NovedadesRecuadro">
+        <img src="hero2.jpg" class="NovedadesImagenes" alt="Imagen de novedad">
+        <div class="ContenidoNovedades">
+          <h3>Título de la novedad 3</h3>
+          <p>Aquí va un texto de prueba para la tercera novedad.</p>
+          <div class="PosicionBoton">
+            <button class="BotonNovedades">Ver más</button>
+          </div>
         </div>
       </div>
 
     </div>
-  </section>
+  </div>
+
+  <!-- Dots de navegación -->
+  <div class="dots-novedades"></div>
+
+  <script src="Scripts/SliderNovedades.js"></script>
+</section>
 
   <!-- ----------------------------------------------------------------- -->
 
@@ -417,24 +450,28 @@ Conocé los planes de estudio de Informática, diseñados para brindarte una for
 
 
     <!-- 8va seccion sobre el centro estudiantil de la escuela -->
-  <h2 class="CentroTitulo">Centro de Estudiantes</h2>
-  <section class="CentroEstudiantil">
-  
-    <div class="CentroContenido">
+<section class="CentroEstudiantil">
 
-       <!-- Que es, quienes son, que hacen los del centro estudiantil -->
-      <div class="CentroTexto">
-        <h3>Conoce a nuestro centro de estudiantes</h3>
-        <h3>Sobre Nosotros</h3>
-        <p>
-          El centro de estudiantes es un espacio donde los alumnos pueden participar y organizar la representación a sus compañeros, proponer actividades y colaborar en la construcción de una mejor vida escolar. A través de su trabajo, impulsan proyectos y eventos que fortalecen la voz estudiantil dentro de la institución.
-        </p>
-      </div>
 
-        <img src="Informatica.jpg" class="CentroFoto" alt="Centro de los del Estudiantes">
+  <div class="CentroContenido">
+    <div class="CentroTexto">
+      <h2>Conoce a nuestro centro de estudiantes</h2>
+      <h3>Sobre Nosotros</h3>
+      <p>
+        El centro de estudiantes es un espacio donde los alumnos pueden participar y organizar la representación a sus compañeros, proponer actividades y colaborar en la construcción de una mejor vida escolar. A través de su trabajo, impulsan proyectos y eventos que fortalecen la voz estudiantil dentro de la institución.
+      </p> 
       
+      <button class="Boton-Centro">Ver más</button>
     </div>
-  </section>
+
+    <div class="CentroFoto">
+      <img src="Informatica.jpg" alt="Centro de Estudiantes">
+    </div>
+
+    
+  </div>
+</section>
+
   
   
 
