@@ -728,6 +728,7 @@ header {
 }
 
 .NovedadesImagenes {
+  align-self: stretch;
   width: 400px;
   height: 100%;
   object-fit: cover;
@@ -1271,7 +1272,7 @@ header {
 
   .NovedadesImagenes {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 40px 40px 0 0;
   }
 
