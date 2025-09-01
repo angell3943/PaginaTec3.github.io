@@ -26,13 +26,13 @@ header {
 .LogoMenu {
     display: flex;             
     align-items: center;       
-    flex-direction: row;       
+    flex-direction: row;
 }
   
 .LogoMenu img {
     height: 50px;
     width: auto;
-    margin-right: 12px;        
+    margin-right: 12px;
 }
   
 .TextoLogo {
