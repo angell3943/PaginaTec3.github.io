@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Institución Educativa</title>
   <link rel="stylesheet" href="PaginaPrincipal.css">
-  
-  <!-- Lo agregue denuevo por las dudas, pero por seccion deben agregarlo para que puedan usarlo-->
-  <script src="PaginaPrincipal.js"></script> 
+
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -94,7 +92,7 @@
     </div> 
     
     <!-- Logo de la escuela -->
-    <img src="logosinfondo.png" class="LogoPrincipal" alt="Logo Grande de la Escuela">   
+    <img src="favicon.png" class="LogoPrincipal" alt="Logo Grande de la Escuela">   
   </div>  
   </section>
 
@@ -119,7 +117,7 @@
 <!-- 4ta seccion sobre las orientaciones de la escuela -->
 <section class="Orientaciones">
 
-  <h1>
+  <h1 class="TituloOrientaciones">
       Descubre nuestros<br>
       programas de<br>
       estudio
@@ -203,7 +201,7 @@ Conocé los planes de estudio de Informática, diseñados para brindarte una for
   <div class="dots" id="dots4"></div>
 
 
-  <script src="PaginaPrincipal.js"></script>
+  <script src="Scripts/PaginaPrincipal.js"></script>
 
 </section>
 
@@ -261,7 +259,7 @@ Conocé los planes de estudio de Informática, diseñados para brindarte una for
   </div>
   <div class="dots" id="dots-eventos"></div>
 
-  <script src="PaginaPrincipal.js"></script>
+  <script src="Scripts/PaginaPrincipal.js"></script>
 </section>
 
 <!--- ---------------------------------------------- -->
@@ -353,29 +351,68 @@ Conocé los planes de estudio de Informática, diseñados para brindarte una for
 
   <!-- 7ma seccion sobre los testimonios de los egresados y padres  -->
 
-  <section class="Egresados">
-   
-    <div class="Testimonios">
-      <div class="flecha izquierda">❮</div>
+   <section class="slider-egresados">
+
+      <div class="slider_container container">
+        
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAAM5JREFUSEvt1DFKA0EUBuBvCwlCOksFxSJ3srIQBAtLbyJpcoSUomirooUnEMtA7pBCkh2YBZGwMwO7sMVOM83jmzf/PKbS46p6tI343nQHE8sER1jnDkFu5wdY4hGLLvHQ8QO+cZsLh7pU54d4wk8dx3UJnMKneMGq7voC2y7xOW7wjt8EfIev/zVtsczwhvu4t/mf2JTgofY8RnOJjy5jaaxTPNfZX5UekJqW5oDjODVhFF9zb5CLB+8EZ/GBs/wSPAv8WzTiw/7Pix90B5+HGRiqRimiAAAAAElFTkSuQmCC" alt="" class="slider_arrow" id="before">
+
+          <div class="slider_body slider_body--show" data-id="1">
+            <div class="slider_texts">
+         
+             <h1 class="subtitle">Hola! Mi nombre es Maria</h1>
+              <p class="slider_review">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, odit provident. Aspernatur ducimus iure vero?
+              </p>
+
+            </div>
+
+            <figure class="slider_pinture">
+              <img src="assets/Cara1.jpg" alt="" class="slider_img">
+            </figure>
+          </div>
+
+          <div class="slider_body" data-id="2">
+            <div class="slider_texts">
+         
+             <h1 class="subtitle">Hola! Mi nombre es Tomas</h1>
+              <p class="slider_review">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, odit provident. Aspernatur ducimus iure vero?
+              </p>
+
+            </div>
+
+            <figure class="slider_pinture">
+              <img src="assets/Cara2.jpg" alt="" class="slider_img">
+            </figure>
+          </div>
+
+          <div class="slider_body" data-id="3">
+            <div class="slider_texts">
+         
+             <h1 class="subtitle">Hola! Mi nombre es Juan</h1>
+              <p class="slider_review">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, odit provident. Aspernatur ducimus iure vero?
+              </p>
+
+            </div>
+
+            <figure class="slider_pinture">
+              <img src="assets/Cara3.jpg" alt="" class="slider_img">
+            </figure>
+          </div>
+
+
+
+
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAANBJREFUSEvt1DFqAkEUANC3jUJALA0YyAXEykYQizSCF7BNY2sKD+AF7Ky8gI2NjZWFWHgNMUWK3CIOSCp311kULJxmivm8/+fPZxJ3XMkdbU/8Yncfqi0vqOD3mkGIrbyJBXr4yUsQiwevjxk+8J2VoAgevAGm6GQlKIqHBENM0MXh0g3S8CqWKOX0tYUjGjF4iG2jnIHXMD/hn1jF4llFB3iHMdZpgUV6XscGX+c9tYhY/PUMjrC99Zy/4R37PDicx1Z+jfkf88Qf/z+PetA/+t0UGPPhJkoAAAAASUVORK5CYII=" alt="" class="slider_arrow" id="next"> 
   
-      <!-- Muestra la foto, y el testimonio de la persona -->
-      <div class="Testimonio">
-        <img src="Informatica.jpg" alt="Persona" class="TestimonioFoto">
-        <h3 class="TestimonioNombre">Juan Pérez</h3>
-        <p class="TestimonioTexto">
-          “La escuela me brindó herramientas y experiencias únicas. Recomiendo totalmente esta institución.”
-        </p>
       </div>
-  
-      
-      <div class="flecha derecha">❯</div>
 
-      <div class="linea"></div> 
-
-    </div>
+      <script src="Scripts/SliderTestimonios.js"></script>
   </section>
 
- 
+
    <!-- ----------------------------------------------------------------- -->
 
 

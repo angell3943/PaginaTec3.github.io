@@ -502,14 +502,17 @@ header {
   
 /*----------------------------------------------------------*/   
 
+.Orientaciones{
+  background-color: floralwhite;
+}
+
 /* Eventos */
 .TituloOrientaciones {
   align-self: flex-start; /* mueve el bloque a la izquierda dentro del flex */
   text-align: left;
   margin-left: 20px; /* opcional, distancia desde el borde */
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
-
 
 .Evento1 {
   position: relative;
@@ -556,12 +559,6 @@ header {
 }
 
 
-
-.TituloOrientaciones h1 {
-  font-size: 36px;
-  line-height: 1.2;
-  margin: 0;
-}
 
 .TituloEvento {
   margin-bottom: 20px;
@@ -751,66 +748,77 @@ header {
 }
 
 /* ------------------------------------------------------------ */
-
-.Egresados {
-  background-color: #f5e6ce; /* Beige claro */
-  padding: 60px 20px;
-  text-align: center;
+.slider-egresados{
+  background-color: #f2f2f2;
+  padding: 40px 0px;
 }
 
-.Testimonios {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  max-width: 900px;
+.container{
+  width: 90%;
+  min-height: 100vh;
+  max-width: 1200px;
   margin: 0 auto;
-  position: relative;
+  overflow: hidden;
 }
 
-.TestimonioFoto {
-  width: 120px;
-  height: 120px;
+.slider_container{
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  align-items: center;
+  gap: 1em;
+}
+
+.slider_body{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+  display: grid;
+  background-color: #f2f2f2;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+  transition: opacity 1s;
+
+}
+
+.slider_body--show{
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.slider_texts{
+  max-width: 600px;
+}
+
+.subtitle{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.slider_review {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.slider_img{
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 15px;
-}
-
-.TestimonioNombre {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.TestimonioTexto {
-  font-style: italic;
-  font-size: 18px;
-  color: #333;
-}
-
-.flecha {
-  font-size: 35px;
-  color: #999;
-  cursor: pointer;
-  user-select: none;
-  transition: color 0.3s;
-}
-
-.flecha:hover {
-  color: #54b159;
-}
-
-.linea {
-  position: absolute;
-  bottom: -20px; /* Separación desde el testimonio */
-  left: 0;
-  right: 0;
-  height: 4px;
-  background-color: black;
-  width: 100%;
+  display: block;
   margin: 0 auto;
 }
 
+.slider_arrow{
+  cursor: pointer;
+  width: 90%;
+
+}
+
+.slider_arrow::nth-of-type(2){
+  justify-self: end;
+}
 
 /* ------------------------------------------------------------ */
 
@@ -1195,28 +1203,6 @@ header {
   }
 
  /*-------------------------- */
-  .Testimonios {
-    flex-direction: column; /* apila verticalmente */
-    gap: 30px; /* espacio entre los testimonios */
-    max-width: 600px;
-  }
-
-  .TestimonioFoto {
-    width: 100px;
-    height: 100px;
-  }
-
-  .TestimonioNombre {
-    font-size: 18px;
-  }
-
-  .TestimonioTexto {
-    font-size: 16px;
-  }
-
-  .flecha {
-    display: none;
-  }
 
   /*------------------------------------*/
 
@@ -1451,24 +1437,21 @@ header {
 
  /*------------------------ */
 
- .Testimonios {
-    flex-direction: column;
-    gap: 20px;
-    max-width: 100%;
-  }
+.slider_body{
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content 1fr;
+  gap: 1em;
+}
 
-  .TestimonioFoto {
-    width: 80px;
-    height: 80px;
-  }
+.slider_pinture {
+  grid-row: 1/2;
+}
 
-  .TestimonioNombre {
-    font-size: 16px;
-  }
+.slider_img{
+  width: 180px;
+  height: 180px;
+}
 
-  .TestimonioTexto {
-    font-size: 14px;
-  }
 /*---------------------------*/
 
   .CentroEstudiantil{
