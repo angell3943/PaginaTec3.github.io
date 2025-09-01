@@ -739,7 +739,7 @@ header {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   position: relative;
 }
 
@@ -1211,9 +1211,9 @@ header {
 /*-----------------------------------------------------------*/
 
  .inscripciones {
-    flex-direction: column;      /* apilar columnas */
-    align-items: center;          /* centrar horizontalmente todo */
-    height: auto;                 /* altura automática */
+    flex-direction: column;
+    align-items: center;
+    height: auto;
   }
 
   .inscripciones h2, .Izquierda h2, .Derecha h2{
@@ -1227,14 +1227,14 @@ header {
   
 
   .Izquierda, .Derecha {
-    width: 90%;                   /* ancho más adecuado */
+    width: 90%;
     padding: 20px;
-    border-right: none;           /* quitar borde derecho */
+    border-right: none;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;          /* centrar contenido interno */
-    text-align: center;           /* centrar texto */
+    align-items: center;
+    text-align: center;
   }
 
   .Pase {
@@ -1243,41 +1243,41 @@ header {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;          /* centrar contenido interno */
+    align-items: center;
     text-align: center;
   }
 
    .DobleLista {
     flex-direction: column;
     gap: 15px;
-    align-items: center;    /* centrado de cada lista */
+    align-items: center;
   }
 
   .DobleLista ul li {
-  margin-bottom: 10px; /* Ajusta este valor según necesites */
+  margin-bottom: 10px;
 }
 
   .BotonInscripciones {
-    align-self: center;           /* centrar botón */
+    align-self: center;
   }
 
 
   /*----------------------------------------*/
 
  .NovedadesRecuadro {
-    flex-direction: column; /* apila verticalmente */
-    height: auto;           /* deja que la altura se ajuste al contenido */
+    flex-direction: column;
+    height: auto;
   }
 
   .NovedadesImagenes {
-    width: 100%;            /* imagen ocupa todo el ancho */
-    height: auto;           /* altura proporcional */
-    border-radius: 40px 40px 0 0; /* bordes solo arriba */
+    width: 100%;
+    height: auto;
+    border-radius: 40px 40px 0 0;
   }
 
   .ContenidoNovedades {
     padding: 20px;
-    text-align: center;     /* centra el texto y botón */
+    text-align: center;
   }
 
   .ContenidoNovedades h3,
@@ -1286,7 +1286,7 @@ header {
   }
 
   .PosicionBoton {
-    text-align: center;     /* botón centrado */
+    text-align: center;
     margin-bottom: 20px;
   }
 
@@ -1295,7 +1295,7 @@ header {
   /*------------------------------------*/
 
   .CentroContenido {
-    flex-direction: row; /* mantiene la imagen a la derecha */
+    flex-direction: row;
     align-items: center;
     gap: 20px;
   }
