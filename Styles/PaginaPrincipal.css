@@ -718,7 +718,7 @@ header {
 }
 
 .NovedadesRecuadro {
-  flex: 0 0 100%; /* cada slide ocupa todo el ancho del contenedor */
+  flex: 0 0 100%;
   background-color: #ff9800;
   border-radius: 40px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -881,9 +881,9 @@ header {
 
 /* Sección completa */
 .CentroEstudiantil {
-  background-color: #f0f0f0; /* Fondo beige */
-  padding: 0; /* Eliminamos el padding para que la imagen ocupe todo */
-  height: 60vh; /* 100% de la altura de la ventana */
+  background-color: #f0f0f0;
+  padding: 0;
+  height: 60vh;
 }
 
 .CentroTexto h2 {
@@ -924,11 +924,11 @@ header {
 
 .CentroFoto {
   flex: 1;
-  height: 500px; /*  Controlás la altura desde acá */
+  height: 500px;
   border-top-left-radius: 200px;
   border-bottom-left-radius: 200px;
   overflow: hidden;
-  margin-right: 0; /*  Pegado al borde derecho */
+  margin-right: 0;
 }
 
 .CentroFoto img {
@@ -965,12 +965,12 @@ header {
   border-top-left-radius: 200px;
   border-bottom-left-radius: 200px;
   overflow: hidden;
-  margin-left: auto; /* empuja la imagen al borde derecho */
+  margin-left: auto;
 }
 
 .CentroFoto img {
   width: 100%;
-  height: 100%; /*  ocupa toda la altura del contenedor */
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -998,9 +998,9 @@ header {
 
 .LogoNombre {
   display: flex;
-  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
+  flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 20px; /* Un pequeño margen abajo */
+  margin-bottom: 20px;
 }
 
 
@@ -1015,13 +1015,13 @@ header {
 }
 
 .NombreEscuela {
-  font-size: 16px;  /* Reducimos el tamaño del texto */
+  font-size: 16px;
   font-weight: bold;
-  line-height: 1.2;  /* Alinea las líneas de texto */
+  line-height: 1.2;
 }
 
 .NombreEscuela p {
-  display: block;  /* Hace que cada parte del nombre esté en una línea */
+  display: block;
 }
 
 .NavegacionRedes {
@@ -1112,7 +1112,7 @@ header {
     margin-left: 0;
     max-width: 90%;
     padding: 40px;
-    text-align: center; /* centra el texto y el botón */
+    text-align: center;
   }
 
   .TextoBienvenida h1 {
@@ -1124,8 +1124,8 @@ header {
   }
 
   .BotonBienvenida {
-    display: inline-block; /* se asegura que se pueda centrar */
-    margin: 20px auto 0; /* margen superior y centrado horizontal */
+    display: inline-block;
+    margin: 20px auto 0;
   }
 
   .LogoPrincipal {
@@ -1308,7 +1308,7 @@ header {
 
   .CentroFoto {
     flex: 1;
-    height: 400px; /* controlás la altura */
+    height: 400px;
     border-top-left-radius: 150px;
     border-bottom-left-radius: 150px;
   }
@@ -1335,9 +1335,9 @@ header {
   }
 
   .LogosRedes {
-    flex-direction: row; /* mantener fila */
+    flex-direction: row;
     gap: 30px;
-    justify-content: center; /* centrado horizontal */
+    justify-content: center;
     margin-bottom: 20px;
   }
 }
@@ -1612,9 +1612,9 @@ header {
   }
 
   .LogosRedes {
-    flex-direction: row; /* mantener fila */
+    flex-direction: row;
     gap: 30px;
-    justify-content: center; /* centrado horizontal */
+    justify-content: center;
     margin-bottom: 20px;
   }
 
