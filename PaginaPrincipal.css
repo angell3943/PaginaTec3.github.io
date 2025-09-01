@@ -274,8 +274,8 @@ header {
 }
 
 .BotonBienvenida {
-  background-color: #4f4f4f;
-  color: black;
+  background-color: #4caf4f;
+  color: #f0f0f0;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 50px;
@@ -941,7 +941,7 @@ header {
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s;
-  margin-top: auto;   /* 🔑 esto lo empuja hacia abajo */
+  margin-top: auto;
 }
 
 .CentroTexto .Boton-Centro:hover {
