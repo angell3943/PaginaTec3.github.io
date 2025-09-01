@@ -867,17 +867,38 @@ header {
 
 /* ------------------------------------------------------------ */
 
-
+/* Sección completa */
 .CentroEstudiantil {
-  background-color: #f9f4ec; /* Fondo beige */
+  background-color: #f9f4ec; 
   padding: 0; /* Eliminamos el padding para que la imagen ocupe todo */
-  height: 60vh; /* 100% de la altura de la ventana */
+  height: 80vh; /* Altura de la sección */
+  display: flex;
+  align-items: center;
 }
 
+/* Contenedor de texto e imagen */
+.CentroContenido {
+  display: flex;
+  width: 100%;
+
+}
+
+/* Texto del centro */
+.CentroTexto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+}
+
+/* Títulos */
 .CentroTexto h2 {
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: -50px;
+  margin-bottom: 10px;
+  padding-top: 30px;
+  text-align: left;
 }
 
 .CentroTexto h2::after {
@@ -886,21 +907,20 @@ header {
   width: 60%;
   height: 4px;
   background-color: #54b159;
-  margin-top: -5px;
-  margin-bottom: 30px;
   border-radius: 2px;
 }
 
-.CentroTexto h3{
+.CentroTexto h3 {
   text-align: center;
   font-size: 28px;
-  margin-top: 50px;
+  margin-top: 20px;
   text-decoration: underline;
   text-decoration-color: #54b159;
   text-decoration-thickness: 4px;
   margin-bottom: 20px;
 }
 
+/* Párrafo */
 .CentroTexto p {
   background-color: floralwhite;
   font-size: 17px;
@@ -910,22 +930,7 @@ header {
   padding: 15px 40px;
 }
 
-.CentroFoto {
-  flex: 1;
-  height: 500px; /* 🔹 Controlás la altura desde acá */
-  border-top-left-radius: 200px;
-  border-bottom-left-radius: 200px;
-  overflow: hidden;
-  margin-right: 0; /* 🔹 Pegado al borde derecho */
-}
-
-.CentroFoto img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
+/* Botón centrado abajo */
 .CentroTexto .Boton-Centro {
   background-color: #54b159;
   color: #fff;
@@ -936,12 +941,32 @@ header {
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s;
-  margin-top: auto;   /* 🔑 esto lo empuja hacia abajo */
+  margin-top: auto; /* empuja el botón hacia abajo */
+  align-self: center; /* lo centra horizontalmente */
 }
 
 .CentroTexto .Boton-Centro:hover {
   background-color: #449347;
 }
+
+
+/* Imagen pegada a la derecha y ocupando toda la altura */
+.CentroFoto {
+  flex: 1;
+  height: 510px;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  overflow: hidden;
+  margin-left: auto; /* empuja la imagen al borde derecho */
+}
+
+.CentroFoto img {
+  width: 100%;
+  height: 100%; /*  ocupa toda la altura del contenedor */
+  object-fit: cover;
+  display: block;
+}
+
 
 
 /* ------------------------------------------------------------ */
@@ -1262,36 +1287,24 @@ header {
 
   /*------------------------------------*/
 
-  .CentroEstudiantil{
-    height: 80vh; /* 100% de la altura de la ventana */
-
-  }
   .CentroContenido {
-    flex-direction: column; /* apila texto arriba y foto abajo */
-    height: auto;
+    flex-direction: row; /* mantiene la imagen a la derecha */
     align-items: center;
-    text-align: center;
+    gap: 20px;
   }
 
   .CentroTexto {
-    padding: 30px 20px;
-    text-align: center;
-  }
-
-  .CentroTexto h3 {
-    font-size: 28px; /* más pequeño para tablet */
-  }
-
-  .CentroTexto p {
-    font-size: 15px;
+    flex: 1;
+    padding: 20px;
   }
 
   .CentroFoto {
-    width: 80%;      /* se reduce un poco */
-    max-width: 500px; /* evita que crezca demasiado */
-    border-radius: 100px;
-    margin-top: 20px;
+    flex: 1;
+    height: 400px; /* controlás la altura */
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
   }
+
   /*----------------------------------*/
   
   .Pie {
@@ -1515,7 +1528,7 @@ header {
 /*---------------------------*/
 
   .CentroEstudiantil{
-    height: 70vh; 
+    height: 120vh; 
   }
 
   .CentroContenido {
@@ -1536,10 +1549,12 @@ header {
   }
 
   .CentroFoto {
+    position: relative;
     width: 90%;
     height: 350px;
     border-radius: 80px;
     margin-top: 15px;
+    margin-right: 25px;
   }
 
 /*-----------------------------------------*/
