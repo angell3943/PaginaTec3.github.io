@@ -574,17 +574,16 @@ header {
 /* ------------------------------------------------------------ */
 
 .inscripciones {
-
   background-color: #f5f0dc;  
   display: flex;
   height: 120vh;
 }
 
-.inscripciones h2{
-  font-size: 50px;
+.Titulo-Incripciones{
+  font-size: 80px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .Izquierda {
@@ -603,18 +602,39 @@ header {
   flex-direction: column;
 }
 
-.Izquierda .Derecha h3{
-  font-weight: bold;
-  margin-top: 20px;
+.Subtitulo-Inscripcion {
+  font-weight: 500;
   margin-bottom: 10px;
-  font-size: 20px;
-
+  font-size: 25px;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 6px;
 }
 
-.Izquierda p{
+.Texto-Inscripciones, .Texto-Pase{
+  font-weight: 100;
+  font-size: 17px;
   margin-bottom: 15px;
   line-height: 1.5;
+  text-align: center;
+  padding: 0px 40px 20px 2px;
+
+
 }
+.Texto-Inscripciones b{
+  font-weight: bold;
+}
+
+.Titulo-Pase{  
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+
 .Pase {
   flex: 1;
   padding: 30px;
@@ -630,16 +650,6 @@ header {
 }
 
 
-.DobleLista {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-}
-
-.DobleLista ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
 
 .BotonInscripciones {
   margin-top: 30px;
@@ -662,41 +672,48 @@ header {
 /* ------------------------------------------------------------ */
 
 .Novedades {
-  background-color: #f9f4ec; 
+  background-color: #f9f4ec;
   padding: 50px 20px;
   text-align: center;
-
 }
 
-.Novedades h2{
+.Novedades h2 {
   font-size: 45px;
   font-weight: bold;
-  margin-bottom: 40px;  
-
+  margin-bottom: 40px;
 }
 
-
 .Novedades h2::after {
-
-   content: "";
+  content: "";
   display: block;
   width: 13%;
-   height: 4px;
-  background-color: #54b159; 
+  height: 4px;
+  background-color: #54b159;
   margin: 5px auto 0;
   border-radius: 2px;
 }
 
+/* === SLIDER === */
+.slider-novedades {
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider-track-novedades {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
 .NovedadesRecuadro {
- 
+  flex: 0 0 100%; /* cada slide ocupa todo el ancho del contenedor */
   background-color: orange;
   border-radius: 40px;
-   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-   overflow: hidden;
-   max-width: 1500px;
-  margin: 0 auto; 
-   height: 200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
   display: flex;
+  height: 250px;
 }
 
 .NovedadesImagenes {
@@ -715,14 +732,14 @@ header {
   position: relative;
 }
 
-.ContenidoNovedades h3{
+.ContenidoNovedades h3 {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
   text-align: left;
 }
 
-.ContenidoNovedades p{
+.ContenidoNovedades p {
   font-size: 16px;
   text-align: left;
   margin-bottom: 40px;
@@ -732,7 +749,7 @@ header {
   text-align: right;
 }
 
-.BotonNovedades{
+.BotonNovedades {
   background-color: #54b159;
   color: white;
   padding: 10px 20px;
@@ -746,6 +763,27 @@ header {
 .BotonNovedades:hover {
   background-color: #449447;
 }
+
+/* === DOTS === */
+.dots-novedades {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.dots-novedades div {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots-novedades .active {
+  background: orange;
+}
+
 
 /* ------------------------------------------------------------ */
 .slider-egresados{
@@ -831,55 +869,45 @@ header {
 
 
 .CentroEstudiantil {
-  background-color: #f9f4ec;
-  padding: 0;
-  height: 60vh;
+  background-color: #f9f4ec; /* Fondo beige */
+  padding: 0; /* Eliminamos el padding para que la imagen ocupe todo */
+  height: 60vh; /* 100% de la altura de la ventana */
 }
 
-.CentroTitulo {
-  font-size: 43px;
+.CentroTexto h2 {
+  font-size: 28px;
   font-weight: bold;
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 100px;
+  margin-bottom: -50px;
 }
 
-.CentroTitulo::after {
+.CentroTexto h2::after {
   content: "";
   display: block;
-  width: 20%;
+  width: 60%;
   height: 4px;
-  background-color: #54b159; 
-  margin: 8px auto 0;
+  background-color: #54b159;
+  margin-top: -5px;
+  margin-bottom: 30px;
   border-radius: 2px;
 }
 
-.CentroContenido {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  width: 100%;
-  height: 100%; /* Aseguramos que ocupe toda la altura disponible */
-}
-
-.CentroTexto {
-  flex: 1;
-  padding: 40px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-}
-
 .CentroTexto h3{
-  font-size: 35px;
-  font-weight: bold;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 50px;
+  text-decoration: underline;
+  text-decoration-color: #54b159;
+  text-decoration-thickness: 4px;
   margin-bottom: 20px;
 }
 
 .CentroTexto p {
-  font-size: 16px;
+  background-color: floralwhite;
+  font-size: 17px;
+  line-height: 1.6;
   color: #333;
+  text-align: center;
+  padding: 15px 40px;
 }
 
 .CentroFoto {
@@ -1327,7 +1355,7 @@ header {
   .slider-orientaciones, .cuatro-orientaciones,
   .Evento1, .cuatro-eventos {
     width: 100%;
-    height: 200px; /* altura visible */
+    height: 400px; /* altura visible */
   }
 
   .Overlay {
@@ -1367,29 +1395,29 @@ header {
   }
 
 
-  .TituloOrientaciones h1 {
+.TituloOrientaciones h1 {
     font-size: 22px;
     text-align: center;
-  }
-  .Evento1{
+}
+
+.Evento1{
   width: 100%; /* Ancho */
-  height: 300px; /* Alto */
+  height: 400px; /* Alto */
 }
 
 .cuatro-eventos{
   width: 100%; /* Ancho */
   height: 300px; /* Alto */
-
 }
 
-  .TituloEvento {
-    font-size: 1.5rem;
-    text-align: center;
+.TituloEvento {
+  font-size: 1.5rem;
+  text-align: center;
   } 
   
-  .BotonVerMas.Gris {
-    padding: 5px 8px;
-    font-size: 14px;
+.BotonVerMas.Gris {
+  padding: 5px 8px;
+  font-size: 14px;
   }
 
  /*-------------------------------------- */
