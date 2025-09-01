@@ -114,7 +114,7 @@ header {
     .abrir-menu, .cerrar-menu {
         display: block;
         border: 0;
-        font-size: 1.25rem;
+        font-size: 2rem;
         background-color: transparent;
     }
 
@@ -624,9 +624,9 @@ header {
   }
 
   .LogosRedes {
-    flex-direction: row; /* mantener fila */
+    flex-direction: row;
     gap: 30px;
-    justify-content: center; /* centrado horizontal */
+    justify-content: center;
     margin-bottom: 20px;
   }
 
