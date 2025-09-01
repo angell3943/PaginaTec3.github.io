@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Institución Educativa</title>
   <link rel="stylesheet" href="PaginaPrincipal.css">
-
-  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
@@ -221,6 +219,8 @@ Conocé los planes de estudio de Informática, diseñados para brindarte una for
 La Expo Técnica es un evento donde los alumnos presentan proyectos, trabajos y actividades de las distintas áreas, mostrando a la comunidad lo aprendido durante el año en la escuela técnica.
         </p>
       </div>
+      
+
     </div>
 
 
@@ -276,22 +276,24 @@ La Expo Técnica es un evento donde los alumnos presentan proyectos, trabajos y 
       <div>
 
         <!-- Apertura y publico -->
-        <h2>Inscripciones</h2>
+        <h2 class="Titulo-Incripciones">Inscripciones</h2>
 
-        <h3>Apertura de Inscripciones</h3>
-        <p>Las inscripciones para el Ciclo Lectivo 2026 se habilitarán a partir del mes de " ". Las fechas exactas se publicarán en nuestras redes oficiales y en Inscripciones</p>
+        <h3 class="Subtitulo-Inscripcion">Apertura de Inscripciones</h3>
+        <p class="Texto-Inscripciones">
+          Las inscripciones para el Ciclo Lectivo 2026 se habilitarán a partir del mes de " ". Las fechas exactas se publicarán en nuestras redes oficiales y en Inscripciones 
+        </p>
 
-        <h3>¿A quién dirigirse?</h3>
-        <p>Las consultas e inscripciones se realizan en Secretaría. También podés comunicarte por teléfono o consultar en Inscripciones</p>
+        <h3 class="Subtitulo-Inscripcion">¿A quién dirigirse?</h3>
+        <p class="Texto-Inscripciones">
+          Las consultas e inscripciones se realizan en Secretaría. También podés comunicarte por teléfono o consultar en Inscripciones
+        </p>
 
         <!-- Horario -->
-        <h3>Horarios de atención</h3>
-        <div class="DobleLista">
-          <ul>
-            <p>De Lunes a Viernes de 8:00hs a </p>
-            <p>11:00hs y de 13:00hs a 16:00hs</p>
-          </ul>
-        </div>
+        <h3 class="Subtitulo-Inscripcion">Horarios de atención</h3> 
+            <p class="Texto-Inscripciones">
+              De <b>Lunes</b> a <b>Viernes</b> de 8:00hs a <br> 
+              11:00hs y de 13:00hs a 16:00hs
+            </p>
       </div>
       <button class="BotonInscripciones">Solicitar inscripción</button>
     </div>
@@ -303,13 +305,10 @@ La Expo Técnica es un evento donde los alumnos presentan proyectos, trabajos y 
       <div class="Pase">
         <div>
           
-          <h2>Desde otra escuela</h2>
+          <h2 class="Titulo-Pase">Desde otra escuela</h2>
 
           <!-- Cosas para llevar -->
-<p>Los alumnos que vienen de otra institución deben presentar su certificado de estudios con las materias cursadas y calificaciones. Se revisará la equivalencia de materias y se indicará el curso correspondiente.</p>
-         
-          <div class="DobleLista">
-          </div>
+          <p class="Texto-Pase">Los alumnos que vienen de otra institución deben presentar su certificado de estudios con las materias cursadas y calificaciones. Se revisará la equivalencia de materias y se indicará el curso correspondiente.</p>
 
         </div>
         <button class="BotonInscripciones">Ver requisitos</button>
@@ -318,10 +317,8 @@ La Expo Técnica es un evento donde los alumnos presentan proyectos, trabajos y 
       <!-- A mitad de año -->
       <div class="Pase">
         <div>
-          <h2>Desde quinto año</h2>
-          <div class="DobleLista">
-            <p>Los alumnos que quieran incorporarse a partir de quinto año deben haber cursado previamente la misma modalidad que ofrece nuestra escuela (Electromecánica o Informática). No se permite el ingreso si vienen de otra orientación.</p>
-          </div>
+          <h2 class="Titulo-Pase">Desde quinto año</h2>
+            <p class="Texto-Pase">Los alumnos que quieran incorporarse a partir de quinto año deben haber cursado previamente la misma modalidad que ofrece nuestra escuela (Electromecánica o Informática). No se permite el ingreso si vienen de otra orientación.</p>
         </div>
         <button class="BotonInscripciones">Consultar ingreso</button>
       </div>
@@ -332,22 +329,55 @@ La Expo Técnica es un evento donde los alumnos presentan proyectos, trabajos y 
   <!-- ----------------------------------------------------------------- -->
 
   <section class="Novedades">
-    <h2>Novedades</h2>
-  
-    <div class="NovedadesRecuadro">   
+  <h2>Novedades</h2>
 
+  <div class="slider-novedades">
+    <div class="slider-track-novedades">
+      
+      <!-- Slide 1 -->
+      <div class="NovedadesRecuadro">
         <img src="Informatica.jpg" class="NovedadesImagenes" alt="Imagen de novedad">
+        <div class="ContenidoNovedades">
+          <h3>Título de la novedad 1</h3>
+          <p>Texto de ejemplo para la primera novedad de la escuela.</p>
+          <div class="PosicionBoton">
+            <button class="BotonNovedades">Ver más</button>
+          </div>
+        </div>
+      </div>
 
-       <div class="ContenidoNovedades">
-        <h3>Título de la novedad</h3>
-        <p>Aquí va un texto donde se puede contar alguna novedad reciente o importante que haya ocurrido en la escuela.</p>
-        <div class="PosicionBoton">
-          <button class="BotonNovedades">Ver más</button>
+      <!-- Slide 2 -->
+      <div class="NovedadesRecuadro">
+        <img src="hero.jpg" class="NovedadesImagenes" alt="Imagen de novedad">
+        <div class="ContenidoNovedades">
+          <h3>Título de la novedad 2</h3>
+          <p>Texto de ejemplo para la segunda novedad importante.</p>
+          <div class="PosicionBoton">
+            <button class="BotonNovedades">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="NovedadesRecuadro">
+        <img src="hero2.jpg" class="NovedadesImagenes" alt="Imagen de novedad">
+        <div class="ContenidoNovedades">
+          <h3>Título de la novedad 3</h3>
+          <p>Aquí va un texto de prueba para la tercera novedad.</p>
+          <div class="PosicionBoton">
+            <button class="BotonNovedades">Ver más</button>
+          </div>
         </div>
       </div>
 
     </div>
-  </section>
+  </div>
+
+  <!-- Dots de navegación -->
+  <div class="dots-novedades"></div>
+
+  <script src="Scripts/SliderNovedades.js"></script>
+</section>
 
   <!-- ----------------------------------------------------------------- -->
 
@@ -357,12 +387,13 @@ La Expo Técnica es un evento donde los alumnos presentan proyectos, trabajos y 
 
       <div class="slider_container container">
         
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAAM5JREFUSEvt1DFKA0EUBuBvCwlCOksFxSJ3srIQBAtLbyJpcoSUomirooUnEMtA7pBCkh2YBZGwMwO7sMVOM83jmzf/PKbS46p6tI343nQHE8sER1jnDkFu5wdY4hGLLvHQ8QO+cZsLh7pU54d4wk8dx3UJnMKneMGq7voC2y7xOW7wjt8EfIev/zVtsczwhvu4t/mf2JTgofY8RnOJjy5jaaxTPNfZX5UekJqW5oDjODVhFF9zb5CLB+8EZ/GBs/wSPAv8WzTiw/7Pix90B5+HGRiqRimiAAAAAElFTkSuQmCC" alt="" class="slider_arrow" id="before">
+          <img src="assets/arrow-left.svg" alt="" class="slider_arrow" id="before">
 
           <div class="slider_body slider_body--show" data-id="1">
             <div class="slider_texts">
          
              <h1 class="subtitle">Hola! Mi nombre es Maria</h1>
+             <hr>
               <p class="slider_review">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, odit provident. Aspernatur ducimus iure vero?
               </p>
@@ -378,6 +409,7 @@ La Expo Técnica es un evento donde los alumnos presentan proyectos, trabajos y 
             <div class="slider_texts">
          
              <h1 class="subtitle">Hola! Mi nombre es Tomas</h1>
+             <hr>
               <p class="slider_review">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, odit provident. Aspernatur ducimus iure vero?
               </p>
@@ -393,6 +425,7 @@ La Expo Técnica es un evento donde los alumnos presentan proyectos, trabajos y 
             <div class="slider_texts">
          
              <h1 class="subtitle">Hola! Mi nombre es Juan</h1>
+             <hr>
               <p class="slider_review">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, odit provident. Aspernatur ducimus iure vero?
               </p>
@@ -407,7 +440,7 @@ La Expo Técnica es un evento donde los alumnos presentan proyectos, trabajos y 
 
 
 
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAANBJREFUSEvt1DFqAkEUANC3jUJALA0YyAXEykYQizSCF7BNY2sKD+AF7Ky8gI2NjZWFWHgNMUWK3CIOSCp311kULJxmivm8/+fPZxJ3XMkdbU/8Yncfqi0vqOD3mkGIrbyJBXr4yUsQiwevjxk+8J2VoAgevAGm6GQlKIqHBENM0MXh0g3S8CqWKOX0tYUjGjF4iG2jnIHXMD/hn1jF4llFB3iHMdZpgUV6XscGX+c9tYhY/PUMjrC99Zy/4R37PDicx1Z+jfkf88Qf/z+PetA/+t0UGPPhJkoAAAAASUVORK5CYII=" alt="" class="slider_arrow" id="next"> 
+          <img src="assets/arrow-right.svg" alt="" class="slider_arrow" id="next"> 
   
       </div>
 
@@ -419,24 +452,28 @@ La Expo Técnica es un evento donde los alumnos presentan proyectos, trabajos y 
 
 
     <!-- 8va seccion sobre el centro estudiantil de la escuela -->
-  <h2 class="CentroTitulo">Centro de Estudiantes</h2>
-  <section class="CentroEstudiantil">
-  
-    <div class="CentroContenido">
+<section class="CentroEstudiantil">
 
-       <!-- Que es, quienes son, que hacen los del centro estudiantil -->
-      <div class="CentroTexto">
-        <h3>Conoce a nuestro centro de estudiantes</h3>
-        <h3>Sobre Nosotros</h3>
-        <p>
-          El centro de estudiantes es un espacio donde los alumnos pueden participar y organizar la representación a sus compañeros, proponer actividades y colaborar en la construcción de una mejor vida escolar. A través de su trabajo, impulsan proyectos y eventos que fortalecen la voz estudiantil dentro de la institución.
-        </p>
-      </div>
 
-        <img src="Informatica.jpg" class="CentroFoto" alt="Centro de los del Estudiantes">
+  <div class="CentroContenido">
+    <div class="CentroTexto">
+      <h2>Conoce a nuestro centro de estudiantes</h2>
+      <h3>Sobre Nosotros</h3>
+      <p>
+        El centro de estudiantes es un espacio donde los alumnos pueden participar y organizar la representación a sus compañeros, proponer actividades y colaborar en la construcción de una mejor vida escolar. A través de su trabajo, impulsan proyectos y eventos que fortalecen la voz estudiantil dentro de la institución.
+      </p> 
       
+      <button class="Boton-Centro">Ver más</button>
     </div>
-  </section>
+
+    <div class="CentroFoto">
+      <img src="Informatica.jpg" alt="Centro de Estudiantes">
+    </div>
+
+    
+  </div>
+</section>
+
   
   
 
