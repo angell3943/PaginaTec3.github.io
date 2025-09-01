@@ -941,16 +941,12 @@ header {
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s;
-<<<<<<< HEAD
   margin-top: auto;   /*  esto lo empuja hacia abajo */
-=======
-  margin-top: auto;
->>>>>>> 1563dd9bcfaea470b1e29c1dbb269f6fed12289d
 }
 
 .CentroTexto .Boton-Centro:hover {
   background-color: #449347;
-}
+} 
 
 
 /* Imagen pegada a la derecha y ocupando toda la altura */
