@@ -18,7 +18,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background: linear-gradient(to top, #1caf21, greenyellow);
+    background: linear-gradient(to top,  #00a560, #c1ff72);
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -872,17 +872,19 @@ header {
 
 /* ------------------------------------------------------------ */
 
-
+/* Sección completa */
 .CentroEstudiantil {
-  background-color: #f0f0f0; 
-  padding: 0; 
-  height: 60vh; 
+  background-color: #f0f0f0; /* Fondo beige */
+  padding: 0; /* Eliminamos el padding para que la imagen ocupe todo */
+  height: 60vh; /* 100% de la altura de la ventana */
 }
 
 .CentroTexto h2 {
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: -50px;
+  margin-bottom: 10px;
+  padding-top: 30px;
+  text-align: left;
 }
 
 .CentroTexto h2::after {
@@ -891,21 +893,20 @@ header {
   width: 60%;
   height: 4px;
   background-color: #54b159;
-  margin-top: -5px;
-  margin-bottom: 30px;
   border-radius: 2px;
 }
 
-.CentroTexto h3{
+.CentroTexto h3 {
   text-align: center;
   font-size: 28px;
-  margin-top: 50px;
+  margin-top: 20px;
   text-decoration: underline;
   text-decoration-color: #54b159;
   text-decoration-thickness: 4px;
   margin-bottom: 20px;
 }
 
+/* Párrafo */
 .CentroTexto p {
   font-size: 17px;
   line-height: 1.6;
@@ -916,15 +917,55 @@ header {
 
 .CentroFoto {
   flex: 1;
-  height: 100%; 
+  height: 500px; /* 🔹 Controlás la altura desde acá */
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
   overflow: hidden;
-  position: relative; 
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
-  border-top-left-radius: 100px;  
-  border-bottom-left-radius: 100px; 
+  margin-right: 0; /* 🔹 Pegado al borde derecho */
 }
+
+.CentroFoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.CentroTexto .Boton-Centro {
+  background-color: #54b159;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: auto;   /* 🔑 esto lo empuja hacia abajo */
+}
+
+.CentroTexto .Boton-Centro:hover {
+  background-color: #449347;
+}
+
+
+/* Imagen pegada a la derecha y ocupando toda la altura */
+.CentroFoto {
+  flex: 1;
+  height: 510px;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  overflow: hidden;
+  margin-left: auto; /* empuja la imagen al borde derecho */
+}
+
+.CentroFoto img {
+  width: 100%;
+  height: 100%; /*  ocupa toda la altura del contenedor */
+  object-fit: cover;
+  display: block;
+}
+
 
 
 /* ------------------------------------------------------------ */
@@ -1245,36 +1286,24 @@ header {
 
   /*------------------------------------*/
 
-  .CentroEstudiantil{
-    height: 80vh; /* 100% de la altura de la ventana */
-
-  }
   .CentroContenido {
-    flex-direction: column; /* apila texto arriba y foto abajo */
-    height: auto;
+    flex-direction: row; /* mantiene la imagen a la derecha */
     align-items: center;
-    text-align: center;
+    gap: 20px;
   }
 
   .CentroTexto {
-    padding: 30px 20px;
-    text-align: center;
-  }
-
-  .CentroTexto h3 {
-    font-size: 28px; /* más pequeño para tablet */
-  }
-
-  .CentroTexto p {
-    font-size: 15px;
+    flex: 1;
+    padding: 20px;
   }
 
   .CentroFoto {
-    width: 80%;      /* se reduce un poco */
-    max-width: 500px; /* evita que crezca demasiado */
-    border-radius: 100px;
-    margin-top: 20px;
+    flex: 1;
+    height: 400px; /* controlás la altura */
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
   }
+
   /*----------------------------------*/
   
   .Pie {
@@ -1498,7 +1527,7 @@ header {
 /*---------------------------*/
 
   .CentroEstudiantil{
-    height: 70vh; 
+    height: 120vh; 
   }
 
   .CentroContenido {
@@ -1519,10 +1548,12 @@ header {
   }
 
   .CentroFoto {
+    position: relative;
     width: 90%;
     height: 350px;
     border-radius: 80px;
     margin-top: 15px;
+    margin-right: 25px;
   }
 
 /*-----------------------------------------*/
