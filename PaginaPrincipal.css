@@ -371,15 +371,15 @@ header {
 }
 
 .SubtituloOrientaciones.Izq2{
-  align-self: flex-start; /* mueve el bloque a la izquierda dentro del flex */
-  margin-left: 100px; /* opcional, distancia desde el borde */
+  align-self: flex-start;
+  margin-left: 100px;
   text-align: left;
 
 }
 
 .SubtituloOrientaciones.Der2{
-  align-self: flex-end; /* mueve el bloque a la izquierda dentro del flex */
-  margin-right: 100px; /* opcional, distancia desde el borde */
+  align-self: flex-end;
+  margin-right: 100px;
   text-align: right;
 }
 
@@ -392,7 +392,7 @@ header {
 
     /* Slider 2 imágenes */
 .slider-orientaciones, .cuatro-orientaciones{
-  width: 1200px; /* ancho consistente */
+  width: 1200px;
   max-width: 100%;
   height: 300px;
   margin: 0 auto 40px;
@@ -508,16 +508,16 @@ header {
 
 /* Eventos */
 .TituloOrientaciones {
-  align-self: flex-start; /* mueve el bloque a la izquierda dentro del flex */
+  align-self: flex-start;
   text-align: left;
-  margin-left: 20px; /* opcional, distancia desde el borde */
+  margin-left: 20px;
   margin-bottom: 40px;
 }
 
 .Evento1 {
   position: relative;
-  width: 1155px; /* Ancho */
-  height: 500px; /* Alto */
+  width: 1155px; 
+  height: 500px; 
   margin: 0 auto 40px;
   background-size: cover;
   background-position: center;
@@ -631,9 +631,9 @@ header {
 
 
 .DobleLista {
-  display: flex;         /* activa flexbox */
-  gap: 40px;             /* espacio entre las listas */
-  justify-content: center; /* centra las listas horizontalmente */
+  display: flex;
+  gap: 40px;
+  justify-content: center;
 }
 
 .DobleLista ul {
@@ -790,6 +790,13 @@ header {
   max-width: 600px;
 }
 
+.slider_texts hr {
+  margin-bottom: 17px;
+  border: none;
+  border-bottom: 1px solid #4b4b4b;
+  width: 350px;
+}
+
 .subtitle{
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -824,9 +831,9 @@ header {
 
 
 .CentroEstudiantil {
-  background-color: #f9f4ec; /* Fondo beige */
-  padding: 0; /* Eliminamos el padding para que la imagen ocupe todo */
-  height: 60vh; /* 100% de la altura de la ventana */
+  background-color: #f9f4ec;
+  padding: 0;
+  height: 60vh;
 }
 
 .CentroTitulo {
@@ -1450,6 +1457,10 @@ header {
 .slider_img{
   width: 180px;
   height: 180px;
+}
+
+.slider_texts hr{
+    min-width: 100%;
 }
 
 /*---------------------------*/
