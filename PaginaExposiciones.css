@@ -18,7 +18,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background: linear-gradient(to top, #1caf21, #c8e6c9);
+    background: linear-gradient(to top, #1caf21, greenyellow);
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -556,7 +556,7 @@ header {
 
 /*---------------------------------------------------------------*/
 .PaginaPie {
-  background: linear-gradient(to top, #1caf21, #c8e6c9);
+  background: linear-gradient(to top, #1caf21, greenyellow);
   color: rgb(0, 0, 0);
   padding: 40px 20px;
   position: relative;
