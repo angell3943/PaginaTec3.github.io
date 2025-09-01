@@ -114,7 +114,7 @@ header {
     .abrir-menu, .cerrar-menu {
         display: block;
         border: 0;
-        font-size: 1.25rem;
+        font-size: 2rem;
         background-color: transparent;
     }
 
@@ -188,7 +188,7 @@ header {
 /* ------------------------------------------------------------ */
 
 .Egresados {
-    background-image: url("hero.jpg");
+    background-image: url("egresados123.jpg");
     background-size: cover;
     background-position: center;
     height: 80vh;   
