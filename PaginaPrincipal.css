@@ -932,11 +932,11 @@ header {
 
 .CentroFoto {
   flex: 1;
-  height: 500px; /* 🔹 Controlás la altura desde acá */
+  height: 500px; /*  Controlás la altura desde acá */
   border-top-left-radius: 200px;
   border-bottom-left-radius: 200px;
   overflow: hidden;
-  margin-right: 0; /* 🔹 Pegado al borde derecho */
+  margin-right: 0; /*  Pegado al borde derecho */
 }
 
 .CentroFoto img {
@@ -956,7 +956,7 @@ header {
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s;
-  margin-top: auto;   /* 🔑 esto lo empuja hacia abajo */
+  margin-top: auto;   /*  esto lo empuja hacia abajo */
 }
 
 .CentroTexto .Boton-Centro:hover {
@@ -1541,20 +1541,26 @@ header {
 
 /*---------------------------*/
 
-  .CentroEstudiantil{
-    height: 120vh; 
+.CentroEstudiantil{
+  height: 120vh; 
   }
 
-  .CentroContenido {
-    flex-direction: column;
-    height: auto;
+.CentroContenido {
+  flex-direction: column;
+  height: auto;
   }
 
-  .CentroTexto {
+.CentroTexto {
     padding: 20px 15px;
   }
 
-  .CentroTexto h3 {
+.CentroTexto h2 {
+  margin-bottom: 10px;
+  padding-top: 0px;
+}
+
+  .CentroTexto h3 {  
+    margin-top: 20px;
     font-size: 22px;
   }
 
@@ -1569,6 +1575,8 @@ header {
     border-radius: 80px;
     margin-top: 15px;
     margin-right: 25px;
+    margin-bottom: 0px;
+    padding:0
   }
 
 /*-----------------------------------------*/
