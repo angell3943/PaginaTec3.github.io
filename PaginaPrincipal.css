@@ -942,6 +942,8 @@ header {
   cursor: pointer;
   transition: background 0.3s;
   margin-top: auto;   /*  esto lo empuja hacia abajo */
+
+
 }
 
 .CentroTexto .Boton-Centro:hover {
@@ -1505,6 +1507,9 @@ header {
 
  /*------------------------ */
 
+
+/* Slider testimonios */
+
 .slider_body{
   grid-template-columns: 1fr;
   grid-template-rows: max-content 1fr;
@@ -1522,6 +1527,10 @@ header {
 
 .slider_texts hr{
     min-width: 100%;
+}
+
+.slider_arrow {
+  display: none;
 }
 
 /*---------------------------*/
