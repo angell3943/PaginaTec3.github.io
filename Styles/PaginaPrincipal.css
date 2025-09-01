@@ -805,7 +805,7 @@ header {
 
 .container{
   width: 90%;
-  min-height: 100vh;
+  min-height: 70vh;
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
@@ -1479,21 +1479,21 @@ header {
   .DobleLista {
     flex-direction: column;
     gap: 10px;
-    align-items: center;    /* centrado de cada lista */
+    align-items: center;
   }
 
   .DobleLista ul li {
-  margin-bottom: 5px; /* Ajusta este valor según necesites */
+  margin-bottom: 5px;
 }
 
   .BotonInscripciones {
-    width: 60%;                  /* botón más ancho en móvil */
+    width: 60%;
     text-align: center;
   }
 
 /*--------------------------------*/
  .Novedades h2 {
-    font-size: 35px;        /* título más pequeño */
+    font-size: 35px;
   }
 
   .ContenidoNovedades h3 {
