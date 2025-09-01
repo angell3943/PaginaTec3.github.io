@@ -18,7 +18,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background: linear-gradient(to top, #1caf21, #c8e6c9);
+    background: linear-gradient(to top, #1caf21, greenyellow);
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -930,7 +930,22 @@ header {
   padding: 15px 40px;
 }
 
-/* Botón centrado abajo */
+.CentroFoto {
+  flex: 1;
+  height: 500px; /* 🔹 Controlás la altura desde acá */
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  overflow: hidden;
+  margin-right: 0; /* 🔹 Pegado al borde derecho */
+}
+
+.CentroFoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .CentroTexto .Boton-Centro {
   background-color: #54b159;
   color: #fff;
@@ -941,8 +956,7 @@ header {
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s;
-  margin-top: auto; /* empuja el botón hacia abajo */
-  align-self: center; /* lo centra horizontalmente */
+  margin-top: auto;   /* 🔑 esto lo empuja hacia abajo */
 }
 
 .CentroTexto .Boton-Centro:hover {
@@ -974,7 +988,7 @@ header {
 /*  Footer */  
 
 .PaginaPie {
-  background: linear-gradient(to top, #1caf21, #c8e6c9);
+  background: linear-gradient(to top, #1caf21, greenyellow);
   color: rgb(0, 0, 0);
   padding: 40px 20px;
   position: relative;
@@ -1092,7 +1106,7 @@ header {
     justify-content: center;
     padding: 0 30px;
     height: auto;
-    align-items: center; /* centra todo horizontalmente */
+    align-items: center;
     padding: 60px 30px;
   }
 
