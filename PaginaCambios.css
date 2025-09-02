@@ -39,7 +39,7 @@ header {
 .TextoLogo {
     display: flex;
     flex-direction: column;    
-    font-size: 1rem;
+    font-size: 17px;
     line-height: 1.2;
     color: black;
     white-space: nowrap;
@@ -111,10 +111,6 @@ header {
 }
 
 @media screen and (max-width: 825px) {
-
-      .TextoLogo {
-      font-size: 0.85rem;
-    }
     
     .abrir-menu, .cerrar-menu {
         display: block;
