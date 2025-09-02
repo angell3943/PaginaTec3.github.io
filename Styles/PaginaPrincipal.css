@@ -875,66 +875,48 @@ header {
 
 /* ------------------------------------------------------------ */
 
-/* Sección completa */
-.CentroEstudiantil {
+/* Sección centro estudiantil */
+.centro-estudiantil {
   background-color: #f0f0f0;
-  padding: 0;
-  height: 60vh;
+  padding: 5px;
+  height: 60%;
+  overflow-x: hidden;
 }
 
-.CentroTexto h2 {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  padding-top: 30px;
-  text-align: left;
+.centro-estudiantil-content{
+  display: flex;
+  flex-direction: column;
 }
 
-.CentroTexto h2::after {
-  content: "";
-  display: block;
-  width: 60%;
-  height: 4px;
-  background-color: #54b159;
-  border-radius: 2px;
+/* parrafo foto boton */
+
+#parrafo-foto-ce{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.CentroTexto h3 {
-  text-align: center;
-  font-size: 28px;
-  margin-top: 20px;
-  text-decoration: underline;
-  text-decoration-color: #54b159;
-  text-decoration-thickness: 4px;
-  margin-bottom: 20px;
+#texto-boton-ce {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* Párrafo */
-.CentroTexto p {
+#parrafo-ce {
   font-size: 17px;
   line-height: 1.6;
   color: #333;
   text-align: center;
-  padding: 15px 40px;
+  background-color: #e5e0d8;
+  border-radius: 8px;
+  padding: 15px 20px;
 }
 
-.CentroFoto {
-  flex: 1;
-  height: 500px;
-  border-top-left-radius: 200px;
-  border-bottom-left-radius: 200px;
-  overflow: hidden;
-  margin-right: 0;
-}
-
-.CentroFoto img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.CentroTexto .Boton-Centro {
+#boton-ce {
   background-color: #54b159;
   color: #fff;
   border: none;
@@ -943,35 +925,25 @@ header {
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background-color 0.3s;
   margin-top: auto;
 
 
 }
 
-.CentroTexto .Boton-Centro:hover {
+#boton-ce:hover {
   background-color: #449347;
 } 
 
 
 /* Imagen pegada a la derecha y ocupando toda la altura */
-.CentroFoto {
-  flex: 1;
-  height: 510px;
-  border-top-left-radius: 200px;
-  border-bottom-left-radius: 200px;
-  overflow: hidden;
-  margin-left: auto;
-}
-
-.CentroFoto img {
-  width: 100%;
-  height: 100%;
+#img-ce {
+  flex: 0 0 55%;
   object-fit: cover;
-  display: block;
+  max-width: 500px;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
 }
-
-
 
 /* ------------------------------------------------------------ */
 
