@@ -1159,7 +1159,7 @@ header {
    .slider-orientaciones, .cuatro-orientaciones,
   .Evento1, .cuatro-eventos {
     width: 90%;
-    height: 250px; /* altura fija visible */
+    height: 250px;
   }
 
   .Overlay {
@@ -1262,6 +1262,9 @@ header {
     align-self: center;
   }
 
+  /*----------------------------------------*/
+
+  
 
   /*----------------------------------------*/
 
@@ -1443,13 +1446,13 @@ header {
 }
 
 .Evento1{
-  width: 100%; /* Ancho */
-  height: 400px; /* Alto */
+  width: 100%;
+  height: 400px;
 }
 
 .cuatro-eventos{
-  width: 100%; /* Ancho */
-  height: 300px; /* Alto */
+  width: 100%;
+  height: 300px;
 }
 
 .TituloEvento {
@@ -1534,10 +1537,6 @@ header {
 
 .slider_texts hr{
     min-width: 100%;
-}
-
-.slider_arrow {
-  display: none;
 }
 
 /*---------------------------*/
@@ -1627,7 +1626,6 @@ header {
 @media (max-width:425px){
   .slider_container {
     grid-template-columns: 25px 1fr 25px;
-
   }
 
   .slider_img {
@@ -1644,4 +1642,9 @@ header {
     font-size: 1rem;
     line-height: 1.6;
   }
+
+  .slider_arrow{
+    width: 100%;
+  }
+
 }
