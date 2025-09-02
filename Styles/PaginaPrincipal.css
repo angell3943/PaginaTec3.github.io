@@ -1397,7 +1397,7 @@ header {
   .slider-orientaciones, .cuatro-orientaciones,
   .Evento1, .cuatro-eventos {
     width: 100%;
-    height: 400px; /* altura visible */
+    height: 400px;
   }
 
   .Overlay {
@@ -1528,8 +1528,8 @@ header {
 }
 
 .slider_img{
-  width: 180px;
-  height: 180px;
+  width: 210px;
+  height: 210px;
 }
 
 .slider_texts hr{
@@ -1621,5 +1621,27 @@ header {
 
   .RedesIconos img {
     width: 35px;
+  }
+}
+
+@media (max-width:425px){
+  .slider_container {
+    grid-template-columns: 25px 1fr 25px;
+
+  }
+
+  .slider_img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .slider_review {
+    font-size: 1rem;
+    line-height: 1.6;
   }
 }
