@@ -340,10 +340,6 @@ header {
   margin: 0 auto 30px;
 }
 
-.Nosotros .BotonNosotros:hover {
-  background-color: #81c784;
-}
-
 /*-----------------------------------------------------------------------*/
 /*-------------- Seccion de eventos medio combinadas -----------------/*
 /* ----------------------------------------------------------------------/*
@@ -456,7 +452,7 @@ header {
   transition: 0.3s;
   text-decoration: none;     
   bottom: 10px;
-  left: 50%;
+  left:50%;
   transform: translateX(-50%);
 }
 
