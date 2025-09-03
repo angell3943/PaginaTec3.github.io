@@ -1096,12 +1096,6 @@ header {
 
 
 
-@media (min-width: 1024px) {
-  .CentroEstudiantil {
-    height: 80vh; /* solo en escritorio grande */
-  }
-}
-
 @media (max-width: 1024px) {
 
   .Presentacion {
@@ -1223,18 +1217,24 @@ header {
     flex-direction: column;
     align-items: center;
     height: auto;
+    text-align: center;
   }
 
-  .inscripciones h2, .Izquierda h2, .Derecha h2{
+  .Titulo-Incripciones, .Titulo-Pase{
     font-size: 45px;
   }
 
-    .inscripciones h3, .Izquierda h3, .Derecha h3{
-    font-size: 23px;
+    .Subtitulo-Inscripcion{
+    font-size: 20px;
     margin-bottom: 5px;
   }
-  
 
+  .Texto-Inscripciones, .Texto-Pase{
+    padding-top: 4px;
+    font-size: 15px;
+  
+  }
+  
   .Izquierda, .Derecha {
     width: 90%;
     padding: 20px;
@@ -1255,16 +1255,6 @@ header {
     align-items: center;          
     text-align: center;
   }
-
-   .DobleLista {
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;   
-  }
-
-  .DobleLista ul li {
-  margin-bottom: 10px; 
-}
 
   .BotonInscripciones {
     align-self: center;          
