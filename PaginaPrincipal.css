@@ -1230,11 +1230,12 @@ header {
   }
 
   .Texto-Inscripciones, .Texto-Pase{
-    padding-top: 4px;
+    margin-top: 5px;
     font-size: 15px;
   
   }
   
+
   .Izquierda, .Derecha {
     width: 90%;
     padding: 20px;
