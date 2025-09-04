@@ -1220,6 +1220,14 @@ header {
     text-align: center;
   }
 
+  #hr-inscripciones-vertical {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border: 1px solid #4b4b4b;
+  width: 85%;
+}
+
   .Titulo-Incripciones, .Titulo-Pase{
     font-size: 45px;
   }
@@ -1249,7 +1257,6 @@ header {
 
   .Pase {
     flex: unset;
-    border-bottom: 2px solid #ccc;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -1257,6 +1264,13 @@ header {
     text-align: center;
   }
 
+  #hr-inscripciones {
+  border: none;
+  align-self: center;
+  border-bottom: 2px solid #4b4b4b;
+  width: 100%;
+  }
+  
   .BotonInscripciones {
     align-self: center;          
   }
