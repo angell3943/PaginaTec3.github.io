@@ -560,40 +560,16 @@ header {
 }
 /* ------------------- MEDIA QUERIES ------------------- */
 @media (max-width: 1024px) {
-    .MenuHamburguesa {
-    display: block;
-  }
 
-  .LinksMenu {
-    display: none;  /* oculto por defecto */
-    flex-direction: column;
-    width: 100%;
-    background-color: #c8e6c9;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    padding: 0;
-    margin: 0;
-  }
-
-  .LinksMenu a {
-    padding: 15px 20px;
-    text-align: center;
-    border-bottom: 1px solid #fff;
-  }
-
-  .LinksMenu.activo {
-    display: flex;
-  }
    .Centro {
-      height: 50vh;  /* Reducimos la altura de la sección */
+      height: 50vh;
       justify-content: center;
       align-items: center;
       text-align: center;
   }
 
   .TituloPrincipal h1 {
-      font-size: 60px;   /* Reducimos tamaño de fuente */
+      font-size: 60px;
       margin: 0;
       padding: 10px 20px;
       line-height: 60px;
@@ -605,10 +581,10 @@ header {
       justify-content: flex-start;
       align-items: center;
       text-align: center;
-      padding: 15px;      /* Reducido del original */
-      width: 90%;          /* Ocupa la mayor parte del contenedor */
-      max-width: 350px;    /* Limita el ancho máximo */
-      height: auto;        /* Se ajusta automáticamente al contenido */
+      padding: 15px;      
+      width: 90%;          
+      max-width: 350px;   
+      height: auto;       
   }
 
   .Tarjeta h3 {
@@ -677,72 +653,6 @@ header {
   .FotoGrande {
     max-width: 90%;
     height: auto;
-  }
-
- .Pie {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .LogoNombre {
-    align-items: center;
-  }
-
-  .PieLogo{
-  margin-bottom: 20px;
-  }
-
-  .NavegacionRapida {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .LogosRedes {
-    flex-direction: row; /* mantener fila */
-    gap: 30px;
-    justify-content: center; /* centrado horizontal */
-    margin-bottom: 20px;
-  }
-
-  .Pie {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .LogoNombre {
-    align-items: center;
-    text-align: center;
-  }
-
-  .NavegacionRedes {
-    flex-direction: row;
-    gap: 15px;
-  }
-
-  .NavegacionRapida {
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
-
-  .NavegacionSecciones h3 {
-    font-size: 18px;
-  }
-
-  .NavegacionSecciones a {
-    font-size: 0.9rem;
-  }
-
-  .LogosRedes {
-    flex-direction: row; /* mantener fila */
-    gap: 30px;
-    justify-content: center; /* centrado horizontal */
-    margin-bottom: 20px;
-  }
-
-  .RedesIconos img {
-    width: 35px;
   }
 
 }

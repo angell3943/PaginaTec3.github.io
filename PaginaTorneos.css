@@ -468,38 +468,12 @@ header {
 
 @media (max-width: 1024px) {
 
-  .MenuHamburguesa {
-    display: block;
-  }
-
-  .LinksMenu {
-    display: none;  /* oculto por defecto */
-    flex-direction: column;
-    width: 100%;
-    background-color: #c8e6c9;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    padding: 0;
-    margin: 0;
-  }
-
-  .LinksMenu a {
-    padding: 15px 20px;
-    text-align: center;
-    border-bottom: 1px solid #fff;
-  }
-
-  .LinksMenu.activo {
-    display: flex;
-  }
-
   .Bienvenida {
     flex-direction: column;
     justify-content: center;
     padding: 0 30px;
     height: auto;
-    align-items: center; /* centra todo horizontalmente */
+    align-items: center;
     padding: 60px 30px;
   }
 
@@ -507,7 +481,7 @@ header {
     margin-left: 0;
     max-width: 90%;
     padding: 40px;
-    text-align: center; /* centra el texto y el botón */
+    text-align: center;
   }
 
   .TextoBienvenida h1 {
@@ -519,8 +493,8 @@ header {
   }
 
   .BotonBienvenida {
-    display: inline-block; /* se asegura que se pueda centrar */
-    margin: 20px auto 0; /* margen superior y centrado horizontal */
+    display: inline-block;
+    margin: 20px auto 0;
   }
 
   .LogoPrincipal {
@@ -602,34 +576,6 @@ header {
     margin: 20px 0;
   }
 
-  /*----------------------------------*/
-  
-  .Pie {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .LogoNombre {
-    align-items: center;
-  }
-
-  .PieLogo{
-  margin-bottom: 20px;
-  }
-
-  .NavegacionRapida {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .LogosRedes {
-    flex-direction: row;
-    gap: 30px;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
 }
 
 @media (max-width: 768px) {
@@ -691,8 +637,8 @@ header {
   }
 
   .torneo-premios ul {
-    list-style: none;   /* quita los puntitos */
-    padding: 0;         /* elimina sangría izquierda */
+    list-style: none;
+    padding: 0;
     margin: 0;
   }
   
