@@ -1,0 +1,74 @@
+@media (max-width: 1024px) {
+
+      .Pie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LogoNombre {
+    align-items: center;
+  }
+
+  .PieLogo{
+  margin-bottom: 20px;
+  }
+
+  .NavegacionRapida {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .LogosRedes {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .Pie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LogoNombre {
+    align-items: center;
+    text-align: center;
+  }
+
+  .NavegacionRedes {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .NavegacionRapida {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .NavegacionSecciones h3 {
+    font-size: 18px;
+  }
+
+  .NavegacionSecciones a {
+    font-size: 0.9rem;
+  }
+
+  .LogosRedes {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+
+  .RedesIconos img {
+    width: 35px;
+  }
+
+}

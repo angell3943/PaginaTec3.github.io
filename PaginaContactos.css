@@ -367,32 +367,7 @@ header {
 
 /* Tablet y móvil */
 @media (max-width: 1024px) {
-  .MenuHamburguesa {
-    display: block;
-  }
 
-.LinksMenu {
-    display: none;  /* oculto por defecto */
-    flex-direction: column;
-    width: 100%;
-    background-color: #c8e6c9;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    padding: 0;
-    margin: 0;
-  }
-
-.LinksMenu a {
-    padding: 15px 20px;
-    text-align: center;
-    border-bottom: 1px solid #fff;
-  }
-
-.LinksMenu.activo {
-    display: flex;
-  }
-  
   .contacto h2::after {
     content: "";
     display: block;
@@ -403,32 +378,6 @@ header {
     border-radius: 2px;
   }
   
-
-  .Pie {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .LogoNombre {
-    align-items: center;
-  }
-
-  .PieLogo{
-  margin-bottom: 20px;
-  }
-
-  .NavegacionRapida {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .LogosRedes {
-    flex-direction: row; /* mantener fila */
-    gap: 30px;
-    justify-content: center; /* centrado horizontal */
-    margin-bottom: 20px;
-  }
 }
  
 @media (max-width: 768px) {

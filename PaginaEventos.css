@@ -567,33 +567,6 @@ header {
 
 /* MEDIA QUERIES TABLET */
 @media (max-width: 1024px) {
-    
-  .MenuHamburguesa {
-    display: block;
-  }
-
-  .LinksMenu {
-    display: none;  /* oculto por defecto */
-    flex-direction: column;
-    width: 100%;
-    background-color: #c8e6c9;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    padding: 0;
-    margin: 0;
-  }
-
-  .LinksMenu a {
-    padding: 15px 20px;
-    text-align: center;
-    border-bottom: 1px solid #fff;
-  }
-
-  .LinksMenu.activo {
-    display: flex;
-  }
-
 
   .TituloPrincipal h1 { 
     font-size: 50px; 
@@ -632,32 +605,6 @@ header {
     display: none;
     }
     
-  .Pie {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .LogoNombre {
-    align-items: center;
-  }
-
-  .PieLogo{
-    margin-bottom: 20px;
-  }
-
-  .NavegacionRapida {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .LogosRedes {
-    flex-direction: row; /* mantener fila */
-    gap: 30px;
-    justify-content: center; /* centrado horizontal */
-    margin-bottom: 20px;
-  }
-  
 }
 
 /* ============================================= */
@@ -665,24 +612,24 @@ header {
 @media (max-width: 768px) {
 
   .Eventos {
-    flex-direction: column;   /* cambia de fila a columna */
-    justify-content: center;  /* centra verticalmente */
-    align-items: center;      /* centra horizontalmente */
-    text-align: center;       /* centra el texto */
-    height: auto;             /* altura automática en móvil */
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    height: auto;
     padding: 20px 0;
   }
 
   .TituloPrincipal h1 {
-    font-size: 32px;         /* más chico para móvil */
+    font-size: 32px;
     line-height: 40px;
-    margin: 0 0 15px 0;      /* espacio abajo del título */
+    margin: 0 0 15px 0;
     padding: 10px 15px;
   }
 
   .LogoPrincipal {
-    height: 120px;           /* achicamos un poco el logo */
-    margin: 0 auto;          /* centrado automático */
+    height: 120px;
+    margin: 0 auto;
     display: block;
   }
 

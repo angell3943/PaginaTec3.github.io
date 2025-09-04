@@ -438,9 +438,9 @@ section {
 
 .LogoNombre {
   display: flex;
-  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
+  flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 20px; /* Un pequeño margen abajo */
+  margin-bottom: 20px;
 }
 
 
@@ -455,13 +455,13 @@ section {
 }
 
 .NombreEscuela {
-  font-size: 16px;  /* Reducimos el tamaño del texto */
+  font-size: 16px;
   font-weight: bold;
-  line-height: 1.2;  /* Alinea las líneas de texto */
+  line-height: 1.2;
 }
 
 .NombreEscuela p {
-  display: block;  /* Hace que cada parte del nombre esté en una línea */
+  display: block;
 }
 
 .NavegacionRedes {
@@ -474,13 +474,13 @@ section {
 
 .LogosRedes {
   display: flex;
-  flex-direction: column;  /* Cambiar de fila a columna */
-  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
-  align-items: center;  /* Centra las imágenes */
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
 .RedesIconos img {
-  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  width: 40px;
   height: auto;
 }
 
@@ -530,32 +530,6 @@ section {
 
 
 @media (max-width: 1024px){ 
-
- .MenuHamburguesa {
-    display: block;
-  }
-
-  .LinksMenu {
-    display: none;  /* oculto por defecto */
-    flex-direction: column;
-    width: 100%;
-    background-color: #c8e6c9;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    padding: 0;
-    margin: 0;
-  }
-
-  .LinksMenu a {
-    padding: 15px 20px;
-    text-align: center;
-    border-bottom: 1px solid #fff;
-  }
-
-  .LinksMenu.activo {
-    display: flex;
-  }
 
   /* --- Sección Historia --- */
   .Historia {
@@ -637,33 +611,6 @@ section {
     max-width: 300px;
   }
 
-  /*-----------------------------------------------*/
-  
-  .Pie {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .LogoNombre {
-    align-items: center;
-  }
-
-  .PieLogo{
-  margin-bottom: 20px;
-  }
-
-  .NavegacionRapida {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .LogosRedes {
-    flex-direction: row; /* mantener fila */
-    gap: 30px;
-    justify-content: center; /* centrado horizontal */
-    margin-bottom: 20px;
-  }
 }
 
 
@@ -716,48 +663,6 @@ section {
     width: 100%;
     max-width: 350px;
     height: auto;
-  }
- 
-    /*-----------------------------------------*/
-
-  .Pie {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .LogoNombre {
-    align-items: center;
-    text-align: center;
-  }
-
-  .NavegacionRedes {
-    flex-direction: row;
-    gap: 15px;
-  }
-
-  .NavegacionRapida {
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
-
-  .NavegacionSecciones h3 {
-    font-size: 18px;
-  }
-
-  .NavegacionSecciones a {
-    font-size: 0.9rem;
-  }
-
-  .LogosRedes {
-    flex-direction: row; /* mantener fila */
-    gap: 30px;
-    justify-content: center; /* centrado horizontal */
-    margin-bottom: 20px;
-  }
-
-  .RedesIconos img {
-    width: 35px;
   }
 
 }

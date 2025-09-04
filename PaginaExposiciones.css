@@ -805,46 +805,6 @@ header {
     margin-bottom: 50px;
 }
 
-.Pie {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .LogoNombre {
-    align-items: center;
-    text-align: center;
-  }
-
-  .NavegacionRedes {
-    flex-direction: row;
-    gap: 15px;
-  }
-
-  .NavegacionRapida {
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
-
-  .NavegacionSecciones h3 {
-    font-size: 18px;
-  }
-
-  .NavegacionSecciones a {
-    font-size: 0.9rem;
-  }
-
-  .LogosRedes {
-    flex-direction: row; /* mantener fila */
-    gap: 30px;
-    justify-content: center; /* centrado horizontal */
-    margin-bottom: 20px;
-  }
-
-  .RedesIconos img {
-    width: 35px;
-  }
-
 }
 
 /* Celular: 768px */

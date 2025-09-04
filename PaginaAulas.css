@@ -42,7 +42,7 @@ header {
     line-height: 1.2;
     color: black;
     white-space: nowrap;
-   font-weight: bold;
+    font-weight: bold;
 }
 
 /* Menu desktop y hamburguesa*/
@@ -262,7 +262,7 @@ header {
   position: relative;
   width: 100%;
   max-width: 500px;
-  margin: 0 auto; /* Centrado horizontal */
+  margin: 0 auto;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -271,7 +271,7 @@ header {
   width: 100%;
   height: auto;
   display: block;
-  filter: brightness(40%); /* Efecto negro translúcido */
+  filter: brightness(40%); 
 }
 
 .InformacionImagen {
@@ -406,7 +406,7 @@ header {
 
 .SalaImagen {
   position: relative;
-  background-image: url("hero.jpg");
+  background-image: url("imgs/hero.jpg");
   background-size: cover;
   background-position: center;
   height: 350px;
@@ -474,7 +474,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px; /* o lo que necesites */
+  height: 100px;
 }
 
 
@@ -547,7 +547,7 @@ header {
 }
 
 .SalaImagen.a {
-  background-image: url("hero2.jpg");
+  background-image: url("imgs/hero2.jpg");
 }
 /*---------------------------------------------------------------*/
 .PaginaPie {
@@ -567,9 +567,9 @@ header {
 
 .LogoNombre {
   display: flex;
-  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
+  flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 20px; /* Un pequeño margen abajo */
+  margin-bottom: 20px;
 }
 
 
@@ -584,13 +584,13 @@ header {
 }
 
 .NombreEscuela {
-  font-size: 16px;  /* Reducimos el tamaño del texto */
+  font-size: 16px;
   font-weight: bold;
-  line-height: 1.2;  /* Alinea las líneas de texto */
+  line-height: 1.2;
 }
 
 .NombreEscuela p {
-  display: block;  /* Hace que cada parte del nombre esté en una línea */
+  display: block;
 }
 
 .NavegacionRedes {
@@ -603,13 +603,13 @@ header {
 
 .LogosRedes {
   display: flex;
-  flex-direction: column;  /* Cambiar de fila a columna */
-  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
-  align-items: center;  /* Centra las imágenes */
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
 .RedesIconos img {
-  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  width: 40px;
   height: auto;
 }
 

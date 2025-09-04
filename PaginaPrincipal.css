@@ -584,7 +584,7 @@ header {
 }
 
 .Titulo-Incripciones{
-  font-size: 80px;
+  font-size: 4rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
@@ -617,7 +617,7 @@ header {
 .Subtitulo-Inscripcion {
   font-weight: 500;
   margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 1.5rem;
   text-decoration: underline;
   text-decoration-color: #ff9800;
   text-decoration-thickness: 4px;
@@ -886,7 +886,7 @@ header {
 
 /* Sección Centro */
 .CentroEstudiantil {
-  background-color: #f9f4ec;
+  background-color: #f0f0f0;
   padding: 0;
   display: flex;
   align-items: center;
@@ -955,7 +955,7 @@ header {
 
 /* Párrafo */
 .CentroTexto p {
-  background-color: floralwhite;
+  background-color: #e5e0d8;
   font-size: 17px;
   line-height: 1.6;
   color: #333;
@@ -966,15 +966,15 @@ header {
 /* Botón */
 .CentroTexto .Boton-Centro {
   background-color: #54b159;
-  color: #fff;
+  color: #f0f0f0;
   border: none;
   padding: 12px 28px;
   font-size: 16px;
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s;
-  margin-top: auto;
+  transition: background-color 0.3s;
+  margin-top: 10px;
   align-self: center;
 }
 
@@ -1290,33 +1290,6 @@ header {
     margin-bottom: 20px;
   }
 
-  /*----------------------------------*/
-  
-  .Pie {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .LogoNombre {
-    align-items: center;
-  }
-
-  .PieLogo{
-  margin-bottom: 20px;
-  }
-
-  .NavegacionRapida {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .LogosRedes {
-    flex-direction: row;
-    gap: 30px;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
 }
 
 
@@ -1524,50 +1497,6 @@ header {
     border-top-right-radius: 200px;
     border-bottom-right-radius: 200px; /* bordes derechos redondeados */
     padding-bottom: 10px;
-  }
-
-
-/*-----------------------------------------*/
-
-  .Pie {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .LogoNombre {
-    align-items: center;
-    text-align: center;
-  }
-
-  .NavegacionRedes {
-    flex-direction: row;
-    gap: 15px;
-  }
-
-  .NavegacionRapida {
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
-
-  .NavegacionSecciones h3 {
-    font-size: 18px;
-  }
-
-  .NavegacionSecciones a {
-    font-size: 0.9rem;
-  }
-
-  .LogosRedes {
-    flex-direction: row;
-    gap: 30px;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-
-  .RedesIconos img {
-    width: 35px;
   }
 
 }

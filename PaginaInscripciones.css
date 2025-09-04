@@ -429,9 +429,9 @@ header {
 
 .LogoNombre {
   display: flex;
-  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
+  flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 20px; /* Un pequeño margen abajo */
+  margin-bottom: 20px;
 }
 
 
@@ -446,13 +446,13 @@ header {
 }
 
 .NombreEscuela {
-  font-size: 16px;  /* Reducimos el tamaño del texto */
+  font-size: 16px;
   font-weight: bold;
-  line-height: 1.2;  /* Alinea las líneas de texto */
+  line-height: 1.2;
 }
 
 .NombreEscuela p {
-  display: block;  /* Hace que cada parte del nombre esté en una línea */
+  display: block;
 }
 
 .NavegacionRedes {
@@ -465,13 +465,13 @@ header {
 
 .LogosRedes {
   display: flex;
-  flex-direction: column;  /* Cambiar de fila a columna */
-  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
-  align-items: center;  /* Centra las imágenes */
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
 .RedesIconos img {
-  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  width: 40px;
   height: auto;
 }
 
@@ -522,57 +522,31 @@ header {
 
 @media (max-width: 1024px) {
   
-  .MenuHamburguesa {
-    display: block;
-  }
-
-  .LinksMenu {
-    display: none;  /* oculto por defecto */
-    flex-direction: column;
-    width: 100%;
-    background-color: #c8e6c9;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    padding: 0;
-    margin: 0;
-  }
-
-  .LinksMenu a {
-    padding: 15px 20px;
-    text-align: center;
-    border-bottom: 1px solid #fff;
-  }
-
-  .LinksMenu.activo {
-    display: flex;
-  }
-
   .Seccion {
     flex-direction: column;
     gap: 20px;
-    align-items: center; /* centra bloques hijos */
+    align-items: center;
   }
 
   .Informacion {
     width: 100%;
     border-right: none;
     padding-right: 0;
-    text-align: center; /* centra texto en tablet */
+    text-align: center;
   }
 
   .Requisitos {
     width: 100%;
     padding-left: 0;
-    text-align: center; /* centra texto en tablet */
+    text-align: center;
   }
 
   /* QUITAR PUNTITOS DE LISTA */
   .Requisitos ul {
     list-style: none;
     padding-left: 0;
-    columns: 1; /* lista en una columna centrada */
-    display: inline-block; /* permite centrar el bloque completo */
+    columns: 1;
+    display: inline-block;
   }
 
   .Requisitos li {
@@ -586,31 +560,6 @@ header {
     margin-right: 50px;
   }
 
-  .Pie {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .LogoNombre {
-    align-items: center;
-  }
-
-  .PieLogo{
-    margin-bottom: 20px;
-  }
-
-  .NavegacionRapida {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .LogosRedes {
-    flex-direction: row; /* mantener fila */
-    gap: 30px;
-    justify-content: center; /* centrado horizontal */
-    margin-bottom: 20px;
-  }
 }
 
  
@@ -618,15 +567,14 @@ header {
 @media (max-width: 768px) {
 
   .TituloPrincipal {
-      display: flex;           /* convierte en flex container */
-      justify-content: center; /* centra horizontalmente */
-      align-items: center;     /* centra verticalmente */
-      flex-direction: column;  /* por si hay más elementos dentro */
-      text-align: center;      /* asegura que el texto interno también se centre */
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
   }
 
   .TituloPrincipal h1 {
-      font-size: 50px;   /* tamaño ajustado a tablet */
+      font-size: 50px;
 
   }
 
@@ -652,7 +600,7 @@ header {
   }
 
   .Requisitos ul {
-    columns: 1; /* lista en una sola columna */
+    columns: 1;
     padding-left: 0;
   }
 
