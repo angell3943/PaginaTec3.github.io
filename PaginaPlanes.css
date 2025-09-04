@@ -187,7 +187,7 @@ header {
 /* -------------------------------------------------*/
 
 .Planes {
-    background-image: url("planes.jpg");
+    background-image: url("imgs/planes.jpg");
     background-size: cover;
     background-position: center;
     height: 70vh;   

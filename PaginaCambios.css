@@ -188,7 +188,7 @@ header {
 /* -------------------------------------------------*/
 
 .CambiosInstitucionales {
-    background-image: url("hero2.jpg");
+    background-image: url("imgs/hero2.jpg");
     background-size: cover;
     background-position: center;
     height: 50vh;   
@@ -209,7 +209,7 @@ header {
 }
 
 .LogoPrincipal{
-    height: 240px;    /* Ajustá este valor al tamaño que quieras */
+    height: 240px;
     width: auto;
     border-radius: 8px;
     margin-left: 150px;
@@ -245,24 +245,24 @@ header {
 
 /* Sección: Cambio de régimen académico */
 .CambioRegimen {
-  background-color: #ffffff; /* fondo blanco */
+  background-color: #ffffff;
   padding: 50px 20px;
 }
 
 .RegimenInformacion {
   max-width: 900px;
   margin: 0 auto;
-  text-align: center; /* centra título y párrafos */
+  text-align: center;
 }
 
 /* Título grande con subrayado verde */
 .Titulo2 {
   font-family: 'Poppins', Arial, sans-serif;
-  font-size: 45px;          /* tamaño del título (ajustable) */
+  font-size: 45px;
   font-weight: 700;
   color: #333333;
   margin: 0;
-  display: inline-block;    /* para centrar y usar ::after */
+  display: inline-block;
   padding-bottom: 10px;
   line-height: 1;
   text-decoration: underline;
@@ -275,12 +275,12 @@ header {
 /* Texto centrado con ancho limitado (~500px) */
 .Texto2 {
   background-color:#ffffff;
-  max-width: 650px;         /* ancho solicitado */
-  margin: 22px auto 0;      /* centra en la página */
+  max-width: 650px;
+  margin: 22px auto 0;
   font-size: 16px;
   color: #444444;
   line-height: 1.65;
-  text-align: center;       /* el texto debe quedar centrado */
+  text-align: center;
   padding: 10px 15px;
 }
 
@@ -303,7 +303,7 @@ header {
 
 /* Estilo del link */
 .EnlaceCambio {
-  color: #1f7a34;      /* mismo verde del subrayado */
+  color: #1f7a34;
   text-decoration: underline;
   font-weight: 600;
   margin-left: 6px;
@@ -320,7 +320,7 @@ header {
   /* Columna izquierda */
 .Columna1 {
     flex: 1;
-    max-width: 560px; /* algo un poco más que 500 para el padding/margen */
+    max-width: 560px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -351,12 +351,12 @@ header {
 
   /* Columna derecha */
 .Columna2 {
-    flex: 0 0 800px; /* ancho fijo aprox */
+    flex: 0 0 800px;
     margin-right: 80px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* todo a la derecha */
-    text-align: center; /* los textos centrados respecto a su propio bloque */
+    align-items: center;
+    text-align: center;
     max-width: 500px;
     width: 100%;
   }
@@ -438,19 +438,18 @@ hr.Separacion {
 .Columna4 {
     flex: 1;
     max-width: 600px;
-    display: flex;           /* Para usar flexbox */
-    justify-content: flex-end; /* Empuja contenido (imagen) hacia la derecha */
-    padding-right: 0;        /* Quitar posible padding a la derecha */
-    margin-right: 0;         /* Quitar posible margen */
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0;
+    margin-right: 0;
 
 }
 
 .Columna4 img {
-    width: 80%;       /* Deja que la imagen tenga ancho automático */
-    max-width: 100%;   /* No pase del ancho máximo del contenedor */
+    width: 80%;
+    max-width: 100%; 
     height: auto;
     display: block;
-    /* opcional: para asegurar que toque el borde derecho */
     margin-right: 0;
 }
 
@@ -475,9 +474,9 @@ hr.Separacion {
 
 .LogoNombre {
   display: flex;
-  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
+  flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 20px; /* Un pequeño margen abajo */
+  margin-bottom: 20px;
 }
 
 
@@ -492,13 +491,13 @@ hr.Separacion {
 }
 
 .NombreEscuela {
-  font-size: 16px;  /* Reducimos el tamaño del texto */
+  font-size: 16px;
   font-weight: bold;
-  line-height: 1.2;  /* Alinea las líneas de texto */
+  line-height: 1.2;
 }
 
 .NombreEscuela p {
-  display: block;  /* Hace que cada parte del nombre esté en una línea */
+  display: block;
 }
 
 .NavegacionRedes {
@@ -511,13 +510,13 @@ hr.Separacion {
 
 .LogosRedes {
   display: flex;
-  flex-direction: column;  /* Cambiar de fila a columna */
-  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
-  align-items: center;  /* Centra las imágenes */
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
 .RedesIconos img {
-  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  width: 40px;
   height: auto;
 }
 
@@ -641,24 +640,24 @@ hr.Separacion {
 @media (max-width: 768px) {
 
   .CambiosInstitucionales {
-    flex-direction: column;   /* cambia de fila a columna */
-    justify-content: center;  /* centra verticalmente */
-    align-items: center;      /* centra horizontalmente */
-    text-align: center;       /* centra el texto */
-    height: auto;             /* altura automática en móvil */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;      
+    text-align: center;
+    height: auto;             
     padding: 20px 0;
   }
 
   .TituloPrincipal h1 {
-    font-size: 32px;         /* más chico para móvil */
+    font-size: 32px;       
     line-height: 40px;
-    margin: 0 0 15px 0;      /* espacio abajo del título */
+    margin: 0 0 15px 0;
     padding: 10px 15px;
   }
 
   .LogoPrincipal {
-    height: 120px;           /* achicamos un poco el logo */
-    margin: 0 auto;          /* centrado automático */
+    height: 120px;
+    margin: 0 auto;
     display: block;
   }
 
