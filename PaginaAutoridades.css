@@ -221,7 +221,7 @@ header {
 .Piramide {
   padding: 50px;
   text-align: center;
-  background-color: #ccc;
+  background-color: #f0f0f0;
 }
 
 
@@ -248,7 +248,7 @@ header {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 15px;
-  border: 3px solid #ccc;
+  border: 3px solid #f0f0f0;
 }
 
 .Tarjetas h3 {
@@ -285,7 +285,76 @@ header {
 }
 
 
+.horarios {
+      width: 100%;
+      background-color: #f0f0f0; /* fondo gris claro para la sección */
+      padding: 40px 0;
+    }
 
+    /* Tabla centrada */
+    .tabla {
+      margin: 0 auto;
+      border-collapse: collapse;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      min-width: 700px;
+    }
+
+    /* Bordes */
+    .tabla th,
+    .tabla td {
+      border: 1px solid #333;
+      padding: 12px 18px;
+    }
+
+    /* Encabezados de días */
+    .Dias {
+      background-color: orange;
+      color: #000000;
+      font-weight: bold;
+    }
+
+    /* Columna Turnos en verde */
+    .tabla td.Turnos {
+      background-color: #28a745;
+      color: #000000;
+      font-weight: bold;
+    }
+
+    /* Todas las casillas normales en blanco */
+    .tabla td {
+      background-color: #ffffff;
+    }
+
+    /* Fila Turno Tarde en beige */
+    .Tarde td {
+      background-color: #f5f5dc;
+    }
+
+ /* Texto debajo de la tabla */
+    .horarios-info {
+      margin-top: 30px;
+      text-align: center;
+      color: #000;
+    }
+
+    .horarios-info h3 {
+      margin-bottom: 10px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+.horarios-info ul {
+  display: inline-block;    /* hacemos que la lista se comporte como bloque centrado */
+  text-align: left;         /* los elementos de la lista se alinean a la izquierda dentro del bloque */
+  list-style-type: disc;    /* puntitos */
+  padding-left: 20px;       /* espacio desde el borde del bloque hasta los puntitos */
+}
+
+.horarios-info li {
+  font-size: 20px;
+  margin: 5px 0;
+}
 /*---------------------------------------------------------------*/
 .PaginaPie {
   background: linear-gradient(to top,  #00a560, #c1ff72);
