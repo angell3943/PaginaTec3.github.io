@@ -234,7 +234,7 @@ header {
 }
 
 .Tarjetas {
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   border-radius: 20px;
   padding: 30px;
   width: 250px;
@@ -264,11 +264,11 @@ header {
 
 /* Colores personalizados */
 .Verde {
-  background-color: #d7f5d0;
+  background-color: #4caf4c;
 }
 
 .Naranja {
-  background-color: #ffe1b3;
+  background-color: #ff9800;
 }
 
 
@@ -293,6 +293,7 @@ header {
 
     /* Tabla centrada */
     .tabla {
+      border: 2px solid black;
       margin: 0 auto;
       border-collapse: collapse;
       text-align: center;
@@ -303,39 +304,39 @@ header {
     /* Bordes */
     .tabla th,
     .tabla td {
-      border: 1px solid #333;
+      border: 1px solid #4b4b4b;
       padding: 12px 18px;
     }
 
     /* Encabezados de días */
     .Dias {
-      background-color: orange;
-      color: #000000;
+      background-color: #ff9800;
+      color: black;
       font-weight: bold;
     }
 
     /* Columna Turnos en verde */
     .tabla td.Turnos {
-      background-color: #28a745;
-      color: #000000;
+      background-color: #4caf4c;
+      color: black;
       font-weight: bold;
     }
 
     /* Todas las casillas normales en blanco */
     .tabla td {
-      background-color: #ffffff;
+      background-color: #f0f0f0;
     }
 
     /* Fila Turno Tarde en beige */
     .Tarde td {
-      background-color: #f5f5dc;
+      background-color: #e5e0d8;
     }
 
  /* Texto debajo de la tabla */
     .horarios-info {
       margin-top: 30px;
       text-align: center;
-      color: #000;
+      color: #4b4b4b;
     }
 
     .horarios-info h3 {
@@ -466,39 +467,13 @@ header {
 
 @media (max-width: 1024px) {
 
-    .MenuHamburguesa {
-    display: block;
-  }
-
-  .LinksMenu {
-    display: none;  /* oculto por defecto */
-    flex-direction: column;
-    width: 100%;
-    background-color: #c8e6c9;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    padding: 0;
-    margin: 0;
-  }
-
-  .LinksMenu a {
-    padding: 15px 20px;
-    text-align: center;
-    border-bottom: 1px solid #fff;
-  }
-
-  .LinksMenu.activo {
-    display: flex;
-  }
-
   /* Autoridades - Título y logo */
   .Autoridades {
-    flex-direction: column; /* columna */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: auto; /* ajustar altura para tablet */
+    height: auto; 
     padding: 40px 20px;
   }
 
@@ -522,14 +497,14 @@ header {
 
   .Nivel {
     display: flex;
-    flex-wrap: wrap;       /* permite que se divida en varias filas */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
   }
 
   .Tarjetas {
-    flex: 1 1 calc(50% - 20px); /* cada tarjeta ocupa ~50% del ancho menos el gap */
-    max-width: 250px;           /* no se haga demasiado grande */
+    flex: 1 1 calc(50% - 20px);
+    max-width: 250px;
   }
 
   .Tarjetas img {
@@ -572,14 +547,14 @@ header {
   }
 
   .Nivel {
-    flex-direction: column; /* todo en columna para móviles */
+    flex-direction: column;
     align-items: center;
     gap: 15px;
     margin-bottom: 20px;
   }
 
   .Tarjetas {
-    width: 90%;  /* ocupar casi todo el ancho */
+    width: 90%;
     max-width: 250px;
     padding: 15px;
   }
