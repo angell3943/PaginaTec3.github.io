@@ -1,4 +1,4 @@
-//Declaración de variables para mostrar nav lateral
+// Declaración de variables para mostrar nav lateral
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
@@ -16,14 +16,42 @@ const subLinks = [
     document.querySelector("#abrir3")
 ];
 
-// Click de cada boton abre y cierra nav lateral
-abrir.addEventListener("click", () => {
-    nav.classList.add("visible");
-})
+// Animación de entrada/salida
+let animacion = null;
 
+// Abrir menú
+abrir.addEventListener("click", () => {
+    if (animacion) animacion.cancel();
+
+    nav.style.display = "flex";
+
+    animacion = nav.animate([
+        { transform: "translateX(100%)", opacity: 0 },
+        { transform: "translateX(0)", opacity: 1 }
+    ], {
+        duration: 350,
+        easing: "ease-in-out",
+        fill: "forwards"
+    });
+});
+
+// Cerrar menú
 cerrar.addEventListener("click", () => {
-    nav.classList.remove("visible");
-})
+    if (animacion) animacion.cancel();
+
+    animacion = nav.animate([
+        { transform: "translateX(0)", opacity: 1 },
+        { transform: "translateX(100%)", opacity: 0 }
+    ], {
+        duration: 350,
+        easing: "ease-in-out",
+        fill: "forwards"
+    });
+
+    animacion.onfinish = () => {
+        nav.style.display = "none";
+    };
+});
 
 // Función para manejar apertura/cierre de sublistas
 subLinks.forEach((link, index) => {
