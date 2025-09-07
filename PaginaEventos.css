@@ -72,7 +72,7 @@ header {
 /* -------------------------------------------------*/
 
 .Eventos {
-    background-image: url("hero2.jpg");
+    background-image: url("imgs/hero2.jpg");
     background-size: cover;
     background-position: center;
     height: 50vh;   
@@ -93,7 +93,7 @@ header {
 }
 
 .LogoPrincipal{
-    height: 240px;    /* Ajustá este valor al tamaño que quieras */
+    height: 240px;
     width: auto;
     border-radius: 8px;
     margin-left: 150px;
