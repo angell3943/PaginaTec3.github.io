@@ -139,6 +139,7 @@ header {
 .header-testimonios img {
   width: 60px;
   height: 60px;
+  border-radius: 50%;
 }
 
 .titulo {
@@ -207,7 +208,8 @@ header {
 }
 
 .main-testimonios.tarjetas{
-  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
 }
 
 /* Flecha debajo */
