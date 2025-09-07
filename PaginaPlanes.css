@@ -204,6 +204,11 @@ header {
   margin-top: 12px;
 }
 
+.BotonesBasicos a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
 .BotonesBasicos button {
   background-color: #4caf4c;
   color: #f0f0f0;
