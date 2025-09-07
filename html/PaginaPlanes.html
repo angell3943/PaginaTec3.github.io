@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Torneos</title>
+  <title>Planes de Estudio</title>
 
     <!-- links css-->
-  <link rel="stylesheet" href="PaginaTorneos.css">
-  <link rel="stylesheet" href="Styles/mobile/header.css">
-  <link rel="stylesheet" href="Styles/mobile/footer.css">
+  <link rel="stylesheet" href="../Styles/desktop/PaginaPlanes.css">
+  <link rel="stylesheet" href="../Styles/mobile/header.css">
+  <link rel="stylesheet" href="../Styles/mobile/footer.css">
 
-    <!-- liks fuentes e iconos-->
+    <!-- links fuentes e iconos-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link rel="icon" type="img/png" href="imgs/favicon.png">          
+  <link rel="icon" type="img/png" href="../imgs/favicon.png">          
 
 </head>
 <body>
@@ -20,7 +20,7 @@
     <!-- 1ra seccion Menu de arriba -->
   <header>
   <div class="LogoMenu">
-    <a href="index.html"><img src="imgs/favicon.png" alt="Logo de la Escuela"></a>
+    <a href="../index.html"><img src="../imgs/favicon.png" alt="Logo de la Escuela"></a>
     <div class="TextoLogo">
       <p>Escuela de Educación</p>
       <p>Secundaria Técnica N°3</p>
@@ -33,7 +33,7 @@
   <nav class="nav" id="nav">
     <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
       <ul class="nav-list">
-        <li><a href="index.html">Inicio</a></li>
+        <li><a href="../index.html">Inicio</a></li>
 
           <li><a href="#" id="abrir1">Institucional</a>
             <ul class="sub-nav-list" id="list1">
@@ -65,95 +65,90 @@
           <li><a href="https://eest3.temploserver.com/?redirect=0">Campus</a></li>
       </ul>
   </nav>
-  <script src="Scripts/Menus.js"></script>
+  <script src="../Scripts/Menus.js"></script>
 </header>
   
 <!-- ----------------------------------------------------------------- -->
 
- <!-- 2da seccion de Eventos -->
-     <section class="Torneos">
+ <!-- 2da seccion de Historia -->
+     <section class="Planes">
 
     <!-- Texto De presentacion de la pagina-->
     <div class="TituloPrincipal">
-      <h1>Torneos Tecnica N°3</h1>
+      <h1>Planes de<br>Estudio</h1>
+      <p>Ciclo basico y superior</p>
     </div> 
-
-        <!-- Logo de la escuela en grande a la izquierda -->
-    <img src="imgs/logo.png" class="LogoPrincipal" alt="Logo Grande de la Escuela" />   
   </section>
   
 
 <!-- ----------------------------------------------------------------- -->
-
-  
-<section class="Nuestros-Torneos">
-  <p class="titulo">Sobre Nuestros Torneos</p>
-  <p class="texto">
-Esta sección está dedicada a informar sobre los distintos torneos que se llevan a cabo en nuestra institución junto a otras escuelas. En ella se contemplan competencias deportivas, tales como fútbol, vóley y atletismo, así como certámenes académicos y tecnológicos, incluyendo torneos de robótica y dibujo técnico, entre otros. Estas instancias constituyen espacios fundamentales para promover el desarrollo integral de los estudiantes, fomentando el trabajo en equipo, la disciplina, el compromiso y la excelencia en diversas áreas del conocimiento y la actividad física.
+ 
+<section class="CambioRegimen">
+  <p class="Titulo">¡Cambio del régimen académico!</p>
+  <p class="Texto">
+    A partir del ciclo lectivo 2025, en la provincia de Buenos Aires cambia el régimen académico de la secundaria: ya no se repite el año completo, sino solo las materias desaprobadas. Las calificaciones serán cuatrimestrales y se requerirá aprobar cada cuatrimestre con nota mínima. Habrá instancias de apoyo e intensificación durante el año para recuperar materias. El objetivo es acompañar mejor a los estudiantes y reducir el abandono escolar.
   </p>
+  <a href="PaginaCambios.html" class="InformacionEnlace">Para más información dirigirse aquí</a>
 </section>
 
+<section class="Escuela">
 
-<section class="torneo-dibujo">
-  <div class="torneo-contenedor">
-    
-    <!-- Imagen -->
-    <div class="torneo-imagen">
-      <img src="imgs/hero.jpg" alt="Torneo de Dibujo Técnico">
+  <h2 class="TituloEscuela">Nuestra escuela</h2>
+  <p class="Descripcion">
+Ofrecemos distintas modalidades de formación técnica para el ámbito de electromecánica y de Informática personal y profesional. Además Los estudiantes aprenderan carpintería, fundición, electricidad, hojalatería y demás que les permitirán desarrollar habilidades útiles y una base sólida para continuar su trayectoria en los años siguientes.  </p>
+
+  <h3 class="Subtitulo">El ciclo básico</h3>
+  <p class="Descripcion">
+Durante el ciclo básico (1º a 3º año), los estudiantes podrán aprender sobre dibujo técnico, fundición, electricidad, carpintería, computación y otras habilidades prácticas esenciales para su formación técnica.  </p>
+
+  <div class="Tiempo">
+  <img src="../imgs/Reloj.png" alt="Ícono de duración">
+  <p class="Texto1">3 años</p> 
+  <p class="Texto2">de duración</p>
+  </div>
+
+  <p class="PlanesEstudio">Descarga los planes de estudio</p>
+  <div class="BotonesBasicos">
+    <button><a download="1° año ciclo básico Técnica 3" href="pdfs/Ciclo básico 1er año .pdf">1° año</a></button>
+    <button><a download="2° año ciclo básico Técnica 3" href="pdfs/Ciclo básico 2do año.pdf">2° año</a></button>
+    <button><a download="3° año ciclo básico Técnica 3" href="pdfs/Ciclo básico 3er año.pdf">3° año</a></button>
+  </div>
+
+  </section>
+
+  <section class="InformaticaElectromecanica">
+    <h3 class="Titulo2">Ciclo Superior</h3>
+
+    <p class="Descripcion">
+Durante el ciclo superior, los estudiantes elegirán entre las modalidades de Técnico en Electromecánica o Técnico en Informática Personal y Profesional, profundizando en conocimientos y habilidades específicas para su futuro profesional.    </p>
+
+      <div class="Tiempo">
+    <img src="../imgs/Reloj.png" alt="Ícono de duración">
+    <p class="Texto1">4 años</p>
+    <p class="Texto2">de duración</p>
+      </div>
+
+  <h2 class="Titulo2">Nuestras especializaciones</h2>
+
+  <div class="Modalidades">  
+
+   <div class="Modalidad2">
+      <a href="#"> 
+      <img src="../imgs/electromecanica.jpg" alt="Electromecánica">
+      <p class="Titulo3">Técnico/a en Electromecánica</p>
+      </a>
     </div>
 
-    <!-- Contenido -->
-    <div class="torneo-info">
-      <h2>Torneo de Dibujo Técnico</h2>
-
-      <div class="torneo-cuerpo">
-        <!-- Columna premios -->
-        <div class="torneo-premios">
-          <h3>Premios</h3>
-          <ul>
-            <li>Kit de dibujo completo</li>
-            <li>Kit de teclado, mouse y auriculares para PC</li>
-          </ul>
-        </div>
-
-        <!-- Columna detalles -->
-        <div class="torneo-detalles">
-          <div class="torneo-bloque">
-            <h4>¿En qué consiste?</h4>
-            <p>
-              La “Olimpiada de Dibujo Técnico 2023 de la Región Educativa N°8” es un evento donde los estudiantes de escuelas técnicas de toda la región participan mostrando sus habilidades en dibujo técnico.
-            Durante la jornada, los alumnos trabajan en desafíos prácticos que evalúan su creatividad, precisión y conocimientos adquiridos en la materia “Lenguajes Tecnológicos” del Ciclo Básico.</p>
-          </div>
-
-          <hr>
-
-          <div class="torneo-bloque">
-            <h4>¿Cuándo es?</h4>
-            <p>
-El lunes 18 de septiembre del 2023 se llevó a cabo la Olimpiada en un evento que reunió a alumnos de 12 escuelas técnicas del distrito.            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Línea separadora -->
-      <hr class="linea-inscripcion">
-
-      <!-- Inscripción -->
-      <div class="torneo-inscripcion">
-        <h4>¿Cómo me inscribo?</h4>
-        <p>
-La participación se organiza a través de las escuelas técnicas, coordinando con los docentes de la materia de “Lenguajes Tecnológicos”. Los interesados deben inscribirse previamente con la autorización de su institución y los profesores a cargo del área.
-        </p>
-      </div>
+    <div class="Modalidad2">
+      <a href="#">
+      <img src="../imgs/Informatica.jpg" alt="Informatica">
+      <p class="Titulo3">Técnico/a en Informática</p>
+    </a>
     </div>
 
   </div>
+
 </section>
-
-
-
-
-
 
 <!-- ----------------------------------------------------------------- -->
 
@@ -163,7 +158,7 @@ La participación se organiza a través de las escuelas técnicas, coordinando c
     <div class="Pie">
       <!-- Logo y nombre de la escuela -->
       <div class="LogoNombre">       
-          <img src="imgs/favicon.png" alt="Logo de la escuela" class="PieLogo">
+          <img src="../imgs/favicon.png" alt="Logo de la escuela" class="PieLogo">
         <div class="NombreEscuela">
           <p>Escuela Educación</p><br>
           <p>Secundaria Técnica N°3</p>
@@ -198,7 +193,6 @@ La participación se organiza a través de las escuelas técnicas, coordinando c
           <h3>Novedades</h3>
           <ul>
             <li><a href="PaginaInscripciones.html">Inscripciones</a></li>
-            <li><a href="#">Avisos</a></li>
             <li><a href="PaginaCambios.html">Cambios</a></li>
             <li><a href="PaginaEgresados.html">Egresados</a></li>
           </ul>
@@ -218,8 +212,8 @@ La participación se organiza a través de las escuelas técnicas, coordinando c
         <h2 id="h2-footer">Seguinos en nuestras redes</h2>
 
         <div class="LogosRedes">
-          <a href="https://web.facebook.com/tecnicapadua" target="_blank" class="RedesIconos"><img src="imgs/facebook2.png" alt="Facebook"></a>
-          <a href="https://www.instagram.com/eest3padua/" target="_blank" class="RedesIconos"><img src="imgs/instagram3.png" alt="Instagram"></a>
+          <a href="https://web.facebook.com/tecnicapadua" target="_blank" class="RedesIconos"><img src="../imgs/facebook2.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/eest3padua/" target="_blank" class="RedesIconos"><img src="../imgs/instagram3.png" alt="Instagram"></a>
         </div>
       </div>
 
@@ -228,4 +222,4 @@ La participación se organiza a través de las escuelas técnicas, coordinando c
   </footer>
 
 </body>
-</html> 
+</html>
