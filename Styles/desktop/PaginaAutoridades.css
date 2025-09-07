@@ -72,7 +72,7 @@ header {
 /* -------------------------------------------------*/
 
 .Autoridades {
-    background-image: url("imgs/hero.jpg");
+    background-image: url("../../imgs/hero.jpg");
     background-size: cover;
     background-position: center;
     height: 70vh;   

@@ -72,7 +72,7 @@ header {
   /* ----------------------------------------------------------------*/
 
   .Inscripciones {
-    background-image: url("imgs/inschead.jpg");
+    background-image: url("../../imgs/inschead.jpg");
     background-size: cover;
     background-position: center;
     height: 80vh;   

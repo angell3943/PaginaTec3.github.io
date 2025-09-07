@@ -72,7 +72,7 @@ header {
 /* -------------------------------------------------*/
 
 .Historia {
-    background-image: url("imgs/historia.jpg");
+    background-image: url("../../imgs/historia.jpg");
     background-size: cover;
     background-position: center;
     height: 60vh;   

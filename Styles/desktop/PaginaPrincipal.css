@@ -212,20 +212,6 @@ header {
   margin: 0 auto 30px;
 }
 
-.Nosotros .BotonNosotros{
-  background-color: #4caf4f;
-  color: black;
-  padding: 6px 60px;
-  font-size: 25px;
-  text-decoration: none;
-  border-radius: 50px;
-  transition: 0.3s;
-}
-
-.Nosotros .BotonNosotros:hover {
-  background-color: #81c784;
-}
-
 /*-----------------------------------------------------------------------*/
 /*-------------- Seccion de eventos medio combinadas -----------------/*
 /* ----------------------------------------------------------------------/*
