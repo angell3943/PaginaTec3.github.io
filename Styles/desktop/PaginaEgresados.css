@@ -206,6 +206,10 @@ header {
   gap: 20px;
 }
 
+.main-testimonios.tarjetas{
+  width: 300px;
+}
+
 /* Flecha debajo */
 
 #tgl-btn-abajo{
