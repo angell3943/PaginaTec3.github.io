@@ -107,41 +107,114 @@ header {
     margin-left: 120px;
 }
 
-/* ------------------------------------------------------------ */
+/* -------------------------- Testimonios ---------------------------------- */
 
-.Testimonios{
-    
-    justify-content: center;
-    padding: 40px 20px;
-    gap: 100px;
-    width: 100%; 
-    display: flex;
+.main-container-t {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  padding: 5px;
+  width: 100%;
+  min-height: 250px;
+  max-height: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.main-testimonios {
+  border-radius: 10px;
+  background-color: #e5e0d8;
+  max-width: 45%;
+  min-width: 300px;
+}
+
+.header-testimonios{
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  align-items: center;
+}
+
+.header-testimonios img {
+  width: 60px;
+  height: 60px;
+}
+
+.titulo {
+  line-height: 1;
+  padding: 5px 0 0 5px;
+  flex-direction: column;
+  color: #4b4b4b;
+}
+
+.titulo h6 {
+  color: #7a7a7a;
+}
+
+.main-content {
+  padding: 10px;
+  color: #4b4b4b;
+  text-align: center;
+}
+
+.main-content::after {
+  content: "";
+  display: block;
+  width: 100%;
+  margin: 5px auto 0;
+  border: 2px solid #ff9800;
 }
 
 
-.Cuadros{
-    background-color: rgb(235, 235, 183);
-    padding: 40px;
-    border-radius: 40px;
-    width: 500px;
-    justify-content: center;   
-    align-items: center;        
-    text-align: center;   
+
+.toggle-tarjetas {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 0 auto;
+  font-size: 1.5rem;
+  color: #4b4b4b;
+  border: none;
+  background: none;
 }
 
-.ImagenTestimonio{
-    width: 70px;
-    border-radius: 50%
+/* Flecha arriba */
+
+#tgl-btn-arriba.active{
+  display: none;
 }
 
-.Cuadros h4 {
-  margin-bottom: 20px;
+/* ------------------------------- Testimonios 2 ----------------------------- */
+
+.tarjetas-container {
+  display: none;
 }
 
-.Cuadros p{
-    font-size: 15px;
+.tarjetas-container.show {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  min-height: 250px;
+  max-height: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
+/* Flecha debajo */
+
+#tgl-btn-abajo{
+  display: none;
+}
+
+#tgl-btn-abajo.active{
+  display: flex;
+}
 
 /* ------------------------------------------------------------ */
 
