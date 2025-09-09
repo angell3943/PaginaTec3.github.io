@@ -69,125 +69,10 @@ header {
     padding-top: 5px;
 }
 
-@media screen and (min-width: 826px) {
-
-    .nav-list li {
-        position: relative;
-    }
-
-    .nav-list li .sub-nav-list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 100px;
-    background-color: #f0f0f0;
-    padding: 0.5rem 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    z-index: 1000;
-}
-
-.nav-list li:hover .sub-nav-list {
-    display: flex;
-}
-
-.nav .nav-list li a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  padding: 5px 15px;
-  display: block;
-  transition: color 0.3s;
-}
-
-.nav .nav-list li:hover > a{
-  color: #1caf21;
-}
-
-.sub-nav-list li:hover {
-  background-color: greenyellow;
-}
-
-}
-
-@media screen and (max-width: 825px) {
-    
-    .abrir-menu, .cerrar-menu {
-        display: block;
-        border: 0;
-        font-size: 2rem;
-        background-color: transparent;
-    }
-
-    .abrir-menu:hover,
-    .cerrar-menu:hover {
-        cursor: pointer;
-    }
-
-    .cerrar-menu {
-        color: #ececec;
-    }
-
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #4b4b4b;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .nav-list li {
-        padding: 5px;
-    }
-
-    .sub-nav-list li {
-        padding-top: 10px;
-    }
-
-    .nav-list li a {
-    color: #f0f0f0;
-    }
-
-    .sub-nav-list {
-        display: none;
-    }
-
-    .nav-list li:has(.sub-nav-list) > a::after{
-        content: "▼";
-        display: inline-block;
-        margin-left: 5px;
-        transition: transform 0.3s;
-    }
-
-    .sub-nav-list.activo{
-        display: flex;
-    }
-
-}
-
-
 /* -------------------------------------------------*/
 
 .AulasyTalleres {
-    background-image: url("imgs/hero2.jpg");
+    background-image: url("../../imgs/hero2.jpg");
     background-size: cover;
     background-position: center;
     height: 50vh;   
@@ -206,7 +91,6 @@ header {
 }
 
 /* ----------------------------------------------------------------*/
-
 .aulas {
       max-width: 100%;
       margin: auto;
@@ -392,29 +276,27 @@ header {
   }
 }
 
-/*-------------------------------------------*/
+
 
 /* Sección Aulas Info/Electro */
 .aulas-info-electro {
+  background-color: #f0f0f0;
   padding: 60px 20px;
 }
-
 
 .contenedor-info-electro {
   max-width: 1200px;
   margin: auto;
+  text-align: center;
 }
 
-/* Títulos y textos */
-.info-electro {
-  font-size: 37px;
-  color: #333;
-  margin-bottom: 10px;
-  text-align: right;
+.titulo-fijo.Talleres {
+    text-align: right;
 }
+
 
 /* Bloque individual */
-.bloque-info, .bloque-electro {
+.bloque-info {
   margin-bottom: 60px;
 }
 
@@ -427,17 +309,17 @@ header {
 }
 
 .titulo-info{
-  text-decoration-color: green;
-  text-align: left;
+    text-align: left;
+    text-decoration-color: green;
 }
 
 .titulo-electro{
-  text-decoration-color: orange;
-  text-align: right;
+    text-align: right;
+    text-decoration-color: orange;
 }
 
-.Descripcion p {
-  font-size: 18px;
+.descripciones p {
+  font-size: 24px;
   color: #666;
   line-height: 1.5;
   margin-bottom: 30px;
@@ -496,10 +378,6 @@ header {
   margin-bottom: 10px;
 }
 
-.botones-slider{
-  text-align: center;
-}
-
 /* Botón dentro del overlay */
 .overlay-btn {
   position: absolute;
@@ -521,7 +399,7 @@ header {
 
 /* Botones rectangulares debajo de la imagen */
 .botones-slider {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .botones-slider button {
@@ -555,6 +433,7 @@ header {
     margin-bottom: 30px;
   }
 }
+
 /*---------------------------------------------------------------*/
 .PaginaPie {
   background: linear-gradient(to top,  #00a560, #c1ff72);
@@ -662,4 +541,3 @@ header {
 .NavegacionSecciones a:hover {
   text-decoration: underline;
 }
-

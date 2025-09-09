@@ -6,8 +6,9 @@
   <title>Planes de Estudio</title>
 
     <!-- links css-->
-  <link rel="stylesheet" href="PaginaPlanes.css">
-  <link rel="stylesheet" href="Styles/tablet-movil-footer.css">
+  <link rel="stylesheet" href="Styles/desktop/PaginaPlanes.css">
+  <link rel="stylesheet" href="Styles/mobile/header.css">
+  <link rel="stylesheet" href="Styles/mobile/footer.css">
 
     <!-- links fuentes e iconos-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -64,7 +65,7 @@
           <li><a href="https://eest3.temploserver.com/?redirect=0">Campus</a></li>
       </ul>
   </nav>
-  <script src="Scripts/Menus.js"></script>
+  <script src="scripts/Menus.js"></script>
 </header>
   
 <!-- ----------------------------------------------------------------- -->
@@ -87,7 +88,7 @@
   <p class="Texto">
     A partir del ciclo lectivo 2025, en la provincia de Buenos Aires cambia el régimen académico de la secundaria: ya no se repite el año completo, sino solo las materias desaprobadas. Las calificaciones serán cuatrimestrales y se requerirá aprobar cada cuatrimestre con nota mínima. Habrá instancias de apoyo e intensificación durante el año para recuperar materias. El objetivo es acompañar mejor a los estudiantes y reducir el abandono escolar.
   </p>
-  <a href="#" class="InformacionEnlace">Para más información dirigirse aquí</a>
+  <a href="PaginaCambios.html" class="InformacionEnlace">Para más información dirigirse aquí</a>
 </section>
 
 <section class="Escuela">
@@ -108,9 +109,9 @@ Durante el ciclo básico (1º a 3º año), los estudiantes podrán aprender sobr
 
   <p class="PlanesEstudio">Descarga los planes de estudio</p>
   <div class="BotonesBasicos">
-    <button>1° año</button>
-    <button>2° año</button>
-    <button>3° año</button>
+    <button><a download="1° año ciclo básico Técnica 3" href="pdfs/Ciclo básico 1er año .pdf">1° año</a></button>
+    <button><a download="2° año ciclo básico Técnica 3" href="pdfs/Ciclo básico 2do año.pdf">2° año</a></button>
+    <button><a download="3° año ciclo básico Técnica 3" href="pdfs/Ciclo básico 3er año.pdf">3° año</a></button>
   </div>
 
   </section>
@@ -163,7 +164,9 @@ Durante el ciclo superior, los estudiantes elegirán entre las modalidades de T�
           <p>Secundaria Técnica N°3</p>
         </div>
       </div>
-  
+      
+      <hr>
+
       <!-- Navegación rápida -->
       <div class="NavegacionRapida">
         <div class="NavegacionSecciones">
@@ -174,6 +177,7 @@ Durante el ciclo superior, los estudiantes elegirán entre las modalidades de T�
             <li><a href="PaginaHistoria.html">Historia de la escula</a></li>
             <li><a href="PaginaAulas.html">Nuestras aulas y talleres</a></li>
             <li><a href="PaginaCentro.html">Centro de Estudiantes</a></li>
+
 
           </ul>
         </div>
@@ -189,7 +193,6 @@ Durante el ciclo superior, los estudiantes elegirán entre las modalidades de T�
           <h3>Novedades</h3>
           <ul>
             <li><a href="PaginaInscripciones.html">Inscripciones</a></li>
-            <li><a href="#">Avisos</a></li>
             <li><a href="PaginaCambios.html">Cambios</a></li>
             <li><a href="PaginaEgresados.html">Egresados</a></li>
           </ul>
@@ -198,11 +201,15 @@ Durante el ciclo superior, los estudiantes elegirán entre las modalidades de T�
           <h3><a href="PaginaContactos.html">Contactos</a></h3> 
         </div>
         <div class="NavegacionSecciones">
-          <h3><a href="https://eest3.temploserver.com/?redirect=0">Campus</a></h3>
+          <h3><a href="#">Campus</a></h3>
         </div>
+
+      <hr>
 
         <!-- Redes sociales -->
       <div class="NavegacionRedes">
+        
+        <h2 id="h2-footer">Seguinos en nuestras redes</h2>
 
         <div class="LogosRedes">
           <a href="https://web.facebook.com/tecnicapadua" target="_blank" class="RedesIconos"><img src="imgs/facebook2.png" alt="Facebook"></a>
