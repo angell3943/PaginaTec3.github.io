@@ -318,11 +318,11 @@ header {
     text-decoration-color: orange;
 }
 
-.descripciones p {
-  font-size: 24px;
+.Descripcion p {
+  font-size: 16px;
   color: #666;
   line-height: 1.5;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 /* Imagen con overlay */
