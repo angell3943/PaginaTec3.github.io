@@ -69,125 +69,10 @@ header {
     padding-top: 5px;
 }
 
-@media screen and (min-width: 826px) {
-
-    .nav-list li {
-        position: relative;
-    }
-
-    .nav-list li .sub-nav-list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 100px;
-    background-color: #f0f0f0;
-    padding: 0.5rem 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    z-index: 1000;
-}
-
-.nav-list li:hover .sub-nav-list {
-    display: flex;
-}
-
-.nav .nav-list li a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  padding: 5px 15px;
-  display: block;
-  transition: color 0.3s;
-}
-
-.nav .nav-list li:hover > a{
-  color: #1caf21;
-}
-
-.sub-nav-list li:hover {
-  background-color: greenyellow;
-}
-
-}
-
-@media screen and (max-width: 825px) {
-    
-    .abrir-menu, .cerrar-menu {
-        display: block;
-        border: 0;
-        font-size: 2rem;
-        background-color: transparent;
-    }
-
-    .abrir-menu:hover,
-    .cerrar-menu:hover {
-        cursor: pointer;
-    }
-
-    .cerrar-menu {
-        color: #ececec;
-    }
-
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #4b4b4b;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .nav-list li {
-        padding: 5px;
-    }
-
-    .sub-nav-list li {
-        padding-top: 10px;
-    }
-
-    .nav-list li a {
-    color: #f0f0f0;
-    }
-
-    .sub-nav-list {
-        display: none;
-    }
-
-    .nav-list li:has(.sub-nav-list) > a::after{
-        content: "▼";
-        display: inline-block;
-        margin-left: 5px;
-        transition: transform 0.3s;
-    }
-
-    .sub-nav-list.activo{
-        display: flex;
-    }
-
-}
-
-
 /* -------------------------------------------------*/
 
 .Autoridades {
-    background-image: url("imgs/hero.jpg");
+    background-image: url("../../imgs/hero.jpg");
     background-size: cover;
     background-position: center;
     height: 70vh;   
@@ -234,7 +119,7 @@ header {
 }
 
 .Tarjetas {
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   border-radius: 20px;
   padding: 30px;
   width: 250px;
@@ -264,11 +149,11 @@ header {
 
 /* Colores personalizados */
 .Verde {
-  background-color: #d7f5d0;
+  background-color: #4caf4c;
 }
 
 .Naranja {
-  background-color: #ffe1b3;
+  background-color: #ff9800;
 }
 
 
@@ -293,6 +178,7 @@ header {
 
     /* Tabla centrada */
     .tabla {
+      border: 2px solid black;
       margin: 0 auto;
       border-collapse: collapse;
       text-align: center;
@@ -303,39 +189,39 @@ header {
     /* Bordes */
     .tabla th,
     .tabla td {
-      border: 1px solid #333;
+      border: 1px solid #4b4b4b;
       padding: 12px 18px;
     }
 
     /* Encabezados de días */
     .Dias {
-      background-color: orange;
-      color: #000000;
+      background-color: #ff9800;
+      color: black;
       font-weight: bold;
     }
 
     /* Columna Turnos en verde */
     .tabla td.Turnos {
-      background-color: #28a745;
-      color: #000000;
+      background-color: #4caf4c;
+      color: black;
       font-weight: bold;
     }
 
     /* Todas las casillas normales en blanco */
     .tabla td {
-      background-color: #ffffff;
+      background-color: #f0f0f0;
     }
 
     /* Fila Turno Tarde en beige */
     .Tarde td {
-      background-color: #f5f5dc;
+      background-color: #e5e0d8;
     }
 
  /* Texto debajo de la tabla */
     .horarios-info {
       margin-top: 30px;
       text-align: center;
-      color: #000;
+      color: #4b4b4b;
     }
 
     .horarios-info h3 {
@@ -470,11 +356,11 @@ header {
 
   /* Autoridades - Título y logo */
   .Autoridades {
-    flex-direction: column; /* columna */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: auto; /* ajustar altura para tablet */
+    height: auto; 
     padding: 40px 20px;
   }
 
@@ -498,14 +384,14 @@ header {
 
   .Nivel {
     display: flex;
-    flex-wrap: wrap;       /* permite que se divida en varias filas */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
   }
 
   .Tarjetas {
-    flex: 1 1 calc(50% - 20px); /* cada tarjeta ocupa ~50% del ancho menos el gap */
-    max-width: 250px;           /* no se haga demasiado grande */
+    flex: 1 1 calc(50% - 20px);
+    max-width: 250px;
   }
 
   .Tarjetas img {
@@ -548,14 +434,14 @@ header {
   }
 
   .Nivel {
-    flex-direction: column; /* todo en columna para móviles */
+    flex-direction: column;
     align-items: center;
     gap: 15px;
     margin-bottom: 20px;
   }
 
   .Tarjetas {
-    width: 90%;  /* ocupar casi todo el ancho */
+    width: 90%;
     max-width: 250px;
     padding: 15px;
   }

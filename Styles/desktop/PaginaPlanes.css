@@ -69,125 +69,10 @@ header {
     padding-top: 5px;
 }
 
-@media screen and (min-width: 826px) {
-
-    .nav-list li {
-        position: relative;
-    }
-
-    .nav-list li .sub-nav-list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 100px;
-    background-color: #f0f0f0;
-    padding: 0.5rem 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    z-index: 1000;
-}
-
-.nav-list li:hover .sub-nav-list {
-    display: flex;
-}
-
-.nav .nav-list li a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  padding: 5px 15px;
-  display: block;
-  transition: color 0.3s;
-}
-
-.nav .nav-list li:hover > a{
-  color: #1caf21;
-}
-
-.sub-nav-list li:hover {
-  background-color: greenyellow;
-}
-
-}
-
-@media screen and (max-width: 825px) {
-    
-    .abrir-menu, .cerrar-menu {
-        display: block;
-        border: 0;
-        font-size: 2rem;
-        background-color: transparent;
-    }
-
-    .abrir-menu:hover,
-    .cerrar-menu:hover {
-        cursor: pointer;
-    }
-
-    .cerrar-menu {
-        color: #ececec;
-    }
-
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #4b4b4b;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .nav-list li {
-        padding: 5px;
-    }
-
-    .sub-nav-list li {
-        padding-top: 10px;
-    }
-
-    .nav-list li a {
-    color: #f0f0f0;
-    }
-
-    .sub-nav-list {
-        display: none;
-    }
-
-    .nav-list li:has(.sub-nav-list) > a::after{
-        content: "▼";
-        display: inline-block;
-        margin-left: 5px;
-        transition: transform 0.3s;
-    }
-
-    .sub-nav-list.activo{
-        display: flex;
-    }
-
-}
-
-
 /* -------------------------------------------------*/
 
 .Planes {
-    background-image: url("imgs/planes.jpg");
+    background-image: url("../../imgs/planes.jpg");
     background-size: cover;
     background-position: center;
     height: 70vh;   
@@ -218,43 +103,44 @@ header {
 
 /* Sección del régimen académico */
 .CambioRegimen {
-    background-color: #e6dece;
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e0d8;
     padding: 20px 15px;
     text-align: center;
+    gap: 10px;
 }
 
 .CambioRegimen .Titulo {
     font-size: 22px;
     font-weight: bold;
-    color: #4b3b2c;
-    margin-bottom: 8px;
+    color: #4b4b4b;
 }
 
 .CambioRegimen .Texto {
     font-size: 17px;
-    color: #444;
+    color: #4b4b4b;
 }
 
 .CambioRegimen .InformacionEnlace {
     font-size: 13px;
     font-weight: 600;
-    color: #000;
-    text-decoration: none;
-    margin-top: 10px;
+    color: black;
+    padding: 10px;
 }
 
 /* Sección Nuestra Escuela */
 .Escuela {
   text-align: center;
   padding: 40px 15px;
-  background-color: #fff;
+  background-color: #f0f0f0;
   
 }
 
 .TituloEscuela {
   font-size: 50px;
   font-weight: bold;
-  color: #333;
+  color: #4b4b4b;
   margin-bottom: 25px;
 }
 
@@ -270,7 +156,7 @@ header {
 
 .Descripcion {
   font-size: 17px;
-  color: #555;
+  color: #4b4b4b;
   margin: 0 auto 20px;
   max-width: 450px;
 }
@@ -278,7 +164,7 @@ header {
 .Subtitulo {
   font-size: 40px;
   font-weight: bold;
-  color: #333;
+  color: #4b4b4b;
   margin-top: 40px;
   margin-bottom: 25px;
 }
@@ -299,7 +185,7 @@ header {
 .Texto2 {
   font-size: 13px;
   font-weight: normal;
-  color: #777;
+  color: #4b4b4b;
   margin-bottom: 20px;
 }
 
@@ -317,9 +203,14 @@ header {
   margin-top: 12px;
 }
 
+.BotonesBasicos a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
 .BotonesBasicos button {
-  background-color: #4caf50;
-  color: white;
+  background-color: #4caf4c;
+  color: #f0f0f0;
   border: none;
   border-radius: 20px;
   padding: 6px 16px;
@@ -329,7 +220,7 @@ header {
 
 /* Sección Especializaciones y Ciclo superior */
 .InformaticaElectromecanica {
-  background-color: #e6dece;
+  background-color: #e5e0d8;
   text-align: center;
   padding: 40px 15px;
 }
@@ -346,7 +237,7 @@ header {
     display: block;
     width: 21%;
     height: 4px;
-    background-color: orange; 
+    background-color: #ff9800; 
     margin: 0px auto 0;
     border-radius: 2px;
 }
@@ -360,7 +251,7 @@ header {
 }
 
 .Modalidad2 {
-  background-color: #eee;
+  background-color: #f0f0f0;
   border-radius: 12px;
   overflow: hidden;
   max-width: 250px;
@@ -381,14 +272,13 @@ header {
   padding: 10px;
   font-size: 14px;
   font-weight: bold;
-  color: #333;
+  color: #4b4b4b;
 }
 
 
 /*---------------------------------------------------------------*/
 .PaginaPie {
   background: linear-gradient(to top, #00a560, #c1ff72);
-  color: rgb(0, 0, 0);
   padding: 40px 20px;
   position: relative;
   font-weight: bold;
@@ -403,11 +293,10 @@ header {
 
 .LogoNombre {
   display: flex;
-  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
+  flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 20px; /* Un pequeño margen abajo */
+  margin-bottom: 20px; 
 }
-
 
 .PieLogo {
   width: 100px;
@@ -420,13 +309,13 @@ header {
 }
 
 .NombreEscuela {
-  font-size: 16px;  /* Reducimos el tamaño del texto */
+  font-size: 16px;
   font-weight: bold;
-  line-height: 1.2;  /* Alinea las líneas de texto */
+  line-height: 1.2;
 }
 
 .NombreEscuela p {
-  display: block;  /* Hace que cada parte del nombre esté en una línea */
+  display: block;
 }
 
 .NavegacionRedes {
@@ -439,13 +328,13 @@ header {
 
 .LogosRedes {
   display: flex;
-  flex-direction: column;  /* Cambiar de fila a columna */
-  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
-  align-items: center;  /* Centra las imágenes */
+  flex-direction: column; 
+  gap: 10px;
+  align-items: center; 
 }
 
 .RedesIconos img {
-  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  width: 40px;  
   height: auto;
 }
 

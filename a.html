@@ -1,89 +1,357 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aulas y Talleres</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aulas Info y Electro</title>
+<style>
+    .aulas {
+      max-width: 100%;
+      margin: auto;
+      padding: 20px;
+      background-color: rgb(233, 233, 219);
+    }
+
+    /* Título fijo */
+    .titulo-fijo {
+      margin-bottom: 50px;
+      text-align: left;
+      font-size: 28px;
+      color: #333;
+    }
+
+    /* Bloques generales */
+    .bloque {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      position: relative;
+      margin-bottom: 60px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .bloque.activo {
+      display: flex;
+      opacity: 1;
+    }
+
+    .texto {
+      flex: 1;
+      padding: 20px;
+     
+    }
+
+    .izquierda, .derecha {
+      margin-bottom: 10px;
+      text-decoration: underline;
+      text-decoration-color: orange;
+      text-decoration-thickness: 3px;
+      font-weight: 600;
+      font-size: 22px;
+      
+    }
+
+    .izquierda{
+      text-align: left;
+    }
+
+    .derecha{
+      text-align: right;
+    }
+
+    .texto p {
+      color: #555;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    /* Contenedor de la foto: las imágenes aparecerán una por vez */
+    .foto {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 100%; /* mantiene la altura del bloque */
+    }
+
+    /* Efecto fade para las imágenes */
+    .foto img {
+      max-width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+
+    .foto img.activo {
+      opacity: 1;
+      position: relative; /* mantiene la altura del bloque */
+    }
+
+    /* Línea divisoria */
+    .bloque::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 40px; /* deja espacio para los botones */
+      left: 50%;
+      width: 2px;
+      background: #ccc;
+      transform: translateX(-50%);
+    }
+
+    /* Botones internos */
+    .botones-internos {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .botones-internos button {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: none;
+      background: #ccc;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .botones-internos button.activo {
+      background: #333;
+    }
+
+    .botones-internos button:hover {
+      background: #555;
+    }
+
+    /* Tablet: hasta 768px */
+@media (max-width: 768px) {
+  .bloque {
+    flex-direction: column; /* horizontal → vertical */
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .texto {
+    order: 1;      /* aparece primero */
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .foto {
+    order: 2;      /* aparece después del texto */
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .bloque::before {
+    left: 50%;     /* mantiene línea vertical centrada */
+    height: 0;     /* opcional: ocultar línea vertical en vertical */
+    width: 0;
+  }
+
+  .botones-internos {
+    bottom: -40px;
+  }
+}
+
+/* Móvil: hasta 425px */
+@media (max-width: 425px) {
+  .bloque {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .texto {
+    order: 1;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  .foto {
+    order: 2;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .botones-internos {
+    bottom: -35px;
   
-      <!-- links css-->
-  <link rel="stylesheet" href="Styles/desktop/PaginaAulas.css">
-  <link rel="stylesheet" href="Styles/mobile/header.css">
-  <link rel="stylesheet" href="Styles/mobile/footer.css">
+  }
+}
 
-      <!-- links fuentes e iconos-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link rel="icon" type="img/png" href="imgs/favicon.png">          
 
+
+/* Sección Aulas Info/Electro */
+.aulas-info-electro {
+  background-color: #f0f0f0;
+  padding: 60px 20px;
+}
+
+.contenedor-info-electro {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.titulo-fijo.Talleres {
+    text-align: right;
+}
+
+
+/* Bloque individual */
+.bloque-info {
+  margin-bottom: 60px;
+}
+
+
+.titulo-info, .titulo-electro {
+  font-size: 32px;
+  color: #555;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.titulo-info{
+    text-align: left;
+    text-decoration-color: green;
+}
+
+.titulo-electro{
+    text-align: right;
+    text-decoration-color: orange;
+}
+
+.descripciones p {
+  font-size: 24px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Imagen con overlay */
+.imagen-overlay {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.imagen-overlay img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.imagen-overlay img.activo {
+  opacity: 1;
+  position: relative;
+}
+
+/* Overlay de texto */
+.overlay-texto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.imagen-overlay:hover .overlay-texto {
+  opacity: 1;
+}
+
+/* Título del overlay */
+.overlay-texto h4 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+/* Botón dentro del overlay */
+.overlay-btn {
+  position: absolute;
+  bottom: 55px;
+  right: 55px;
+  padding: 10px 20px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.overlay-btn:hover {
+  background-color: #e65c00;
+}
+
+/* Botones rectangulares debajo de la imagen */
+.botones-slider {
+  margin-top: 15px;
+}
+
+.botones-slider button {
+  padding: 6px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 16px;
+}
+
+.botones-slider button:hover {
+  background-color: #555;
+}
+
+.botones-slider button.activo {
+  background-color: orange;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bloque-info {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .bloque-info {
+    margin-bottom: 30px;
+  }
+}
+
+</style>
 </head>
 <body>
-
-    <!-- 1ra seccion Menu de arriba -->
-  <header>
-  <div class="LogoMenu">
-    <a href="index.html"><img src="imgs/favicon.png" alt="Logo de la Escuela"></a>
-    <div class="TextoLogo">
-      <p>Escuela de Educación</p>
-      <p>Secundaria Técnica N°3</p>
-    </div>
-  </div>
-
-  <!-- Mneús desktop y hamburguesa -->
-  <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
-
-  <nav class="nav" id="nav">
-    <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
-      <ul class="nav-list">
-        <li><a href="index.html">Inicio</a></li>
-
-          <li><a href="#" id="abrir1">Institucional</a>
-            <ul class="sub-nav-list" id="list1">
-              <li><a href="PaginaPlanes.html">Planes de estudio</a></li>
-              <li><a href="PaginaAutoridades.html">Autoridades</a></li>
-              <li><a href="PaginaHistoria.html">Historia de la escuela</a></li>
-              <li><a href="PaginaAulas.html">Aulas y talleres</a></li>
-              <li><a href="PaginaCentro.html">Centro de estudiantes</a></li>
-            </ul>
-          </li>
-
-          <li><a href="#" id="abrir2">Eventos</a>
-            <ul class="sub-nav-list" id="list2">
-              <li><a href="PaginaExposiciones.html">Exposición técnica</a></li>
-              <li><a href="PaginaEventos.html">Eventos escolares</a></li>
-              <li><a href="PaginaTorneos.html">Torneos</a></li>
-            </ul>
-          </li>
-
-          <li><a href="#" id="abrir3">Novedades</a>
-            <ul class="sub-nav-list" id="list3">
-              <li><a href="PaginaInscripciones.html">Inscripciones</a></li>
-              <li><a href="PaginaCambios.html">Cambios</a></li>
-              <li><a href="PaginaEgresados.html">Egresados</a></li>
-            </ul>
-          </li>
-                
-          <li><a href="PaginaContactos.html">Contacto</a></li>
-          <li><a href="https://eest3.temploserver.com/?redirect=0">Campus</a></li>
-      </ul>
-  </nav>
-  <script src="scripts/Menus.js"></script>
-</header>
-  
-<!-- ----------------------------------------------------------------- -->
-
- <!-- 2da seccion de Bienvenida -->
-     <section class="AulasyTalleres">
-      
-    <!-- Texto De presentacion de la pagina-->
-    <div class="TituloPrincipal">
-      <h1>Aulas y talleres de<br>Tecnia n°3</h1>
-    </div> 
-
-  </section>
-  
-
-<!-- ----------------------------------------------------------------- -->
-
-
 <section class="aulas">
 
 
@@ -261,77 +529,6 @@ descripciones, luego borra este comentario -->
 </section>
 
 
-
-<!-- ----------------------------------------------------------------- -->
-
-   <!-- 9na seccion la navegacion rapida entre paginass -->
-
-  <footer class="PaginaPie">
-    <div class="Pie">
-      <!-- Logo y nombre de la escuela -->
-      <div class="LogoNombre">       
-          <img src="imgs/favicon.png" alt="Logo de la escuela" class="PieLogo">
-        <div class="NombreEscuela">
-          <p>Escuela Educación</p><br>
-          <p>Secundaria Técnica N°3</p>
-        </div>
-      </div>
-      
-      <hr>
-
-      <!-- Navegación rápida -->
-      <div class="NavegacionRapida">
-        <div class="NavegacionSecciones">
-          <h3>Institucional</h3>
-          <ul>
-            <li><a href="PaginaPlanes.html">Planes de estudios</a></li>
-            <li><a href="PaginaAutoridades.html">Autoridades</a></li>
-            <li><a href="PaginaHistoria.html">Historia de la escula</a></li>
-            <li><a href="PaginaAulas.html">Nuestras aulas y talleres</a></li>
-            <li><a href="PaginaCentro.html">Centro de Estudiantes</a></li>
-
-
-          </ul>
-        </div>
-        <div class="NavegacionSecciones">
-          <h3>Eventos</h3>
-          <ul>
-            <li><a href="PaginaExposiciones.html">Exposion Tecnica 2025</a></li>
-            <li><a href="PaginaEventos.html">Eventos escolares</a></li>
-            <li><a href="PaginaTorneos.html">Torneos</a></li>
-          </ul>
-        </div>
-        <div class="NavegacionSecciones">
-          <h3>Novedades</h3>
-          <ul>
-            <li><a href="PaginaInscripciones.html">Inscripciones</a></li>
-            <li><a href="PaginaCambios.html">Cambios</a></li>
-            <li><a href="PaginaEgresados.html">Egresados</a></li>
-          </ul>
-        </div>
-        <div class="NavegacionSecciones">
-          <h3><a href="PaginaContactos.html">Contactos</a></h3> 
-        </div>
-        <div class="NavegacionSecciones">
-          <h3><a href="#">Campus</a></h3>
-        </div>
-
-      <hr>
-
-        <!-- Redes sociales -->
-      <div class="NavegacionRedes">
-        
-        <h2 id="h2-footer">Seguinos en nuestras redes</h2>
-
-        <div class="LogosRedes">
-          <a href="https://web.facebook.com/tecnicapadua" target="_blank" class="RedesIconos"><img src="imgs/facebook2.png" alt="Facebook"></a>
-          <a href="https://www.instagram.com/eest3padua/" target="_blank" class="RedesIconos"><img src="imgs/instagram3.png" alt="Instagram"></a>
-        </div>
-      </div>
-
-      </div>
-    </div>
-  </footer>
 
 </body>
 </html>
