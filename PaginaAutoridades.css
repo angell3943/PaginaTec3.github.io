@@ -355,6 +355,8 @@ header {
   font-size: 20px;
   margin: 5px 0;
 }
+
+
 /*---------------------------------------------------------------*/
 .PaginaPie {
   background: linear-gradient(to top,  #00a560, #c1ff72);
@@ -466,32 +468,6 @@ header {
 
 @media (max-width: 1024px) {
 
-    .MenuHamburguesa {
-    display: block;
-  }
-
-  .LinksMenu {
-    display: none;  /* oculto por defecto */
-    flex-direction: column;
-    width: 100%;
-    background-color: #c8e6c9;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    padding: 0;
-    margin: 0;
-  }
-
-  .LinksMenu a {
-    padding: 15px 20px;
-    text-align: center;
-    border-bottom: 1px solid #fff;
-  }
-
-  .LinksMenu.activo {
-    display: flex;
-  }
-
   /* Autoridades - Título y logo */
   .Autoridades {
     flex-direction: column; /* columna */
@@ -597,4 +573,81 @@ header {
     font-size: 13px;
   }
 
+    .tabla {
+    min-width: unset;      /* quitamos el mínimo de 700px */
+    width: 100%;           /* ocupa todo el ancho */
+    font-size: 14px;       /* reducimos un poco el tamaño del texto */
+  }
+
+  .tabla th,
+  .tabla td {
+    padding: 8px;          /* menos espacio interno */
+  }
+
+  .horarios-info h3 {
+    font-size: 22px;
+  }
+
+  .horarios-info li {
+    font-size: 16px;
+  }
+
 }
+/* Estilos por defecto (escritorio) -> mantenemos tu tabla normal */
+.tabla {
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  min-width: 700px;
+}
+
+
+@media (max-width: 425px) {
+  .tabla {
+    display: none; /* ocultamos la tabla clásica en celular */
+  }
+
+  /* Nueva vista estilo slider */
+  .tabla-mobile {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .dia-card {
+    flex: 0 0 90%; /* ocupa casi toda la pantalla */
+    background: #fff;
+    border: 1px solid #333;
+    padding: 15px;
+    scroll-snap-align: start;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .dia-card h4 {
+    background: orange;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .dia-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dia-card li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+  }
+
+  .dia-card li:last-child {
+    border-bottom: none;
+  }
+}
+
