@@ -207,347 +207,353 @@ header {
 
 /* ----------------------------------------------------------------*/
 
-.DescubreAula{
-  padding: 32px;
-  background: #f6f0e7;
+.aulas {
+      max-width: 100%;
+      margin: auto;
+      padding: 20px;
+      background-color: rgb(233, 233, 219);
+    }
+
+    /* Título fijo */
+    .titulo-fijo {
+      margin-bottom: 50px;
+      text-align: left;
+      font-size: 28px;
+      color: #333;
+    }
+
+    /* Bloques generales */
+    .bloque {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      position: relative;
+      margin-bottom: 60px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .bloque.activo {
+      display: flex;
+      opacity: 1;
+    }
+
+    .texto {
+      flex: 1;
+      padding: 20px;
+     
+    }
+
+    .izquierda, .derecha {
+      margin-bottom: 10px;
+      text-decoration: underline;
+      text-decoration-color: orange;
+      text-decoration-thickness: 3px;
+      font-weight: 600;
+      font-size: 22px;
+      
+    }
+
+    .izquierda{
+      text-align: left;
+    }
+
+    .derecha{
+      text-align: right;
+    }
+
+    .texto p {
+      color: #555;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    /* Contenedor de la foto: las imágenes aparecerán una por vez */
+    .foto {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 100%; /* mantiene la altura del bloque */
+    }
+
+    /* Efecto fade para las imágenes */
+    .foto img {
+      max-width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+
+    .foto img.activo {
+      opacity: 1;
+      position: relative; /* mantiene la altura del bloque */
+    }
+
+    /* Línea divisoria */
+    .bloque::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 40px; /* deja espacio para los botones */
+      left: 50%;
+      width: 2px;
+      background: #ccc;
+      transform: translateX(-50%);
+    }
+
+    /* Botones internos */
+    .botones-internos {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .botones-internos button {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: none;
+      background: #ccc;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .botones-internos button.activo {
+      background: #333;
+    }
+
+    .botones-internos button:hover {
+      background: #555;
+    }
+
+    /* Tablet: hasta 768px */
+@media (max-width: 768px) {
+  .bloque {
+    flex-direction: column; /* horizontal → vertical */
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .texto {
+    order: 1;      /* aparece primero */
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .foto {
+    order: 2;      /* aparece después del texto */
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .bloque::before {
+    left: 50%;     /* mantiene línea vertical centrada */
+    height: 0;     /* opcional: ocultar línea vertical en vertical */
+    width: 0;
+  }
+
+  .botones-internos {
+    bottom: -40px;
+  }
 }
 
-.DescubreAula hr {
-  margin-top: 10px;
+/* Móvil: hasta 425px */
+@media (max-width: 425px) {
+  .bloque {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .texto {
+    order: 1;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  .foto {
+    order: 2;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .botones-internos {
+    bottom: -35px;
+  
+  }
+}
+
+/*-------------------------------------------*/
+
+/* Sección Aulas Info/Electro */
+.aulas-info-electro {
+  padding: 60px 20px;
+}
+
+
+.contenedor-info-electro {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Títulos y textos */
+.info-electro {
+  font-size: 37px;
+  color: #333;
   margin-bottom: 10px;
+  text-align: right;
 }
 
-.Titulo {
-  font-size: 40px;
-  margin-bottom: 40px;
-  margin-top: 20px;
+/* Bloque individual */
+.bloque-info, .bloque-electro {
+  margin-bottom: 60px;
 }
 
-.Aulas {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
+
+.titulo-info, .titulo-electro {
+  font-size: 32px;
+  color: #555;
+  margin-bottom: 20px;
+  text-decoration: underline;
 }
 
-.ColumnaTexto {
-  flex: 1;
+.titulo-info{
+  text-decoration-color: green;
   text-align: left;
-  min-width: 400px;
 }
 
-.Columna1{
-  display: flex;
-  gap: 1rem;
+.titulo-electro{
+  text-decoration-color: orange;
+  text-align: right;
 }
 
-.Foto1 img {
-  height: 100%;
-  max-height: 500px;
-  width: 500px;
-  object-fit: cover;
+.Descripcion p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 30px;
 }
 
-
-.Mejoras h2{
-    font-size: 20px;
-    text-decoration: underline;
-    text-decoration-color: orange;
-    text-decoration-thickness: 3px;
-}
-
-
-
-
-.NuevoMaterial {
+/* Imagen con overlay */
+.imagen-overlay {
   position: relative;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 100%;
   overflow: hidden;
-  border-radius: 10px;
 }
 
-.NuevoMaterial img {
+.imagen-overlay img {
   width: 100%;
   height: auto;
   display: block;
-  filter: brightness(40%); 
-}
-
-.InformacionImagen {
+  opacity: 0;
+  transition: opacity 0.8s ease;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  z-index: 2;
-  padding: 10px 20px;
+  top: 0;
+  left: 0;
 }
 
-.Titulo2 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.TextoMaterial {
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.TextoPequeño{
-    margin-top: 22px;
-    margin-bottom: -10px;
-    font-size: 10px;
-}
-
-
-.Zoom {
-  font-family: sans-serif;
-  color: #333;
-  background-color: #f6f0e7;
-  padding: 20px 2px;
-}
-
-.Titulo3 {
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-  margin-left: 40px;
-}
-
-.InformacionZoom {
-  margin-left: 40px;
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.Columna2,
-.Columna3 {
-  display: flex;
-  flex-direction: column;
-  max-width: 375px;
-  max-height: 400px;
-  gap: 10px;
-}
-
-.Columna2 .Pequeña{
-  width: 100%;
-  max-height: 300px;
-  max-width: 400px;
-  object-fit: cover;
-}
-
-.Columna3 .Arriba{
-  width: 100%;
-  max-height: 200px;
-  max-width: 400px;
-  object-fit: cover;
-  
-}
-
-.TextoZoom {
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.Central img {
-  width: 500px;
-  height: 100%;
-  max-height: 390px;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-
-.Talleres {
-  width: 100%;
-  margin: 0 auto;
-  padding: 40px 80px;
-  font-family: Arial, sans-serif;
-  color: #333;
-
-}
-
-.Titulo4 {
-  text-align: right;
-  font-size: 40px;
-  font-weight: bold;
-  color: #333;
-}
-
-.SubtituloTalleres {
-  font-size: 30px;
-  color: #222;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  text-decoration: underline;
-  text-decoration-color: orange;
-  text-decoration-thickness: 3px;
-}
-
-
-
-.Descripcion {
-  font-size: 14px;
-  margin-bottom: 30px;
-  color: #666;
-  margin-top: 5px;
-  text-align: center;
-}
-
-.Sala {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.SalaImagen {
+.imagen-overlay img.activo {
+  opacity: 1;
   position: relative;
-  background-image: url("imgs/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 350px;
-  border-radius: 6px;
-  overflow: hidden;
 }
 
-.Overlay {
-  background-color: rgba(0, 0, 0, 0.45);
-  color: #fff;
-  padding: 20px;
+/* Overlay de texto */
+.overlay-texto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+  background-color: rgba(0,0,0,0.4);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 10px;
-}
-
-.Titulo5 {
-  font-size: 20px;
-  margin: 0;
-}
-
-.Descripcion2 {
-  font-size: 16px;
-  margin: 0;
-}
-
-.TextoTalleres {
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-
-.Aulas2 {
-  padding: 10px 20px;
-  width: 100%;
-}
-
-.BloqueAulas {
-  padding: 10px;
-  margin-bottom: 60px;
-
-}
-
-.Titulo6 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  margin-top: -40px;
-  color: #333;
-  display: inline-block;
-  padding-bottom: 2px;
-  text-decoration: underline;
-  text-decoration-color: green;
-  text-decoration-thickness: 3px;
-}
-
-
-.Titulo6.C {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  margin-top: -50px;
-  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
-
-
-.GrupoImagenes{
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+.imagen-overlay:hover .overlay-texto {
+  opacity: 1;
 }
 
-.ImagenAula.A {
-  max-height: 500px;  
-  max-width: 95%;    
+/* Título del overlay */
+.overlay-texto h4 {
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 
-.ImagenAula.B {
-  max-height: 250px;  
-  max-width: 90%;   
+.botones-slider{
+  text-align: center;
 }
 
-.ImagenAula.C {
-  max-height: 350px;  
-  max-width: 90%;   
+/* Botón dentro del overlay */
+.overlay-btn {
+  position: absolute;
+  bottom: 55px;
+  right: 55px;
+  padding: 10px 20px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
 }
 
-
-.Columna4,
-.Columna5 {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.overlay-btn:hover {
+  background-color: #e65c00;
 }
 
-.Columna4 {
-  flex: 1;
-  min-width: 200px;
+/* Botones rectangulares debajo de la imagen */
+.botones-slider {
+  margin-top: 20px;
 }
 
-.Columna5 {
-  flex: 1;
-  min-width: 200px;
+.botones-slider button {
+  padding: 6px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 16px;
 }
 
-.ImagenAula {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 4px;
+.botones-slider button:hover {
+  background-color: #555;
 }
 
-.ImagenAula.grande {
-  max-height: 500px;
-  max-width: 100%;
+.botones-slider button.activo {
+  background-color: orange;
 }
 
-.TextoImagen {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
+/* Responsive */
+@media (max-width: 768px) {
+  .bloque-info {
+    margin-bottom: 40px;
+  }
 }
 
-
-.Titulo6.D{
-  font-size: 30px;
-  text-decoration: underline;
-  text-decoration-color: orange;
-  text-decoration-thickness: 3px;
-  margin-bottom: 15px;
-}
-
-.SalaImagen.a {
-  background-image: url("imgs/hero2.jpg");
+@media (max-width: 425px) {
+  .bloque-info {
+    margin-bottom: 30px;
+  }
 }
 /*---------------------------------------------------------------*/
 .PaginaPie {
