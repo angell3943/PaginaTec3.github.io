@@ -297,7 +297,8 @@ header {
 @media screen and (max-width: 425px) {
 
   .encabezado {
-    gap: 10%;
+    flex-direction: column;
+    gap: 8%;
   }
 
   #titulo-encabezado {
@@ -305,8 +306,8 @@ header {
   }
 
   #logo-encabezado {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
   }
 
 }
