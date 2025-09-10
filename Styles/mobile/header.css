@@ -103,3 +103,11 @@
     }
 
 }
+
+@media screen and (max-width: 380px) {
+
+  .TextoLogo {
+    font-size: .75rem;
+  }
+
+}
