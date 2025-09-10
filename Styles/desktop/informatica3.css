@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+ /* Menú de navegación */ 
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: linear-gradient(to top,  #00a560, #c1ff72);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+  
+.LogoMenu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+  
+.LogoMenu img {
+    height: 50px;
+    width: auto;
+    margin-right: 12px;
+}
+  
+.TextoLogo {
+    display: flex;
+    flex-direction: column;    
+    font-size: 17px;
+    line-height: 1.2;
+    color: black;
+    white-space: nowrap;
+   font-weight: bold;
+}
+
+/* Menu desktop y hamburguesa*/
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.abrir-menu, .cerrar-menu {
+    display: none;
+}
+
+.nav .nav-list li a {
+  text-decoration: none;
+}
+
+.sub-nav-list {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    gap: 5px;
+    padding-top: 5px;
+}
+
+/* ------------------------------------------------------------ */
+
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+#titulo-encabezado {
+    font-size: 3rem;
+    color: #4b4b4b;
+    text-decoration: underline;
+    text-decoration-color: #4caf4c;
+}
+
+#logo-encabezado {
+    width: 150px;
+    height: 150px;
+}
+
+/*---------------------- bloques salas ------------------------*/
+
+.bloques {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    background-color: red;
+}
+
+.bloque {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25%;
+    gap: 30px;
+    padding: 50px;
+}
+
+.bloque.gris {
+    background-color: #f0f0f0;
+}
+
+.bloque.beige {
+    background-color: #e5e0d8;
+}
+
+.subtitulo {
+    padding: 5px;
+    color: #4b4b4b;
+    text-decoration: underline;
+    font-size: 2.5rem;
+}
+
+.subtitulo.derecha {
+    text-align: right;
+}
+
+.subtitulo.izquierda {
+    text-align: left;
+}
+
+.subtitulo.verde {
+    text-decoration-color: #4caf4c;
+}
+
+.subtitulo.naranja {
+    text-decoration-color: #ff9800;
+}
+
+.salas-content {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.parrafo-container {
+    width: 45%;
+}
+
+.parrafo-container p {
+    color: #4b4b4b;
+    font-size: 23px;
+    text-align: justify;
+    line-height: 1.5;
+} 
+
+.img-container {
+    width: 55%;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.parrafo-container,
+.img-container {
+    flex: 1 1 400px;
+    max-width: 600px;
+}
+
+#subtitulo-centro {
+    text-align: center;
+}
+
+/*---------------- footer --------------------------*/
+
+.PaginaPie {
+  background: linear-gradient(to top,  #00a560, #c1ff72);
+  color: rgb(0, 0, 0);
+  padding: 40px 20px;
+  position: relative;
+  font-weight: bold;
+}
+
+.Pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.LogoNombre {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+
+.PieLogo {
+  width: 100px;
+  height: auto;
+  margin-right: 15px; 
+  margin-left: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.NombreEscuela {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.NombreEscuela p {
+  display: block;
+}
+
+.NavegacionRedes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.LogosRedes {
+  display: flex;
+  flex-direction: column;  
+  gap: 10px;  
+  align-items: center;  
+  padding: 1rem;
+}
+
+.RedesIconos img {
+  width: 40px;  
+  height: auto;
+}
+
+
+.NavegacionRapida {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.NavegacionSecciones {
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.NavegacionSecciones h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones h3 a{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.NavegacionSecciones li {
+  margin: 5px 0;
+}
+
+.NavegacionSecciones a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+.NavegacionSecciones a:hover {
+  text-decoration: underline;
+}
