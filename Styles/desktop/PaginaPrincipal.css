@@ -91,7 +91,7 @@ header {
 }
 
 .Presentacion .slider ul {
-  display: flex;   
+  display: flex;
   animation: slide 10s infinite alternate linear;
   width: 200%;
   height: 100%;
@@ -115,7 +115,7 @@ header {
   45% {margin-left: 0;}
 
   55% {margin-left: -100%;}
-  95% {margin-left: -100%;}
+  100% {margin-left: -100%;}
 }
 
 /* -------- CONTENIDO ENCIMA -------- */
@@ -365,12 +365,29 @@ header {
   background-color: #ff9800; 
 }
 
-  
-/*----------------------------------------------------------*/   
-
 .Orientaciones{
   background-color: #e5e0d8;
 }
+  
+.info-extra {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: .55rem;
+  color: #4b4b4b;
+  text-decoration-color: #4b4b4b;
+}
+
+.info-extra a {
+  color: #4b4b4b;
+}
+
+.info-extra hr {
+  width: 265px;
+  align-self: center;
+}
+
+/*----------------------------------------------------------*/   
 
 /* Eventos */
 .TituloOrientaciones {
