@@ -135,11 +135,11 @@ header {
 }
 
 .subtitulo.verde {
-    text-decoration-color: #ff9800;
+    text-decoration-color: #4caf4c;
 }
 
 .subtitulo.naranja {
-    text-decoration-color: #4caf4c;
+    text-decoration-color: #ff9800;
 }
 
 .salas-content {
@@ -308,6 +308,19 @@ header {
   #logo-encabezado {
     width: 100px;
     height: 100px;
+  }
+
+  .subtitulo {
+    font-size: 1.5rem;
+  }
+
+  .subtitulo.derecha,
+  .subtitulo.izquierda {
+    text-align: center;
+  }
+
+  .parrafo-container p {
+    font-size: 1rem;
   }
 
 }
