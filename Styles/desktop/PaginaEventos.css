@@ -192,8 +192,8 @@ header {
 }
 
 .Bloque1.ConImagen .TextoImagen img {
-  height: 100%;       /* Se ajusta a la altura del texto */
-  width: auto;        /* Mantiene la proporción */
+  height: 200px;
+  width: auto;
   object-fit: cover;
   display: block;
   border: 2px solid white;
