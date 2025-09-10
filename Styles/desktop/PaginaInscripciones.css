@@ -101,7 +101,7 @@ header {
 
 .Seccion {
   display: flex;
-  gap: 30px; /* Espacio entre bloques */
+  gap: 30px;
   align-items: flex-start;
 }
 
