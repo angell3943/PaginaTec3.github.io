@@ -92,7 +92,7 @@ header {
 }
 
 .LogoPrincipal{
-    height: 280px;    /* Ajustá este valor al tamaño que quieras */
+    height: 280px;
     width: auto;
     border-radius: 8px;
     margin-left: 230px;
@@ -231,10 +231,10 @@ header {
     }
 
 .horarios-info ul {
-  display: inline-block;    /* hacemos que la lista se comporte como bloque centrado */
-  text-align: left;         /* los elementos de la lista se alinean a la izquierda dentro del bloque */
-  list-style-type: disc;    /* puntitos */
-  padding-left: 20px;       /* espacio desde el borde del bloque hasta los puntitos */
+  display: inline-block; 
+  text-align: left;   
+  list-style-type: disc;  
+  padding-left: 20px;    
 }
 
 .horarios-info li {
@@ -261,9 +261,9 @@ header {
 
 .LogoNombre {
   display: flex;
-  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
+  flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 20px; /* Un pequeño margen abajo */
+  margin-bottom: 20px;
 }
 
 
@@ -278,13 +278,13 @@ header {
 }
 
 .NombreEscuela {
-  font-size: 16px;  /* Reducimos el tamaño del texto */
+  font-size: 16px;
   font-weight: bold;
-  line-height: 1.2;  /* Alinea las líneas de texto */
+  line-height: 1.2;
 }
 
 .NombreEscuela p {
-  display: block;  /* Hace que cada parte del nombre esté en una línea */
+  display: block;
 }
 
 .NavegacionRedes {
@@ -297,13 +297,13 @@ header {
 
 .LogosRedes {
   display: flex;
-  flex-direction: column;  /* Cambiar de fila a columna */
-  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
-  align-items: center;  /* Centra las imágenes */
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
 .RedesIconos img {
-  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  width: 40px;
   height: auto;
 }
 
@@ -349,6 +349,10 @@ header {
 
 .NavegacionSecciones a:hover {
   text-decoration: underline;
+}
+
+.tabla-mobile {
+  display: none;
 }
 
 
@@ -460,41 +464,10 @@ header {
   }
 
     .tabla {
-    min-width: unset;      /* quitamos el mínimo de 700px */
-    width: 100%;           /* ocupa todo el ancho */
-    font-size: 14px;       /* reducimos un poco el tamaño del texto */
+    display: none;
   }
 
-  .tabla th,
-  .tabla td {
-    padding: 8px;          /* menos espacio interno */
-  }
-
-  .horarios-info h3 {
-    font-size: 22px;
-  }
-
-  .horarios-info li {
-    font-size: 16px;
-  }
-
-}
-/* Estilos por defecto (escritorio) -> mantenemos tu tabla normal */
-.tabla {
-  margin: 0 auto;
-  border-collapse: collapse;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  min-width: 700px;
-}
-
-
-@media (max-width: 425px) {
-  .tabla {
-    display: none; /* ocultamos la tabla clásica en celular */
-  }
-
-  /* Nueva vista estilo slider */
+    /* Nueva vista estilo slider */
   .tabla-mobile {
     display: flex;
     overflow-x: auto;
@@ -504,7 +477,7 @@ header {
   }
 
   .dia-card {
-    flex: 0 0 90%; /* ocupa casi toda la pantalla */
+    flex: 0 0 90%; 
     background: #fff;
     border: 1px solid #333;
     padding: 15px;
@@ -535,5 +508,33 @@ header {
   .dia-card li:last-child {
     border-bottom: none;
   }
+
+    .tabla {
+    min-width: unset;    
+    width: 100%;        
+    font-size: 14px;     
+  }
+
+  .tabla th,
+  .tabla td {
+    padding: 8px;        
+  }
+
+  .horarios-info h3 {
+    font-size: 22px;
+  }
+
+  .horarios-info li {
+    font-size: 16px;
+  }
+
+}
+/* Estilos por defecto (escritorio) -> mantenemos tu tabla normal */
+.tabla {
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  min-width: 700px;
 }
 
