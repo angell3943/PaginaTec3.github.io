@@ -135,6 +135,7 @@ header {
   color: rgb(0, 0, 0);
   padding: 40px 20px;
   position: relative;
+  bottom: 0;
   font-weight: bold;
 }
 
