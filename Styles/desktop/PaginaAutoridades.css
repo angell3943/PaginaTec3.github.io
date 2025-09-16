@@ -467,7 +467,7 @@ header {
     display: none;
   }
 
-    /* Nueva vista estilo slider */
+  /* Tabla Slider */
   .tabla-mobile {
     display: flex;
     overflow-x: scroll;
