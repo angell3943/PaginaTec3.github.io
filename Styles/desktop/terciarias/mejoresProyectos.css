@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* -------------------------- Header ---------------------------------- */
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: linear-gradient(to top,  #00a560, #c1ff72);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+  
+.LogoMenu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+  
+.LogoMenu img {
+    height: 50px;
+    width: auto;
+    margin-right: 12px;
+}
+  
+.TextoLogo {
+    display: flex;
+    flex-direction: column;    
+    font-size: 17px;
+    line-height: 1.2;
+    color: black;
+    white-space: nowrap;
+   font-weight: bold;
+}
+
+/* Menu desktop y hamburguesa*/
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.abrir-menu, .cerrar-menu {
+    display: none;
+}
+
+.nav .nav-list li a {
+  text-decoration: none;
+}
+
+.sub-nav-list {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    gap: 5px;
+    padding-top: 5px;
+}
+
+/*--- Main content ---*/
+
+main {
+  color: #4b4b4b;
+}
+
+/*--- Cabecera ---*/
+
+.cabecera {
+  background-color: #e5e0d8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.cabecera h2 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  text-decoration-color: #ff9800;
+  flex: 0 1 auto;
+}
+
+.cabecera img {
+  width: auto;
+  height: 80px;
+}
+
+/*--- Introfucción ---*/
+
+.int-block {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: #e5e0d8;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 100%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 35%;
+}
+
+.text-container h2 {
+  text-decoration: underline;
+  text-decoration-color: #ff9800;
+}
+
+.text-container p {
+  text-align: justify;
+  max-width: 300px;
+}
+
+.img-slider-container {
+  width: 65%;
+  height: 790px;
+  position: relative;
+}
+
+.img-slider {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.img-slider img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.dots-container {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 10%;
+  height: 25px;
+  background-color: #e5e0d8;
+  border-radius: 72px;
+  z-index: 10;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #4b4b4b;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot:hover {
+  background-color: #7a8cff;
+}
+
+.dot.active {
+  background-color: #5172ff;
+}
+
+/*----------------------------- Footer ----------------------------------*/
+.PaginaPie {
+  background: linear-gradient(to top, #00a560, #c1ff72);
+  padding: 40px 20px;
+  position: relative;
+  font-weight: bold;
+}
+
+.Pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.LogoNombre {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px; 
+}
+
+.PieLogo {
+  width: 100px;
+  height: auto;
+  margin-right: 15px; 
+  margin-left: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.NombreEscuela {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.NombreEscuela p {
+  display: block;
+}
+
+.NavegacionRedes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.LogosRedes {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  align-items: center; 
+}
+
+.RedesIconos img {
+  width: 40px;  
+  height: auto;
+}
+
+
+.NavegacionRapida {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.NavegacionSecciones {
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.NavegacionSecciones h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones h3 a{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NavegacionSecciones ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.NavegacionSecciones li {
+  margin: 5px 0;
+}
+
+.NavegacionSecciones a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+.NavegacionSecciones a:hover {
+  text-decoration: underline;
+}
