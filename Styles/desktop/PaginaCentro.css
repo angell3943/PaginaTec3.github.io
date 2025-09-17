@@ -204,137 +204,64 @@ header {
   text-align: center;
 }
 
-.Bloque {
-  padding: 40px 0;
-}
+/* Fotos */
 
-.IntegrantesBeige {
-  background-color: #f5f0e6;
-  height: 150vh;
-}
-
-.IntregrantesBlanco {
-  background-color: #ffffff;
-  height: 110vh;
-}
-
-.Titulo {
-  text-align: center;
-  position: relative;
-  top: 18px;
-  left: 50px;
-  font-size: 30px;
-  text-decoration: underline;
-  text-decoration-color: green;
-}
-
-.Integrantes {
+.fotos-centro {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #4b4b4b;
   gap: 30px;
-  padding: 0 20px;
 }
 
-.Tarjeta1 {
-  position: relative;
-  background-color: inherit;
-  padding: 10px 20px;
+.imgs-cargos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   text-align: center;
-  width: 300px;
-  height: 250px;
-  box-sizing: border-box;
-  background-color: rgb(255, 255, 255);
-  
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.Tarjeta2 { 
-  position: relative;
-  background-color: inherit;
-  padding: 10px 20px;
-  text-align: center;
-  width: 300px;
-  height: 250px;
-  box-sizing: border-box;
-    background-color: #ede5db;
+.img-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  flex: 1 1 250px;
 }
 
-.Tarjeta1 img, .Tarjeta2 img {
-    width: 230px;
-    height: auto;
-    border: 6px solid white;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto;
+.nombre {
+  background-color: #ede5db;
+  border-radius: 90px;
+  width: 200px;
 }
 
-.Puesto{
-    font-weight: bold;
-    margin-bottom: 15px;
-    font-size: 16px;
+.img-container img {
+  width: calc(70% + 25px);
+  height: calc(70% - 20px);
+  /*object-fit: cover;*/
 }
 
-.Tarjeta1.a{
-    right:50px;
-    transform: rotate(13deg);
+.foto-grupal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.Tarjeta1.b{
-    top:100px;
-    left: 300px;
-    transform: rotate(-16deg);
+.foto-grupal h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+  text-decoration-color: #4caf4c;
 }
 
-.Tarjeta1.c{
-    top:320px;
-    right:400px;
-    transform: rotate(2deg);
+.foto-grupal img {
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 19 / 9;
 }
-
-
-.Tarjeta2.a{
-    top:370px;
-    right:-15px;
-    transform: rotate(5deg);
-}
-
-.Tarjeta2.b{
-    right:120px;
-    transform: rotate(-5deg);
-}
-
-.Tarjeta2.c{
-    left:120px;
-    transform: rotate(5deg);
-}
-
-.Tarjeta2.d{
-    top:390px;
-    transform: rotate(-10deg);
-}
-
-.Tarjeta2.e{
-    top:50px;
-    left:30px;
-    transform: rotate(-1deg);
-}
-
-.FotoGrupal {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #ffffff; /* o el color que combine con el resto del sitio */
-}
-
-.FotoGrande{
-    width: 100%;
-    max-width: 600px;
-    height: 100%;
-    max-height: 300px;
-    border: 18px solid #ede5db;
-
-}
-
-
 
 /*---------------------------------------------------------------*/
 .PaginaPie {

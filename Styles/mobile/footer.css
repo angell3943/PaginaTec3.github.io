@@ -93,6 +93,11 @@ display: none;
     font-size: 0.9rem;
   }
 
+  #h2-footer {
+    text-align: center;
+    font-size: 1rem;
+  }
+
   .LogosRedes {
     flex-direction: row;
     gap: 30px;
