@@ -30,7 +30,7 @@ tarjetas.forEach(tarjeta => {
       cerrarTarjeta(tarjeta);
     }
   });
-});
+}); 
 
 // Cerrar al hacer click en overlay
 overlay.addEventListener("click", () => {
