@@ -553,12 +553,3 @@ header {
   }
 
 }
-/* Estilos por defecto (escritorio) -> mantenemos tu tabla normal */
-.tabla {
-  margin: 0 auto;
-  border-collapse: collapse;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  min-width: 700px;
-}
-

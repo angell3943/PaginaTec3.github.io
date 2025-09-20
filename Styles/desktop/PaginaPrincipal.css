@@ -235,9 +235,8 @@ header {
   margin: 0 auto 30px;
 }
 
-/*-----------------------------------------------------------------------*/
 /*-------------- Seccion de eventos medio combinadas -----------------/*
-/* ----------------------------------------------------------------------/*
+
 
 
   /* Orientaciones */
@@ -1060,44 +1059,33 @@ header {
 /* ---------------------------------------------------------- */
 
 
-   .slider-orientaciones, .cuatro-orientaciones,
-  .Evento1, .cuatro-eventos {
+.slider-orientaciones, .cuatro-orientaciones,
+.Evento1, .cuatro-eventos {
     width: 90%;
     height: 250px;
   }
 
-  .Overlay {
-    width: 45%;
+.Overlay {
+    width: 100%;
     padding: 15px;
   }
 
-  .Overlay.Izq {
-    left: 0;
-    right: auto;
+.Overlay.Naranja h3, .Overlay.Gris h3 {
+  text-align: center;
+  font-size: 20px;
   }
 
-  .Overlay.Der {
-    right: 0;
-    left: auto;
+.Overlay.Naranja p, .Overlay.Gris p {
+  text-align: center;
+  font-size: 15px;
   }
 
-  .Overlay h3 {
+
+  .BotonVerMas.Naranja, .BotonVerMas.Gris {
+    padding: 8px 60px;
     font-size: 18px;
   }
-
-  .Overlay p {
-    font-size: 14px;
-  }
-
-  .BotonVerMas.Naranja {
-    padding: 6px 60px;
-    font-size: 18px;
-  }
-
-  .BotonVerMas.Gris {
-    padding: 4px 40px;
-    font-size: 16px;
-  }
+  
 
   .SubtituloOrientaciones.Izq2,
   .SubtituloOrientaciones.Der2 {
@@ -1266,34 +1254,14 @@ header {
     height: 400px;
   }
 
-  .Overlay {
-    width: 35%;
-    padding: 10px;
-  }
-
-  .Overlay.Izq {
-    left: 0;
-    right: auto;
-  }
-
-  .Overlay.Der {
-    right: 0;
-    left: auto;
-  }
 
   .Overlay h3 {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .Overlay p {
-    font-size: 13px;
+    font-size: 14px;
   }
-
-  .BotonVerMas.Naranja {
-    padding: 4px 25px;
-    font-size: 16px;
-  }
-
  
   .SubtituloOrientaciones.Izq2,
   .SubtituloOrientaciones.Der2 {
@@ -1318,14 +1286,13 @@ header {
   height: 300px;
 }
 
-
 .TituloEvento {
   font-size: 1.5rem;
   text-align: center;
   } 
   
-.BotonVerMas.Gris {
-  padding: 5px 8px;
+.BotonVerMas.Gris, .BotonVerMas.Naranja {
+  padding: 8px 50px;
   font-size: 14px;
   }
 
@@ -1377,7 +1344,7 @@ header {
 .slider_body{
   grid-template-columns: 1fr;
   grid-template-rows: max-content 1fr;
-  gap: 1rem;
+  gap: 1rem; 
 }
 
 .slider_pinture {
@@ -1410,9 +1377,9 @@ header {
   .CentroFoto img {
     width: 100%;
     height: auto;
-    border-top-right-radius: 200px;
-    border-bottom-right-radius: 200px; /* bordes derechos redondeados */
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+    border-radius: 0%;
+  
   }
 
 }
