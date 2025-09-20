@@ -467,11 +467,12 @@ header {
     display: none;
   }
 
-    /* Nueva vista estilo slider */
+  /* Tabla Slider */
   .tabla-mobile {
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    position: sticky;
     gap: 15px;
     padding: 10px;
   }
@@ -481,7 +482,7 @@ header {
     background: #fff;
     border: 1px solid #333;
     padding: 15px;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
 

@@ -82,7 +82,7 @@ header {
 }
 
 .TituloPrincipal h1{
-    color: rgb(49, 49, 49);
+    color: #4b4b4b;
     margin-left: 100px;
     margin-top: -240px;
     font-size: 80px; 
@@ -91,156 +91,269 @@ header {
 
   /* ----------------------------------------------------------------*/
 
-.BloqueUno {
-  background-color: beige;
+.main-content {
+  width: 100%;
+  background-color: #e5e0d8;
 }
 
-.BloqueDos{
-  background-color: white;
-}
-
-.Seccion {
+.bloques {
+  width: 100%;
   display: flex;
-  gap: 30px;
-  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 25px;
 }
 
-.Titulo{
-  display: inline-block;
-  font-size: 33px;
-  font-weight: bold;
-  padding: 10px 20px;
-  margin-top: 40px;
-  color: #000;
+.titulo {
+  background-color: #4caf4c;
+  height: 60px;
+  align-content: center;
+  padding-left: 10px;
+  width: 24%;
+  max-width: 270px;
+
+   clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 50%, calc(100% - 30px) 100%, 0 100%);
 }
 
-.Titulo.Verde{
-  text-decoration: underline;
-  text-decoration-color: green;
-  text-decoration-thickness: 3px;
-}
-
-.Titulo.Naranja{
-  text-decoration: underline;
-  text-decoration-color: orange;
-  text-decoration-thickness: 3px;
-}
-
-.Informacion {
-  width: 60%;
-  padding-right: 20px;
-  border-right: 2px solid #aaa; /* 👉 Línea vertical */
-  margin-bottom: 20px;
-}
-
-.Informacion p {
-  margin-top: 40px;
-  margin-left: 30px;
-  margin-bottom: 30px;
-}
-
-.TituloFlecha {
-  display: inline-block;
-  font-size: 33px;
-  background-color: green;
-  position: relative;
-  font-weight: bold;
-  padding: 10px 20px;
-  margin-top: 40px;
-  color: #000;
-}
-
-/* Puntas en forma de flecha */
-.TituloFlecha::before,
-.TituloFlecha::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 0;
-  height: 0;
-  border-top: 35px solid transparent;
-  border-bottom: 35px solid transparent;
-}
-
-.TituloFlecha::before {
-  left: -20px;
-  border-right: 20px solid green; /* color igual al fondo */
-}
-
-.TituloFlecha::after {
-  right: -20px;
-  border-left: 20px solid green;
-}
-
-.SeccionCentrada {
-  padding: 50px 0;
+.bloques-beige {
+  margin: 0;
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: #e5e0d8;
+  min-height: 300px;
+}
+
+.izquierda {
+  width: 55%;
+  justify-items: center;
+}
+
+.derecha {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  gap: 10px;
 }
 
-.Requisitos {
-  width: 40%;
-  padding-left: 20px;
 
+.texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  gap: 10px;
 }
 
-.Titulo.Verde.Centrado{
-  margin-top: -25px;
+.texto h2 {
+  align-self: flex-start;
+  text-align: left;
+  width: auto;
+  padding-left: 5%;
 }
 
-.Requisitos h3 {
-  margin-top: 0;
-  font-size: 30px;
-  font-weight: bold;
-  margin-left: 10px;
-  margin-bottom: 30px;
-}
-
-.Subtitulo{
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: -25px;
-  font-weight: bold;
-}
-
-.Subtitulo.Verde{
+.h2-subtitle {
+  color: #4b4b4b;
   text-decoration: underline;
-  text-decoration-color: green;
-  text-decoration-thickness: 3px;
+  text-decoration-color: #ff9800;
 }
 
-.Subtitulo.Naranja{
-  text-decoration: underline;
-  text-decoration-color: orange;
-  text-decoration-thickness: 3px;
+.texto p {
+  color: #4b4b4b;
+  padding: 20px;
 }
 
-.Requisitos ul {
-  list-style-position: inside;
-  padding-left: 20px;
-  columns: 2;
+.texto .texto-verde {
+  text-decoration-color: #4caf4c;
 }
 
-.Requisitos li {
-  margin-top: 10px;
-  font-size: 14px;
-  margin-bottom: 10px;
+.divisor-y {
+  margin: 0;
+  padding: 0;
+  border: 0,9px solid #4b4b4b ;
+  height: 250px;
+  align-self: center;
 }
 
-.Requisitos hr {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border: 1px solid #ccc;
+.requisitos{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 50px;
+  align-items: center;
+  gap: 10px;
+}
+
+.requisitos ul li {
+  color: #4b4b4b;
+}
+
+.h2-requisitos {
+  color: #4b4b4b;
+}
+
+.bloques-blanco {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: #f0f0f0;
+  min-height: 300px;
+}
+
+.divisor-x {
+  border: 0,9px solid #4b4b4b;
   width: 90%;
-  margin-left: 30px;
+}
+
+#izq-3 ul li {
+  color: #4b4b4b;
+}
+
+.izquierda-abajo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.derecha-abajo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 50px;
+  align-items: center;
+  gap: 10px;
+}
+
+.h3-subtitle {
+  text-decoration: underline;
+  text-decoration-color: #ff9800;
+  color: #4b4b4b;
+}
+
+.bloque-reinscripciones {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f0f0f0;
+}
+
+#titulo-reinscripciones {
+  padding: 10px;
+  color: #4b4b4b;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #4caf4c;
+}
+
+.row-block {
+  display: flex;
+}
+
+#reinscripciones-lista {
+  max-width: 75%;
+  color: #4b4b4b;
+}
+
+.abajo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.abajo h2 {
+  font-size: 2rem;
+}
+
+.reinscripciones-requisitos-lista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.reinscripciones-requisitos-lista ul {
+  max-width: 50%;
+}
+
+.reinscripciones-requisitos-lista ul li{
+  font-size: 1rem;
+}
+
+.fin {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+#hr-fin-insc{
+  align-self: center;
+  width: 50%;
+  border-top: 1px solid #4b4b4b;
+  max-width: 400px;
+}
+
+#fin-insc-txt {
+  color: #4b4b4b;
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+#fin-insc-txt a {
+  color: #4b4b4b;
+  text-decoration-color: #4b4b4b;
+}
+
+/*----------------------------- Tabla de horarios ----------------------------------*/
+
+.tabla-container {
+  padding: 50px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.tabla-container h2 {
+  font-size: 2.5rem;
+  color: #4b4b4b;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #4caf4c;
+}
+
+.tabla {
+  border: 2px solid #4b4b4b;
+  margin: 0 auto;
+}
+
+.tabla table {
+  border-collapse: collapse;
+}
+
+.tabla tr ,
+.tabla td {
+  border: 1px solid #4b4b4b;
+}
+
+.tabla td {
+  text-align: center;
+  color: #4b4b4b;
+  border: 1px solid #4b4b4b;
+  width: 200px;
+  height: 100px;
 }
 
 /*---------------------------------------------------------------*/
-
 .Regimen{
-  background-color:beige;
+  background-color:#e5e0d8;
   padding: 70px 20px;
 }
 
@@ -249,7 +362,7 @@ header {
   font-size: 40px;
   margin-bottom: 15px;
   text-decoration: underline;
-  text-decoration-color: orange;
+  text-decoration-color: #ff9800;
   text-decoration-thickness: 3px;
   text-underline-offset: 8px;
 }
@@ -285,12 +398,26 @@ header {
   text-align: center;
   margin-left: 150px;
   margin-right: 150px;
-  margin-top: 30px;
+  color: #4b4b4b;
   }
 
-.Contacto a{
-  color: #444;
+.fin-regimen {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 
+#hr-regimen {
+  width: 50%;
+  max-width: 400px;
+  border: 1px solid #4b4b4b;
+}
+
+.Contacto a{
+  color: #4b4b4b;
+  text-decoration-color: #4b4b4b;
 }
 
 
