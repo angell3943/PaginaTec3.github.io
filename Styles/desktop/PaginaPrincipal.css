@@ -1344,7 +1344,7 @@ header {
 .slider_body{
   grid-template-columns: 1fr;
   grid-template-rows: max-content 1fr;
-  gap: 1rem;
+  gap: 1rem; 
 }
 
 .slider_pinture {
