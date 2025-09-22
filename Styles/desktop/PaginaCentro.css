@@ -566,3 +566,29 @@ header {
   }
 
 }
+
+@media screen and (max-width: 748px){
+
+  #presidente-container {
+    order: 3;
+
+    padding-top: 50px;
+  }
+
+}
+
+@media screen and (max-width: 499px){
+  #vice-container {
+    order: 2;
+  }
+
+  #presidente-container {
+    order: 1;
+
+    padding-top: calc(-50px);
+  }
+
+  #tesorero-container {
+    order: 3;
+  }
+}
