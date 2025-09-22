@@ -1310,6 +1310,10 @@ header {
     margin-bottom: 15px;
   }
 
+  .Texto-Inscripciones {
+    padding-right: 0;
+    padding-top: 10px;
+  }
 
 .BotonInscripciones {
     width: 60%;                
@@ -1364,12 +1368,12 @@ header {
 /*---------------------------*/
 
 .CentroContenido {
-    flex-direction: column; /* texto arriba, imagen abajo */
+    flex-direction: column;
     align-items: center;
   }
 
   .CentroFoto {
-    width: 80%; /* centrada pero no tan grande */
+    width: 80%;
     max-height: 300px;
     margin-top: 20px;
   }
