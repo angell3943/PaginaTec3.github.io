@@ -62,12 +62,35 @@ header {
 }
 
 .sub-nav-list {
-    display: none;
+    display: flex;
     flex-direction: column;
     list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
     gap: 5px;
     padding-top: 5px;
+
+    transform: translateY(-10px);
+    transition: max-height 0.7s ease, opacity 0.7s ease, transform 0.7s ease;
 }
+
+.sub-nav-list li {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.sub-nav-list.activo li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.sub-nav-list.activo li:nth-child(1) { transition-delay: 0.05s; }
+.sub-nav-list.activo li:nth-child(2) { transition-delay: 0.1s; }
+.sub-nav-list.activo li:nth-child(3) { transition-delay: 0.15s; }
+.sub-nav-list.activo li:nth-child(4) { transition-delay: 0.2s; }
+.sub-nav-list.activo li:nth-child(5) { transition-delay: 0.25s; }
 
   /* ----------------------------------------------------------------*/
 
@@ -78,22 +101,25 @@ header {
     height: 80vh;   
     align-items: center;
     display: flex;
-    
 }
 
-.TituloPrincipal h1{
+.titulo-principal h1{
     color: #4b4b4b;
     margin-left: 100px;
     margin-top: -240px;
     font-size: 80px; 
 }
 
+.titulo-principal-mobile {
+  display: none;
+}
 
   /* ----------------------------------------------------------------*/
 
 .main-content {
   width: 100%;
   background-color: #e5e0d8;
+  color: #4b4b4b;
 }
 
 .bloques {
@@ -108,10 +134,10 @@ header {
   height: 60px;
   align-content: center;
   padding-left: 10px;
-  width: 24%;
+  width: 100%;
   max-width: 270px;
 
-   clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 50%, calc(100% - 30px) 100%, 0 100%);
+  clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 50%, calc(100% - 30px) 100%, 0 100%);
 }
 
 .bloques-beige {
@@ -127,6 +153,7 @@ header {
 .izquierda {
   width: 55%;
   justify-items: center;
+  align-content: center;
 }
 
 .derecha {
@@ -145,6 +172,10 @@ header {
   align-items: center;
   padding-top: 10px;
   gap: 10px;
+}
+
+.texto > p {
+  max-width: 70%;
 }
 
 .texto h2 {
@@ -206,17 +237,28 @@ header {
 
 .divisor-x {
   border: 0,9px solid #4b4b4b;
-  width: 90%;
+  width: 70%;
 }
 
 #izq-3 ul li {
   color: #4b4b4b;
 }
 
+.bloque-reinscripciones {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f0f0f0;
+}
+
 .izquierda-abajo {
   display: flex;
   flex-direction: column;
   width: 50%;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .derecha-abajo {
@@ -232,13 +274,6 @@ header {
   text-decoration: underline;
   text-decoration-color: #ff9800;
   color: #4b4b4b;
-}
-
-.bloque-reinscripciones {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background-color: #f0f0f0;
 }
 
 #titulo-reinscripciones {
@@ -355,6 +390,7 @@ header {
 .Regimen{
   background-color:#e5e0d8;
   padding: 70px 20px;
+  color: #4b4b4b;
 }
 
 .InformacionRegimen h2{
@@ -532,7 +568,7 @@ header {
 
 
 @media (max-width: 1024px) {
-  
+
   .Seccion {
     flex-direction: column;
     gap: 20px;
@@ -577,47 +613,99 @@ header {
 
 @media (max-width: 768px) {
 
-  .TituloPrincipal {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
+.titulo-principal h1{
+    display: none;
   }
 
-  .TituloPrincipal h1 {
-      font-size: 50px;
-
+  .titulo-principal-mobile {
+    display: block;
+    margin: 0 auto;
   }
 
-  /* Bloques de inscripción */
-  .Seccion {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .Informacion {
-    width: 100%;
-    border-right: none;
-    padding: 0;
-  }
-
-  .Informacion p {
-    margin: 15px;
-  }
-
-  .Requisitos {
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .Requisitos ul {
-    columns: 1;
-    padding-left: 0;
-  }
-
-  .Requisitos h3 {
+  .titulo-principal-mobile h1 {
+    font-size: 2rem;
+    color: #4b4b4b;
     text-align: center;
-    margin-left: 0;
+  }
+
+  /* Main content */
+
+  .bloques-beige,
+  .bloques-blanco,
+  .row-block,
+  .reinscripciones-requisitos-lista {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bloques-beige,
+  .bloques-blanco {
+    gap: 20px;
+  }
+
+  .izquierda,
+  .izquierda-abajo,
+  .derecha,
+  .derecha-abajo {
+    width: 100%;
+  }
+
+  .texto + .divisor-x,
+  .divisor-y {
+    display: none;
+  }
+
+ .texto {
+    width: 95%;       
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .texto .h2-subtitle {
+    padding-left: 0;
+    align-self: center;
+    font-size: 2rem;
+  }
+
+  .texto h2, 
+  .texto p {
+    text-align: center;
+  }
+
+  .requisitos {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .requisitos ul {
+    list-style-position: inside;
+    padding: 0;
+    text-align: left;
+  }
+
+  .bloque-reinscripciones {
+    gap: 40px;
+  }
+
+  .row-block {
+    gap: 20px;
+  }
+
+  .izquierda-abajo,
+  .derecha-abajo {
+    padding: 0px;
+  }
+
+  .derecha-abajo .texto > p,
+  .izquierda-abajo .texto > p {
+    padding-top: 0;
+  }
+
+  .reinscripciones-requisitos-lista {
+    gap: 0;
   }
 
   /* Regimen */
@@ -625,12 +713,9 @@ header {
     font-size: 28px;
   }
 
-  .InformacionRegimen p,
-  .Contacto {
-    margin: 15px;
+  .InformacionRegimen p {
     font-size: 14px;
-    text-align: left;
+    text-align: justify;
   }
-
 
 }

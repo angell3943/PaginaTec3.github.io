@@ -27,7 +27,7 @@ slides.forEach((_, i) => {
   setInterval(() => {
     index = (index + 1) % slides.length;
     updateSlider();
-  }, 5000);
+  }, 10000);
 }
 
 document.addEventListener("DOMContentLoaded", setupSliderNovedades);

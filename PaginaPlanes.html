@@ -70,6 +70,8 @@
   
 <!-- ----------------------------------------------------------------- -->
 
+<main>
+
  <!-- 2da seccion de Historia -->
      <section class="Planes">
 
@@ -128,27 +130,43 @@ Durante el ciclo superior, los estudiantes elegirán entre las modalidades de T�
     <p class="Texto2">de duración</p>
       </div>
 
-  <h2 class="Titulo2">Nuestras especializaciones</h2>
-
-  <div class="Modalidades">  
-
-   <div class="Modalidad2">
-      <a href="#"> 
-      <img src="imgs/electromecanica.jpg" alt="Electromecánica">
-      <p class="Titulo3">Técnico/a en Electromecánica</p>
-      </a>
-    </div>
-
-    <div class="Modalidad2">
-      <a href="#">
-      <img src="imgs/Informatica.jpg" alt="Informatica">
-      <p class="Titulo3">Técnico/a en Informática</p>
-    </a>
-    </div>
-
-  </div>
+ 
 
 </section>
+
+    <section class="modalidades_tarjetas">
+
+    <h3 class="Titulo2">Nuestras especilizaciones</h3>
+
+  <!-- Fondo borroso -->
+  <div class="overlay" id="overlay"></div>
+
+  <div class="tarjetas-container">
+    <div class="tarjeta" id="tarjeta1">
+      <div class="imagen"></div>
+      <div class="info">Tecnico/a en Informática</div>
+      <button class="toggle-btn">+</button>
+      <div class="contenido">
+        <h2>Informatica</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eveniet tenetur earum sit repellendus harum. Repudiandae optio autem exercitationem repellat quos quo corporis perspiciatis! Autem dolorem iure officiis fugiat eligendi, deserunt aliquam repellendus? Nam doloribus, unde expedita exercitationem quasi minus d asperiores laudantium veritatis aliquam rerum, ad sunt quam consequatur delectus quae! Temporibus iusto dicta quasi. Labo.</p>
+      </div>
+    </div>
+ 
+    <div class="tarjeta" id="tarjeta2">
+      <div class="imagen"></div>
+      <div class="info">Tecnico/a en Electromecánica</div>
+      <button class="toggle-btn">+</button>
+      <div class="contenido">
+        <h2>Electromecanica</h2>
+        <p>Contenido de la segunda tarjeta, diferente visualmente.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="Scripts/Planes.js"></script>
+</section>
+
+</main>
 
 <!-- ----------------------------------------------------------------- -->
 
@@ -171,15 +189,15 @@ Durante el ciclo superior, los estudiantes elegirán entre las modalidades de T�
       <div class="NavegacionRapida">
         <div class="NavegacionSecciones">
           <h3>Institucional</h3>
+          <div class="navegacion2">
           <ul>
             <li><a href="PaginaPlanes.html">Planes de estudios</a></li>
             <li><a href="PaginaAutoridades.html">Autoridades</a></li>
             <li><a href="PaginaHistoria.html">Historia de la escula</a></li>
             <li><a href="PaginaAulas.html">Nuestras aulas y talleres</a></li>
             <li><a href="PaginaCentro.html">Centro de Estudiantes</a></li>
-
-
           </ul>
+          </div>
         </div>
         <div class="NavegacionSecciones">
           <h3>Eventos</h3>

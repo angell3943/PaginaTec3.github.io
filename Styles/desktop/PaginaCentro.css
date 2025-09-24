@@ -62,12 +62,35 @@ header {
 }
 
 .sub-nav-list {
-    display: none;
+    display: flex;
     flex-direction: column;
     list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
     gap: 5px;
     padding-top: 5px;
+
+    transform: translateY(-10px);
+    transition: max-height 0.7s ease, opacity 0.7s ease, transform 0.7s ease;
 }
+
+.sub-nav-list li {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.sub-nav-list.activo li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.sub-nav-list.activo li:nth-child(1) { transition-delay: 0.05s; }
+.sub-nav-list.activo li:nth-child(2) { transition-delay: 0.1s; }
+.sub-nav-list.activo li:nth-child(3) { transition-delay: 0.15s; }
+.sub-nav-list.activo li:nth-child(4) { transition-delay: 0.2s; }
+.sub-nav-list.activo li:nth-child(5) { transition-delay: 0.25s; }
 
 /* -------------------------------------------------*/
 
@@ -94,12 +117,12 @@ header {
 
 /* ----------------------------------------------------------------*/
 
-.CentroEstudiantil {
+.centro-estudiantil {
   width: 100%;
 }
 
-.Beige {
-  background-color: #ede5db; /* color beige claro */
+.beige {
+  background-color: #e5e0d8;
   padding: 50px 20px;
   display: flex;
   flex-wrap: wrap;
@@ -108,8 +131,8 @@ header {
   height: 75vh;
 }
 
-.Blanco {
-  background-color: #ffffff;
+.blanco {
+  background-color: #f0f0f0;
   padding: 50px 20px;
   display: flex;
   flex-wrap: wrap;
@@ -118,7 +141,7 @@ header {
   height: 65vh;
 }
 
-.Tarjeta {
+.tarjeta {
   width: 300px;
   padding: 30px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -127,23 +150,23 @@ header {
   position: relative;
 }
 
-.Tarjeta h3 {
+.tarjeta h3 {
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-.Tarjeta p {
+.tarjeta p {
   font-size: 14px;
   line-height: 1.5;
 }
 
-.Blanco1, .Blanco2 {
+.blanco1, .blanco2 {
   position: relative;
-  background-color: white;
+  background-color: #f0f0f0;
 }
 
-.Blanco1 {
+.blanco1 {
   right: 100px;
   bottom: 30px;
   transform: rotate(-10deg);
@@ -157,7 +180,7 @@ header {
   text-align: center;
 }
 
-.Blanco2  {
+.blanco2  {
   left: 30px;
   top: 100px;
   transform: rotate(7deg);
@@ -171,12 +194,12 @@ header {
   text-align: center;
 }
 
-.Beige1, .Beige2 {
+.beige1, .beige2 {
   position: relative;
-  background-color: #ede5db;
+  background-color: #e5e0d8;
 }
 
-.Beige1{
+.beige1{
   bottom: 30px;
   right: -12px;
   transform: rotate(14deg);
@@ -190,7 +213,7 @@ header {
   text-align: center;
 }
 
-.Beige2{
+.beige2{
   left: 234px;
   top: 100px;
   transform: rotate(-10deg);
@@ -204,6 +227,54 @@ header {
   text-align: center;
 }
 
+/* info extra */
+
+.info-extra {
+  color: #4b4b4b;
+  background-color: #e5e0d8;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.logros,
+.contactos {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  background-color: #f0f0f0;
+  padding: 10px 30px 30px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logros h2 {
+  text-align: center;
+}
+
+.contactos h2 {
+  text-align: center;
+}
+
+.logros ul li {
+  text-align: justify;
+}
+
+#contact,
+.contactos a {
+  font-weight: 600;
+}
+
+.contactos p > a {
+  text-decoration-color: #4b4b4b;
+  color: #4b4b4b;
+}
+
 /* Fotos */
 
 .fotos-centro {
@@ -212,6 +283,13 @@ header {
   align-items: center;
   color: #4b4b4b;
   gap: 30px;
+  background-color: #f0f0f0;
+}
+
+.fotos-centro > h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+  text-decoration-color: #4caf4c;
 }
 
 .imgs-cargos {
@@ -232,7 +310,7 @@ header {
 }
 
 .nombre {
-  background-color: #ede5db;
+  background-color: #e5e0d8;
   border-radius: 90px;
   width: 200px;
 }
@@ -317,13 +395,13 @@ header {
 
 .LogosRedes {
   display: flex;
-  flex-direction: column;  /* Cambiar de fila a columna */
-  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
-  align-items: center;  /* Centra las imágenes */
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
 .RedesIconos img {
-  width: 40px;  /* Ajusta el tamaño de las imágenes */
+  width: 40px;
   height: auto;
 }
 
@@ -387,7 +465,7 @@ header {
       line-height: 60px;
   }
      /* Tarjetas en columna y centradas */
-  .Tarjeta {
+  .tarjeta {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -399,27 +477,27 @@ header {
       height: auto;       
   }
 
-  .Tarjeta h3 {
+  .tarjeta h3 {
       order: 0;
       margin-bottom: 10px;
       width: 100%;
   }
 
-  .Tarjeta p {
+  .tarjeta p {
       order: 1;
       width: 100%;
   }
 
 
   /* Sección CentroEstudiantil: columna */
-  .Beige, .Blanco {
+  .beige, .blanco {
     flex-direction: column;
     align-items: center;
     height: auto;
   }
 
   /* Tarjetas: centradas */
-  .Blanco1, .Blanco2, .Beige1, .Beige2 {
+  .blanco1, .blanco2, .beige1, .beige2 {
     transform: rotate(0deg);
     left: 0;
     right: 0;
@@ -434,53 +512,83 @@ header {
   /* Integrantes: columna */
   .Integrantes {
     display: flex;
-    flex-direction: column;  /* Una debajo de otra */
-    align-items: center;     /* Centrado horizontal */
-    gap: 30px;               /* Espacio entre tarjetas */
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
     padding: 20px;
 }
 
-.Tarjeta1, .Tarjeta2 {
-    position: static;        /* Quita posición relativa */
-    transform: rotate(0deg); /* Sin inclinaciones */
-    width: 300px;            /* Mantener ancho */
+.tarjeta1, .tarjeta2 {
+    position: static;
+    transform: rotate(0deg);
+    width: 300px;
     text-align: center;
     margin: 0 auto;
 }
 
-.Tarjeta1.a, .Tarjeta1.b, .Tarjeta1.c,
-.Tarjeta2.a, .Tarjeta2.b, .Tarjeta2.c, 
-.Tarjeta2.d, .Tarjeta2.e{
+.tarjeta1.a, .tarjeta1.b, .tarjeta1.c,
+.tarjeta2.a, .tarjeta2.b, .tarjeta2.c, 
+.tarjeta2.d, .tarjeta2.e{
   transform: rotate(0deg);
 }
-
-  /* Título de integrantes centrado */
-  .Titulo {
-    left: 0;
-    top: 0;
-    text-align: center;
-  }
-
-  /* Foto grupal centrada */
-  .FotoGrande {
-    max-width: 90%;
-    height: auto;
-  }
 
 }
 
 @media  (max-width: 768px) {
   .Centro {
-      height: 40vh;  /* Altura menor para móviles */
+      height: 40vh;
       justify-content: center;
       align-items: center;
       text-align: center;
   }
 
   .TituloPrincipal h1 {
-      font-size: 45px;   /* Tamaño más pequeño */
+      font-size: 45px;
       margin: 0;
       padding: 5px 10px;
       line-height: 45px;
+  }
+
+  /* Info extra */
+
+  .logros ul li {
+    text-align: start;
+  }
+
+  .contactos p {
+    text-align: center;
+  }
+
+  .fotos-centro h1,
+  .foto-grupal h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 748px){
+
+  #presidente-container {
+    order: 3;
+
+    padding-top: 50px;
+  }
+
+}
+
+@media screen and (max-width: 499px){
+  #vice-container {
+    order: 2;
+  }
+
+  #presidente-container {
+    order: 1;
+
+    padding-top: calc(-50px);
+  }
+
+  #tesorero-container {
+    order: 3;
   }
 }
