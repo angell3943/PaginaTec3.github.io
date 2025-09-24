@@ -6,6 +6,13 @@
   
 body {
     font-family: 'Poppins', sans-serif;
+     background: linear-gradient(
+    -40deg,
+    rgb(255, 255, 255) 49.8%,
+    green 49.8%,
+    green 50.2%,
+    rgb(228, 228, 205) 50.2%
+  );
 }
 /* ------------------------------------------------------------ */
  
@@ -63,13 +70,35 @@ header {
 }
 
 .sub-nav-list {
-    display: none;
+    display: flex;
     flex-direction: column;
     list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
     gap: 5px;
     padding-top: 5px;
+
+    transform: translateY(-10px);
+    transition: max-height 0.7s ease, opacity 0.7s ease, transform 0.7s ease;
 }
 
+.sub-nav-list li {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.sub-nav-list.activo li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.sub-nav-list.activo li:nth-child(1) { transition-delay: 0.05s; }
+.sub-nav-list.activo li:nth-child(2) { transition-delay: 0.1s; }
+.sub-nav-list.activo li:nth-child(3) { transition-delay: 0.15s; }
+.sub-nav-list.activo li:nth-child(4) { transition-delay: 0.2s; }
+.sub-nav-list.activo li:nth-child(5) { transition-delay: 0.25s; }
 /* -------------------------------------------------*/
 
 .CambiosInstitucionales {
@@ -83,7 +112,6 @@ header {
 }
 
 .TituloPrincipal h1{
-    color: rgb(49, 49, 49);
     margin-left: 30px;
     margin-top: -20px;
     padding-right: 50px ;
@@ -105,241 +133,120 @@ header {
 /* ----------------------------------------------------------------*/
 
 .Cambios {
-    background-color: #e6dece;
+    background-color: #ffffff;
     padding: 20px 15px;
     text-align: center;
 }
 
-.Cambios .tTtulo {
-    font-size: 50px;
+.Titulo {
+    font-size: 40px;
     font-weight: bold;
-    color: #4b3b2c;
     margin-bottom: 8px;
     text-decoration: underline;
-    text-decoration-color: orange;
+    text-decoration-color: green;
     text-decoration-thickness: 3px;
 } 
 
-.Cambios.Texto {
+.Texto {
     font-size: 17px;
-    color: #444;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding-bottom: 10px;
 }
 
-/* Sección: Cambio de régimen académico */
-.CambioRegimen {
-  background-color: #ffffff;
-  padding: 50px 20px;
+/*----------------------------------------*/
+
+.contenedor{ 
+  margin: 0 auto ;
+  padding: 20px 15px;
+  max-width: 1150px;
 }
 
-.RegimenInformacion {
-  max-width: 900px;
+
+.Titulo2{
+ 
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 3px;
+ 
+}
+
+.Texto2{
+  text-align: left;
+  max-width: 1100px;
+  padding: 25px 15px 30px 15px;
+  font-size: 17px;
+
+}
+
+.cambios-regimen hr{
+  max-width: 500px;
   margin: 0 auto;
-  text-align: center;
+
 }
 
-/* Título grande con subrayado verde */
-.Titulo2 {
-  font-family: 'Poppins', Arial, sans-serif;
-  font-size: 45px;
-  font-weight: 700;
-  color: #333333;
-  margin: 0;
+
+.subtitulo{ 
+  padding-top: 20px;
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 3px;
+}
+
+ul{
+  padding-left: 30px;
+}
+
+.contenedor2 {
+  padding: 40px 0px 20px 0px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  max-width: 1000px;
+  gap: 30px;
+}
+
+
+.carta.izquierda {
+  align-self: flex-start; 
+}
+
+.carta.derecha {
+  align-self: flex-end; 
+}
+
+.carta {
+  background: rgb(228, 228, 214);
+  box-shadow: -20px -10px 0px 20px rgb(255, 255, 255);
+  padding: 15px 20px;
+  width: 400px;
+  border-radius: 5px;
+  transition: transform 0.2s;
+  
+}
+
+.carta:hover {
+  transform: scale(1.1);
+}
+
+.carta h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 19px;
+  border-bottom: 2px solid orange; /* línea decorativa */
   display: inline-block;
-  padding-bottom: 10px;
-  line-height: 1;
-  text-decoration: underline;
-  text-decoration-color:green;
-  text-decoration-thickness: 4px;
-  text-underline-offset: 4px;
+  padding-bottom: 3px;
 }
 
-
-/* Texto centrado con ancho limitado (~500px) */
-.Texto2 {
-  background-color:#ffffff;
-  max-width: 650px;
-  margin: 22px auto 0;
-  font-size: 16px;
-  color: #444444;
-  line-height: 1.65;
-  text-align: center;
-  padding: 10px 15px;
-}
-
-/* Línea separadora */
-.CambiosHr {
-  border: none;
-  height: 1px;
-  background-color: #e0e0e0;
-  margin: 28px auto 10px;
-  max-width: 700px;
-}
-
-/* Texto pequeño con link (link solo en la frase especificada) */
-.CambioLink {
-  font-size: 14px;
-  color: #555555;
+.carta p {
   margin: 0;
-  text-align: center;
+  font-size: 16px;
+  line-height: 1.4;
 }
-
-/* Estilo del link */
-.EnlaceCambio {
-  color: #1f7a34;
-  text-decoration: underline;
-  font-weight: 600;
-  margin-left: 6px;
-}
-
-.Cambio2 {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 20px;
-    background-color:beige;
-    min-height: 600px;
-  }
-
-  /* Columna izquierda */
-.Columna1 {
-    flex: 1;
-    max-width: 560px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
-  }
-
-.Columna1 img {
-    max-width: 100%;
-    max-width: 500px;
-    height: auto;
-    display: block;
-    border: 12px solid white;
-  }
-
-.Imagen1{
-    position: relative;
-    left: 150px;
-    top: 40px;
-    transform: rotate(-10deg)
-}
-
-.Imagen2{
-    position: relative;
-    left: 340px;
-    top: 70px;
-    transform: rotate(15deg);
-}
-
-  /* Columna derecha */
-.Columna2 {
-    flex: 0 0 800px;
-    margin-right: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 500px;
-    width: 100%;
-  }
-
-.Titulo3 {
-    font-size: 45px;
-    font-weight: bold;
-    position: relative;
-    margin-bottom: 12px;
-    text-decoration: underline;
-    text-decoration-color:orange;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 8px;
-  }
-
-.Texto3 {
-    font-size: 16px;
-    line-height: 1.4;
-    color: #333;
-  }
-
-hr.Separacion {
-    border-top: 2px solid #ccc;
-    margin: 20px;
-    width: 100%;
-  }
-
-.Centro {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    max-height: 400px;
-  }
-
-.Cambio3 {
-    display: flex;
-    padding: 50px 20px;
-    background-color: #fff;
-    align-items: center;
-    gap: 40px;
-  }
-
-  /* Columna izquierda */
-.Columna3 {
-    flex: 1;
-    max-width: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-right: 100px;
-    margin-left: 50px;
-  }
-
-.Titulo4 { 
-    font-size: 45px;
-    margin-bottom: 15px;
-    position: relative;
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color:green;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 4px;
-  }
-
-.Texto4 {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 15px 0;
-  }
-
-.Linea {
-    width: 80%;
-    border: none;
-    border-top: 2px solid #ccc;
-    margin: 10px 0;
-  }
-
-.Columna4 {
-    flex: 1;
-    max-width: 600px;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 0;
-    margin-right: 0;
-
-}
-
-.Columna4 img {
-    width: 80%;
-    max-width: 100%; 
-    height: auto;
-    display: block;
-    margin-right: 0;
-}
-
-
-
 
 /*---------------------------------------------------------------*/
 .PaginaPie {
@@ -449,142 +356,103 @@ hr.Separacion {
   text-decoration: underline;
 }
 
-/* ================== RESPONSIVE ================== */
+/* -------------------------------------- */
+@media  (max-width: 768px) {
 
-/* ----------- Tablets grandes (≤1024px) ----------- */
-@media (max-width: 1024px) {
-
-  /* Título principal más chico */
-  .TituloPrincipal h1 {
-    font-size: 55px;
-    line-height: 65px;
+  /* Ajuste del hero */
+  .CambiosInstitucionales {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
     text-align: center;
-    margin: 0 auto;
+  }
+
+  .TituloPrincipal h1 {
+    font-size: 50px;
+    margin: 0 auto 20px auto;
+    line-height: 1.2;
+    padding: 10px;
   }
 
   .LogoPrincipal {
-    margin: 20px auto;
-    display: block;
+    margin: 0 auto 20px auto;
     height: 180px;
   }
 
-  /* Cambios institucionales */
-  .Cambios .Titulo {
-    font-size: 35px;
+  .contenedor2 {
+    display: flex;
+    flex-direction: row; /* scroll horizontal */
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
   }
 
-  .Cambios .Texto {
+  .carta {
+    flex: 0 0 90%;       /* ancho fijo de 300px */
+    min-height: 220px;     /* altura uniforme */
+    align-self: flex-start; /* todas al mismo nivel */
+    transition: none;       /* quita efecto scale */
+  }
+
+  .carta h3 {
+    font-size: 18px;
+    border-bottom: 2px solid orange;
+    padding-bottom: 3px;
+
+  }
+
+  .carta p {
     font-size: 15px;
-    padding: 0 10px;
+    line-height: 1.4;
+    word-break: break-word;
+    padding:0px 10px 0px 0px;
   }
 
-  /* Sección Cambio2 → columnas en vertical */
-  .Cambio2 {
-    flex-direction: column;
-    align-items: center;
+  /* quitar el escalonado */
+  .carta.izquierda,
+  .carta.derecha {
+    align-self: flex-start;
   }
 
-  .Columna1, .Columna2 {
-    max-width: 90%;
-    margin: 20px auto;
+  .carta:hover {
+    transform: none; /* desactiva el scale en móvil */
   }
 
-  .Imagen1, .Imagen2 {
-    position: static;
-    transform: none;
-    max-width: 90%;
-    margin: 0 auto;
+  .Texto, .Texto2 {
+    font-size: 16px;
+    padding: 10px;
   }
 
-  .Columna2 .Titulo3 {
-    font-size: 35px;
+  .Titulo, .Titulo2, .subtitulo {
+    font-size: 30px;
   }
-
-  .Columna2 .Texto3 {
-    font-size: 15px;
-  }
-
-  /* Sección Cambio3 */
-  .Cambio3 {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .Columna3, .kiosco-derecha {
-    margin: 20px auto;
-    max-width: 90%;
-  }
-
-  .Titulo4 {
-    font-size: 35px;
-  }
-
 }
 
-/* ----------- Tablets verticales y móviles grandes (≤768px) ----------- */
-@media (max-width: 768px) {
+@media (max-width: 425px) {
 
-  .CambiosInstitucionales {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;      
-    text-align: center;
-    height: auto;             
-    padding: 20px 0;
-  }
-
+  /* Ajuste hero aún más compacto */
   .TituloPrincipal h1 {
-    font-size: 32px;       
-    line-height: 40px;
-    margin: 0 0 15px 0;
-    padding: 10px 15px;
+    font-size: 35px;
+    padding: 5px;
   }
 
   .LogoPrincipal {
-    height: 120px;
-    margin: 0 auto;
-    display: block;
+    height: 140px;
   }
 
-  /* Texto principal */
-  .Cambios .Titulo {
-    font-size: 28px;
-  }
-
-  .Cambios .Texto {
+  .Texto, .Texto2 {
     font-size: 14px;
   }
 
-  /* Sección Cambio de régimen */
-  .Titulo2 {
-    font-size: 28px;
+  .Titulo, .Titulo2, .subtitulo {
+    font-size: 24px;
   }
 
-  .Texto2 {
-    font-size: 14px;
-    padding: 5px 10px;
+  /* Cartas más pequeñas para celular */
+  .carta {
+    width: 250px;
+    padding: 10px;
   }
-
-  /* Sección Cambio2 */
-  .Columna2 .Titulo3 {
-    font-size: 28px;
-  }
-
-  .Columna2 .Texto3 {
-    font-size: 14px;
-  }
-
-  .Centro {
-    max-width: 90%;
-  }
-
-  /* Sección Cambio3 */
-  .Titulo4 {
-    font-size: 28px;
-  }
-
-  .Texto4 {
-    font-size: 14px;
-  }
- 
 }
+
+
