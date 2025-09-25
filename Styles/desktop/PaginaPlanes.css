@@ -7,6 +7,10 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+main {
+  color: #4b4b4b;
+}
 /* ------------------------------------------------------------ */
 
  /* Menú de navegación */ 
@@ -105,6 +109,7 @@ header {
 }
 
 .TituloPrincipal h1{
+    color: white;
     margin-left: 30px;
     margin-top: -70px;
     font-size: 105px; 
@@ -113,6 +118,7 @@ header {
 }
 
 .TituloPrincipal p{
+    color: white;
     font-weight: bold;
     font-size: 20px;
     margin-left: 35px;
@@ -124,6 +130,7 @@ header {
 
 /* Sección del régimen académico */
 .CambioRegimen {
+    color: #4b4b4b;
     display: flex;
     flex-direction: column;
     background-color: #e5e0d8;
@@ -144,6 +151,7 @@ header {
 }
 
 .CambioRegimen .InformacionEnlace {
+    color: #4b4b4b;
     font-size: 13px;
     font-weight: 600;
     padding: 10px;
@@ -158,6 +166,7 @@ header {
 }
 
 .TituloEscuela {
+  color: #4b4b4b;
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 25px;
@@ -174,12 +183,14 @@ header {
 }
 
 .Descripcion {
+  color: #4b4b4b;
   font-size: 17px;
   margin: 0 auto 20px;
   max-width: 450px;
 }
 
 .Subtitulo {
+  color: #4b4b4b;
   font-size: 40px;
   font-weight: bold;
   margin-top: 40px;
@@ -391,6 +402,7 @@ header {
 }
 
 .LogoNombre {
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -408,12 +420,14 @@ header {
 }
 
 .NombreEscuela {
+  color: black;
   font-size: 16px;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 0.8;
 }
 
 .NombreEscuela p {
+  color:black;
   display: block;
 }
 
@@ -445,12 +459,15 @@ header {
 }
 
 .NavegacionSecciones {
+  font-weight: normal;
+  color:black;
   flex: 1;
   min-width: 150px;
   margin-bottom: 20px;
 }
 
 .NavegacionSecciones h3{
+  color: black;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -529,6 +546,7 @@ header {
     height: 35px;
   }
   .Texto1 {
+    color: #4b4b4b;
     font-size: 20px;
   }
   .Texto2 {
