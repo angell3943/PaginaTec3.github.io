@@ -155,55 +155,54 @@ main {
 .img-slider-container {
   width: 65%;
   height: 790px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-.img-slider {
-  overflow: hidden;
+.img-slider-hijo {
   width: 100%;
   height: 100%;
+  aspect-ratio: 16 / 16;
+  position: relative;
   display: flex;
-  flex-direction: row;
-  border-radius: 8px;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
 }
 
-.img-slider img {
+.img-slider-hijo::-webkit-scrollbar {
+  display: none;
+}
+
+.img-slider-container img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  border-radius: 8px;
+  left: 0;
+  position: sticky;
+  scroll-snap-align: center;
 }
 
 .dots-container {
-  opacity: 0;
   display: flex;
   gap: 10px;
-  position: absolute;
   bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
   width: 20%;
   min-width: 110px;
   height: 25px;
-  background-color: #e5e0d8;
+  background-color: #f0f0f0;
   border-radius: 72px;
-  z-index: 10;
   justify-content: space-evenly;
   align-items: center;
 
   transition: opacity 0.3s ease;
 }
 
-.img-slider:hover + .dots-container {
-  opacity: 1;
-}
-
-.dots-container:hover {
-  opacity: 1;
-}
-
 .dot {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border: none;
   border-radius: 50%;
   background-color: #4b4b4b;
@@ -217,6 +216,7 @@ main {
 
 .dot.active {
   background-color: #5172ff;
+  transform: scale(1.25);
 }
 
 /*----------------------------- Footer ----------------------------------*/
@@ -323,4 +323,17 @@ main {
 
 .NavegacionSecciones a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px){
+
+  .int-block {
+    flex-direction: column;
+  }
+
+
+  .img-slider-container {
+    max-height: 500px;
+  }
+
 }
