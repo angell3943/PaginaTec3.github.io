@@ -1,6 +1,7 @@
 const dots = document.querySelectorAll(".dot");
+const slider = document.querySelector(".img-slider-hijo");
 
-    dots.forEach(dot => {
+    dots.forEach((dot, indice) => {
 
         dot.addEventListener("click", function (){
 
@@ -10,6 +11,12 @@ const dots = document.querySelectorAll(".dot");
 
             this.classList.add("active");
 
+            slider.scrollTo({
+                left: indice * slider.clientWidth,
+                behavior: "smooth"
+            })
+
         });
 
-    })      
+    })
+    
