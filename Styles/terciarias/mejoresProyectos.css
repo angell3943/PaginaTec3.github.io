@@ -152,66 +152,9 @@ main {
   max-width: 300px;
 }
 
-.img-slider-container {
-  width: 65%;
-  height: 790px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.img-slider-hijo {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 16 / 16;
-  position: relative;
-  display: flex;
-  overflow: scroll;
-  scroll-snap-type: x mandatory;
-}
-
-.img-slider-hijo::-webkit-scrollbar {
-  display: none;
-}
-
-.img-slider-container img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  left: 0;
-  position: sticky;
-  scroll-snap-align: center;
-}
-
-.dots-container {
-  display: flex;
-  gap: 10px;
-  bottom: 10px;
-  width: 20%;
-  min-width: 110px;
-  height: 25px;
-  background-color: #f0f0f0;
-  border-radius: 72px;
-  justify-content: space-evenly;
-  align-items: center;
-
-  transition: opacity 0.3s ease;
-}
-
-.dot {
-  width: 15px;
-  height: 15px;
-  border: none;
-  border-radius: 50%;
-  background-color: #4b4b4b;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
 .dot:hover {
   background-color: #7a8cff;
+  transform: scale(1.15);
 }
 
 .dot.active {
@@ -332,8 +275,8 @@ main {
   }
 
 
-  .img-slider-container {
-    max-height: 500px;
+  .slider-container {
+    max-height: 450px;
   }
 
 }
