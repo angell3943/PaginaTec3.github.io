@@ -165,7 +165,6 @@ header {
   gap: 10px;
 }
 
-
 .texto {
   display: flex;
   flex-direction: column;
@@ -174,7 +173,7 @@ header {
   gap: 10px;
 }
 
-.texto > p {
+.texto p {
   max-width: 70%;
 }
 
@@ -203,7 +202,7 @@ header {
 .divisor-y {
   margin: 0;
   padding: 0;
-  border: 0,9 px solid #4b4b4b ;
+  border: 0,9px solid #4b4b4b ;
   height: 250px;
   align-self: center;
 }
@@ -238,6 +237,10 @@ header {
 .divisor-x {
   border: 0,9px solid #4b4b4b;
   width: 70%;
+}
+
+#hr-x-slide-first {
+  align-self: center;
 }
 
 #izq-3 ul li {
@@ -384,6 +387,13 @@ header {
   border: 1px solid #4b4b4b;
   width: 200px;
   height: 100px;
+}
+
+/* Slider no conflictivos desktop */
+
+.slider {
+  display: flex;
+  flex-direction: column;
 }
 
 /*---------------------------------------------------------------*/
@@ -651,7 +661,7 @@ header {
     width: 100%;
   }
 
-  .texto + .divisor-x,
+  .divisor-x,
   .divisor-y {
     display: none;
   }
@@ -706,6 +716,30 @@ header {
 
   .reinscripciones-requisitos-lista {
     gap: 0;
+  }
+
+  /* slider textos sobrantes */
+
+  .slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slide {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    position: sticky;
+    scroll-snap-align: center;
   }
 
   /* Regimen */
