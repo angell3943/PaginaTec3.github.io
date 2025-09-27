@@ -20,7 +20,6 @@ header {
     padding: 1rem;
     background: linear-gradient(to top,  #00a560, #c1ff72);
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
   
 .LogoMenu {
@@ -191,7 +190,6 @@ header {
   height: 340px;
   width: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 /* ------------------------------------------------------------ */
 
@@ -962,7 +960,10 @@ header {
   flex-wrap: wrap;
 }
 
+
+
 .NavegacionSecciones {
+  
   flex: 1;
   min-width: 150px;
   margin-bottom: 20px;
