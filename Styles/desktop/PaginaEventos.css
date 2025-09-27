@@ -337,7 +337,7 @@ main {
     width: 100%;
   }
 
-    .rcp-block:nth-child(odd) img {
+  .rcp-block:nth-child(odd) img {
     order: 1;
   }
   .rcp-block:nth-child(odd) p {
