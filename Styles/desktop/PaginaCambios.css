@@ -277,6 +277,10 @@ ul{
   transform: scale(1.1);
 }
 
+.carta2:hover {
+  transform: scale(1.1);
+}
+
 .carta h3 {
   margin-top: 0px;
   margin-bottom: 10px;
