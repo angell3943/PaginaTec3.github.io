@@ -9,15 +9,6 @@ body {
   
 }
 
-.linea{
-background: linear-gradient(
-    -48deg,
-    #e5e0d8 49.8%,
-    green 50%,
-    green 50%,
-    rgb(228, 228, 205) 50.2%
-)
-}
 /* ------------------------------------------------------------ */
 
 
@@ -135,6 +126,10 @@ header {
 
 /* ----------------------------------------------------------------*/
 
+main {
+  color: #4b4b4b;
+}
+
 .Cambios {
     background-color: #f0f0f0;
     padding: 20px 15px;
@@ -146,7 +141,7 @@ header {
     font-weight: bold;
     margin-bottom: 5px;
     text-decoration: underline;
-    text-decoration-color: green;
+    text-decoration-color: #4caf4c;
     text-decoration-thickness: 3px;
     padding-bottom: 5px;
 } 
@@ -167,13 +162,22 @@ header {
   max-width: 1150px;
 }
 
+.linea{
+background: linear-gradient(
+    -48deg,
+    #f0f0f0 49.8%,
+    green 50%,
+    green 50%,
+    #e5e0d8 50.2%
+)
+}
 
 .Titulo2{
  
   text-align: center;
   font-size: 40px;
   text-decoration: underline;
-  text-decoration-color: orange;
+  text-decoration-color: #ff9800;
   text-decoration-thickness: 3px;
  
 }
@@ -185,21 +189,22 @@ header {
   font-size: 17px;
 
 }
+
 .cambios-regimen{
   background-color: #e5e0d8;
 }
+
 .cambios-regimen hr{
   max-width: 450px;
   margin: 0 auto;
 
 }
 
-
 .subtitulo{ 
   padding-top: 20px;
   font-size: 30px;
   text-decoration: underline;
-  text-decoration-color: orange;
+  text-decoration-color: #ff9800;
   text-decoration-thickness: 3px;
 }
 
@@ -219,12 +224,10 @@ ul{
 
 .izquierda{
     align-self: flex-start; 
-
 }
 
 .derecha{
   align-self: flex-end; 
-
 }
 
 .carta.izquierda {
@@ -239,21 +242,17 @@ ul{
 .solos{
   box-shadow:
   15px 5px 15px 0px rgba(0, 0, 0, 0.13);
-  background: rgb(228, 228, 214);
+  background-color: #f0f0f0;
   padding: 15px 20px;
   width: 400px;
   border-radius: 5px;
   transition: transform 0.2s;
 }
 
-.solos:hover{
-  transform: scale(1.1);
-}
-
 .carta2{
-  background: rgb(228, 228, 214);
+  background: #e5e0d8;
   box-shadow:
-  -20px -14px 0px 20px rgb(255, 255, 255),
+  -20px -14px 0px 20px #f0f0f0,
   10px 25px 15px 0px rgba(0, 0, 0, 0.13);
   padding: 15px 20px;
   width: 400px;
@@ -262,9 +261,9 @@ ul{
 }
 
 .carta {
-  background: rgb(228, 228, 214);
+  background: #e5e0d8;
   box-shadow:
-  -20px -10px 0px 20px rgb(255, 255, 255),
+  -20px -10px 0px 20px #f0f0f0,
   10px 25px 15px 0px rgba(0, 0, 0, 0.13);
   padding: 15px 20px;
   width: 400px;
@@ -272,7 +271,11 @@ ul{
   transition: transform 0.2s;
 }
 
-.carta:hover {
+.solos:hover,
+.carta:hover,
+.carta.derecha:hover,
+.carta.izquierda:hover,
+.carta2:hover {
   transform: scale(1.1);
 }
 
@@ -280,17 +283,18 @@ ul{
   margin-top: 0px;
   margin-bottom: 10px;
   font-size: 19px;
-  border-bottom: 2px solid orange; /* línea decorativa */
+  border-bottom: 2px solid #ff9800;
   display: inline-block;
   padding-bottom: 3px;
 }
+
 .solos h3{
-border-bottom: 2px solid orange;
+border-bottom: 2px solid #ff9800;
 
 }
 
 .carta2 h3{ 
-  border-bottom: 2px solid orange;
+  border-bottom: 2px solid #ff9800;
 }
 
 .carta p {
@@ -459,14 +463,31 @@ border-bottom: 2px solid orange;
     padding:0px 10px 0px 0px;
   }
 
-  /* quitar el escalonado */
-  .carta.izquierda,
-  .carta.derecha {
-    align-self: flex-start;
+  .contenedor2 {
+    display: flex;
+    align-items: center;
   }
 
-  .carta:hover {
-    transform: none; /* desactiva el scale en móvil */
+  .izquierda,
+  .derecha {
+    display: flex;
+    align-items: center;
+  }
+
+  .solos:hover,
+  .carta:hover,
+  .carta.derecha:hover,
+  .carta.izquierda:hover,
+  .carta2:hover {
+    transform: scale(1);
+  }
+
+  .solos,
+  .carta,
+  .carta.derecha,
+  .carta.izquierda,
+  .carta2 {
+    box-shadow: 0 0 0 0;
   }
 
   .Texto, .Texto2 {
