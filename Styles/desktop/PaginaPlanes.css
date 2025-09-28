@@ -270,8 +270,8 @@ header {
 
 /* Tarjetas normales */
 .tarjeta {
-  width: 180px;
-  height: 180px;
+  width: 280px;
+  height: 220px;
   border-radius: 12px;
   cursor: pointer;
   position: relative;
@@ -533,7 +533,7 @@ header {
     font-size: 40px;
   }
   .Descripcion {
-    font-size: 15px;
+    font-size: 16px;
     max-width: 350px;
   }
 
@@ -576,6 +576,7 @@ header {
     width: 220px;
     height: 220px;
   }
+
   .tarjeta.activo {
     width: 95%;
     height: 95vh;               /* Altura casi completa de la pantalla */
@@ -638,25 +639,15 @@ header {
     font-size: 16px;
   }
 
-  /* Cambio de régimen */
-  .CambioRegimen .Titulo {
-    font-size: 18px;
-  }
-  .CambioRegimen .Texto {
-    font-size: 14px;
-  }
-  .CambioRegimen .InformacionEnlace {
-    font-size: 12px;
-  }
-
   /* Nuestra escuela */
   .TituloEscuela {
-    font-size: 30px;
+    font-size: 32px;
   }
   .Descripcion {
-    font-size: 14px;
+    font-size: 16px;
     max-width: 300px;
   }
+
   .Subtitulo {
     font-size: 24px;
   }
@@ -667,14 +658,14 @@ header {
   }
 
   .Texto1 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .Texto2 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .PlanesEstudio {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .BotonesBasicos {
