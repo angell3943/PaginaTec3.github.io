@@ -475,6 +475,7 @@ border-bottom: 2px solid orange;
     min-height: 280px; /* ancho fijo para móvil */
     padding: 10px;
   }
+  
   .solos:hover {
     transform: none; /* desactiva el scale en móvil */
   }
