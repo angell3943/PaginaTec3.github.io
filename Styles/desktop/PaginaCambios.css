@@ -12,11 +12,12 @@ body {
 .linea{
 background: linear-gradient(
     -48deg,
-    rgb(255, 255, 255) 49.8%,
+    rgb(252, 252, 252) 49.8%,
     green 50%,
     green 50%,
-    rgb(228, 228, 205) 50.2%
+    #e5e0d8  50.2%
 )
+#e5e0d8 
 }
 /* ------------------------------------------------------------ */
 
@@ -242,18 +243,36 @@ ul{
   transition: transform 0.2s;
 }
 
-.solos.sin-fondo{
-  box-shadow: 10px 25px 15px 0px rgba(0, 0, 0, 0.13);
+.carta {
+  background: rgb(228, 228, 214);
+  box-shadow:
+  -20px -10px 0px 20px rgb(255, 255, 255),
+  10px 25px 15px 0px rgba(0, 0, 0, 0.13);
+  padding: 15px 20px;
+  width: 400px;
+  border-radius: 5px;
+  transition: transform 0.2s;
 }
 
+.carta:hover {
+  transform: scale(1.1);
+}
 
-.contenedor2 h3 {
+.carta h3 {
   margin-top: 0px;
   margin-bottom: 10px;
   font-size: 19px;
   border-bottom: 2px solid orange; /* línea decorativa */
   display: inline-block;
   padding-bottom: 3px;
+}
+.solos h3{
+border-bottom: 2px solid orange;
+
+}
+
+.carta2 h3{ 
+  border-bottom: 2px solid orange;
 }
 
 .contenedor2 p {
