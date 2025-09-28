@@ -227,33 +227,14 @@ ul{
 
 }
 
-.carta.izquierda {
-  align-self: flex-start; 
-}
-
-.carta.derecha {
-  align-self: flex-end; 
-}
-
-
-.solos{
-  box-shadow:
-  15px 5px 15px 0px rgba(0, 0, 0, 0.13);
-  background: rgb(228, 228, 214);
-  padding: 15px 20px;
-  width: 400px;
-  border-radius: 5px;
-  transition: transform 0.2s;
-}
-
 .solos:hover{
   transform: scale(1.1);
 }
 
-.carta2{
+.solos{
   background: rgb(228, 228, 214);
   box-shadow:
-  -20px -14px 0px 20px rgb(255, 255, 255),
+  -15px -14px 0px 17px rgb(255, 255, 255),
   10px 25px 15px 0px rgba(0, 0, 0, 0.13);
   padding: 15px 20px;
   width: 400px;
@@ -261,22 +242,12 @@ ul{
   transition: transform 0.2s;
 }
 
-.carta {
-  background: rgb(228, 228, 214);
-  box-shadow:
-  -20px -10px 0px 20px rgb(255, 255, 255),
-  10px 25px 15px 0px rgba(0, 0, 0, 0.13);
-  padding: 15px 20px;
-  width: 400px;
-  border-radius: 5px;
-  transition: transform 0.2s;
+.solos.sin-fondo{
+  box-shadow: 10px 25px 15px 0px rgba(0, 0, 0, 0.13);
 }
 
-.carta:hover {
-  transform: scale(1.1);
-}
 
-.carta h3 {
+.contenedor2 h3 {
   margin-top: 0px;
   margin-bottom: 10px;
   font-size: 19px;
@@ -285,7 +256,7 @@ ul{
   padding-bottom: 3px;
 }
 
-.carta p {
+.contenedor2 p {
   margin: 0;
   font-size: 16px;
   line-height: 1.4;
@@ -399,6 +370,33 @@ ul{
   text-decoration: underline;
 }
 
+
+@media (max-width: 1024px) {
+
+  /* Autoridades - Título y logo */
+  .CambiosInstitucionales {
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto; 
+    padding: 40px 20px;
+  }
+
+  .TituloPrincipal h1 {
+    margin: 0 0 20px 0;
+    font-size: 60px;
+    padding-right: 0;
+    margin-top: 0;
+    background-color: rgba(139, 137, 137, 0.5);
+    line-height: 1.2em;
+  }
+
+  .LogoPrincipal {
+    margin: 20px 0 0 0;
+    height: 220px; 
+  }
+}
 /* -------------------------------------- */
 @media  (max-width: 768px) {
 
@@ -428,23 +426,19 @@ ul{
     overflow-x: auto;
     gap: 20px;
     padding: 20px;
-  }
 
-  .carta {
-    flex: 0 0 90%;       /* ancho fijo de 300px */
-    min-height: 220px;     /* altura uniforme */
     align-self: flex-start; /* todas al mismo nivel */
     transition: none;       /* quita efecto scale */
   }
 
-  .carta h3 {
+  .contenedor2 h3 {
     font-size: 18px;
     border-bottom: 2px solid orange;
     padding-bottom: 3px;
 
   }
 
-  .carta p {
+  .contenedor2 p {
     font-size: 15px;
     line-height: 1.4;
     word-break: break-word;
@@ -452,12 +446,17 @@ ul{
   }
 
   /* quitar el escalonado */
-  .carta.izquierda,
-  .carta.derecha {
+  .izquierda,
+  .derecha {
     align-self: flex-start;
   }
 
-  .carta:hover {
+  .solos, .solos.sin-fondo{
+    box-shadow: none;
+    min-height: 280px; /* ancho fijo para móvil */
+    padding: 10px;
+  }
+  .solos:hover {
     transform: none; /* desactiva el scale en móvil */
   }
 
@@ -492,7 +491,7 @@ ul{
   }
 
   /* Cartas más pequeñas para celular */
-  .carta {
+  .solos {
     width: 250px;
     padding: 10px;
   }
