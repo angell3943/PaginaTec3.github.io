@@ -9,6 +9,19 @@ body {
   
 }
 
+<<<<<<< HEAD
+=======
+.linea{
+background: linear-gradient(
+    -48deg,
+    rgb(252, 252, 252) 49.8%,
+    green 50%,
+    green 50%,
+    #e5e0d8  50.2%
+)
+#e5e0d8 
+}
+>>>>>>> 2befec319e3095e2853719e1a0836edaca94aaf3
 /* ------------------------------------------------------------ */
 
 
@@ -230,6 +243,7 @@ ul{
   align-self: flex-end; 
 }
 
+<<<<<<< HEAD
 .carta.izquierda {
   align-self: flex-start; 
 }
@@ -253,6 +267,16 @@ ul{
   background: #e5e0d8;
   box-shadow:
   -20px -14px 0px 20px #f0f0f0,
+=======
+.solos:hover{
+  transform: scale(1.1);
+}
+
+.solos{
+  background: rgb(228, 228, 214);
+  box-shadow:
+  -15px -14px 0px 17px rgb(255, 255, 255),
+>>>>>>> 2befec319e3095e2853719e1a0836edaca94aaf3
   10px 25px 15px 0px rgba(0, 0, 0, 0.13);
   padding: 15px 20px;
   width: 400px;
@@ -297,7 +321,7 @@ border-bottom: 2px solid #ff9800;
   border-bottom: 2px solid #ff9800;
 }
 
-.carta p {
+.contenedor2 p {
   margin: 0;
   font-size: 16px;
   line-height: 1.4;
@@ -411,6 +435,33 @@ border-bottom: 2px solid #ff9800;
   text-decoration: underline;
 }
 
+
+@media (max-width: 1024px) {
+
+  /* Autoridades - Título y logo */
+  .CambiosInstitucionales {
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto; 
+    padding: 40px 20px;
+  }
+
+  .TituloPrincipal h1 {
+    margin: 0 0 20px 0;
+    font-size: 60px;
+    padding-right: 0;
+    margin-top: 0;
+    background-color: rgba(139, 137, 137, 0.5);
+    line-height: 1.2em;
+  }
+
+  .LogoPrincipal {
+    margin: 20px 0 0 0;
+    height: 220px; 
+  }
+}
 /* -------------------------------------- */
 @media  (max-width: 768px) {
 
@@ -440,29 +491,26 @@ border-bottom: 2px solid #ff9800;
     overflow-x: auto;
     gap: 20px;
     padding: 20px;
-  }
 
-  .carta {
-    flex: 0 0 90%;       /* ancho fijo de 300px */
-    min-height: 220px;     /* altura uniforme */
     align-self: flex-start; /* todas al mismo nivel */
     transition: none;       /* quita efecto scale */
   }
 
-  .carta h3 {
+  .contenedor2 h3 {
     font-size: 18px;
     border-bottom: 2px solid orange;
     padding-bottom: 3px;
 
   }
 
-  .carta p {
+  .contenedor2 p {
     font-size: 15px;
     line-height: 1.4;
     word-break: break-word;
     padding:0px 10px 0px 0px;
   }
 
+<<<<<<< HEAD
   .contenedor2 {
     display: flex;
     align-items: center;
@@ -488,6 +536,22 @@ border-bottom: 2px solid #ff9800;
   .carta.izquierda,
   .carta2 {
     box-shadow: 0 0 0 0;
+=======
+  /* quitar el escalonado */
+  .izquierda,
+  .derecha {
+    align-self: flex-start;
+  }
+
+  .solos, .solos.sin-fondo{
+    box-shadow: none;
+    min-height: 280px; /* ancho fijo para móvil */
+    padding: 10px;
+  }
+  
+  .solos:hover {
+    transform: none; /* desactiva el scale en móvil */
+>>>>>>> 2befec319e3095e2853719e1a0836edaca94aaf3
   }
 
   .Texto, .Texto2 {
@@ -521,7 +585,7 @@ border-bottom: 2px solid #ff9800;
   }
 
   /* Cartas más pequeñas para celular */
-  .carta {
+  .solos {
     width: 250px;
     padding: 10px;
   }

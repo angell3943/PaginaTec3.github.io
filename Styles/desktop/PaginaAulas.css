@@ -70,7 +70,6 @@ header {
     opacity: 0;
     gap: 5px;
     padding-top: 5px;
-
     transform: translateY(-10px);
     transition: max-height 0.7s ease, opacity 0.7s ease, transform 0.7s ease;
 }
@@ -242,63 +241,6 @@ header {
       background: #555;
     }
 
-    /* Tablet: hasta 768px */
-@media (max-width: 768px) {
-  .bloque {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-
-  .texto {
-    order: 1;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .foto {
-    order: 2;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .bloque::before {
-    left: 50%;
-    height: 0;
-    width: 0;
-  }
-
-  .botones-internos {
-    bottom: -40px;
-  }
-}
-
-/* Móvil: hasta 425px */
-@media (max-width: 425px) {
-  .bloque {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-
-  .texto {
-    order: 1;
-    text-align: center;
-    padding: 5px 0;
-  }
-
-  .foto {
-    order: 2;
-    width: 100%;
-    margin-top: 5px;
-  }
-
-  .botones-internos {
-    bottom: -35px;
-  
-  }
-}
-
 
 
 /* Sección Aulas Info/Electro */
@@ -444,18 +386,6 @@ header {
   background-color: orange;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .bloque-info {
-    margin-bottom: 40px;
-  }
-}
-
-@media (max-width: 425px) {
-  .bloque-info {
-    margin-bottom: 30px;
-  }
-}
 
 /*---------------------------------------------------------------*/
 .PaginaPie {
@@ -563,4 +493,146 @@ header {
 
 .NavegacionSecciones a:hover {
   text-decoration: underline;
+}
+
+
+
+/* -------------------------------------- */
+@media  (max-width: 768px) {
+
+  /* Ajuste del hero */
+  .AulasyTalleres {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .TituloPrincipal h1 {
+    font-size: 50px;
+    margin: 0 auto 20px auto;
+    line-height: 1.2;
+    padding: 10px;
+  }
+
+  .titulo-fijo{
+    font-size: 24px;
+  }
+
+  .contenedor-externo{
+    padding-top: 10px;
+  }
+
+  .titulo-info, .titulo-electro {
+    font-size: 27px;
+  }
+
+   .bloque {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .texto {
+    order: 1;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .foto {
+    order: 2;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .bloque::before {
+    left: 50%;
+    height: 0;
+    width: 0;
+  }
+
+  .botones-internos {
+    bottom: -40px;
+  }
+
+  .bloque-info {
+    margin-bottom: 40px;
+  }
+
+    .overlay-texto {
+    opacity: 1; /* Siempre visible */
+    background-color: rgba(0,0,0,0.35); /* Más suave para no tapar tanto */
+    font-size: 18px;  /* Letra más chica para pantallas reducidas */
+    padding: 15px;    /* Menos padding para que no quede apretado */
+
+  }
+
+  .overlay-texto h4 {
+    font-size: 22px;  /* Ajustar título */
+    margin-bottom: 8px;
+  }
+
+  .overlay-btn {
+    position: static; /* El botón ya no flotante */
+    margin-top: 15px;
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+
+}
+
+@media (max-width: 425px) {
+
+  /* Ajuste hero aún más compacto */
+  .TituloPrincipal h1 {
+    font-size: 35px;
+    padding: 5px;
+  }
+
+  .titulo-fijo{
+    font-size: 20px;
+  }
+
+   .bloque {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .texto {
+    order: 1;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  .foto {
+    order: 2;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .botones-internos {
+    bottom: -35px;
+  
+  }
+  
+  .bloque-info {
+    margin-bottom: 30px;
+  }
+
+  .overlay-texto {
+    font-size: 16px; /* Más chico aún para celulares muy chicos */
+    padding: 10px;
+  }
+
+  .overlay-texto h4 {
+    font-size: 20px;
+  }
+
+  .overlay-btn {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+  
 }
