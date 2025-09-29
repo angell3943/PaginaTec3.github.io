@@ -190,6 +190,10 @@ header {
   text-decoration-color: #ff9800;
 }
 
+#desde-4to-title-mobile {
+  display: none;
+}
+
 .texto p {
   color: #4b4b4b;
   padding: 20px;
@@ -270,6 +274,7 @@ header {
   width: 50%;
   padding: 50px;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -323,6 +328,20 @@ header {
 .reinscripciones-requisitos-lista ul li{
   font-size: 1rem;
 }
+
+/* Slider no conflictivos desktop */
+
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-4to {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Mensaje final + link */
 
 .fin {
   display: flex;
@@ -387,13 +406,6 @@ header {
   border: 1px solid #4b4b4b;
   width: 200px;
   height: 100px;
-}
-
-/* Slider no conflictivos desktop */
-
-.slider {
-  display: flex;
-  flex-direction: column;
 }
 
 /*---------------------------------------------------------------*/
@@ -740,6 +752,52 @@ header {
     width: 100%;
     position: sticky;
     scroll-snap-align: center;
+  }
+
+  /* Slider Bloque 3 */
+
+  .slider-4to {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 10px 0 10px 0;
+  }
+
+  .slider-4to::-webkit-scrollbar {
+    display: none;
+  }
+
+  #desde-4to-title {
+    display: none;
+  }
+
+  #desde-4to-title-mobile {
+    display: block;
+    font-size: 2rem;
+  }
+
+  /* Slider Reinscripciones */
+
+  .row-block {
+    flex-direction: row;
+    gap: 0;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .row-block::-webkit-scrollbar {
+    display: none;
+  }
+
+  .izquierda-abajo,
+  .derecha-abajo {
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    position: sticky;
+  }
+
+  .izquierda-abajo > .texto,
+  .derecha-abajo > .texto {
+    width: 100%;
   }
 
   /* Regimen */
