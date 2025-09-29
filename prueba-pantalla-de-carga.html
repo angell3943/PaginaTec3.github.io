@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantalla de carga con logo</title>
+  <style>
+    /* Pantalla de carga */
+    #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #111; /* color de fondo */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.8s ease, visibility 0.8s ease;
+    }
+
+    #loader.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    /* Contenedor del logo con círculo animado */
+    .loader-container {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Logo en el centro */
+    .loader-container img {
+      width: 100px; /* ajustá según tu logo */
+      height: 100px;
+      border-radius: 50%; /* por si el logo no está en formato circular */
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Círculo giratorio alrededor del logo */
+    .circle {
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      border: 5px solid transparent;
+      border-top: 5px solid orange; /* línea naranja */
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      z-index: 1;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Contenido de la página */
+    .contenido {
+      display: none;
+      text-align: center;
+      padding: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Pantalla de carga -->
+  <div id="loader">
+    <div class="loader-container">
+      <img src="imgs/favicon.png" alt="Logo">
+      <div class="circle"></div>
+    </div>
+  </div>
+
+  <!-- Contenido -->
+  <div class="contenido">
+    <h1>Bienvenido a mi página ✨</h1>
+    <p>El contenido ya cargó.</p>
+  </div>
+  
+
+  <script>
+    // Cuando la página termina de cargar
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loader");
+      loader.classList.add("hidden");
+      document.querySelector(".contenido").style.display = "block";
+    });
+  </script>
+</body>
+</html>
