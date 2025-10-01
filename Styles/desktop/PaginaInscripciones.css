@@ -341,6 +341,12 @@ header {
   flex-direction: row;
 }
 
+/* Ocultar dots */
+
+.dots {
+  display: none;
+}
+
 /* Mensaje final + link */
 
 .fin {
@@ -731,7 +737,7 @@ header {
   }
 
   /* slider textos sobrantes */
-
+    /* Desde otra escuela */
   .slider {
     display: flex;
     flex-direction: row;
@@ -752,6 +758,32 @@ header {
     width: 100%;
     position: sticky;
     scroll-snap-align: center;
+  }
+
+    /* Desde otra escuela dots */
+
+  .dots {
+    display: flex;
+    width: 80px;
+    height: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .dot {
+    background-color: #4b4b4b;
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+    border: none;
+
+    transition: 0.5s ease;
+  }
+
+  .dot.active {
+    background-color: #ff9800;
+    scale: 1.25;
   }
 
   /* Slider Bloque 3 */
