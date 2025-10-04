@@ -251,6 +251,10 @@ header {
   color: #4b4b4b;
 }
 
+#bloque-3 {
+  padding-bottom: 10px;
+}
+
 .bloque-reinscripciones {
   display: flex;
   flex-direction: column;
