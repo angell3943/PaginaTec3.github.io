@@ -9,8 +9,6 @@ body {
   
 }
 
-<<<<<<< HEAD
-=======
 .linea{
 background: linear-gradient(
     -48deg,
@@ -21,7 +19,6 @@ background: linear-gradient(
 )
 #e5e0d8 
 }
->>>>>>> 2befec319e3095e2853719e1a0836edaca94aaf3
 /* ------------------------------------------------------------ */
 
 
@@ -243,31 +240,6 @@ ul{
   align-self: flex-end; 
 }
 
-<<<<<<< HEAD
-.carta.izquierda {
-  align-self: flex-start; 
-}
-
-.carta.derecha {
-  align-self: flex-end; 
-}
-
-
-.solos{
-  box-shadow:
-  15px 5px 15px 0px rgba(0, 0, 0, 0.13);
-  background-color: #f0f0f0;
-  padding: 15px 20px;
-  width: 400px;
-  border-radius: 5px;
-  transition: transform 0.2s;
-}
-
-.carta2{
-  background: #e5e0d8;
-  box-shadow:
-  -20px -14px 0px 20px #f0f0f0,
-=======
 .solos:hover{
   transform: scale(1.1);
 }
@@ -276,7 +248,6 @@ ul{
   background: rgb(228, 228, 214);
   box-shadow:
   -15px -14px 0px 17px rgb(255, 255, 255),
->>>>>>> 2befec319e3095e2853719e1a0836edaca94aaf3
   10px 25px 15px 0px rgba(0, 0, 0, 0.13);
   padding: 15px 20px;
   width: 400px;
@@ -510,33 +481,6 @@ border-bottom: 2px solid #ff9800;
     padding:0px 10px 0px 0px;
   }
 
-<<<<<<< HEAD
-  .contenedor2 {
-    display: flex;
-    align-items: center;
-  }
-
-  .izquierda,
-  .derecha {
-    display: flex;
-    align-items: center;
-  }
-
-  .solos:hover,
-  .carta:hover,
-  .carta.derecha:hover,
-  .carta.izquierda:hover,
-  .carta2:hover {
-    transform: scale(1);
-  }
-
-  .solos,
-  .carta,
-  .carta.derecha,
-  .carta.izquierda,
-  .carta2 {
-    box-shadow: 0 0 0 0;
-=======
   /* quitar el escalonado */
   .izquierda,
   .derecha {
@@ -551,7 +495,6 @@ border-bottom: 2px solid #ff9800;
   
   .solos:hover {
     transform: none; /* desactiva el scale en móvil */
->>>>>>> 2befec319e3095e2853719e1a0836edaca94aaf3
   }
 
   .Texto, .Texto2 {
