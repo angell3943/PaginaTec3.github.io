@@ -119,9 +119,8 @@ header {
     height: 240px;    /* Ajustá este valor al tamaño que quieras */
     width: auto;
     border-radius: 8px;
-    margin-left: 150px;
+    margin-left: 100px;
     margin-bottom: 40px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
 
 /* ----------------------------------------------------------------*/
@@ -157,6 +156,7 @@ header {
 
 .torneo-contenedor {
   display: flex;
+  align-items: flex-start;
   gap: 30px;
   max-width: 1200px;
   margin: auto;
@@ -167,19 +167,23 @@ header {
   height: auto;
   object-fit: cover;
   display: block;
+
 }
 
 .torneo-info {
   flex: 1;
 }
-
-.torneo-info h2 {
+.titulo-torneo {
+  display: block;          /* Ocupa todo el ancho */
+  width: 100%;             /* Se asegura de expandirse */
+  text-align: center;      /* Centra el texto */
   font-size: 28px;
   color: #333;
-  border-bottom: 2px solid #2e7d32;
-  display: inline-block;
   padding-bottom: 5px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto; /* Centrado y con espacio abajo */
+  text-decoration: underline;
+  text-decoration-color: #00a560;
+
 }
 
 .torneo-cuerpo {
@@ -190,7 +194,7 @@ header {
 
 .torneo-premios {
   width: 150px;
-  margin-top: 50px; /* 🔹 Baja la lista para que coincida con el hr */
+  margin-top: 10px; /* 🔹 Baja la lista para que coincida con el hr */
 }
 
 
@@ -214,12 +218,12 @@ header {
 }
 
 .torneo-bloque {
-  text-align: right;       /* Sigue pegado a la derecha */
-  padding-right: 20px;     /* Margen desde el borde */
-  max-width: 400px;        /* 🔹 Máximo ancho */
-  margin-left: auto;       /* 🔹 Mantenerlo alineado a la derecha */
-
+  text-align: center;     /* Centra el contenido dentro del bloque */
+  max-width: 600px;       /* Limita el ancho para que no ocupe toda la pantalla */
+  margin: 0 auto;         /* Centra el bloque dentro del contenedor */
+  padding: 0;             /* Elimina padding lateral que empujaba el bloque */
 }
+
 
 .torneo-bloque h4 {
   font-size: 16px;
@@ -228,8 +232,6 @@ header {
 
 .torneo-bloque p {
   font-size: 15px;
-  max-width: 400px;
-  margin-left: auto;
   color: #555;
 }
 
@@ -247,17 +249,25 @@ header {
 .linea-inscripcion {
   border: none;
   border-top: 1px solid #ccc;
-  margin: 20px 0;
+  margin: 0 auto 20px 30px;
+  max-width: 70%;
+  align-items: center;
 }
 
+
 .torneo-inscripcion h4 {
+  text-align: center;
   font-size: 16px;
   margin-bottom: 5px;
 }
 
 .torneo-inscripcion p {
+  text-align: center;
   font-size: 15px;
+  max-width: 800px;
   color: #555;
+  margin: 0 auto;
+  padding: 0;
 }
 
 
