@@ -911,7 +911,6 @@ header {
   margin-bottom: 20px;
 }
 
-
 .PieLogo {
   width: 100px;
   height: auto;
@@ -953,15 +952,13 @@ header {
   height: auto;
 }
 
-
 .NavegacionRapida {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
 }
 
-.NavegacionSecciones {
-  
+.NavegacionSecciones {  
   flex: 1;
   min-width: 150px;
   margin-bottom: 20px;
