@@ -381,6 +381,26 @@ header {
   line-height: 1.2;
 }
 
+.votaciones{
+  display: flex;
+}
+.votaciones h1{
+  text-decoration: underline;
+  text-decoration-color: orange;
+  padding: 20px;
+}
+
+.bloquevot1 img{
+display: flex;
+min-width: 50px;
+height: 300px;
+align-items: start;
+}
+
+.bloquevot1 h2{
+  align-items: end;
+}
+
 .NombreEscuela p {
   display: block;
 }
