@@ -95,12 +95,13 @@ header {
 /* -------------------------------------------------*/
 
 .Autoridades {
-    background-image: url("../../imgs/hero.jpg");
+    background-image: url("../../imgs/autoridadeshead.jpg");
     background-size: cover;
     background-position: center;
     height: 70vh;   
     align-items: center;
     display: flex;
+    
     
 }
 
@@ -118,7 +119,6 @@ header {
     width: auto;
     border-radius: 8px;
     margin-left: 230px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 
 }
 
