@@ -337,6 +337,36 @@ section {
 }
 
 
+.video-section {
+  text-align: center;
+ background-color: #f0e9da;
+}
+
+.titulo-video {
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #2ecc71; /* color verde del subrayado */
+  text-underline-offset: 6px;     /* separación entre el texto y la línea */
+  margin-bottom: 30px;
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.contenedor-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-video video {
+  width: 70%;          /* ajustá el tamaño del video */
+  max-width: 800px;    /* evita que se haga muy grande */
+  border-radius: 10px; /* esquinas redondeadas opcionales */
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
 
 /*---------------------------------------------------------------*/
 .PaginaPie {
