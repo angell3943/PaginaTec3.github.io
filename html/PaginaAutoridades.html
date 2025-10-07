@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../Styles/desktop/PaginaAutoridades.css">
   <link rel="stylesheet" href="../Styles/mobile/header.css">
   <link rel="stylesheet" href="../Styles/mobile/footer.css">
+  <link rel="stylesheet" href="../Styles/mobile/loader.css">
 
     <!-- links fuentes e iconos-->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -18,6 +19,17 @@
 </head>
 
 <body>
+
+     <!-- Pantalla de carga -->
+  <div id="loader">
+    <div class="loader-container">
+      <img src="../imgs/favicon.png" alt="Logo">
+      <div class="circle"></div>
+    </div>
+  </div>
+
+<script src="../Scripts/loader.js"></script>
+
 
     <!-- 1ra seccion Menu de arriba -->
   <header>
@@ -249,7 +261,7 @@
 
         <!-- Texto debajo de la tabla -->
     <div class="horarios-info">
-      <h3>Horarios de atención a Padres:</h3>
+      <h3>Horarios de atención de secretaria:</h3>
       <ul>
         <li>Martes de 10:30hs a 11:30hs</li>
         <li>Jueves de 8:00hs a 10:00hs y 13:30hs a 15:00hs</li>
@@ -259,12 +271,6 @@
 
 
   </section>
-
-
-
-  <!-- Repetir por Miércoles, Jueves, Viernes -->
-</div>
-
 
     <!-- ----------------------------------------------------------------- -->
 
