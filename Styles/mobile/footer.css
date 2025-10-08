@@ -1,6 +1,4 @@
-footer {
-  color: black;
-}
+/* Ajustes desktop para mobile */
 
 footer hr {
 display: none;
@@ -10,9 +8,32 @@ display: none;
   display: none;
 }
 
+/* Mobile */
+
+@media (max-width: 1440px){
+
+  .Nombre-escuela {
+    font-size: 10px;
+  }
+
+  .NavegacionSecciones h3,
+  .NavegacionSecciones h3 > a {
+    font-size: 18px;
+  }
+
+  .NavegacionSecciones a {
+    font-size: 15px;
+  }
+
+}
+
 @media (max-width: 1024px) {
 
-      .Pie {
+  footer {
+    height: 1010px;
+  }
+
+  .Pie {
     flex-direction: column;
     align-items: center;
   }
