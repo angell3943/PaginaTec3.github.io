@@ -308,9 +308,10 @@ header {
 }
 
 .img-container img {
-  width: calc(70% + 25px);
-  height: calc(70% - 20px);
+  width: 70%;
+  height: 70%;
   object-fit: cover;
+  border-radius: 50%;
 }
 
 .foto-grupal {
@@ -330,14 +331,7 @@ header {
 .foto-grupal img {
   object-fit: cover;
   width: 100%;
-  aspect-ratio: 19 / 9;
-}
-
-/* Fotos individuales */
-
-#tesorero-container, 
-#tesorero-container img {
-  border-radius: 50%;
+  aspect-ratio: 19 / 6;
 }
 
 /* Votaciones */
