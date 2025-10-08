@@ -139,6 +139,7 @@ header {
 
 
 .Cambios {
+    color: #4b4b4b;
     background-color: #f0f0f0;
     padding: 20px 15px;
 }
@@ -164,6 +165,11 @@ header {
 
 /*----------------------------------------*/
 
+.cambios-regimen{
+  color: #4b4b4b;
+  background-color: #e5e0d8;
+}
+
 .contenedor{ 
   margin: 0 auto ;
   padding: 20px 15px;
@@ -182,7 +188,7 @@ background: linear-gradient(
 
 .Titulo2{
  
-  text-align: center;
+  text-align: justify;
   font-size: 40px;
   text-decoration: underline;
   text-decoration-color: #ff9800;
@@ -196,10 +202,6 @@ background: linear-gradient(
   padding: 5px 15px 30px 15px;
   font-size: 17px;
 
-}
-
-.cambios-regimen{
-  background-color: #e5e0d8;
 }
 
 .cambios-regimen hr{
@@ -243,7 +245,7 @@ ul{
 }
 
 .solos{
-  background: rgb(228, 228, 214);
+  background-color: #e5e0d8;
   box-shadow:
   -15px -14px 0px 17px rgb(255, 255, 255),
   10px 25px 15px 0px rgba(0, 0, 0, 0.13);
@@ -296,114 +298,7 @@ border-bottom: 2px solid #ff9800;
   line-height: 1.4;
 }
 
-/*---------------------------------------------------------------*/
-.PaginaPie {
-  background: linear-gradient(to top,  #00a560, #c1ff72);
-  color: rgb(0, 0, 0);
-  padding: 40px 20px;
-  position: relative;
-  font-weight: bold;
-}
-
-.Pie {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.LogoNombre {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
-
-
-.PieLogo {
-  width: 100px;
-  height: auto;
-  margin-right: 15px; 
-  margin-left: 30px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.NombreEscuela {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-.NombreEscuela p {
-  display: block;
-}
-
-.NavegacionRedes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.LogosRedes {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-
-.RedesIconos img {
-  width: 40px;
-  height: auto;
-}
-
-
-.NavegacionRapida {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.NavegacionSecciones {
-  flex: 1;
-  min-width: 150px;
-  margin-bottom: 20px;
-}
-
-.NavegacionSecciones h3{
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.NavegacionSecciones h3 a{
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.NavegacionSecciones ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.NavegacionSecciones li {
-  margin: 5px 0;
-}
-
-.NavegacionSecciones a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: 1rem;
-}
-
-.NavegacionSecciones a:hover {
-  text-decoration: underline;
-}
-
+/*----------------------------- Mobile ----------------------------------*/
 
 @media (max-width: 1024px) {
 
