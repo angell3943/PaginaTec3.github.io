@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eventos escolares</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contactos</title>
 
     <!-- links css-->
-  <link rel="stylesheet" href="Styles/desktop/PaginaEventos.css">
-  <link rel="stylesheet" href="Styles/desktop/footer-desktop.css">
-  <link rel="stylesheet" href="Styles/mobile/header.css">
-  <link rel="stylesheet" href="Styles/mobile/footer.css">
-  <link rel="stylesheet" href="Styles//mobile/loader.css">
-
+  <link rel="stylesheet" href="../Styles/desktop/PaginaContactos.css"/>
+  <link rel="stylesheet" href="../Styles/desktop/footer-desktop.css">
+  <link rel="stylesheet" href="../Styles/mobile/header.css">
+  <link rel="stylesheet" href="../Styles/mobile/footer.css">
+  <link rel="stylesheet" href="../Styles//mobile/loader.css">
     <!-- links fuentes e iconos-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" type="img/png" href="imgs/favicon.png">          
+  <link rel="icon" type="img/png" href="../imgs/favicon.png">          
 
 </head>
 <body>
 
-   <!-- Pantalla de carga -->
+     <!-- Pantalla de carga -->
   <div id="loader">
     <div class="loader-container">
-      <img src="imgs/favicon.png" alt="Logo">
+      <img src="../imgs/favicon.png" alt="Logo">
       <div class="circle"></div>
     </div>
   </div>
 
-<script src="Scripts/loader.js"></script>
+<script src="../Scripts/loader.js"></script>
+
 
     <!-- 1ra seccion Menu de arriba -->
   <header>
   <div class="LogoMenu">
-    <a href="index.html"><img src="imgs/favicon.png" alt="Logo de la Escuela"></a>
+    <a href="../index.html"><img src="../imgs/favicon.png" alt="Logo de la Escuela"></a>
     <div class="TextoLogo">
       <p>Escuela de Educación</p>
       <p>Secundaria Técnica N°3</p>
@@ -46,14 +46,14 @@
   <nav class="nav" id="nav">
     <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
       <ul class="nav-list">
-        <li><a href="index.html">Inicio</a></li>
+        <li><a href="../index.html">Inicio</a></li>
 
           <li><a href="#" id="abrir1">Institucional</a>
             <ul class="sub-nav-list" id="list1">
               <li><a href="PaginaPlanes.html">Planes de estudio</a></li>
-              <li><a href="html/PaginaAutoridades.html">Autoridades</a></li>
+              <li><a href="PaginaAutoridades.html">Autoridades</a></li>
               <li><a href="PaginaHistoria.html">Historia de la escuela</a></li>
-              <li><a href="html/PaginaAulas.html">Aulas y talleres</a></li>
+              <li><a href="PaginaAulas.html">Aulas y talleres</a></li>
               <li><a href="PaginaCentro.html">Centro de estudiantes</a></li>
             </ul>
           </li>
@@ -78,106 +78,52 @@
           <li><a href="https://eest3.temploserver.com/?redirect=0">Campus</a></li>
       </ul>
   </nav>
-  <script src="Scripts/Menus.js"></script>
+  <script src="../Scripts/Menus.js"></script>
 </header>
+ 
   
 <!-- ----------------------------------------------------------------- -->
 
- <!-- 2da seccion de Eventos -->
-     <section class="Eventos">
 
-    <!-- Texto De presentacion de la pagina-->
-    <div class="TituloPrincipal">
-      <h1>Eventos escolares<br>Tecnica N°3</h1>
-    </div> 
+  <!-- seccion de Contacto -->
+    <section class="contacto">
+        <h2>Contáctanos</h2>
+    <div class="contenedor-contacto">
+        <div class="columna izquierda">
+            
+            <h3>Teléfono </h3>
+            <p>0000 - 12345678</p>
+            <h3>Nuestras redes</h3>
+            <p>Instagram: <a href="https://www.instagram.com/eest3padua/" target="_blank">eest3padua</a></p>
+            <p>Facebook: <a href="https://web.facebook.com/tecnicapadua" target="_blank">Escuela de Educación Secundaria Técnica 3</a></p>
+            <h3>Biblioteca</h3>
+            <p>Instagram: <a href="https://www.instagram.com/biblioteca.eest3.merlo/"target="_blank">biblioteca.eest3.merlo</a></p>
+        </div>
 
-        <!-- Logo de la escuela en grande a la izquierda -->
-    <img src="imgs/favicon.png" class="LogoPrincipal" alt="Logo Grande de la Escuela" />   
-  </section>
-  
+        <div class="columna centro">
+          <h3>Horarios de atención</h3>
+            <p>Turno mañana de 8 a 11:00 hrs</p>
+            <p>Turno tarde de 13:30 a 16:00 hrs</p>
+            <h3>Dirección</h3>
+           <p>El Algarrobo 223, San Antonio de Padua, Provincia de Buenos Aires</p>
+        </div>
 
-<!-- ----------------------------------------------------------------- -->
-
-<main>
-
-<!-- Introducción -->
-
-  <section class="introduction">
-
-    <h2>Sobre nuestros eventos</h2>
-
-    <p>
-      En esta sección se presentan las diversas actividades institucionales 
-      que se desarrollan a lo largo del ciclo lectivo. Se incluyen actos 
-      escolares, ferias educativas, jornadas recreativas y propuestas formativas 
-      complementarias, como talleres de RCP y capacitaciones extracurriculares. 
-      Estas iniciativas tienen como objetivo fomentar la participación activa de 
-      los estudiantes, fortalecer el sentido de comunidad educativa y enriquecer 
-      la formación integral a través de experiencias significativas por fuera del
-      espacio curricular tradicional.
-    </p>
-
-  </section>
-
-<!-- Eventos -->
-
-  <!-- Evento 25 de Mayo 2025 -->
-
-    <!-- Evento RCP -->
-
-    <div class="rcp">
-
-      <h2>Curso de RCP 2025</h2>
-
-      <div class="rcp-main">
-
-      <div class="rcp-block">
-
-        <p>
-          El Centro de Estudiantes, junto a las diferentes propuestas 
-          que nos brinda la Secretaría de Educación de Merlo, nos presentó 
-          en esta oportunidad una charla y capacitación a cargo de la Escuela 
-          de Guardavidas y la Asociación de Salvataje Acuático Argentino, referida a 
-          RCP y primeros auxilios básicos.
-        </p>
-
-        <hr id="primer">
-
-        <img src="imgs/rcp3.png" alt="">
-
-      </div>
-
-      <div class="rcp-block">
-
-        <img src="imgs/Rcp5.png" alt="">
-
-        <hr id="segundo">
-
-        <p>
-          La actividad estuvo orientada a brindar conocimientos prácticos y teóricos 
-          esenciales para actuar con rapidez y eficacia ante emergencias. 
-          Participaron estudiantes de 5.º año y delegados de los diferentes cursos, 
-          quienes pudieron practicar maniobras y resolver dudas con los profesionales 
-          presentes.
-          <br>
-          <br>
-          <b>Agradecemos la excelente jornada compartida y el compromiso de todos los 
-          participantes.</b>
-        </p>
-
-      </div>
-
-      </div>
-
+        <div class="columna derecha">
+            <h3>Mapa interactivo</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.2687596395945!2d-58.685788099999996!3d-34.6731658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc0867422f20b%3A0x486a3acb13f50d77!2sEscuela%20T%C3%A9cnica%20N%C2%BA%203!5e0!3m2!1ses-419!2sar!4v1753142254809!5m2!1ses-419!2sar" 
+                width="100%" 
+                height="300" 
+                style="border: 4px solid #1caf21;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
     </div>
-
-  </section>
-
-<!--  -->
-
-</main>
-
-<!-- ----------------------------------------------------------------- -->
+    </section>
+  
+  <!-- ----------------------------------------------------------------- -->
 
    <!-- 9na seccion la navegacion rapida entre paginass -->
 
@@ -185,7 +131,7 @@
     <div class="Pie">
       <!-- Logo y nombre de la escuela -->
       <div class="LogoNombre">       
-          <img src="imgs/favicon.png" alt="Logo de la escuela" class="PieLogo">
+          <img src="../imgs/favicon.png" alt="Logo de la escuela" class="PieLogo">
         <div class="NombreEscuela">
           <p>Escuela Educación</p><br>
           <p>Secundaria Técnica N°3</p>
@@ -200,9 +146,9 @@
           <h3>Institucional</h3>
           <ul>
             <li><a href="PaginaPlanes.html">Planes de estudios</a></li>
-            <li><a href="html/PaginaAutoridades.html">Autoridades</a></li>
+            <li><a href="PaginaAutoridades.html">Autoridades</a></li>
             <li><a href="PaginaHistoria.html">Historia de la escuela</a></li>
-            <li><a href="html/PaginaAulas.html">Nuestras aulas y talleres</a></li>
+            <li><a href="PaginaAulas.html">Nuestras aulas y talleres</a></li>
             <li><a href="PaginaCentro.html">Centro de Estudiantes</a></li>
 
           </ul>
@@ -239,8 +185,8 @@
         <h2 id="h2-footer">Seguinos en nuestras redes</h2>
 
         <div class="LogosRedes">
-          <a href="https://web.facebook.com/tecnicapadua" target="_blank" class="RedesIconos"><img src="imgs/facebook2.png" alt="Facebook"></a>
-          <a href="https://www.instagram.com/eest3padua/" target="_blank" class="RedesIconos"><img src="imgs/instagram3.png" alt="Instagram"></a>
+          <a href="https://web.facebook.com/tecnicapadua" target="_blank" class="RedesIconos"><img src="../imgs/facebook2.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/eest3padua/" target="_blank" class="RedesIconos"><img src="../imgs/instagram3.png" alt="Instagram"></a>
         </div>
       </div>
 

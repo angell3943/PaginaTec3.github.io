@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torneos</title>
+
+    <!-- links css-->
+  <link rel="stylesheet" href="../Styles/desktop/PaginaTorneos.css">
+  <link rel="stylesheet" href="../Styles/desktop/footer-desktop.css">
+  <link rel="stylesheet" href="../Styles/mobile/header.css">
+  <link rel="stylesheet" href="../Styles/mobile/footer.css">
+  <link rel="stylesheet" href="../Styles//mobile/loader.css">
+
+    <!-- liks fuentes e iconos-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="img/png" href="../imgs/favicon.png">          
+
+</head>
+<body>
+
+     <!-- Pantalla de carga -->
+  <div id="loader">
+    <div class="loader-container">
+      <img src="../imgs/favicon.png" alt="Logo">
+      <div class="circle"></div>
+    </div>
+  </div>
+
+<script src="../Scripts/loader.js"></script>
+
+
+    <!-- 1ra seccion Menu de arriba -->
+  <header>
+  <div class="LogoMenu">
+    <a href="../index.html"><img src="../imgs/favicon.png" alt="Logo de la Escuela"></a>
+    <div class="TextoLogo">
+      <p>Escuela de Educación</p>
+      <p>Secundaria Técnica N°3</p>
+    </div>
+  </div>
+
+  <!-- Mneús desktop y hamburguesa -->
+  <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+
+  <nav class="nav" id="nav">
+    <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+      <ul class="nav-list">
+        <li><a href="../index.html">Inicio</a></li>
+
+          <li><a href="#" id="abrir1">Institucional</a>
+            <ul class="sub-nav-list" id="list1">
+              <li><a href="PaginaPlanes.html">Planes de estudio</a></li>
+              <li><a href="PaginaAutoridades.html">Autoridades</a></li>
+              <li><a href="PaginaHistoria.html">Historia de la escuela</a></li>
+              <li><a href="PaginaAulas.html">Aulas y talleres</a></li>
+              <li><a href="PaginaCentro.html">Centro de estudiantes</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" id="abrir2">Eventos</a>
+            <ul class="sub-nav-list" id="list2">
+              <li><a href="PaginaExposiciones.html">Exposición técnica</a></li>
+              <li><a href="PaginaEventos.html">Eventos escolares</a></li>
+              <li><a href="PaginaTorneos.html">Torneos</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" id="abrir3">Novedades</a>
+            <ul class="sub-nav-list" id="list3">
+              <li><a href="PaginaInscripciones.html">Inscripciones</a></li>
+              <li><a href="PaginaCambios.html">Cambios</a></li>
+              <li><a href="PaginaEgresados.html">Egresados</a></li>
+            </ul>
+          </li>
+                
+          <li><a href="PaginaContactos.html">Contacto</a></li>
+          <li><a href="https://eest3.temploserver.com/?redirect=0">Campus</a></li>
+      </ul>
+  </nav>
+  <script src="../Scripts/Menus.js"></script>
+</header>
+  
+<!-- ----------------------------------------------------------------- -->
+
+ <!-- 2da seccion de Eventos -->
+     <section class="Torneos">
+
+    <!-- Texto De presentacion de la pagina-->
+    <div class="TituloPrincipal">
+      <h1>Torneos Tecnica N°3</h1>
+    </div> 
+
+        <!-- Logo de la escuela en grande a la izquierda -->
+    <img src="../imgs/favicon.png" class="LogoPrincipal" alt="Logo Grande de la Escuela" />   
+  </section>
+  
+
+<!-- ----------------------------------------------------------------- -->
+
+  
+<section class="Nuestros-Torneos">
+  <p class="titulo">Sobre Nuestros Torneos</p>
+  <p class="texto">
+    Esta sección está dedicada a informar sobre los distintos torneos que se llevan a 
+    cabo en nuestra institución junto a otras escuelas. En ella se contemplan competencias 
+    deportivas, tales como fútbol, vóley y atletismo, así como certámenes académicos y tecnológicos, 
+    incluyendo torneos de robótica y dibujo técnico, entre otros. Estas instancias constituyen espacios 
+    fundamentales para promover el desarrollo integral de los estudiantes, fomentando el trabajo en equipo, 
+    la disciplina, el compromiso y la excelencia en diversas áreas del conocimiento y la actividad física.
+  </p>
+</section>
+
+
+<section class="torneo-dibujo">
+ 
+    <h2 class="titulo-torneo">Torneo de Dibujo Técnico</h2>
+
+ <div class="torneo-contenedor">
+    <!-- Imagen -->
+    <div class="torneo-imagen">
+      <img src="../imgs/hero.jpg" alt="Torneo de Dibujo Técnico">
+    </div>
+
+    <!-- Contenido -->
+    <div class="torneo-info">
+
+      <div class="torneo-cuerpo">
+        <!-- Columna premios -->
+        <div class="torneo-premios">
+          <h3>Premios</h3>
+          <ul>
+            <li>Kit de dibujo completo</li>
+            <li>Kit de teclado, mouse y auriculares para PC</li>
+          </ul>
+        </div>
+
+        <!-- Columna detalles -->
+        <div class="torneo-detalles">
+          <div class="torneo-bloque">
+            <h4>¿En qué consiste?</h4>
+            <p>
+              La “Olimpiada de Dibujo Técnico 2023 de la Región Educativa N°8” es un evento donde los estudiantes 
+              de escuelas técnicas de toda la región participan mostrando sus habilidades en dibujo técnico.
+              Durante la jornada, los alumnos trabajan en desafíos prácticos que evalúan su creatividad, precisión y 
+              conocimientos adquiridos en la materia “Lenguajes Tecnológicos” del Ciclo Básico.
+            </p>
+            </div>
+        </div>
+      </div>
+      
+      
+    </div>
+
+  </div>
+
+  <div>
+
+          <hr class="linea-inscripcion">
+
+          <div class="torneo-bloque">
+            <h4>¿Cuándo es?</h4>
+            <p>
+              El lunes 18 de septiembre del 2023 se llevó a cabo la Olimpiada 
+              en un evento que reunió a alumnos de 12 escuelas técnicas del distrito.
+            </p>
+          </div>
+
+         <!-- Línea separadora -->
+      <hr class="linea-inscripcion">
+
+      <!-- Inscripción -->
+      <div class="torneo-inscripcion">
+        <h4>¿Cómo me inscribo?</h4>
+        <p>
+          La participación se organiza a través de las escuelas técnicas, coordinando con los docentes de la materia de 
+          “Lenguajes Tecnológicos”. Los interesados deben inscribirse previamente con la autorización de su institución y 
+          los profesores a cargo del área.
+        </p>
+      </div>
+  </div>
+</section>
+
+<!-- ----------------------------------------------------------------- -->
+
+   <!-- 9na seccion la navegacion rapida entre paginass -->
+
+  <footer class="PaginaPie">
+    <div class="Pie">
+      <!-- Logo y nombre de la escuela -->
+      <div class="LogoNombre">       
+          <img src="../imgs/favicon.png" alt="Logo de la escuela" class="PieLogo">
+        <div class="NombreEscuela">
+          <p>Escuela Educación</p><br>
+          <p>Secundaria Técnica N°3</p>
+        </div>
+      </div>
+      
+      <hr>
+
+      <!-- Navegación rápida -->
+      <div class="NavegacionRapida">
+        <div class="NavegacionSecciones">
+          <h3>Institucional</h3>
+          <ul>
+            <li><a href="PaginaPlanes.html">Planes de estudios</a></li>
+            <li><a href="PaginaAutoridades.html">Autoridades</a></li>
+            <li><a href="PaginaHistoria.html">Historia de la escuela</a></li>
+            <li><a href="PaginaAulas.html">Nuestras aulas y talleres</a></li>
+            <li><a href="PaginaCentro.html">Centro de Estudiantes</a></li>
+
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3>Eventos</h3>
+          <ul>
+            <li><a href="PaginaExposiciones.html">Exposion Tecnica 2025</a></li>
+            <li><a href="PaginaEventos.html">Eventos escolares</a></li>
+            <li><a href="PaginaTorneos.html">Torneos</a></li>
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3>Novedades</h3>
+          <ul>
+            <li><a href="PaginaInscripciones.html">Inscripciones</a></li>
+            <li><a href="PaginaCambios.html">Cambios</a></li>
+            <li><a href="PaginaEgresados.html">Egresados</a></li>
+          </ul>
+        </div>
+        <div class="NavegacionSecciones">
+          <h3><a href="PaginaContactos.html">Contactos</a></h3> 
+        </div>
+        <div class="NavegacionSecciones">
+          <h3><a href="#">Campus</a></h3>
+        </div>
+
+      </div>
+      <hr>
+
+        <!-- Redes sociales -->
+      <div class="NavegacionRedes">
+        
+        <h2 id="h2-footer">Seguinos en nuestras redes</h2>
+
+        <div class="LogosRedes">
+          <a href="https://web.facebook.com/tecnicapadua" target="_blank" class="RedesIconos"><img src="../imgs/facebook2.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/eest3padua/" target="_blank" class="RedesIconos"><img src="../imgs/instagram3.png" alt="Instagram"></a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html> 
