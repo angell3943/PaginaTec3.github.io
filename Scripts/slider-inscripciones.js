@@ -120,11 +120,7 @@ slider_rd.addEventListener("scroll", function(){
 
     seen_index_rd = Math.round( slider_rd.scrollLeft / slides_rd[0].offsetWidth );
 
-    dots_rd.forEach(dot => {
-
-        dot.classList.remove("active");
-
-    });
+    dots_rd.forEach(dot => {dot.classList.remove("active")});
 
     dots_rd[seen_index_rd].classList.add("active");
 
