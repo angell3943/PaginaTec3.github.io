@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+html {
+  scroll-behavior: smooth;
+}
    
 body {
     font-family: 'Poppins', sans-serif;
@@ -181,11 +185,12 @@ header {
   text-align: center;
   background-color: #f0f0f0;
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   min-height: 525px;
+  max-height: 700px;
 }
 
-.expo-g-container > h2 {
+.expo-g-container > h1 {
   color: #4b4b4b;
   text-decoration: underline;
   text-decoration-color: #4caf4c;
@@ -201,11 +206,10 @@ header {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  position: relative;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 3%;
   width: 45%;
-  height: 60%;
+  height: 65%;
   min-width: 300px;
   min-height: 350px;
 }
@@ -242,6 +246,40 @@ header {
   position: sticky;
   width: 100%;
   height: 100%;
+}
+
+.overlayg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 20px;
+  background-color: rgba(75, 75, 75, 0.6);
+  position: absolute;
+  transition: all .5s ease;
+
+  width: 35%;
+  height: 100%;
+}
+
+.overlayg h3 {
+  text-align: justify;
+  font-size: 1.4rem;
+  color: #f0f0f0;
+}
+
+.overlayg a {
+  background-color: #f0f0f0;
+  color: #4b4b4b;
+  border-radius: 90px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 35px;
+  text-decoration: none;
+
+  width: 65%;
+  height: 35px;
 }
 
 .slide-g img {
@@ -292,9 +330,14 @@ header {
 
 /* Proyectos expo */
 
+.proyectos-container {
+  scroll-margin-top: 100px;
+}
+
 /*------- Proyectos 7mo -------*/
 
 .septimo-proyectos {
+  scroll-margin-top: 100px;
   background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
@@ -356,6 +399,24 @@ header {
   max-width: 500px;
   min-width: 250px;
   text-align: justify;
+}
+
+/* Actividades */
+
+.actividades {
+  scroll-margin-top: 100px;
+}
+
+/* Expos Anteriores */
+
+.previous-exp {
+  scroll-margin-top: 100px;
+}
+
+/* Proyectos destacados */
+
+.outstanding-projects {
+  scroll-margin-top: 100px;
 }
 
 /*---------------------------- Mobile -----------------------------------*/
