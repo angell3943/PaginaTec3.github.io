@@ -338,6 +338,7 @@ section {
 
 
 .video-section {
+  display: none;
   text-align: center;
  background-color: #f0e9da;
 }
@@ -361,7 +362,8 @@ section {
 
 .contenedor-video video {
   width: 70%;          /* ajustá el tamaño del video */
-  max-width: 800px;    /* evita que se haga muy grande */
+  max-width: 70%;    /* evita que se haga muy grande */
+
   border-radius: 10px; /* esquinas redondeadas opcionales */
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
