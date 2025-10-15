@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+html {
+  scroll-behavior: smooth;
+}
    
 body {
     font-family: 'Poppins', sans-serif;
@@ -175,141 +179,164 @@ header {
 
 /*----------------------------------------------------------------------------------------------------*/
 
-.expo-general-container {
-  height: 70vh;
-  width: 100%;
+/* Navegación */
+
+.expo-g-container {
+  text-align: center;
   background-color: #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+  width: 100%;
+  height: 60vh;
+  min-height: 525px;
+  max-height: 700px;
 }
 
-#expo-titulo {
+.expo-g-container > h1 {
   color: #4b4b4b;
   text-decoration: underline;
   text-decoration-color: #4caf4c;
-  font-size: 35px;
-  padding: 10px;
-  text-align: center;
 }
 
-.expo-general-sld-container {
-  width: 100%;
-  height: 60%;
+.bi, 
+.dot-g {
+  cursor: pointer;
+}
+
+.sld-g-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f0f0f0;
+  gap: 10px;
+  margin: 0 auto;
+  margin-top: 3%;
+  width: 45%;
+  height: 65%;
+  min-width: 300px;
+  min-height: 350px;
 }
 
-.expo-general-sld {
-  position: relative;
-  width: 50%;
-  height: 100%;
-  border-radius: 8px;
-}
-
-.expo-general-sld img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-}
-
-.overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  text-align: center;
-  width: 25%;
-  height: 100%;
-  z-index: 100;
-  position: absolute;
-  background-color: #4b4b4b;
-  border-radius: 8px;
-  background-color: rgba(75, 75, 75, 0.5);
-  padding: 5px 5px 10px 5px;
-}
-
-.overlay button {
-  border: none;
-  height: 40px;
-  width: 80px;
-  border-radius: 8px;
-  color: #4b4b4b;
-  background-color: #e5e0d8;
-
+.sld-g-container .bi {
+  opacity: 0;
+  font-size: 2rem;
   transition: all .5s ease;
 }
 
-.overlay button:hover {
-  background-color: #4b4b4b;
-  color: #e5e0d8;
+.sld-g-container:hover .bi {
+  opacity: 1;
 }
 
-.overlay h3 {
+.sld-g {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  min-width: 700px;
+  height: 100%;
+}
+
+.sld-g::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-g {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  position: sticky;
+  width: 100%;
+  height: 100%;
+}
+
+.overlayg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 20px;
+  background-color: rgba(75, 75, 75, 0.6);
+  position: absolute;
+  transition: all .5s ease;
+
+  width: 35%;
+  height: 100%;
+}
+
+.overlayg h3 {
+  text-align: justify;
+  font-size: 1.4rem;
   color: #f0f0f0;
 }
 
-.bi {
-  font-size: 3rem;
+.overlayg a {
+  background-color: #f0f0f0;
+  color: #4b4b4b;
+  border-radius: 90px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 35px;
+  text-decoration: none;
+
+  width: 65%;
+  height: 35px;
 }
 
-/* Dots */
+.slide-g img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
-.dots-expo-general-container {
+.sld-g,
+.slide-g {
+  border-radius: 33px 0 33px 0;
+}
+
+/* Dots g*/
+
+.dots-g-container {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  width: 150px;
+  gap: 5px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  max-width: 100px;
+  min-width: 80px;
   height: 30px;
 }
 
-.dot-expo-general {
+.dot-g {
   background-color: #4b4b4b;
-  border: none;
+  border-radius: 50%;
   width: 15px;
   height: 15px;
   transition: all .5s ease;
-  border-radius: 50%;
 }
 
-.dot-expo-general:hover {
-  transform: scale(1.25);
+.dot-g:hover {
   background-color: #ff9800;
+  transform: scale(1.25);
+}
+
+.dot-g.active {
+  background-color: #ff9800;
+  transform: scale(1.25);
+  margin-right: 2px;
+  margin-left: 2px;
 }
 
 /* Proyectos expo */
 
-.proyectos-sld {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  background-color: #e5e0d8;
-  color: #4b4b4b;
-  height: 70vh;
-  padding: 20px;
-}
-
-.proyectos-sld h1,
-.proyectos-sld h2 {
-  text-decoration: underline;
-  text-decoration-color: #ff9800;
-}
-
-.proyectos-sld-container {
-  padding: 10px;
-  width: 100%;
-  height: 60%;
+.proyectos-container {
+  scroll-margin-top: 100px;
 }
 
 /*------- Proyectos 7mo -------*/
 
 .septimo-proyectos {
+  scroll-margin-top: 100px;
   background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
@@ -373,113 +400,172 @@ header {
   text-align: justify;
 }
 
-/*---------------------------------------------------------------*/
-.PaginaPie {
-  background: linear-gradient(to top,  #00a560, #c1ff72);
-  color: rgb(0, 0, 0);
-  padding: 40px 20px;
-  position: relative;
-  font-weight: bold;
+/* Actividades */
+
+.actividades {
+  scroll-margin-top: 100px;
+  color: #4b4b4b;
+  background-color: #e5e0d8;
+  width: 100%;
+  height: 90vh;
 }
 
-.Pie {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+.actividades > h1 {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #ff9800;
+  padding: 20px;
 }
 
-.LogoNombre {
-  display: flex;
-  flex-direction: column; /* El logo y el nombre estarán uno debajo del otro */
-  align-items: flex-start;
-  margin-bottom: 20px; /* Un pequeño margen abajo */
-}
-
-
-.PieLogo {
-  width: 100px;
-  height: auto;
-  margin-right: 15px; 
-  margin-left: 30px;
-  margin-bottom: 10px;
+.sld-a-container {
   display: flex;
   align-items: center;
+  margin: 0 auto;
+  width: 60%;
+  height: 80%;
 }
 
-.NombreEscuela {
-  font-size: 16px;  /* Reducimos el tamaño del texto */
-  font-weight: bold;
-  line-height: 1.2;  /* Alinea las líneas de texto */
+.sld-a-container .bi {
+  opacity: 0;
+  font-size: 2rem;
+  transition: all .5s ease;
 }
 
-.NombreEscuela p {
-  display: block;  /* Hace que cada parte del nombre esté en una línea */
+.sld-a-container:hover .bi {
+  opacity: 1;
 }
 
-.NavegacionRedes {
+.slda {
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  background-color: #e5e0d8;
+  width: 100%;
+  height: 100%;
+}
+
+.slda::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-a {
+  scroll-snap-align: center;
+  position: sticky;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-a h2{
+  text-decoration: underline;
+  text-decoration-color: #ff9800;
+  margin-bottom: 15px;
+  height: 5%;
+}
+
+
+#slide-a-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+  width: 100%;
+  height: 95%;
+}
+
+#slide-a-content img {
+  object-fit: cover;
+  border-radius: 8px;
+  width: 45%;
+  height: 95%;
+}
+
+.txt-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  text-align: justify;
+  font-size: 20px;
 }
 
-.LogosRedes {
+.txt-container hr {
+  color: #4b4b4b;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.txt-container h4 {
+  text-align: left;
+  width: 100%;
+}
+
+.listas-a {
   display: flex;
-  flex-direction: column;  /* Cambiar de fila a columna */
-  gap: 10px;  /* Opcional: agrega espacio entre las imágenes */
-  align-items: center;  /* Centra las imágenes */
-}
-
-.RedesIconos img {
-  width: 40px;  /* Ajusta el tamaño de las imágenes */
-  height: auto;
-}
-
-
-.NavegacionRapida {
-  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
-.NavegacionSecciones {
-  flex: 1;
-  min-width: 150px;
-  margin-bottom: 20px;
+.listas-a ul {
+  list-style-position: inside;
+  padding: 5px 10px 5px 10px;
 }
 
-.NavegacionSecciones h3{
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.listas-a ul li {
+  text-align: left;
 }
 
-.NavegacionSecciones h3 a{
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
+/* Dots-a */
+
+.dots-a-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  width: 40px;
+  height: 30px;
 }
 
-.NavegacionSecciones ul {
-  list-style-type: none;
-  padding-left: 0;
+.dot-a {
+  background-color: #4b4b4b;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  transition: all .5s ease;
 }
 
-.NavegacionSecciones li {
-  margin: 5px 0;
+.dot-a:hover {
+  background-color: #ff9800;
+  transform: scale(1.25);
 }
 
-.NavegacionSecciones a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: 1rem;
+.dot-a.active {
+  background-color: #ff9800;
+  transform: scale(1.25);
+  margin-right: 2px;
+  margin-left: 2px;
 }
 
-.NavegacionSecciones a:hover {
-  text-decoration: underline;
+/* Expos Anteriores */
+
+.previous-exp {
+  scroll-margin-top: 100px;
 }
+
+/* Proyectos destacados */
+
+.outstanding-projects {
+  scroll-margin-top: 100px;
+}
+
+/*---------------------------- Mobile -----------------------------------*/
 
 @media  (max-width: 1028px) {
 
