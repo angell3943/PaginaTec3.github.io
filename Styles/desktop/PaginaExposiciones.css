@@ -182,12 +182,18 @@ header {
   background-color: #f0f0f0;
   width: 100%;
   height: 70vh;
+  min-height: 525px;
 }
 
 .expo-g-container > h2 {
   color: #4b4b4b;
   text-decoration: underline;
   text-decoration-color: #4caf4c;
+}
+
+.bi, 
+.dot-g {
+  cursor: pointer;
 }
 
 .sld-g-container {
@@ -219,8 +225,10 @@ header {
   align-items: center;
   justify-content: flex-start;
   overflow-x: scroll;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
   width: 100%;
+  min-width: 700px;
   height: 100%;
 }
 
@@ -273,6 +281,13 @@ header {
 .dot-g:hover {
   background-color: #ff9800;
   transform: scale(1.25);
+}
+
+.dot-g.active {
+  background-color: #ff9800;
+  transform: scale(1.25);
+  margin-right: 2px;
+  margin-left: 2px;
 }
 
 /* Proyectos expo */
