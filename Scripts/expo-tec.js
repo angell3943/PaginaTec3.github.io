@@ -78,3 +78,5 @@ sliderg.addEventListener("scroll", function(){
     dotsg[seen_indexg].classList.add("active");
 
 });
+
+// slider actividades
