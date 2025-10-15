@@ -299,7 +299,6 @@ header {
   display: flex;
   align-items: center;
   gap: 5px;
-  background-color: #f0f0f0;
   margin: 0 auto;
   border-radius: 8px;
   margin-top: 10px;
@@ -405,6 +404,153 @@ header {
 
 .actividades {
   scroll-margin-top: 100px;
+  color: #4b4b4b;
+  background-color: #e5e0d8;
+  width: 100%;
+  height: 90vh;
+}
+
+.actividades > h1 {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #ff9800;
+  padding: 20px;
+}
+
+.sld-a-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 60%;
+  height: 80%;
+}
+
+.sld-a-container .bi {
+  opacity: 0;
+  font-size: 2rem;
+  transition: all .5s ease;
+}
+
+.sld-a-container:hover .bi {
+  opacity: 1;
+}
+
+.slda {
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  background-color: #e5e0d8;
+  width: 100%;
+  height: 100%;
+}
+
+.slda::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-a {
+  scroll-snap-align: center;
+  position: sticky;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-a h2{
+  text-decoration: underline;
+  text-decoration-color: #ff9800;
+  margin-bottom: 15px;
+  height: 5%;
+}
+
+
+#slide-a-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+  width: 100%;
+  height: 95%;
+}
+
+#slide-a-content img {
+  object-fit: cover;
+  border-radius: 8px;
+  width: 45%;
+  height: 95%;
+}
+
+.txt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.txt-container hr {
+  color: #4b4b4b;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.txt-container h4 {
+  text-align: left;
+  width: 100%;
+}
+
+.listas-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.listas-a ul {
+  list-style-position: inside;
+  padding: 5px 10px 5px 10px;
+}
+
+.listas-a ul li {
+  text-align: left;
+}
+
+/* Dots-a */
+
+.dots-a-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  width: 40px;
+  height: 30px;
+}
+
+.dot-a {
+  background-color: #4b4b4b;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  transition: all .5s ease;
+}
+
+.dot-a:hover {
+  background-color: #ff9800;
+  transform: scale(1.25);
+}
+
+.dot-a.active {
+  background-color: #ff9800;
+  transform: scale(1.25);
+  margin-right: 2px;
+  margin-left: 2px;
 }
 
 /* Expos Anteriores */
