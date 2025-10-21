@@ -83,7 +83,7 @@ sliderg.addEventListener("scroll", function(){
 
 // slider expos anteriores
 
-const slides_inside_pexp = document.querySelectorAll(".slide-pexp .sld-inside-pexp");
+/*const slides_inside_pexp = document.querySelectorAll(".slide-pexp .sld-inside-pexp");
 let actual_inside_pexp = 0;
 
 function slider_inside_pexp (){
@@ -98,7 +98,7 @@ function slider_inside_pexp (){
 
     }, 4000);
 
-}
+}*/
 
 // sliders mejores proyectos
 
