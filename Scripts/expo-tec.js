@@ -81,15 +81,31 @@ sliderg.addEventListener("scroll", function(){
 
 // slider actividades
 
+// slider expos anteriores
+
+const slides_inside_pexp = document.querySelectorAll(".slide-pexp .sld-inside-pexp");
+let actual_inside_pexp = 0;
+
+function slider_inside_pexp (){
+
+
+
+    setInterval (() =>{
+
+        slides_inside_pexp[actual_inside_pexp].classList.remove("activo");
+        actual_inside_pexp = (actual_inside_pexp+1) % slides_inside_pexp.length;
+        slides_inside_pexp[actual_inside_pexp].classList.add("activo");
+
+    }, 4000);
+
+}
+
 // sliders mejores proyectos
 
 const rightSlides_out_p = document.querySelectorAll (".sldp .slide-p.derecho");
 const leftSlides_out_p = document.querySelectorAll(".sldp .slide-p.izquierdo")
 let rightActual_out_p = 0;
 let leftActual_out_p = 0;
-
-rightSlides_out_p[0].classList.add("activo");
-leftSlides_out_p[0].classList.add("activo");
 
 setInterval (() => {
 
