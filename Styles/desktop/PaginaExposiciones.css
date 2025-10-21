@@ -665,16 +665,28 @@ header {
 .sldp {
   display: flex;
   overflow: hidden;
+  position: relative;
   width: 60%;
   height: 100%;
+}
+
+.slide-p.izquierdo {
+  border-radius: 33px 0 0 0;
 }
 
 .slide-p {
   flex: 0 0 100%;
   object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
   border-radius: 0 33px 0 0;
   width: 100%;
   height: 100%;
+}
+
+.slide-p.activo {
+  opacity: 1;
 }
 
 /*---------------------------- Mobile -----------------------------------*/
