@@ -109,13 +109,12 @@ header {
 }
 
 .TituloPrincipal h1{
-    color: rgb(49, 49, 49);
+    color: #4b4b4b;
     margin-left: 30px;
     margin-top: -200px;
     padding-right: 200px ;
     font-size: 80px; 
     background-color: rgba(139, 137, 137, 0.5);
-    line-height: 96px;
 }
 
 /* ------------------------------------------- Introducción ---------------------*/
@@ -123,6 +122,10 @@ header {
 .introduccion-container {
   background-color: #f0f0f0;
   padding: 45px 20px;
+  width: 100%;
+  height: 65vh;
+  min-height: 500px;
+  max-height: 900px;
 }
 
 .int-titulo {
@@ -139,9 +142,10 @@ header {
 .int-content{
   display: flex;
   gap: 20px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   max-width: 1200px;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -149,10 +153,14 @@ header {
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
+  width: 70%;
+  height: 100%;
 }
 
 .texto {
+  text-align: justify;
   background-color: #e5e0d8;
   padding: 15px;
   border-radius: 8px;
@@ -160,18 +168,18 @@ header {
   line-height: 1.5;
 }
 
-.int-derecha {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: space-between;
+.int-img-container {
+  width: 30%;
+  height: 100%;
+}
+
+#mobile-int-img {
+  display: none;
 }
 
 #int-img {
-  margin-top: 7.5%;
   width: 100%;
-  height: 50%;
+  height: 100%;
   object-fit: cover;
   border-radius: 8px;
   max-width: 450px;
@@ -812,229 +820,3 @@ header {
 .slide-p.activo {
   opacity: 1;
 }
-
-/*---------------------------- Mobile -----------------------------------*/
-
-@media  (max-width: 1028px) {
-
-      .MenuHamburguesa {
-    display: block;
-  }
-
-  .LinksMenu {
-    display: none;  /* oculto por defecto */
-    flex-direction: column;
-    width: 100%;
-    background-color: #c8e6c9;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    padding: 0;
-    margin: 0;
-  }
-
-  .LinksMenu a {
-    padding: 15px 20px;
-    text-align: center;
-    border-bottom: 1px solid #fff;
-  }
-
-  .LinksMenu.activo {
-    display: flex;
-  }
-
-.Exposiciones {
-      height: 50vh;  /* Reducimos la altura de la sección */
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-  }
-
-  .TituloPrincipal h1 {
-      font-size: 70px;   /* Reducimos tamaño de fuente */
-      margin: 0;
-      padding: 10px 20px;
-      line-height: 60px;
-  }
- 
-
-  /* Expo1: columnas en columna */
-  .Contenedor1 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .Columna2 {
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .Imagen2y3 {
-    max-width: 300px;
-    height: auto;
-  }
-
-  /* Proyectos: columnas centradas */
-  .Contenedor2 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .Columna3 {
-    width: 90%;
-  }
-
-  .ImagenProyecto {
-    max-width: 100%;
-  }
-
-  /* Proyectos2: columnas en columna */
-  .Proyec1 {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .Texto3 {
-    width: 90%;
-  }
-
-  .ImagenProyecto2 {
-    max-width: 80%;
-  }
-
-  /* Seccion2: columnas en columna */
-  .Contenedor3 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .ColumnaIzquierda, .ColumnaDerecha {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-
-  .Imagen4 {
-    max-width: 90%;
-  }
-
-  /* Seccion3: bloques en columna */
-  .Bloque1 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .Columna4 {
-    width: 90%;
-    text-align: center;
-  }
-
-  .ImagenSeccion3 {
-    gap: 20px;
-  }
-
-  .Imagen5 {
-    width: 200px;
-    height: auto;
-  }
-
-  .Imagen5.GirarIzquierda.a {
-    transform: rotate(-6deg) translateX(100px);
-}
-
-.Imagen5.GirarIzquierda.b {
-    transform: rotate(-6deg) translateX(100px);
-    margin-top: 50px;
-  }
-
-.Imagen5.GirarDerecha.a {
-    transform: rotate(6deg) translateX(-20px);
-}
-
-.Imagen5.GirarDerecha.b {
-    transform: rotate(6deg) translateX(170px);
-    margin-bottom: 50px;
-}
-
-}
-
-/* Celular: 768px */
-@media (max-width: 768px) {
-
-  /* Título principal aún más pequeño */
-  .TituloPrincipal h1 {
-    font-size: 50px;
-    line-height: 50px;
-    margin-top: -60px;
-  }
-
-  /* Expo1 */
-  .Imagen1 {
-    max-width: 90%;
-    height: auto;
-  }
-
-  .Imagen2y3 {
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
-  /* Proyectos */
-  .Columna3 {
-    width: 95%;
-  }
-
-  .ImagenProyecto {
-    max-width: 100%;
-  }
-
-  /* Proyectos2 */
-  .Texto3 {
-    width: 95%;
-  }
-
-  .ImagenProyecto2 {
-    max-width: 95%;
-  }
-
-  /* Seccion2 */
-  .ColumnaIzquierda, .ColumnaDerecha {
-    width: 100%;
-  }
-
-  .Imagen4 {
-    max-width: 95%;
-  }
-
-  /* Seccion3 */
-  .Columna4 {
-    width: 95%;
-  }
-
-  .Imagen5 {
-    width: 180px;
-    height: auto;
-  }
-
-.Imagen5.GirarIzquierda.a {
-    transform: rotate(-6deg) translateX(-330px);
-}
-
-.Imagen5.GirarIzquierda.b {
-    transform: rotate(-6deg) translateX(-280px);
-}
-
-.Imagen5.GirarDerecha.a {
-    transform: rotate(6deg) translateX(120px);
-}
-
-.Imagen5.GirarDerecha.b {
-    transform: rotate(6deg) translateX(170px);
-    margin-bottom: 50px;
-}
-
-}
-
-

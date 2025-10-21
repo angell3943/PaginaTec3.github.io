@@ -1,0 +1,68 @@
+@media (max-width: 768px){
+    
+    .TituloPrincipal h1 {
+        font-size: 40px;
+        width: 200px;
+    }
+
+    /* Introducción */
+
+    .int-izquierda {
+        gap: 10px;
+    }
+
+    .int-izquierda {
+        width: 100%;
+    }
+
+    .int-img-container {
+        display: none;
+    }
+
+    /* slider general */
+
+    .bi-caret-left,
+    .bi-caret-right {
+        display: none;
+    }
+
+    /* proyectos septimo */
+
+    .explicacion-texto {
+        flex-wrap: wrap;
+    }
+
+    /* slider previous exp */
+
+    /* mejores proyectos */
+
+    
+
+}
+
+@media (max-width: 425px) {
+
+    /* Introducción */
+
+
+    /* slider general */
+
+    .sld-g {
+        min-width: 300px;
+    }
+
+    .overlay-g {
+        width: 100%;
+    }
+
+    /* Proyectos Séptimo */
+
+    
+
+    /* slider previous exp */
+
+    .sld-pexp {
+        min-width: 300px;
+    }
+
+}
