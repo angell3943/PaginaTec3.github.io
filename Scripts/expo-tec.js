@@ -80,3 +80,31 @@ sliderg.addEventListener("scroll", function(){
 });
 
 // slider actividades
+
+// sliders mejores proyectos
+
+const rightSlides_out_p = document.querySelectorAll (".sldp .slide-p.derecho");
+const leftSlides_out_p = document.querySelectorAll(".sldp .slide-p.izquierdo")
+let rightActual_out_p = 0;
+let leftActual_out_p = 0;
+
+rightSlides_out_p[0].classList.add("activo");
+leftSlides_out_p[0].classList.add("activo");
+
+setInterval (() => {
+
+    rightSlides_out_p[rightActual_out_p].classList.remove("activo");
+    rightActual_out_p = (rightActual_out_p+1)%rightSlides_out_p.length;
+    rightSlides_out_p[rightActual_out_p].classList.add("activo");
+
+}, 4000);
+
+
+
+setInterval (() => {
+
+    leftSlides_out_p[leftActual_out_p].classList.remove("activo");
+    leftActual_out_p = (leftActual_out_p+1)%leftSlides_out_p.length;
+    leftSlides_out_p[leftActual_out_p].classList.add("activo");
+
+}, 5000);
