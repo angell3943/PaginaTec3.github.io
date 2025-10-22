@@ -1,89 +1,120 @@
-//slider general 
+/* Funciones globales */
+
+//eliminar dot.active
+function remove_dots(dots){
+
+    dots.forEach(dot => {dot.classList.remove("active")});
+
+}
+
+//slider inside
+function slider_inside (slides_inside_slector){
+
+    const slides_inside = document.querySelectorAll(slides_inside_slector);
+
+    let actual_inside = 0;
+
+    setInterval( () =>{
+
+        slides_inside[actual_inside].classList.remove("actuivo");
+        actual_inside = (actual_inside+1) / slider_inside.length;
+        slides_inside[actual_inside].classList.add("activo");
+
+    }, 5000);
+
+}
+
+/* slider básico 100% funcional */
+
+function common_slider ({
+    dots_selector,
+    flecha_derecha_selector,
+    flecha_izquierda_selector,
+    slider_selector,
+    slides_selector
+    }){
+
+        const dots = document.querySelectorAll(dots_selector);
+        const flecha_derecha = document.querySelector(flecha_derecha_selector);
+        const flecha_izquierda = document.querySelector(flecha_izquierda_selector);
+        const slider = document.querySelector(slider_selector);
+        const slide = document.querySelectorAll(slides_selector);
+
+        let seen_index = 0;
 
         /* dots */
 
-const dotsg = document.querySelectorAll(".dot-g");
-const sliderg = document.querySelector (".sld-g");
-const slidesg = document.querySelectorAll(".sld-g .slide-g");
+        dots.forEach( (dot, i) => {
 
-let seen_indexg = 0;
+            dot.addEventListener("click", function(){
 
-dotsg.forEach( (dot, i) => {
+                remove_dots(dots);
 
-    dot.addEventListener("click", function(){
+                this.classList.add("active");
 
-        dotsg.forEach(d => {
+                slide[i].scrollIntoView({
+                    behavior: "smooth",
+                    block: "nearest",
+                    inline: "nearest"
+                });
 
-            d.classList.remove("active");
+            });
 
         });
-
-        this.classList.add("active");
-
-        slidesg[i].scrollIntoView({
-            behavior: "smooth",
-            block: "nearest",
-            inline: "nearest"
-        });
-
-    });
-
-});
 
         /* flechas */
 
-const flechadg = document.querySelector(".flecha-derecha");
-const flechaig = document.querySelector(".flecha-izquierda");
+        flecha_derecha.addEventListener("click", function(){
 
-flechaig.addEventListener("click", function(){
+            seen_index = Math.round(slider.scrollLeft / slide[0].offsetWidth);
 
-    seen_indexg = Math.round( sliderg.scrollLeft / slidesg[0].offsetWidth);
+            slide[seen_index+1].scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+                inline: "nearest"
+            });
 
-    slidesg[seen_indexg-1].scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
-        inline: "nearest"
-    });
+            remove_dots(dots);
 
-    dotsg.forEach(dot => {dot.classList.remove("active")});
+            dots[seen_index+1].classList.add("active");
 
-    dotsg[seen_indexg-1].classList.add("active");
+        });
 
-});
+        flecha_izquierda.addEventListener("click", function(){
 
-flechadg.addEventListener("click", function(){
+            seen_index = Math.round(slider.scrollLeft / slide[0].offsetWidth);
+            
+            slide[seen_index-1].scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+                inline: "nearest"
+            });
 
-    seen_indexg = Math.round( sliderg.scrollLeft / slidesg[0].offsetWidth);
+            remove_dots(dots);
 
-    slidesg[seen_indexg+1].scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
-        inline: "nearest"
-    });
+            dots[seen_index-1].classList.add("active");
 
-    dotsg.forEach(dot => {dot.classList.remove("active")});
+        });
 
-    dotsg[seen_indexg+1].classList.add("active");
+        /* scroll */
 
-});
+        slider.addEventListener("scroll", function(){
 
-        /* scrolleable */
+            seen_index = Math.round(slider.scrollLeft / slide[0].offsetWidth);
+            
+            remove_dots(dots);
 
-sliderg.addEventListener("scroll", function(){
+            dots[seen_index].classList.add("active");
 
-    seen_indexg = Math.round( sliderg.scrollLeft / slidesg[0].offsetWidth);
-    
-    dotsg.forEach(dot => {dot.classList.remove("active")});
+        });
 
-    dotsg[seen_indexg].classList.add("active");
+}
 
-});
-
-// slider actividades
+//slider-slider inside
 
 // slider expos anteriores
 
-
+/*
 
 const slides_inside_pexp = document.querySelectorAll(".slide-pexp .sld-inside-pexp");
 let actual_inside_pexp = 0;
@@ -96,8 +127,11 @@ let actual_inside_pexp = 0;
 
     }, 4000);
 
+*/
+
 // sliders mejores proyectos
 
+/*
 const rightSlides_out_p = document.querySelectorAll (".sldp .slide-p.derecho");
 const leftSlides_out_p = document.querySelectorAll(".sldp .slide-p.izquierdo")
 let rightActual_out_p = 0;
@@ -120,3 +154,34 @@ setInterval (() => {
     leftSlides_out_p[leftActual_out_p].classList.add("activo");
 
 }, 5000);
+*/
+
+
+/* llamar funciones */
+
+//slider general
+common_slider({
+    dots_selector: ".dot-g",
+    flecha_derecha_selector: ".flecha-derecha-g",
+    flecha_izquierda_selector: ".flecha-izquierda-g",
+    slider_selector: ".sld-g",
+    slides_selector: ".slide-g"
+});
+
+//slider actividades
+common_slider({
+    dots_selector: ".dot-a",
+    flecha_derecha_selector: ".flecha-derecha-a",
+    flecha_izquierda_selector: ".flecha-izquierda-a",
+    slider_selector: ".slda",
+    slides_selector: ".slide-a"
+});
+
+//slider pexp (prueba)
+common_slider({
+    dots_selector: ".dot-pexp",
+    flecha_derecha_selector: ".flecha-derecha-pexp",
+    flecha_izquierda_selector: ".flecha-izquierda-pexp",
+    slider_selector: ".sld-pexp",
+    slides_selector: ".slide-pexp"
+});
