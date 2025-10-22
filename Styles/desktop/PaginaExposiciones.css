@@ -645,6 +645,7 @@ header {
   padding: 20px;
   background-color: rgba(75, 75, 75, 0.6);
   position: absolute;
+  z-index: 2;
   transition: all .5s ease;
 
   width: 35%;
@@ -676,25 +677,59 @@ header {
   background-color: #ff9800;
 }
 
-.slide-pexp img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
 .sld-pexp,
 .slide-pexp {
   border-radius: 33px 0 33px 0;
 }
 
 .sld-inside-pexp {
+  object-fit: cover;
   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   opacity: 0;
   transition: opacity 2s ease-in-out;
+  width: 100%;
+  height: 100%;
 }
 
 .sld-inside-pexp.activo {
   opacity: 1;
+}
+
+/* Dots pexp*/
+
+.dots-pexp-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  max-width: 100px;
+  min-width: 80px;
+  height: 30px;
+}
+
+.dot-pexp {
+  background-color: #4b4b4b;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  transition: all .5s ease;
+}
+
+.dot-pexp:hover {
+  background-color: #ff9800;
+  transform: scale(1.25);
+}
+
+.dot-pexp.active {
+  background-color: #ff9800;
+  transform: scale(1.25);
+  margin-right: 2px;
+  margin-left: 2px;
 }
 
 /* Proyectos destacados */

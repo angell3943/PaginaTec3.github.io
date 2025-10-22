@@ -83,12 +83,10 @@ sliderg.addEventListener("scroll", function(){
 
 // slider expos anteriores
 
-/*const slides_inside_pexp = document.querySelectorAll(".slide-pexp .sld-inside-pexp");
+
+
+const slides_inside_pexp = document.querySelectorAll(".slide-pexp .sld-inside-pexp");
 let actual_inside_pexp = 0;
-
-function slider_inside_pexp (){
-
-
 
     setInterval (() =>{
 
@@ -97,8 +95,6 @@ function slider_inside_pexp (){
         slides_inside_pexp[actual_inside_pexp].classList.add("activo");
 
     }, 4000);
-
-}*/
 
 // sliders mejores proyectos
 
