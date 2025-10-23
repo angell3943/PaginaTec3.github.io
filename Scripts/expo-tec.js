@@ -114,48 +114,6 @@ function common_slider (
 
 // slider expos anteriores
 
-/*
-
-const slides_inside_pexp = document.querySelectorAll(".slide-pexp .sld-inside-pexp");
-let actual_inside_pexp = 0;
-
-    setInterval (() =>{
-
-        slides_inside_pexp[actual_inside_pexp].classList.remove("activo");
-        actual_inside_pexp = (actual_inside_pexp+1) % slides_inside_pexp.length;
-        slides_inside_pexp[actual_inside_pexp].classList.add("activo");
-
-    }, 4000);
-
-*/
-
-// sliders mejores proyectos
-
-/*
-const rightSlides_out_p = document.querySelectorAll (".sldp .slide-p.derecho");
-const leftSlides_out_p = document.querySelectorAll(".sldp .slide-p.izquierdo")
-let rightActual_out_p = 0;
-let leftActual_out_p = 0;
-
-setInterval (() => {
-
-    rightSlides_out_p[rightActual_out_p].classList.remove("activo");
-    rightActual_out_p = (rightActual_out_p+1)%rightSlides_out_p.length;
-    rightSlides_out_p[rightActual_out_p].classList.add("activo");
-
-}, 4000);
-
-
-
-setInterval (() => {
-
-    leftSlides_out_p[leftActual_out_p].classList.remove("activo");
-    leftActual_out_p = (leftActual_out_p+1)%leftSlides_out_p.length;
-    leftSlides_out_p[leftActual_out_p].classList.add("activo");
-
-}, 5000);
-*/
-
 
 /* llamar funciones */
 
@@ -177,11 +135,18 @@ common_slider(
     ".slide-a"
 );
 
-/*slider proyectos
-common_slider();
+//slider proyectos
+common_slider(
+    ".dot-pr",
+    ".flecha-derecha-pr",
+    ".flecha-izquierda-pr",
+    ".sld-pr",
+    ".slide-pr"
+);
 
-slider_inside();
-*/
+slider_inside(".sld-i-pr-1");
+slider_inside(".sld-i-pr-2");
+slider_inside(".sld-i-pr-3");
 
 //slider pexp
 common_slider(
@@ -192,6 +157,6 @@ common_slider(
     ".slide-pexp"
 );
 
-slider_inside(".sld-inside-pexp-1");
-slider_inside(".sld-inside-pexp-2");
-slider_inside(".sld-inside-pexp-3");
+slider_inside(".sld-i-pexp-1");
+slider_inside(".sld-i-pexp-2");
+slider_inside(".sld-i-pexp-3");
