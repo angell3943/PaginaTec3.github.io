@@ -24,7 +24,9 @@ function slider_inside (slides_inside_slector){
 
 }
 
-/* slider básico 100% funcional */
+/* Fnciones principales */
+
+//slider básico 100% funcional 
 
 function common_slider (
     dots_selector,
@@ -110,11 +112,6 @@ function common_slider (
 
 }
 
-//slider-slider inside
-
-// slider expos anteriores
-
-
 /* llamar funciones */
 
 //slider general
@@ -160,3 +157,8 @@ common_slider(
 slider_inside(".sld-i-pexp-1");
 slider_inside(".sld-i-pexp-2");
 slider_inside(".sld-i-pexp-3");
+
+//slider mejores proyectos
+
+slider_inside(".sldp-1");
+slider_inside(".sldp-2");
