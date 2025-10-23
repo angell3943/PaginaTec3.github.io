@@ -13,11 +13,11 @@ function slider_inside (slides_inside_slector){
     const slides_inside = document.querySelectorAll(slides_inside_slector);
 
     let actual_inside = 0;
+    
+    setInterval( () => {
 
-    setInterval( () =>{
-
-        slides_inside[actual_inside].classList.remove("actuivo");
-        actual_inside = (actual_inside+1) / slider_inside.length;
+        slides_inside[actual_inside].classList.remove("activo");
+        actual_inside = (actual_inside+1) % slides_inside.length;
         slides_inside[actual_inside].classList.add("activo");
 
     }, 5000);
@@ -26,13 +26,13 @@ function slider_inside (slides_inside_slector){
 
 /* slider básico 100% funcional */
 
-function common_slider ({
+function common_slider (
     dots_selector,
     flecha_derecha_selector,
     flecha_izquierda_selector,
     slider_selector,
     slides_selector
-    }){
+    ){
 
         const dots = document.querySelectorAll(dots_selector);
         const flecha_derecha = document.querySelector(flecha_derecha_selector);
@@ -160,28 +160,38 @@ setInterval (() => {
 /* llamar funciones */
 
 //slider general
-common_slider({
-    dots_selector: ".dot-g",
-    flecha_derecha_selector: ".flecha-derecha-g",
-    flecha_izquierda_selector: ".flecha-izquierda-g",
-    slider_selector: ".sld-g",
-    slides_selector: ".slide-g"
-});
+common_slider(
+    ".dot-g",
+    ".flecha-derecha-g",
+    ".flecha-izquierda-g",
+    ".sld-g",
+    ".slide-g"
+);
 
 //slider actividades
-common_slider({
-    dots_selector: ".dot-a",
-    flecha_derecha_selector: ".flecha-derecha-a",
-    flecha_izquierda_selector: ".flecha-izquierda-a",
-    slider_selector: ".slda",
-    slides_selector: ".slide-a"
-});
+common_slider(
+    ".dot-a",
+    ".flecha-derecha-a",
+    ".flecha-izquierda-a",
+    ".slda",
+    ".slide-a"
+);
 
-//slider pexp (prueba)
-common_slider({
-    dots_selector: ".dot-pexp",
-    flecha_derecha_selector: ".flecha-derecha-pexp",
-    flecha_izquierda_selector: ".flecha-izquierda-pexp",
-    slider_selector: ".sld-pexp",
-    slides_selector: ".slide-pexp"
-});
+/*slider proyectos
+common_slider();
+
+slider_inside();
+*/
+
+//slider pexp
+common_slider(
+    ".dot-pexp",
+    ".flecha-derecha-pexp",
+    ".flecha-izquierda-pexp",
+    ".sld-pexp",
+    ".slide-pexp"
+);
+
+slider_inside(".sld-inside-pexp-1");
+slider_inside(".sld-inside-pexp-2");
+slider_inside(".sld-inside-pexp-3");
