@@ -153,6 +153,7 @@ header {
   background-color: #e5e0d8;
   max-width: 45%;
   min-width: 300px;
+  max-height: fit-content;
 }
 
 .header-testimonios{
@@ -193,8 +194,6 @@ header {
   border: 2px solid #ff9800;
 }
 
-
-
 .toggle-tarjetas {
   display: flex;
   width: 100%;
@@ -228,6 +227,7 @@ header {
   width: 100%;
   min-height: 250px;
   max-height: 100%;
+  align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
@@ -235,6 +235,7 @@ header {
 
 .main-testimonios.tarjetas{
   width: 300px;
+  max-height: fit-content;
 }
 
 /* Flecha debajo */
