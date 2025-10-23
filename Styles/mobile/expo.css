@@ -9,13 +9,10 @@
 
     .int-izquierda {
         gap: 10px;
-    }
-
-    .int-izquierda {
         width: 100%;
     }
 
-    .int-img-container {
+    #int-img {
         display: none;
     }
 
@@ -44,7 +41,6 @@
 
     /* Introducción */
 
-
     /* slider general */
 
     .sld-g {
@@ -53,6 +49,12 @@
 
     .overlay-g {
         width: 100%;
+    }
+
+    /* Otros proyectos */
+
+    .sld-pr {
+        min-width: 300px;
     }
 
     /* Proyectos Séptimo */
@@ -65,4 +67,32 @@
         min-width: 300px;
     }
 
+    /* Proyectos destacados */
+    
+    .project-box {
+        flex-direction: column;
+    }
+
+    .text-box-p {
+        width: 100%;
+    }
+
+    .heading-box h2{
+        font-size: 1rem;
+    }
+
+    .heading-box img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .sldp {
+        width: 100%;
+    }
+    
+    .sldp-par,
+    .slide-p {
+        border-radius: 33px 33px 0 0;
+    }
+    
 }
