@@ -41,30 +41,93 @@
 
     /* Introducción */
 
+    .introduccion-container {
+        height:850px;
+    }
+
     /* slider general */
+
+    .expo-g-container {
+        height: 550px;
+    }
+
+    .expo-g-container h1 {
+        font-size: 1.5rem;
+    }
 
     .sld-g {
         min-width: 300px;
     }
 
-    .overlay-g {
+    .overlayg {
+        opacity: 0;
         width: 100%;
     }
 
+    .overlayg.active-overlay {
+        opacity: 1;
+    }
+
     /* Otros proyectos */
+
+    .proyectos-container {
+        height: 550px;
+    }
+
+    .proyectos-container h1 {
+        font-size: 1.5rem;
+    }
 
     .sld-pr {
         min-width: 300px;
     }
 
+    .overlay-pr {
+        opacity: 0;
+        width: 100%;
+    }
+
+    .overlay-pr.active-overlay {
+        opacity: 1;
+    }
+
     /* Proyectos Séptimo */
 
-    
+    #choice-img {
+        min-height: 300px;
+    }
+
+    /* Actividades */
+
+    .actividades {
+        height: 900px;
+    }
+
+    .actividades h1 {
+        font-size: 1.5rem;
+    }
 
     /* slider previous exp */
 
+    .previous-exp {
+        height: 550px;
+    }
+
+    .previous-exp h1 {
+        font-size: 1.5rem;
+    }
+
     .sld-pexp {
         min-width: 300px;
+    }
+
+    .overlay-pexp {
+        opacity: 0;
+        width: 100%;
+    }
+
+    .overlay-pexp.active-overlay {
+        opacity: 1;
     }
 
     /* Proyectos destacados */
@@ -78,7 +141,7 @@
     }
 
     .heading-box h2{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .heading-box img {
