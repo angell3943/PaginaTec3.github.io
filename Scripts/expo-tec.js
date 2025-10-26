@@ -112,6 +112,27 @@ function common_slider (
 
 }
 
+function overlay_dinamico (overlay_selector, slider_selector) {
+
+    const overlay = document.querySelectorAll(overlay_selector);
+    const slides = document.querySelectorAll(slider_selector);
+
+    slides.forEach( (slide, i) => {
+
+        slide.addEventListener("click", function(){
+
+            if (overlay[i].classList.contains("active-overlay")){
+                overlay[i].classList.remove("active-overlay");
+            } else {
+                overlay[i].classList.add("active-overlay");
+            }
+
+        });
+
+    });
+
+}
+
 /* llamar funciones */
 
 //slider general
@@ -159,6 +180,21 @@ slider_inside(".sld-i-pexp-2");
 slider_inside(".sld-i-pexp-3");
 
 //slider mejores proyectos
-
 slider_inside(".sldp-1");
 slider_inside(".sldp-2");
+
+//overlayg
+overlay_dinamico(
+    ".overlayg",
+    ".slide-g"
+);
+
+overlay_dinamico(
+    ".overlay-pr",
+    ".slide-pr"
+);
+
+overlay_dinamico(
+    ".overlay-pexp",
+    ".slide-pexp"
+);
