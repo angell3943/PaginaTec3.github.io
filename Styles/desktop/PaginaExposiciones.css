@@ -192,11 +192,14 @@ header {
 /* Navegación */
 
 .expo-g-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   background-color: #f0f0f0;
   padding: 20px 0;
   width: 100%;
-  height: 70vh;
+  height: 65vh;
   min-height: 525px;
   max-height: 700px;
 }
@@ -348,13 +351,16 @@ header {
 /* Otros proyectos */
 
 .proyectos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   scroll-margin-top: 100px;
   background-color: #e5e0d8;
   color: #4b4b4b;
   text-align: center;
   padding: 20px 0;
   width: 100%;
-  height: 70vh;
+  height: 65vh;
   min-height: 525px;
   max-height: 700px;
 }
@@ -732,13 +738,16 @@ header {
 /* Expos Anteriores */
 
 .previous-exp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   scroll-margin-top: 100px;
   background-color: #f0f0f0;
   color: #4b4b4b;
   text-align: center;
   padding: 20px 0;
   width: 100%;
-  height: 70vh;
+  height: 65vh;
   min-height: 525px;
   max-height: 700px;
 }
