@@ -1023,3 +1023,5 @@ header {
 .slide-p.activo {
   opacity: 1;
 }
+
+.out-p-mobile {display: none;}

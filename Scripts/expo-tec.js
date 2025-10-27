@@ -198,3 +198,7 @@ overlay_dinamico(
     ".overlay-pexp",
     ".slide-pexp"
 );
+
+//slider imágenes mejores proyectos mobile
+slider_inside(".sldp-mobile-1");
+slider_inside(".sldp-mobile-2");
