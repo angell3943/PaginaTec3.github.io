@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+background-color: #e5e0d8;
+}
+.expotec24{
+
+}
+.expotec24 > h2:first-of-type  {
+    text-decoration: underline orange;
+}
+.logo1{
+    width: 50px;
+    height: 50px;
+}
+.encabezado{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.bloque1{
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+.sub1{
+    display: flex;
+}
+.foto1{
+    width: 400px;
+    height: 300px;
+}
