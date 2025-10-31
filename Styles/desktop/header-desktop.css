@@ -5,7 +5,7 @@ header {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 10px;
     background: linear-gradient(to top,  #00a560, #c1ff72);
     z-index: 1000;
 }
@@ -13,26 +13,27 @@ header {
 .LogoMenu {
     display: flex;
     align-items: center;
-    flex-direction: row;
+    gap: 15px;
 }
   
 .LogoMenu img {
-    height: 50px;
-    width: auto;
-    margin-right: 12px;
+    height: 40px;
+    width: 40px;
 }
   
 .TextoLogo {
     display: flex;
     flex-direction: column;    
-    font-size: 17px;
-    line-height: 1.2;
-    color: black;
+    font-size: 15px;
     white-space: nowrap;
-   font-weight: bold;
+    font-weight: bold;
 }
 
 /* Menu desktop y hamburguesa*/
+
+.nav {
+    font-size: 15px;
+}
 
 .nav-list {
     display: flex;
@@ -55,8 +56,7 @@ header {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    gap: 5px;
-    padding-top: 5px;
+    border-radius: 8px;
 
     transform: translateY(-10px);
     transition: max-height 0.7s ease, opacity 0.7s ease, transform 0.7s ease;
