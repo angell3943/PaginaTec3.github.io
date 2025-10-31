@@ -1,7 +1,7 @@
 /*  Footer Desktop */  
 
 footer {
-  min-height: 290px;
+  min-height: 350px;
   background: linear-gradient(to top,  #00a560, #c1ff72);
   color: black;
   padding: 20px 5px 0 5px;
@@ -11,26 +11,22 @@ footer {
 
 .Pie {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .LogoNombre {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0 10px 20px 10px;
 }
 
 .PieLogo {
   width: 100px;
   height: auto;
-  margin-right: 15px; 
-  margin-left: 15px;
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
 }
 
 .NombreEscuela {
@@ -41,6 +37,19 @@ footer {
 
 .NombreEscuela p {
   display: block;
+}
+
+.Pie > hr {
+  border: none;
+  border-top: 1px solid black;
+  width: 90%;
+}
+
+.footer-main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .NavegacionRedes {
@@ -67,39 +76,37 @@ footer {
   display: flex;
   gap: 35px;
   flex-wrap: wrap;
+  padding: 2.5rem 5rem 2.5rem 5rem;
 }
 
 .NavegacionSecciones {  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   flex: 1;
-  min-width: 150px;
-  margin-bottom: 20px;
+  min-width: 170px;
 }
 
 .NavegacionSecciones h3{
-  font-size: 20px;
+  text-align: center;
+  font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.NavegacionSecciones h3 a{
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
 }
 
 .NavegacionSecciones ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   list-style-type: none;
-  padding-left: 0;
 }
 
-.NavegacionSecciones li {
-  margin-bottom: 2px;
+.NavegacionSecciones li a{
+  font-size: .8rem;
 }
 
 .NavegacionSecciones a {
   text-decoration: none;
   color: black;
-  font-size: 1rem;
 }
 
 .NavegacionSecciones a:hover {

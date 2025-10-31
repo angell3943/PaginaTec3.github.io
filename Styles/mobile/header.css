@@ -91,7 +91,7 @@ a, button {
         bottom: 0;
         background-color: #4b4b4b;
         padding: 2rem;
-        box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 100vw 100vh rgba(0, 0, 0, 0.5);
     }
 
     .nav-list {
