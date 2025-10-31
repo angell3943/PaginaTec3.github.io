@@ -188,10 +188,10 @@ main {
 .img1{
     position: relative;
     display: inline-block;
-    width: 500px; /* mismo tamaño que la imagen */
+    width: 500px;
     height: 300px;
     border-radius: 20px;
-    overflow: hidden; /* importante para que el overlay no se desborde */
+    overflow: hidden;
 }
 .overlay{
     position: absolute;
@@ -199,7 +199,7 @@ main {
     left: 0;
     width: 40%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* fondo oscuro semi-transparente */
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     display: flex;
     justify-content: center;
@@ -245,6 +245,7 @@ main {
     border-radius: 20px 0px 0px 20px; 
 }
 
+/* RCP */
 
 .rcp {
   padding: 20px;
@@ -291,28 +292,28 @@ main {
 .mayo25{
 display: flex;
 flex-direction: column;
-padding: 40px 20px; /* más espacio interior */
+padding: 40px 20px;
 background-color: #f0f0f0;
-gap: 30px; /* espacio entre elementos internos */
+gap: 30px;
 
 }
 .mayo25 h2 {
-    margin-top: 0; /* margen arriba */
-    margin-bottom: 0; /* margen abajo */
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 40px;
     text-decoration: underline #74acdf;
 }
 .contenedor{
     display: flex;
     flex-direction: row;
-    align-items: flex-start; /* evita que se apilen */
+    align-items: flex-start;
     padding-left: 20px;
 }
 .bloque1{
     width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 10px; /* espacio entre párrafos, imágenes y hr */
+  gap: 10px;
 }
 .foto1{
     width: 85%;
@@ -366,10 +367,10 @@ gap: 30px; /* espacio entre elementos internos */
 }
 
 .derecha img {
-    transform: translateX(30px); /* sobresale 25px hacia la derecha */
+    transform: translateX(30px);
 }
 .izquierda img {
-    transform: translateX(-30px); /* sobresale 25px hacia la izquierda */
+    transform: translateX(-30px);
 }
 
 .derecha{
