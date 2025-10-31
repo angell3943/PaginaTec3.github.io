@@ -357,9 +357,16 @@ header {
   text-decoration-color: #ff9800;
 }
 
-#seventh-block video {
-  border-radius: 8px;
-  width: 80%;
-  max-width: fit-content;
+#seventh-block div {
+  width: 90%;
+  max-width: 1200px;
   height: 90%;
+  max-height: 1100px;
+}
+
+#seventh-block video {
+  object-fit: cover;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
 }
