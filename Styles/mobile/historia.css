@@ -1,0 +1,16 @@
+@media (max-width: 425px){
+
+    .heading {
+        height: 40vh;
+    }
+
+    .heading-content h1 {
+        font-size: 1rem;
+    }
+
+    .heading-content img {
+        width: 50px;
+        height: 50px;
+    }
+
+}
