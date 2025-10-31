@@ -1,34 +1,214 @@
 *{
     margin:0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
-background-color: #e5e0d8;
+    background-color: #e5e0d8;
+    font-family: 'Poppins', sans-serif;
 }
-.expotec24{
-
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: linear-gradient(to top,  #00a560, #c1ff72);
+    z-index: 1000;
 }
-.expotec24 > h2:first-of-type  {
-    text-decoration: underline orange;
+  
+.LogoMenu {
+    display: flex;             
+    align-items: center;       
+    flex-direction: row;       
 }
-.logo1{
-    width: 50px;
+  
+.LogoMenu img {
     height: 50px;
+    width: auto;
+    margin-right: 12px;        
 }
-.encabezado{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
+  
+.TextoLogo {
+    display: flex;
+    flex-direction: column;    
+    font-size: 17px;
+    line-height: 1.2;
+    color: black;
+    white-space: nowrap;
+   font-weight: bold;
 }
-.bloque1{
-    background-color: #f0f0f0;
+
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.abrir-menu, .cerrar-menu {
+    display: none;
+}
+
+.nav .nav-list li a {
+  text-decoration: none;
+}
+
+.sub-nav-list {
     display: flex;
     flex-direction: column;
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    gap: 5px;
+    padding-top: 5px;
+
+    transform: translateY(-10px);
+    transition: max-height 0.7s ease, opacity 0.7s ease, transform 0.7s ease;
 }
+
+.sub-nav-list li {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.sub-nav-list.activo li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.sub-nav-list.activo li:nth-child(1) { transition-delay: 0.05s; }
+.sub-nav-list.activo li:nth-child(2) { transition-delay: 0.1s; }
+.sub-nav-list.activo li:nth-child(3) { transition-delay: 0.15s; }
+.sub-nav-list.activo li:nth-child(4) { transition-delay: 0.2s; }
+.sub-nav-list.activo li:nth-child(5) { transition-delay: 0.25s; }
+.expotec24{
+    color: #4b4b4b;
+}
+
+
+.logoprincipal{
+    height: 70px;
+    width: 70px;
+}
+.encabezadop{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.encabezadop h1{
+text-decoration: underline orange;
+font-size: 45px;
+}
+.expotec24 > h2:first-of-type{
+text-decoration: underline orange;
+margin-bottom: 20px;
+font-size: 30px;
+margin: 20px;
+}
+
+.contenedor1{
+    background-color: #f0f0f0;
+}
+.bloque1{
+    display: flex;
+    box-shadow: 0px 8px 10px 0px rgb(175, 174, 174);
+
+}
+
 .sub1{
     display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px 20px;
+
+}
+
+.encabezadobloq{
+    display: flex;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+.bloque1 h2{
+    margin-top: 10px;
+    text-decoration: underline #4caf4f;
+    font-size: 30px;
+}
+.logo2{
+    height: 60px;
 }
 .foto1{
-    width: 400px;
-    height: 300px;
+    height: 320px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.foto1:hover {
+  transform: scale(1.1); /* Agranda el div y su contenido */
+}
+
+.inter > h2:first-of-type{
+text-align: center;
+margin-bottom: 60px;
+}
+.inter h2{
+    text-decoration: underline #4caf4f;
+    font-size: 35px;
+    margin:20px
+}
+.bloque2{
+    display: flex;
+    flex-direction: row;
+    background-color: #e5e0d8;
+    box-shadow: 0px 8px 10px 0px rgb(175, 174, 174);
+
+}
+.sub2{
+display: flex;
+flex-direction: column;
+width: 50%;
+padding: 10px 20px;
+}
+.bloque2 h2{
+    margin-top: 10px;
+    text-decoration: underline #4caf4f;
+    font-size: 30px;
+}
+.contenedor1 > div {
+    margin-bottom: 20px; /* ajustá el valor a gusto */
+}
+.bloque3{
+    background-color: #e5e0d8;
+    margin-top: 30px;
+    padding: 5px 50px;
+}
+.bloque3 > h2:first-of-type{
+    text-align: end;
+    font-size: 30px;
+}
+.bloque3 h2{
+    text-decoration: underline orange;
+    font-size: 20px;
+}
+.sub3{
+    display: flex;
+    flex-direction: row;
+    gap:30px
+}
+.foto3{
+    width: 500px;
+    height: 400px;
+}
+.texto3{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.listas{
+    display: flex;
+    justify-content: space-evenly;
+
 }
