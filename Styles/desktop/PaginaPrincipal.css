@@ -394,6 +394,7 @@ body {
   background-color: #e5e0d8;  
   display: flex;
   height: 100vh;
+  min-height: 750px;
   align-items: center;
 }
 
