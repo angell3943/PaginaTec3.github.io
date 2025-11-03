@@ -1,0 +1,28 @@
+  .contenedor {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+  }
+
+  .contenedor img {
+    width: 100%;
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* negro semitransparente */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+  }
+
+  .contenedor:hover .overlay {
+    opacity: 1; /* aparece al pasar el mouse */
+  }

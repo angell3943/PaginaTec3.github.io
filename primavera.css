@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.primavera{
+    background-color: #f0f0f0;
+}
+.primavera > h2:first-of-type{
+text-decoration: underline violet;
+}
+.primavera > h3:first-of-type{
+text-decoration: underline violet;
+}
+li {
+  padding-left: 0;
+  margin-left: 0;
+  list-style-position: inside; 
+}
+.bloqder h3{
+    background-color: violet;
+}
+.contenedor1{
+    display: flex;
+    gap: 10px;
+}
+.fotoprim{
+    height: 300px;
+    width: 300px;
+}
+.bloque1{
+    width: 30%;
+}
+.bloque2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.bloqder{
+    background-color: #e5e0d8 ;
+    width: 10%;
+    margin-left: auto;
+}
+.bloqder li{
+    text-align: center;
+}
