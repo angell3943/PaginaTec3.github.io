@@ -583,6 +583,11 @@ body {
   text-align: right;
 }
 
+.PosicionBoton a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
 .BotonNovedades {
   background-color: #4caf4f;
   color: #f0f0f0;
@@ -1131,6 +1136,7 @@ body {
 
   .ContenidoNovedades p {
     font-size: 14px;
+    margin: 0;
   }
 
   .NovedadesRecuadro {
