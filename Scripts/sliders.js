@@ -179,9 +179,7 @@ common_slider(
     null
 );
 
-slider_inside (".sld-i-hi1")
-slider_inside (".sld-i-hi2")
-slider_inside (".sld-i-hi3")
+slider_inside (".sld-inside-historia");
 
 /* página Expo Tecnica */
 
