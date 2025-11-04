@@ -8,15 +8,174 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* ===== SECCIÓN PRESENTACIÓN ===== */
-.presentacion {
+/* Presentación */
 
+.presentacion {
+  width: 100%;
+  height: 70vh;
+  min-height: 550px;
+  max-height: 600px;
+}
+
+.presentacion-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.arrow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.flecha-izquierda-presentacion {
+  left: 0;
+}
+
+.flecha-derecha-presentacion {
+  right: 0;
+}
+
+.flecha-izquierda-presentacion, 
+.flecha-derecha-presentacion {
+  position: absolute;
+  z-index: 30;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.presentacion-content:hover .flecha-izquierda-presentacion,
+.presentacion-content:hover .flecha-derecha-presentacion,
+.presentacion-content:hover .dots-presentacion-container {
+  opacity: 1;
+}
+
+.sld-presentacion-container {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  height: 100%;
+}
+
+.sld-presentacion-container::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-presentacion {
+  position: sticky;
+  scroll-snap-align: center;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .slide-presentacion img {
-  width: 200px;
-  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
+
+.slide-presentacion-content {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  gap: 20rem;
+  width: 100%;
+}
+
+.overlay-presentacion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(255, 165, 0, 0.8);
+  padding: 60px;
+  border-radius: 15px;
+  max-width: 475px;
+  min-height: 325px;
+}
+
+.overlay-presentacion p {
+  margin-bottom: 20px;
+}
+
+.overlay-presentacion a {
+  width: 50%;
+}
+
+.overlay-presentacion a button {
+  background-color: #4caf4f;
+  color: #f0f0f0;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.overlay-presentacion button:hover {
+  background-color: #449347;
+}
+
+.slide-presentacion-content img {
+  width: 15rem;
+  height: 15rem;
+}
+
+/* dots */
+
+.dots-presentacion-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 25;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  max-width: 100px;
+  min-width: 80px;
+  height: 30px;
+  opacity: 0;
+
+  transition: opacity .5s ease;
+}
+
+.dot-presentacion {
+  background-color: #4b4b4b;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  transition: all .5s ease;
+}
+
+.dot-presentacion:hover {
+  background-color: #ff9800;
+  transform: scale(1.25);
+}
+
+.dot-presentacion.active {
+  background-color: #ff9800;
+  transform: scale(1.25);
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
 /* ------------------------------------------------------------ */
 
  /* Sección Sobre Nosotros */
@@ -450,6 +609,7 @@ body {
 
 .slider-track-novedades {
   display: flex;
+  align-items: center;
   transition: transform 0.4s ease;
 }
 
@@ -726,44 +886,6 @@ body {
 
 @media (max-width: 1024px) {
 
-  .Presentacion {
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 30px;
-    height: auto;
-    align-items: center;
-    padding: 60px 30px;
-  }
-
-  .ContenidoPresentacion{
-    gap: 30px;
-  }
-
-  .TextoBienvenida {
-    margin-left: 0;
-    max-width: 100%;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .TextoBienvenida h1 {
-    font-size: 40px;
-  }
-
-  .TextoBienvenida p {
-    font-size: 24px;
-  }
-
-  .BotonBienvenida {
-    display: inline-block;
-    margin: 20px auto 0;
-  }
-
-  .LogoPrincipal {
-    margin-left: 0;
-    margin-top: 20px;
-    height: 250px;
-  }
 
 /* ---------------------------------------------------------- */
 

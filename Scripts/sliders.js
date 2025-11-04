@@ -135,6 +135,17 @@ function overlay_dinamico (overlay_selector, slider_selector) {
 
 /* llamar funciones */
 
+/* Index */
+common_slider(
+    ".dot-presentacion",
+    ".flecha-derecha-presentacion",
+    ".flecha-izquierda-presentacion",
+    ".sld-presentacion-container",
+    ".slide-presentacion"
+);
+
+/* págona Expo Tecnica */
+
 //slider general
 common_slider(
     ".dot-g",
