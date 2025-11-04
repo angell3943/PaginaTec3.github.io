@@ -436,10 +436,11 @@ main {
 
   /* Planes */
   .TituloPrincipal h1 {
-    font-size: 70px;
-    margin-bottom: 15px;
+    font-size: 3rem;
+    margin-bottom: 10px;
 
   }
+  
   .TituloPrincipal p {
     font-size: 16px;
   }

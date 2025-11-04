@@ -30,6 +30,7 @@ body {
 }
 
 .heading-content h1 {
+  text-align: center;
   text-decoration: underline;
   text-decoration-color: #4caf4c;
   background-color: #f0f0f0;
