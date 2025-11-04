@@ -18,6 +18,7 @@ body {
   background-position: center center;
   width: 100%;
   height: 60vh;
+  min-height: 300px;
 }
 
 .heading-content {
@@ -51,7 +52,8 @@ body {
   display: flex;
   color: #4b4b4b;
   width: 100%;
-  height: 80vh;
+  height: 70vh;
+  min-height: 700px;
 }
 
 .odd-block {
@@ -72,7 +74,7 @@ body {
 
 .text-content-block p {
   text-align: justify;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 35px;
   padding: 20px;
   max-width: 550px;
@@ -136,6 +138,12 @@ body {
 
 /* segundo bloque */
 
+#second-block {
+  height: 60vh;
+  min-height: 650px;
+  max-height: 700px;
+}
+
 .img-alone {
   border-radius: 8px;
   object-fit: cover;
@@ -160,13 +168,14 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  padding: 2.5%;
   width: 50%;
   height: 100%;
 }
 
 #third-block p {
   text-align: justify;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 35px;
   max-width: 600px;
 }
@@ -178,12 +187,22 @@ body {
   height: 40%;
 }
 
+/* Cuarto bloque */
+
+#fourth-block {
+  height: 60vh;
+  min-height: 650px;
+  max-height: 700px;
+}
+
 /* Quinto bloque */
 
 #fifth-block {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 60vh;
+  min-height: 300px;
 }
 
 #fifth-block div {
@@ -192,7 +211,7 @@ body {
 
 #fifth-block p{
   text-align: justify;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 35px;
   padding-bottom: 10px;
   max-width: 1200px;
@@ -208,7 +227,11 @@ body {
 
 /* Sexto bloque */
 
-#sixth-block {height: 100vh;}
+#sixth-block {
+  height: 100vh;
+  min-height: 1200px;
+  max-height: 1400px;
+}
 
 .nowadays-container {
   display: flex;
@@ -219,7 +242,7 @@ body {
 
 .nowadays-container p {
   text-align: justify;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 35px;
 }
 
