@@ -1,0 +1,463 @@
+@media (max-width: 1024px) {
+
+.slide-presentacion-content {
+    gap: 10rem;
+}
+
+.overlay-presentacion {
+    padding: 40px;
+    max-width: 400px;
+    min-height: 300px;
+}
+
+/* ---------------------------------------------------------- */
+
+.Nosotros {
+    padding: 60px 20px;
+  }
+
+.Nosotros h2 {
+    font-size:30px;
+  }
+
+.Nosotros p {
+    font-size:20px;
+  }
+
+.Nosotros .BotonNosotros {
+    font-size: 20px;
+    padding: 6px 50px;
+  }
+/* ---------------------------------------------------------- */
+
+
+
+.slider-orientaciones, .cuatro-orientaciones,
+.Evento1, .cuatro-eventos {
+    width: 90%;
+    height: 250px;
+  }
+
+.Overlay {
+    width: 100%;
+    padding: 15px;
+  }
+
+.Overlay.Naranja h3, .Overlay.Gris h3 {
+  text-align: center;
+  font-size: 20px;
+  }
+
+.Overlay.Naranja p, .Overlay.Gris p {
+  text-align: center;
+  font-size: 15px;
+  }
+
+
+  .BotonVerMas.Naranja, .BotonVerMas.Gris {
+    padding: 8px 60px;
+    font-size: 18px;
+  }
+  
+
+  .SubtituloOrientaciones.Izq2,
+  .SubtituloOrientaciones.Der2 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .TituloOrientaciones h1 {
+    font-size: 28px;
+  }
+
+  .TituloEvento {
+    font-size: 1.8rem;
+  }
+  
+/*-----------------------------------------------------------*/
+
+ .inscripciones {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    text-align: center;
+  }
+
+  #hr-inscripciones-vertical {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border: 1px solid #4b4b4b;
+  width: 85%;
+}
+
+  .Titulo-Incripciones, .Titulo-Pase{
+    font-size: 45px;
+  }
+
+    .Subtitulo-Inscripcion{
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .Texto-Inscripciones, .Texto-Pase{
+    margin-top: 5px;
+    font-size: 15px;
+  
+  }
+  
+
+  .Izquierda, .Derecha {
+    width: 90%;
+    padding: 20px;
+    border-right: none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;  
+  }
+
+  .Pase {
+    flex: unset;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          
+    text-align: center;
+  }
+
+  #hr-inscripciones {
+  border: none;
+  align-self: center;
+  border-bottom: 2px solid #4b4b4b;
+  width: 100%;
+  }
+  
+  .BotonInscripciones {
+    align-self: center;          
+  }
+
+
+  /*----------------------------------------*/
+
+ .NovedadesRecuadro {
+    flex-direction: column;
+    min-height: fit-content; 
+    height: 70vh;       
+  }
+
+  .NovedadesImagenes {
+    width: 100%;            
+    height: 300px;           
+    border-radius: 40px 0 40px 0; 
+  }
+
+  .ContenidoNovedades {
+    padding: 20px;
+    text-align: center;     
+  }
+
+  .ContenidoNovedades h3 {
+    font-size: 1rem;
+  }
+
+  .ContenidoNovedades p {
+    font-size: .7rem;
+  }
+
+  .ContenidoNovedades h3,
+  .ContenidoNovedades p {
+    text-align: center;
+  }
+
+  .PosicionBoton {
+    text-align: center;    
+    margin-bottom: 20px;
+  }
+
+}
+
+
+
+/* Móvil */
+@media (max-width: 768px) {
+
+.presentacion {
+    min-height: 450px;
+    max-height: 550px;
+}
+
+.slide-presentacion-content {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.overlay-presentacion {
+    padding: 20px;
+    max-width: 275px;
+    min-height: 200px;
+}
+
+.overlay-presentacion h1 {
+    font-size: 1.5rem;
+}
+
+.overlay-presentacion p {
+    font-size: .8rem;
+}
+
+.overlay-presentacion a {
+    width: 60%;
+}
+
+.overlay-presentacion a button {
+    font-size: .6rem;
+    padding: 10px;
+}
+
+.slide-presentacion-content img {
+    width: 8rem;
+    height: 8rem;
+}
+
+.flecha-izquierda-presentacion, 
+.flecha-derecha-presentacion {
+    display: none;
+}
+
+.dots-presentacion-container {
+    opacity: 1;
+}
+
+/*-------------------------------------------------*/
+
+.Nosotros {
+    padding: 50px 15px;
+  }
+
+  .Nosotros h2 {
+    font-size: 25px;
+  }
+
+  .Nosotros p {
+    font-size: 16px;
+  }
+
+  .Nosotros .BotonNosotros {
+    font-size: 18px;
+    padding: 6px 40px;
+  }
+
+  /* ---------------------------------------------------------- */
+
+  .slider-orientaciones, .cuatro-orientaciones,
+  .Evento1, .cuatro-eventos {
+    width: 100%;
+    height: 400px;
+  }
+
+
+  .Overlay h3 {
+    font-size: 17px;
+  }
+
+  .Overlay p {
+    font-size: 14px;
+  }
+ 
+  .SubtituloOrientaciones.Izq2,
+  .SubtituloOrientaciones.Der2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+
+.TituloOrientaciones h1 {
+    font-size: 22px;
+    text-align: center;
+}
+
+.Evento1{
+  width: 100%; 
+  height: 400px; 
+}
+
+.cuatro-eventos{
+  width: 100%;
+  height: 300px;
+}
+
+.TituloEvento {
+  font-size: 1.5rem;
+  text-align: center;
+  } 
+  
+.BotonVerMas.Gris, .BotonVerMas.Naranja {
+  padding: 8px 50px;
+  font-size: 14px;
+  }
+
+ /*-------------------------------------- */
+
+ .inscripciones {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .Izquierda, .Derecha {
+    width: 95%;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+.BotonInscripciones {          
+    text-align: center;
+  }
+
+/*--------------------------------*/
+ .Novedades h2 {
+    font-size: 35px;      
+  }
+
+  .ContenidoNovedades h3 {
+    font-size: 25px;
+  }
+
+  .ContenidoNovedades p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .NovedadesRecuadro {
+    border-radius: 40px 0;
+  }
+
+  .NovedadesImagenes {
+    border-radius: 40px 0 0 0;
+  }
+
+ /*------------------------ */
+
+
+/* Slider testimonios */
+.slider_body{
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content 1fr;
+  gap: 1rem; 
+}
+
+.slider_pinture {
+  grid-row: 1/2;
+}
+
+.slider_img{
+  width: 210px;
+  height: 210px;
+}
+
+.slider_texts hr{
+    min-width: 100%;
+}
+
+
+/*---------------------------*/
+
+.CentroContenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .CentroFoto {
+    width: 80%;
+    max-height: 300px;
+    margin-top: 20px;
+  }
+
+  .CentroFoto img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    border-radius: 0%;
+  
+  }
+
+}
+
+@media (max-width:425px){
+
+/* Cabecera presentacion */
+
+.slide-presentacion-content {
+    padding: 5px;
+}
+
+.overlay-presentacion {
+    padding: 15px;
+    min-height: 100px;
+}
+
+.overlay-presentacion h1 {
+    font-size: 1rem;
+}
+
+.overlay-presentacion p {
+    font-size: .6rem;
+}
+
+.overlay-presentacion a {
+    align-self: center;
+}
+
+.overlay-presentacion a button {
+    font-size: .5rem;
+}
+
+.slide-presentacion-content img {
+    width: 5rem;
+    height:5rem;
+}
+
+/* Testimoios egresados */    
+
+.slider_container{
+  grid-template-columns: 25px 1fr 25px;
+}
+
+.slider_arrow {
+  width: 90%;
+}
+
+.slider_img{
+  width: 180px;
+  height: 180px;
+}
+
+
+.subtitle{
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.slider_review{
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/*--------------------------------------------------------*/
+
+
+ .CentroFoto {
+    width: 90%;
+    max-height: 220px;
+    margin-top: 20px;
+  }
+
+  .CentroFoto img {
+    width: 100%;
+    height: auto;
+  }
+}
