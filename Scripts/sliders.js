@@ -1,11 +1,7 @@
 /* Funciones globales */
 
 //eliminar dot.active
-function remove_dots(dots){
-
-    dots.forEach(dot => {dot.classList.remove("active")});
-
-}
+const remove_dots = dots => (dots.forEach(dot => dot.classList.remove("active")));
 
 //slider inside
 function slider_inside (slides_inside_slector){
@@ -29,89 +25,72 @@ function slider_inside (slides_inside_slector){
 //slider básico 100% funcional 
 
 function common_slider (
-    dots_selector,
-    flecha_derecha_selector,
-    flecha_izquierda_selector,
-    slider_selector,
-    slides_selector
+    dots_selector = null,
+    slider_selector = null,
+    slides_selector = null,
+    flecha_derecha_selector = null,
+    flecha_izquierda_selector = null
     ){
 
         const dots = document.querySelectorAll(dots_selector);
-        const flecha_derecha = document.querySelector(flecha_derecha_selector);
-        const flecha_izquierda = document.querySelector(flecha_izquierda_selector);
         const slider = document.querySelector(slider_selector);
         const slide = document.querySelectorAll(slides_selector);
 
         let seen_index = 0;
 
-        /* dots */
+        if(dots.length != 0 && slider != null && slide.length != 0){
 
-        dots.forEach( (dot, i) => {
+            /* dots */
 
-            dot.addEventListener("click", function(){
+            dots.forEach( (dot, i) => {
 
-                remove_dots(dots);
+                dot.addEventListener("click", function(){
 
-                this.classList.add("active");
+                    remove_dots(dots);
 
-                slide[i].scrollIntoView({
-                    behavior: "smooth",
-                    block: "nearest",
-                    inline: "nearest"
+                    this.classList.add("active");
+
+                    slide[i].scrollIntoView({
+                        behavior: "smooth",
+                        block: "nearest",
+                        inline: "nearest"
+                    });
+
                 });
 
             });
 
-        });
+            /* flechas */
 
-        /* flechas */
+            if (flecha_derecha_selector != null && flecha_izquierda_selector != null){
+                arrows(
+                    flecha_derecha_selector,
+                    flecha_izquierda_selector,
+                    dots,
+                    slider,
+                    slide 
+                );
+            }
 
-        flecha_derecha.addEventListener("click", function(){
+            /* scroll */
 
-            seen_index = Math.round(slider.scrollLeft / slide[0].offsetWidth);
+            slider.addEventListener("scroll", function(){
 
-            slide[seen_index+1].scrollIntoView({
-                behavior: "smooth",
-                block: "nearest",
-                inline: "nearest"
+                seen_index = Math.round(slider.scrollLeft / slide[0].offsetWidth);
+            
+                remove_dots(dots);
+
+                dots[seen_index].classList.add("active");
+
             });
 
-            remove_dots(dots);
-
-            dots[seen_index+1].classList.add("active");
-
-        });
-
-        flecha_izquierda.addEventListener("click", function(){
-
-            seen_index = Math.round(slider.scrollLeft / slide[0].offsetWidth);
-            
-            slide[seen_index-1].scrollIntoView({
-                behavior: "smooth",
-                block: "nearest",
-                inline: "nearest"
-            });
-
-            remove_dots(dots);
-
-            dots[seen_index-1].classList.add("active");
-
-        });
-
-        /* scroll */
-
-        slider.addEventListener("scroll", function(){
-
-            seen_index = Math.round(slider.scrollLeft / slide[0].offsetWidth);
-            
-            remove_dots(dots);
-
-            dots[seen_index].classList.add("active");
-
-        });
+        } else {
+            return;
+        }
 
 }
 
+//overlay dinamico
 function overlay_dinamico (overlay_selector, slider_selector) {
 
     const overlay = document.querySelectorAll(overlay_selector);
@@ -133,44 +112,104 @@ function overlay_dinamico (overlay_selector, slider_selector) {
 
 }
 
+//flechas
+function arrows (
+    flecha_derecha_selector,
+    flecha_izquierda_selector,
+    dots,
+    slider,
+    slide
+){
+
+    const flecha_derecha = document.querySelector(flecha_derecha_selector);
+    const flecha_izquierda = document.querySelector(flecha_izquierda_selector);
+    let seen_index = 0;
+
+    flecha_derecha.addEventListener("click", function(){
+
+        seen_index = Math.round(slider.scrollLeft / slide[0].offsetWidth);
+
+            slide[seen_index+1].scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+                inline: "nearest"
+            });
+
+        remove_dots(dots);
+
+        dots[seen_index+1].classList.add("active");
+
+    });
+
+    flecha_izquierda.addEventListener("click", function(){
+
+        seen_index = Math.round(slider.scrollLeft / slide[0].offsetWidth);
+            
+            slide[seen_index-1].scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+                inline: "nearest"
+        });
+
+        remove_dots(dots);
+
+        dots[seen_index-1].classList.add("active");
+
+    });
+
+}
+
 /* llamar funciones */
 
 /* Index */
 common_slider(
     ".dot-presentacion",
-    ".flecha-derecha-presentacion",
-    ".flecha-izquierda-presentacion",
     ".sld-presentacion-container",
-    ".slide-presentacion"
+    ".slide-presentacion",
+    ".flecha-derecha-presentacion",
+    ".flecha-izquierda-presentacion" 
 );
 
-/* págona Expo Tecnica */
+/* página historia */
+common_slider(
+    ".dot-historia",
+    ".sld-historia-container",
+    ".slide-historia",
+    null,
+    null
+);
+
+slider_inside (".sld-i-hi1")
+slider_inside (".sld-i-hi2")
+slider_inside (".sld-i-hi3")
+
+/* página Expo Tecnica */
 
 //slider general
 common_slider(
     ".dot-g",
-    ".flecha-derecha-g",
-    ".flecha-izquierda-g",
     ".sld-g",
-    ".slide-g"
+    ".slide-g",
+    ".flecha-derecha-g",
+    ".flecha-izquierda-g"
 );
 
 //slider actividades
 common_slider(
     ".dot-a",
-    ".flecha-derecha-a",
-    ".flecha-izquierda-a",
     ".slda",
-    ".slide-a"
+    ".slide-a",
+    ".flecha-derecha-a",
+    ".flecha-izquierda-a"
 );
 
 //slider proyectos
 common_slider(
     ".dot-pr",
-    ".flecha-derecha-pr",
-    ".flecha-izquierda-pr",
     ".sld-pr",
-    ".slide-pr"
+    ".slide-pr",
+    ".flecha-derecha-pr",
+    ".flecha-izquierda-pr"
 );
 
 slider_inside(".sld-i-pr-1");
@@ -180,10 +219,10 @@ slider_inside(".sld-i-pr-3");
 //slider pexp
 common_slider(
     ".dot-pexp",
-    ".flecha-derecha-pexp",
-    ".flecha-izquierda-pexp",
     ".sld-pexp",
-    ".slide-pexp"
+    ".slide-pexp",
+    ".flecha-derecha-pexp",
+    ".flecha-izquierda-pexp"
 );
 
 slider_inside(".sld-i-pexp-1");

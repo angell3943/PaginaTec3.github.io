@@ -1,8 +1,135 @@
+#main-content-mobile {
+    display: none;
+}
+
 @media (max-width: 900px){
 
     #main-content-desktop {
         display: none;
     }
+
+    #main-content-mobile {
+        display: block;
+    }
+
+    /* primer bloque */
+
+    .mobile-block {
+        display: flex;
+        flex-direction: column;
+        color: #4b4b4b;
+        width: 100%;
+        height: 75vh;
+        min-height: 750px;
+    }
+
+    .sld-historia-container {
+        display: flex;
+        align-items: center;
+        overflow: scroll;
+        scroll-snap-type: x mandatory;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sld-historia-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .slide-historia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+        position: sticky;
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide-historia p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        width: 60%;
+        height: 50%;
+    }
+
+    .img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        width: 100%;
+        height: 50%;
+    }
+
+    .img-container img {
+        object-fit: cover;
+        border-radius: 8px;
+        width: 80%;
+        height: 90%;
+    }
+
+    .slider-inside-img-historia {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        width: 100%;
+        height: 50%;
+    }
+
+    .sld-inside-historia {
+        position: absolute;
+        object-fit: cover;
+        border-radius: 8px;
+        width: 80%;
+        height: 90%;
+
+        opacity: 0;
+        transition: opacity 2s ease-in-out;
+    }
+
+    .sld-inside-historia.activo {
+        opacity: 1;
+    }
+
+    /* dots-historia */
+
+    .dots-historia-container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin: 0 auto;
+        border-radius: 8px;
+        max-width: 100px;
+        width: fit-content;
+        height: 30px;   
+    }
+
+    .dot-historia {
+        background-color: #4b4b4b;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        transition: all .5s ease;
+    }
+
+    .dot-historia:hover {
+        background-color: #ff9800;
+        transform: scale(1.25);
+    }
+
+    .dot-historia.active {
+        background-color: #ff9800;
+        transform: scale(1.25);
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+
 }
 
 @media (max-width: 425px){
