@@ -9,6 +9,7 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
+    text-align: justify;
 }
 
 /* -------------------------------------------------*/
@@ -71,105 +72,66 @@ main {
 
 /* main content */
 
-/* Evento RCP */
+/*PRIMAVERA*/
 
 .primavera{
-    padding: 20px;
-    text-align: justify;
     background-color: #f0f0f0;
+    padding: 20px;
+    padding-right: 0px;
+    
 }
-.primavera h1{
-    text-decoration: underline 3px#a674d4;
-
-    margin-bottom:2px;
+.primavera > h2:first-of-type{
+text-decoration: underline violet;
+margin-bottom: 5px;
+font-size: 2.5rem;
 }
-.primavera h2{
-    text-decoration: underline 3px #a674d4;
-    margin-top: 7px;
+.primavera > h3:first-of-type{
+text-decoration: underline violet;
+margin-bottom: 5px;
+font-size: 2rem;
 }
-.infoprin{
-    display:flex;
-    flex-direction: row;
+li {
+  padding-left: 0;
+  margin-left: 0;
+  list-style-position: inside; 
 }
-.info1{
-    display:flex;
-    flex-direction: row;
-    gap: 10px;
-    width: 100%;
-
-}
-.izquierdap{
+.contenedor1p{
     display: flex;
+    gap: 20px;
+}
+.fotoprim{
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+.bloque1p{
     width: 30%;
 }
-.img1{
-    position: relative;
-    display: inline-block;
-    width: 500px;
-    height: 300px;
-    border-radius: 20px;
-    overflow: hidden;
-}
- .contenedorimg{
-    position: relative;
-    display: inline-block;
-    width: 400px;
-  }
-.overlay{
-  position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* negro semitransparente */
-    color: white;
+.bloque2p{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0; /* oculto al inicio */
-    transition: opacity 0.3s ease;
-}
-.contenedor:hover .overlay {
-    opacity: 1; /* aparece al pasar el mouse */
-  }
-
-.fotoprima{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 20px;
-}
-
-.texto2{
-    width: 60%;
-
-}
-.lineay{
-    border-left: 1px solid;
-    height: 450px;              
-    margin: 0 20px;     
-}
-
-.bloqueder{
-    display:flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #e5e0d8;
-    height: 350px;
-    width: 230px;
-    border-radius: 20px 0px 0px 20px; 
-    margin-right: -20px;
+    width: 50%;
 }
-.bloqueder h3{
-    background-color: #a674d4;
-    color: white;
-    margin-top: 0;
-    width: 100%;
+.bloqder{
+    background-color: #e5e0d8 ;
+    width: 15%;
+    margin-left: auto;
+    border-radius: 20px 0px 0px 20px;
+
+}
+.bloqder h2{
+border-radius: 20px 0px 0px 20px;
+text-align: center;
+background-color: violet;
+}
+.bloqder li{
     text-align: center;
-    text-decoration: none;
-    border-radius: 20px 0px 0px 20px; 
 }
+.lista{
+    margin-top: 10px;
+}
+/* Evento RCP */
 
 /* RCP */
 
@@ -369,6 +331,49 @@ gap: 30px;
 /* MEDIA QUERIES MÓVIL */
 @media (max-width: 768px) {
 
+  .contenedor1p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bloque1p, .bloque2p{
+    width: 100%;
+    margin:0;
+  }
+  .primavera > h2:first-of-type{
+    text-align: center;
+  }
+
+
+  .fotoprim{
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .bloqder{
+    width: 90%;
+    border-radius: 20px;
+    margin: 20px auto;
+
+  }
+  .bloqder h2{
+    border-radius: 20px;
+  }
+  .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .mayo25 h2{
+      text-align: center;
+    }
+    .bloque1{
+      width: 100%;
+    }
+    .bloque2{
+      margin: 0 auto;
+      margin-top: 20px;
+    }
   .Eventos {
     flex-direction: column;  
     justify-content: center; 
