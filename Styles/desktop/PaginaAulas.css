@@ -254,6 +254,11 @@ body {
   height: 100%;
 }
 
+.overlay-elec-ayt {
+  top: 0;
+  right: 0;
+}
+
 .overlay h3 {
   text-align: justify;
   font-size: 1.4rem;
