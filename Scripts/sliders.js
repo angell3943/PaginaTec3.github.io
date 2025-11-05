@@ -172,14 +172,30 @@ common_slider(
 
 /* página historia */
 common_slider(
-    ".dot-historia",
-    ".sld-historia-container",
-    ".slide-historia",
+    ".dot-historia-1",
+    ".sld-historia-container-1",
+    ".slide-historia-1",
     null,
     null
 );
 
-slider_inside (".sld-inside-historia");
+slider_inside (".sld-inside-historia-1");
+
+common_slider(
+    ".dot-historia-2",
+    ".sld-historia-container-2",
+    ".slide-historia-2",
+    null,
+    null
+);
+
+common_slider(
+    ".dot-historia-3",
+    ".sld-historia-container-3",
+    ".slide-historia-3",
+    null,
+    null
+);
 
 /* página Expo Tecnica */
 
