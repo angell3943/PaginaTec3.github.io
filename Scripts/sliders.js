@@ -100,11 +100,7 @@ function overlay_dinamico (overlay_selector, slider_selector) {
 
         slide.addEventListener("click", function(){
 
-            if (overlay[i].classList.contains("active-overlay")){
-                overlay[i].classList.remove("active-overlay");
-            } else {
-                overlay[i].classList.add("active-overlay");
-            }
+            overlay[i].classList.toggle("active-overlay");
 
         });
 
