@@ -166,6 +166,49 @@ common_slider(
     ".flecha-izquierda-presentacion" 
 );
 
+/* Aulas y talleres */
+
+//info
+common_slider(
+    ".dot-info-ayt",
+    ".sld-info-ayt",
+    ".slide-info-ayt",
+    ".flecha-derecha-info-ayt",
+    ".flecha-izquierda-info-ayt" 
+);
+
+slider_inside(".sld-i-info-ayt-1");
+slider_inside(".sld-i-info-ayt-2");
+slider_inside(".sld-i-info-ayt-3");
+
+overlay_dinamico(
+    ".overlay-info-ayt",
+    ".slide-info-ayt"
+);
+
+//electro
+common_slider(
+    ".dot-elec-ayt",
+    ".sld-elec-ayt",
+    ".slide-elec-ayt",
+    ".flecha-derecha-elec-ayt",
+    ".flecha-izquierda-elec-ayt" 
+);
+
+slider_inside(".sld-i-elec-ayt-1");
+slider_inside(".sld-i-elec-ayt-2");
+slider_inside(".sld-i-elec-ayt-3");
+slider_inside(".sld-i-elec-ayt-4");
+slider_inside(".sld-i-elec-ayt-5");
+slider_inside(".sld-i-elec-ayt-6");
+slider_inside(".sld-i-elec-ayt-7");
+slider_inside(".sld-i-elec-ayt-8");
+
+overlay_dinamico(
+    ".overlay-elec-ayt",
+    ".slide-elec-ayt"
+);
+
 /* página historia */
 common_slider(
     ".dot-historia-1",
