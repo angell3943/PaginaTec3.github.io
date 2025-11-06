@@ -191,30 +191,6 @@ body {
 
 @media (max-width: 1024px) {
 
-  /* Autoridades - Título y logo */
-  .Autoridades {
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: auto; 
-    padding: 40px 20px;
-  }
-
-  .TituloPrincipal h1 {
-    margin: 0 0 20px 0;
-    font-size: 60px;
-    padding-right: 0;
-    margin-top: 0;
-    background-color: rgba(139, 137, 137, 0.5);
-    line-height: 1.2em;
-  }
-
-  .LogoPrincipal {
-    margin: 20px 0 0 0;
-    height: 220px; 
-  }
-
   .Piramide {
     padding: 30px 20px;
   }
@@ -249,21 +225,6 @@ body {
 
 /* ----------------- Móvil (≤768px) ----------------- */
 @media (max-width: 768px) {
-
-  /* Autoridades - Título y logo */
-  .Autoridades {
-    padding: 30px 15px;
-  }
-
-  .TituloPrincipal h1 {
-    font-size: 45px;
-    line-height: 1.1em;
-  }
-
-  .LogoPrincipal {
-    height: 180px;
-    margin: 15px 0 0 0;
-  }
 
   /* Pirámide de autoridades */
   .Piramide {

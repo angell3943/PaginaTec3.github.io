@@ -100,11 +100,7 @@ function overlay_dinamico (overlay_selector, slider_selector) {
 
         slide.addEventListener("click", function(){
 
-            if (overlay[i].classList.contains("active-overlay")){
-                overlay[i].classList.remove("active-overlay");
-            } else {
-                overlay[i].classList.add("active-overlay");
-            }
+            overlay[i].classList.toggle("active-overlay");
 
         });
 
@@ -170,16 +166,75 @@ common_slider(
     ".flecha-izquierda-presentacion" 
 );
 
+/* Aulas y talleres */
+
+//info
+common_slider(
+    ".dot-info-ayt",
+    ".sld-info-ayt",
+    ".slide-info-ayt",
+    ".flecha-derecha-info-ayt",
+    ".flecha-izquierda-info-ayt" 
+);
+
+slider_inside(".sld-i-info-ayt-1");
+slider_inside(".sld-i-info-ayt-2");
+slider_inside(".sld-i-info-ayt-3");
+
+overlay_dinamico(
+    ".overlay-info-ayt",
+    ".slide-info-ayt"
+);
+
+//electro
+common_slider(
+    ".dot-elec-ayt",
+    ".sld-elec-ayt",
+    ".slide-elec-ayt",
+    ".flecha-derecha-elec-ayt",
+    ".flecha-izquierda-elec-ayt" 
+);
+
+slider_inside(".sld-i-elec-ayt-1");
+slider_inside(".sld-i-elec-ayt-2");
+slider_inside(".sld-i-elec-ayt-3");
+slider_inside(".sld-i-elec-ayt-4");
+slider_inside(".sld-i-elec-ayt-5");
+slider_inside(".sld-i-elec-ayt-6");
+slider_inside(".sld-i-elec-ayt-7");
+slider_inside(".sld-i-elec-ayt-8");
+
+overlay_dinamico(
+    ".overlay-elec-ayt",
+    ".slide-elec-ayt"
+);
+
 /* página historia */
 common_slider(
-    ".dot-historia",
-    ".sld-historia-container",
-    ".slide-historia",
+    ".dot-historia-1",
+    ".sld-historia-container-1",
+    ".slide-historia-1",
     null,
     null
 );
 
-slider_inside (".sld-inside-historia");
+slider_inside (".sld-inside-historia-1");
+
+common_slider(
+    ".dot-historia-2",
+    ".sld-historia-container-2",
+    ".slide-historia-2",
+    null,
+    null
+);
+
+common_slider(
+    ".dot-historia-3",
+    ".sld-historia-container-3",
+    ".slide-historia-3",
+    null,
+    null
+);
 
 /* página Expo Tecnica */
 
