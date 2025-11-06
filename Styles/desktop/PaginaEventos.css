@@ -336,6 +336,8 @@ gap: 30px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90%;
+
   }
   .bloque1p, .bloque2p{
     width: 100%;
@@ -349,6 +351,8 @@ gap: 30px;
   .fotoprim{
     margin: 0 auto;
     margin-top: 10px;
+    width: 90%;
+    justify-content: center;
   }
   .bloqder{
     width: 90%;
@@ -368,11 +372,12 @@ gap: 30px;
       text-align: center;
     }
     .bloque1{
-      width: 100%;
+      width: 90%;
     }
     .bloque2{
       margin: 0 auto;
       margin-top: 20px;
+      width: 100%;
     }
   .Eventos {
     flex-direction: column;  
