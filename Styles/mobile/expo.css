@@ -66,14 +66,6 @@
         flex-wrap: wrap;
     }
 
-    /* Actividades */
-
-    /* slider previous exp */
-
-    /* mejores proyectos */
-
-    
-
 }
 
 @media (max-width: 425px) {
@@ -86,45 +78,11 @@
 
     /* slider general */
 
-    .expo-g-container {
-        height: 550px;
-    }
-
-    .expo-g-container h1 {
-        font-size: 1.5rem;
-    }
-
-    .sld-g {
-        min-width: 300px;
-    }
-
-    .overlayg {
-        opacity: 0;
-        width: 100%;
-    }
-
     .overlayg.active-overlay {
         opacity: 1;
     }
 
     /* Otros proyectos */
-
-    .proyectos-container {
-        height: 550px;
-    }
-
-    .proyectos-container h1 {
-        font-size: 1.5rem;
-    }
-
-    .sld-pr {
-        min-width: 300px;
-    }
-
-    .overlay-pr {
-        opacity: 0;
-        width: 100%;
-    }
 
     .overlay-pr.active-overlay {
         opacity: 1;
@@ -167,23 +125,6 @@
     }
 
     /* slider previous exp */
-
-    .previous-exp {
-        height: 550px;
-    }
-
-    .previous-exp h1 {
-        font-size: 1.5rem;
-    }
-
-    .sld-pexp {
-        min-width: 300px;
-    }
-
-    .overlay-pexp {
-        opacity: 0;
-        width: 100%;
-    }
 
     .overlay-pexp.active-overlay {
         opacity: 1;

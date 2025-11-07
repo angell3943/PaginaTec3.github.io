@@ -206,3 +206,24 @@ de estilos, el estilo asignado debajo (el más personalizado) ganará por especi
 .dot {
     cursor: pointer;
 }
+
+@media (max-width: 425px){
+
+  .outer-container {
+        height: 550px;
+  }
+
+  .outer-container h1 {
+      font-size: 1.5rem;
+  }
+
+  .sldr {
+      min-width: 300px;
+  }
+
+  .overlay {
+      opacity: 0;
+      width: 100%;
+  }
+
+}
