@@ -168,6 +168,42 @@ common_slider(
 
 /* Aulas y talleres */
 
+//slider A
+common_slider(
+    ".dot-ayt-A",
+    ".sld-ayt-A",
+    ".slide-ayt-A",
+    ".flecha-derecha-ayt-A",
+    ".flecha-izquierda-ayt-A" 
+);
+
+slider_inside(".slide-i-ayt-A-A");
+slider_inside(".slide-i-ayt-A-B");
+
+//slider B
+common_slider(
+    ".dot-ayt-B",
+    ".sld-ayt-B",
+    ".slide-ayt-B",
+    ".flecha-derecha-ayt-B",
+    ".flecha-izquierda-ayt-B" 
+);
+
+slider_inside(".slide-i-ayt-B-A");
+slider_inside(".slide-i-ayt-B-B");
+
+//slider c
+common_slider(
+    ".dot-ayt-C",
+    ".sld-ayt-C",
+    ".slide-ayt-C",
+    ".flecha-derecha-ayt-C",
+    ".flecha-izquierda-ayt-C" 
+);
+
+slider_inside(".slide-i-ayt-C-A");
+slider_inside(".slide-i-ayt-C-B");
+
 //info
 common_slider(
     ".dot-info-ayt",
