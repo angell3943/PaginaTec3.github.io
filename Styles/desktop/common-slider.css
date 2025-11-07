@@ -1,0 +1,208 @@
+/*
+
+La forma preferida de utilizar estos estilos es con contenedores como los siguientes:
+
+.exterior-general-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: ;
+  padding: 20px 0;
+  width: 100%;
+  height: 65vh;
+  min-height: 525px;
+  max-height: 700px;
+}
+
+.exterior-general-container > title {
+  color: #4b4b4b;
+  text-decoration: underline;
+  text-decoration-color: ;
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+
+de no cumplir con estos contenedores, el diseño podría romperse o verse desproporcionado.
+Por ende, se deberá añadir una clase secundaria identificatoria según a qué sección de su
+página pertenece el slider pertinente para hacerle modificaciones personalizadas.
+
+En los links de cabecera, el archivo actual debe estar por arriba, así ante cualquier conflicto
+de estilos, el estilo asignado debajo (el más personalizado) ganará por especificidad.
+
+*/
+
+/* Contenedor externo */
+
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /*background-color: ;*/
+  padding: 20px 0;
+  width: 100%;
+  height: 65vh;
+  min-height: 525px;
+  max-height: 700px;
+}
+
+.outer-container > h1 {
+  color: #4b4b4b;
+  text-decoration: underline;
+  /*text-decoration-color: ;*/
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+
+/* Slider container */
+
+.sldr-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  width: 45%;
+  height: 65%;
+  min-width: 300px;
+  min-height: 350px;
+}
+
+.sldr-container .bi {
+  opacity: 0;
+  font-size: 2rem;
+  transition: all .5s ease;
+}
+
+.sldr-container:hover .bi {
+  opacity: 1;
+}
+
+/* Slider */
+
+.sldr {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  min-width: 700px;
+  height: 100%;
+}
+
+.sldr::-webkit-scrollbar {
+  display: none;
+}
+
+.sldr,
+.slide {
+  border-radius: 33px 0 33px 0;
+}
+
+/* Slide */
+
+.slide {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  position: sticky;
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;    
+}
+
+/* Overlay */
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 20px;
+  background-color: rgba(75, 75, 75, 0.6);
+  position: absolute;
+  z-index: 2;
+  transition: all .5s ease;
+
+  width: 35%;
+  height: 100%;
+}
+
+.overlay h3 {
+  text-align: justify;
+  font-size: 1.4rem;
+  color: #f0f0f0;
+}
+
+.overlay a {
+  background-color: #f0f0f0;
+  color: #4b4b4b;
+  border-radius: 90px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 35px;
+  text-decoration: none;
+  transition: all .5s ease;
+
+  width: 65%;
+  height: 35px;
+}
+
+.overlay a:hover {
+  color: #f0f0f0;
+  background-color: #ff9800;
+}
+
+/* Slider inside */
+
+.slide-inside {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+/* Dot */
+
+.dots-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  max-width: 100px;
+  min-width: 80px;
+  height: 30px;
+}
+
+.dot {
+  background-color: #4b4b4b;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  transition: all .5s ease;
+}
+
+.dot:hover {
+  background-color: #ff9800;
+  transform: scale(1.25);
+}
+
+.bi,
+.dot {
+    cursor: pointer;
+}
