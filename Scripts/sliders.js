@@ -90,24 +90,6 @@ function common_slider (
 
 }
 
-//overlay dinamico
-function overlay_dinamico (overlay_selector, slider_selector) {
-
-    const overlay = document.querySelectorAll(overlay_selector);
-    const slides = document.querySelectorAll(slider_selector);
-
-    slides.forEach( (slide, i) => {
-
-        slide.addEventListener("click", function(){
-
-            overlay[i].classList.toggle("active-overlay");
-
-        });
-
-    });
-
-}
-
 //flechas
 function arrows (
     flecha_derecha_selector,
@@ -150,6 +132,24 @@ function arrows (
         remove_dots(dots);
 
         dots[seen_index-1].classList.add("active");
+
+    });
+
+}
+
+//overlay dinamico
+function overlay_dinamico (overlay_selector, slider_selector) {
+
+    const overlay = document.querySelectorAll(overlay_selector);
+    const slides = document.querySelectorAll(slider_selector);
+
+    slides.forEach( (slide, i) => {
+
+        slide.addEventListener("click", function(){
+
+            overlay[i].classList.toggle("active-overlay");
+
+        });
 
     });
 
