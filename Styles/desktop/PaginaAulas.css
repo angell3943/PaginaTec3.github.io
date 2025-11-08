@@ -18,6 +18,7 @@ body {
   background-position: center center;
   width: 100%;
   height: 60vh;
+  min-height: 350px;
 }
 
 .heading-content {
@@ -83,8 +84,8 @@ body {
 .slider-container {
   display: flex;
   align-items: center;
-  width: 65%;
-  height: 85%;
+  width: 70%;
+  height: 90%;
   min-height: 550px;
   max-height: 900px;
 }
@@ -111,7 +112,6 @@ body {
   scroll-snap-align: center;
   display: flex;
   align-items: center;
-  text-align: justify;
   width: 100%;
   height: 100%;
 }
@@ -142,8 +142,9 @@ body {
 }
 
 .text-content p {
+  text-align: justify;
   font-size: 1.1rem;
-  line-height: 30px;
+  line-height: 25px;
   width: 80%;
 }
 
@@ -294,6 +295,11 @@ body {
   height: 100%;
 }
 
+.overlay-info-ayt {
+  top: 0;
+  left: 0;
+}
+
 .overlay-elec-ayt {
   top: 0;
   right: 0;
@@ -324,8 +330,8 @@ body {
   background-color: #ff9800;
 }
 
-.sld,
-.slide {
+.slide,
+.sld-inside {
   border-radius: 33px 0 33px 0;
 }
 
@@ -358,8 +364,7 @@ body {
   margin: 0 auto;
   border-radius: 8px;
   margin-top: 10px;
-  max-width: 100px;
-  min-width: 80px;
+  width: fit-content;
   height: 30px;
 }
 
@@ -402,117 +407,96 @@ body {
   margin-left: 2px;
 }
 
+@media  (min-width: 1200px) {.text-content p {line-height: 30px;}}
+
 /*------------------------------ Mobile ---------------------------------*/
 
 /* -------------------------------------- */
-@media  (max-width: 768px) {
+@media (max-width: 1024px){
 
-  /* Ajuste del hero */
-  .AulasyTalleres {
+  /* primeros 3 sliders */
+
+  /* Bloques generales */
+
+  .block {
+    height: 85vh;
+    min-height: 700px;
+  }
+
+  /* Sliders */
+
+  .slider-container {
+    width: 90%;
+  }
+
+  .slide {
     flex-direction: column;
-    height: auto;
-    padding: 20px;
-    text-align: center;
   }
 
-  .TituloPrincipal h1 {
-    font-size: 50px;
-    margin: 0 auto 20px auto;
-    line-height: 1.2;
-    padding: 10px;
-  }
-
-  .titulo-fijo{
-    font-size: 24px;
-  }
-
-  .contenedor-externo{
-    padding-top: 10px;
-  }
-
-  .titulo-info, .titulo-electro {
-    font-size: 27px;
-  }
-
-   .bloque {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-
-  .texto {
+  .text-container {
     order: 1;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .foto {
-    order: 2;
     width: 100%;
-    margin-top: 10px;
+    height: 50%;
   }
 
-  .bloque::before {
-    left: 50%;
+  .text-content p {
+    width: 90%;
+  }
+
+  .slide hr {
+    order: 2;
+    width: 90%;
     height: 0;
-    width: 0;
   }
 
-  .botones-internos {
-    bottom: -40px;
+  .img-container {
+    order: 3;
+    width: 100%;
+    height: 50%;
   }
+
+}
+
+@media  (max-width: 768px) {
 
   /* talleres info elec */
 
-  .sld-container .bi {
+  .sld-container .bi,
+  .slider-container .bi {
     display: none;
   }
 
   #cabecera-sliders-talleres {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 
-.aulas-y-talleres-info-elec p {
-  width: 90%;
+  .aulas-y-talleres-info-elec p {
+    width: 90%;
+  }
+
 }
 
-}
-
-@media (max-width: 425px) {
-
-  /* Ajuste hero aún más compacto */
-  .TituloPrincipal h1 {
-    font-size: 35px;
-    padding: 5px;
-  }
-
-  .titulo-fijo{
-    font-size: 20px;
-  }
-
-   .bloque {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-
-  .texto {
-    order: 1;
-    text-align: center;
-    padding: 5px 0;
-  }
-
-  .foto {
-    order: 2;
-    width: 100%;
-    margin-top: 5px;
-  }
-
-  .botones-internos {
-    bottom: -35px;
+@media (max-width: 500px) {
   
+  /* primeros 3 sliders */
+
+  /* bloques generales */
+
+  .block {
+    height: 95vh;
+    min-height: 750px;
   }
-  
+
+  /* sliders */
+
+  .text-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-content p {
+    font-size: .8rem;
+  }
+
   /* talleres info elec */
 
   .aulas-y-talleres-info-elec {
