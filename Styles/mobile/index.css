@@ -24,10 +24,6 @@
     font-size:20px;
   }
 
-.Nosotros .BotonNosotros {
-    font-size: 20px;
-    padding: 6px 50px;
-  }
 /* ---------------------------------------------------------- */
 
 
@@ -243,11 +239,6 @@
 
   .Nosotros p {
     font-size: 16px;
-  }
-
-  .Nosotros .BotonNosotros {
-    font-size: 18px;
-    padding: 6px 40px;
   }
 
   /* ---------------------------------------------------------- */
