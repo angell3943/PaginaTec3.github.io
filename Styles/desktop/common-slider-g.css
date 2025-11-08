@@ -217,20 +217,25 @@ de estilos, el estilo asignado debajo (el más personalizado) ganará por especi
 @media (max-width: 425px){
 
   .outer-container {
-        height: 550px;
+    height: 550px;
   }
 
   .outer-container h1 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .sldr {
-      min-width: 300px;
+    min-width: 300px;
   }
 
   .overlay {
-      opacity: 0;
-      width: 100%;
+    opacity: 0;
+    width: 100%;
+  }
+
+  .overlay.izq,
+  .overlay.der {
+    border-radius: 33px 0;
   }
 
   .overlay a {

@@ -1,3 +1,11 @@
+/* general */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* header */
+
 header {
     display: flex;
     position: sticky;

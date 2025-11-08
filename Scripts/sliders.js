@@ -341,3 +341,23 @@ overlay_dinamico(
 //slider imágenes mejores proyectos mobile
 slider_inside(".sldp-mobile-1");
 slider_inside(".sldp-mobile-2");
+
+/* pagina talleres terciaria */
+
+//info
+slider_inside(".slide-i-A");
+slider_inside(".slide-i-B");
+slider_inside(".slide-i-C");
+slider_inside(".slide-i-D");
+slider_inside(".slide-i-E");
+
+//electro
+slider_inside(".slide-i-F");
+slider_inside(".slide-i-G");
+slider_inside(".slide-i-H");
+slider_inside(".slide-i-I");
+slider_inside(".slide-i-J");
+slider_inside(".slide-i-K");
+slider_inside(".slide-i-L");
+slider_inside(".slide-i-M");
+slider_inside(".slide-i-N");
