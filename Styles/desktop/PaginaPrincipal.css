@@ -178,6 +178,11 @@ body {
   margin-left: 2px;
 }
 
+.bi,
+.dot-presentacion {
+  cursor: pointer;
+}
+
 /* ------------------------------------------------------------ */
 
  /* Sección Sobre Nosotros */
