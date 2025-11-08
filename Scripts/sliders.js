@@ -151,6 +151,16 @@ function overlay_dinamico (overlay_selector, slider_selector) {
 
         });
 
+        const link = overlay[i].querySelector("a");
+
+        if(link) {
+            link.addEventListener("click", function(e){
+
+                e.stopPropagation();
+
+            });
+        }
+
     });
 
 }

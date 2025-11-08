@@ -242,4 +242,8 @@ de estilos, el estilo asignado debajo (el más personalizado) ganará por especi
     pointer-events: none;
   }
 
+  .overlay.active-overlay a {
+    pointer-events: auto;
+  }
+
 }
