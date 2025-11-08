@@ -11,25 +11,17 @@ body {
 /*-------------------------------------------------------------*/
 
 .contacto {
+  color: #4b4b4b;
   padding: 40px;
-  background-color: #f9f9f9;
+  background-color: #f0f0f0;
 }
 
 .contacto h2 {
-    margin-bottom: 20px;
-    font-size: 40px;
+  text-decoration: underline;
+  text-decoration-color: #ff9800;
+  margin-bottom: 20px;
+  font-size: 40px;
 }
-
-.contacto h2::after {
-    content: "";
-    display: block;
-    width: 21%;
-    height: 4px;
-    background-color: orange; 
-    margin: -9px 0 0 0;
-    border-radius: 2px;
-}
-
 
 .contenedor-contacto {
     display: flex;
@@ -56,43 +48,22 @@ body {
 
 .columna p, .columna ul, .columna li {
     font-size: 14px;
-    color: #444;
 }
 
 .columna a {
-    color: #444;
-    font-weight: bold;
+  color: #4b4b4b;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-
-
-/* ---------------------------- Mobile -------------------------------- */
-
-/* Tablet y móvil */
-@media (max-width: 1024px) {
-
-  .contacto h2::after {
-    content: "";
-    display: block;
-    width:35%;
-    height: 4px;
-    background-color: orange; 
-    margin: -9px 0 0 0;
-    border-radius: 2px;
-  }
-  
+.columna a:hover {
+  text-decoration: underline;
+  text-decoration-color: #4b4b4b;
 }
- 
+
 @media (max-width: 768px) {
-  
-  .contacto h2::after {
-    content: "";
-    display: block;
-    width:65%;
-    height: 4px;
-    background-color: orange; 
-    margin: -9px 0 0 0;
-    border-radius: 2px;
+  .columna a {
+    text-decoration: underline;
+    text-decoration-color: #4b4b4b;
   }
-
 }

@@ -78,6 +78,11 @@
 
 @media (max-width: 768px) {
 
+  footer {
+    height: 130vh;
+    max-height: 825px;
+  }
+
   .Pie {
     flex-direction: column;
     align-items: center;

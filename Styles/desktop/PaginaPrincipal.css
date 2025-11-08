@@ -220,8 +220,19 @@ body {
 
   /* Orientaciones */
 .Orientaciones, .Eventos {
+  color: #4b4b4b;
   margin: 0 auto;
   padding: 20px;
+}
+
+.Orientaciones > h1 {
+  text-decoration: underline;
+  text-decoration-color: #ff9800;
+}
+
+.Eventos > h2 {
+  text-decoration: underline;
+  text-decoration-color: #4caf4c;
 }
 
 .SubtituloOrientaciones {
@@ -233,6 +244,16 @@ body {
   text-decoration-thickness: 3px;
 }
 
+.SubtituloEventos {
+  margin-bottom: 10px;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-color: #4caf4c;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 3px;
+}
+
+
 .SubtituloOrientaciones.Izq2{
   align-self: flex-start;
   margin-left: 100px;
@@ -241,6 +262,18 @@ body {
 }
 
 .SubtituloOrientaciones.Der2{
+  align-self: flex-end;
+  margin-right: 100px;
+  text-align: right;
+}
+
+.SubtituloEventos.Izq2 {
+  align-self: flex-start;
+  margin-left: 100px;
+  text-align: left;
+}
+
+.SubtituloEventos.Der2 {
   align-self: flex-end;
   margin-right: 100px;
   text-align: right;
@@ -285,7 +318,7 @@ body {
   position: absolute;
   width: 35%;
   height: 100%;
-  color: white;
+  color: #f0f0f0;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -321,7 +354,7 @@ body {
     
 .BotonVerMas{ 
   position: absolute;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px #4b4b4b;
   transition: 0.3s;
   text-decoration: none;     
   bottom: 10px;
@@ -331,7 +364,7 @@ body {
 
 .BotonVerMas.Naranja {
   background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  color: #4b4b4b;
   padding: 8px 100px;
   font-size: 20px;
 } 
@@ -342,7 +375,7 @@ body {
 
 .BotonVerMas.Naranja:hover {
   background-color: #ff9800;
-  color: white;
+  color: #f0f0f0;
 }
 
 .dots {
@@ -416,11 +449,11 @@ body {
 
 
 #dots-eventos .dot { 
-  background-color: gray; 
+  background-color: #4b4b4b; 
 }
 
 #dots-eventos .dot.active { 
-  background-color: darkgray; 
+  background-color: #ff9800; 
 }
 
 .BotonVerMas.Gris {
@@ -435,14 +468,11 @@ body {
   background-color: rgb(109, 108, 108);
   color: white;
 }
-
-  
+ 
 .cuatro-eventos{
   max-width: 1155px;
   height: 250px;
 }
-
-
 
 .TituloEvento {
   margin-bottom: 20px;
@@ -580,19 +610,12 @@ body {
 }
 
 .Novedades h2 {
+  color: #4b4b4b;
+  text-decoration: underline;
+  text-decoration-color: #4caf4c;
   font-size: 45px;
   font-weight: bold;
   margin-bottom: 40px;
-}
-
-.Novedades h2::after {
-  content: "";
-  display: block;
-  width: 13%;
-  height: 4px;
-  background-color: #4caf4f;
-  margin: 5px auto 0;
-  border-radius: 2px;
 }
 
 /* === SLIDER === */
@@ -635,6 +658,7 @@ body {
 }
 
 .ContenidoNovedades h3 {
+  color: #f0f0f0;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -642,6 +666,7 @@ body {
 }
 
 .ContenidoNovedades p {
+  color: #f0f0f0;
   font-size: 16px;
   text-align: left;
   margin-bottom: 40px;
@@ -745,7 +770,8 @@ body {
   margin-bottom: 17px;
   border: none;
   border-bottom: 1px solid #4b4b4b;
-  width: 350px;
+  width: 70%;
+  max-width: 80%;
 }
 
 .subtitle{
