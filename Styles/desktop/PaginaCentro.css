@@ -11,7 +11,7 @@ body {
 /* -------------------------------------------------*/
 
 .Centro {
-    background-image: url("../../imgs/Centro.jpg");
+    background-image: url("../../assets/imgs/recursos-generales/cabeceras/centro.jpg");
     background-size: cover;
     background-position: center;
     height: 70vh;   

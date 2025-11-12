@@ -15,7 +15,7 @@ body {
   /* ----------------------------------------------------------------*/
 
   .Inscripciones {
-    background-image: url("../../imgs/inschead.jpg");
+    background-image: url("../../assets/imgs/recursos-generales/cabeceras/inscripciones.jpg");
     background-size: cover;
     background-position: center;
     height: 80vh;   

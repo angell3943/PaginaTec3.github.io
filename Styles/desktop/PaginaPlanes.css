@@ -15,7 +15,7 @@ main {
 /* -------------------------------------------------*/
 
 .Planes {
-    background-image: url("../../imgs/planes.jpg");
+    background-image: url("../../assets/imgs/recursos-generales/cabeceras/planes.jpg");
     background-size: cover;
     background-position: center;
     height: 70vh;   
