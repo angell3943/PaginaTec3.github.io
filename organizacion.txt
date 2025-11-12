@@ -1,0 +1,23 @@
+páginas
+
+1- Index.html
+    2.institucional- Planes de estudio
+    3.institucional- Autoridades
+    4.institucional- Historia de la escuela
+    5.institucional- AyT
+        5.1- talleres (todos los talleres separados por modalidad)
+    6.institucional- Centro de estudiantes
+
+    7.eventos- Exposicion Técnica
+        7.1- Proyectos actuales (todos los proyectos de la expo actual desde 1°ro-7°mo)
+        7.2- Exposiciones anteriores (todo el contenido separado por expo, actividades y proyectos)
+        7.3- Mejores Proyectos (los mejores proyectos de la historia de esta escuela)
+    8.eventos- Eventos escolares (con torneos)
+
+    9.novedades- Inscripciones
+    10.novedades- Cambios
+    11.novedades- Egresados
+
+    12- Contactos
+
+    
